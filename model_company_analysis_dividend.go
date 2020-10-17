@@ -9,8 +9,8 @@
 
 package openapi
 
-// CompanyDividend struct for CompanyDividend
-type CompanyDividend struct {
+// CompanyAnalysisDividend struct for CompanyAnalysisDividend
+type CompanyAnalysisDividend struct {
 	Current  float32 `json:"current,omitempty"`
 	Future   float32 `json:"future,omitempty"`
 	Upcoming bool    `json:"upcoming,omitempty"`

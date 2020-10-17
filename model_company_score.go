@@ -11,5 +11,5 @@ package openapi
 
 // CompanyScore struct for CompanyScore
 type CompanyScore struct {
-	Data CompanyScore `json:"data,omitempty"`
+	Data CompanyDataScore `json:"data,omitempty"`
 }

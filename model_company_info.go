@@ -11,5 +11,5 @@ package openapi
 
 // CompanyInfo struct for CompanyInfo
 type CompanyInfo struct {
-	Data CompanyInfo `json:"data,omitempty"`
+	Data CompanyDataInfo `json:"data,omitempty"`
 }
