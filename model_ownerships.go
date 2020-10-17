@@ -8,6 +8,7 @@
  */
 
 package openapi
+
 // Ownerships struct for Ownerships
 type Ownerships struct {
 	Data []Ownership `json:"data,omitempty"`

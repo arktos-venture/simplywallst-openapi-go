@@ -8,11 +8,12 @@
  */
 
 package openapi
+
 // IndustryPerformanceDate struct for IndustryPerformanceDate
 type IndustryPerformanceDate struct {
-	Return7d []IndustryPerformanceDateData `json:"return_7d,omitempty"`
-	Return30d []IndustryPerformanceDateData `json:"return_30d,omitempty"`
-	Return90d []IndustryPerformanceDateData `json:"return_90d,omitempty"`
+	Return7d     []IndustryPerformanceDateData `json:"return_7d,omitempty"`
+	Return30d    []IndustryPerformanceDateData `json:"return_30d,omitempty"`
+	Return90d    []IndustryPerformanceDateData `json:"return_90d,omitempty"`
 	Return1yrAbs []IndustryPerformanceDateData `json:"return_1yr_abs,omitempty"`
 	Return3yrAbs []IndustryPerformanceDateData `json:"return_3yr_abs,omitempty"`
 	Return5yrAbs []IndustryPerformanceDateData `json:"return_5yr_abs,omitempty"`

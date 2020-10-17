@@ -8,17 +8,18 @@
  */
 
 package openapi
+
 // New struct for New
 type New struct {
-	CompanyId string `json:"company_id,omitempty"`
-	CiqCompanyId int32 `json:"ciq_company_id,omitempty"`
-	CompanySymbol string `json:"company_symbol,omitempty"`
-	Content string `json:"content,omitempty"`
-	Description string `json:"description,omitempty"`
-	Headline string `json:"headline,omitempty"`
-	OriginalUrl string `json:"original_url,omitempty"`
-	ProviderName string `json:"provider_name,omitempty"`
-	Url string `json:"url,omitempty"`
-	Date int32 `json:"date,omitempty"`
+	CompanyId        string `json:"company_id,omitempty"`
+	CiqCompanyId     int32  `json:"ciq_company_id,omitempty"`
+	CompanySymbol    string `json:"company_symbol,omitempty"`
+	Content          string `json:"content,omitempty"`
+	Description      string `json:"description,omitempty"`
+	Headline         string `json:"headline,omitempty"`
+	OriginalUrl      string `json:"original_url,omitempty"`
+	ProviderName     string `json:"provider_name,omitempty"`
+	Url              string `json:"url,omitempty"`
+	Date             int32  `json:"date,omitempty"`
 	DateDiffFriendly string `json:"date_diff_friendly,omitempty"`
 }

@@ -8,6 +8,7 @@
  */
 
 package openapi
+
 // CompanyAnalysis struct for CompanyAnalysis
 type CompanyAnalysis struct {
 	Data CompanyAnalysis `json:"data,omitempty"`

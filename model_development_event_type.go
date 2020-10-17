@@ -8,10 +8,11 @@
  */
 
 package openapi
+
 // DevelopmentEventType struct for DevelopmentEventType
 type DevelopmentEventType struct {
-	Id int32 `json:"id,omitempty"`
-	Name string `json:"name,omitempty"`
+	Id        int32  `json:"id,omitempty"`
+	Name      string `json:"name,omitempty"`
 	ShortName string `json:"shortName,omitempty"`
-	Group string `json:"group,omitempty"`
+	Group     string `json:"group,omitempty"`
 }

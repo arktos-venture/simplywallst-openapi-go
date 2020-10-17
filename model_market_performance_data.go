@@ -8,8 +8,9 @@
  */
 
 package openapi
+
 // MarketPerformanceData struct for MarketPerformanceData
 type MarketPerformanceData struct {
-	Top map[string]MarketPerformanceDate `json:"top,omitempty"`
+	Top   map[string]MarketPerformanceDate `json:"top,omitempty"`
 	Worst map[string]MarketPerformanceDate `json:"worst,omitempty"`
 }

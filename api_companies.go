@@ -15,6 +15,7 @@ import (
 	_nethttp "net/http"
 	_neturl "net/url"
 	"strings"
+
 	"github.com/antihax/optional"
 )
 
@@ -28,7 +29,7 @@ type CompaniesApiService service
 
 // ListDevelopmentInfoOpts Optional parameters for the method 'ListDevelopmentInfo'
 type ListDevelopmentInfoOpts struct {
-    DevelopmentInfoAdd optional.Interface
+	DevelopmentInfoAdd optional.Interface
 }
 
 /*
@@ -37,7 +38,7 @@ List properties of developmentinfo
  * @param ctx _context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param include string include (name or id) of the developmentinfo
  * @param optional nil or *ListDevelopmentInfoOpts - Optional Parameters:
- * @param "DevelopmentInfoAdd" (optional.Interface of DevelopmentInfoAdd) - 
+ * @param "DevelopmentInfoAdd" (optional.Interface of DevelopmentInfoAdd) -
 @return DevelopmentInfo
 */
 func (a *CompaniesApiService) ListDevelopmentInfo(ctx _context.Context, include string, localVarOptionals *ListDevelopmentInfoOpts) (DevelopmentInfo, *_nethttp.Response, error) {
@@ -138,7 +139,7 @@ func (a *CompaniesApiService) ListDevelopments(ctx _context.Context, id string) 
 
 	// create path and map variables
 	localVarPath := a.client.cfg.BasePath + "/api/company/developments/{id}"
-	localVarPath = strings.Replace(localVarPath, "{"+"id"+"}", _neturl.QueryEscape(parameterToString(id, "")) , -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"id"+"}", _neturl.QueryEscape(parameterToString(id, "")), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := _neturl.Values{}
@@ -199,7 +200,7 @@ func (a *CompaniesApiService) ListDevelopments(ctx _context.Context, id string) 
 
 // ListEstimateCoveragesOpts Optional parameters for the method 'ListEstimateCoverages'
 type ListEstimateCoveragesOpts struct {
-    Version optional.String
+	Version optional.String
 }
 
 /*
@@ -223,7 +224,7 @@ func (a *CompaniesApiService) ListEstimateCoverages(ctx _context.Context, id str
 
 	// create path and map variables
 	localVarPath := a.client.cfg.BasePath + "/api/company/estimates/coverage/{id}"
-	localVarPath = strings.Replace(localVarPath, "{"+"id"+"}", _neturl.QueryEscape(parameterToString(id, "")) , -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"id"+"}", _neturl.QueryEscape(parameterToString(id, "")), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := _neturl.Values{}
@@ -287,8 +288,8 @@ func (a *CompaniesApiService) ListEstimateCoverages(ctx _context.Context, id str
 
 // ListNewsOpts Optional parameters for the method 'ListNews'
 type ListNewsOpts struct {
-    SimplywallSt optional.Bool
-    Version optional.String
+	SimplywallSt optional.Bool
+	Version      optional.String
 }
 
 /*
@@ -313,7 +314,7 @@ func (a *CompaniesApiService) ListNews(ctx _context.Context, id string, localVar
 
 	// create path and map variables
 	localVarPath := a.client.cfg.BasePath + "/api/news/{id}"
-	localVarPath = strings.Replace(localVarPath, "{"+"id"+"}", _neturl.QueryEscape(parameterToString(id, "")) , -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"id"+"}", _neturl.QueryEscape(parameterToString(id, "")), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := _neturl.Values{}
@@ -397,7 +398,7 @@ func (a *CompaniesApiService) ListOwnerships(ctx _context.Context, id string) (O
 
 	// create path and map variables
 	localVarPath := a.client.cfg.BasePath + "/api/company/ownership/shareholders/{id}"
-	localVarPath = strings.Replace(localVarPath, "{"+"id"+"}", _neturl.QueryEscape(parameterToString(id, "")) , -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"id"+"}", _neturl.QueryEscape(parameterToString(id, "")), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := _neturl.Values{}
@@ -458,7 +459,7 @@ func (a *CompaniesApiService) ListOwnerships(ctx _context.Context, id string) (O
 
 // ListPricesOpts Optional parameters for the method 'ListPrices'
 type ListPricesOpts struct {
-    StartTimestamp optional.Int32
+	StartTimestamp optional.Int32
 }
 
 /*
@@ -482,7 +483,7 @@ func (a *CompaniesApiService) ListPrices(ctx _context.Context, id string, localV
 
 	// create path and map variables
 	localVarPath := a.client.cfg.BasePath + "/api/company/price/{id}"
-	localVarPath = strings.Replace(localVarPath, "{"+"id"+"}", _neturl.QueryEscape(parameterToString(id, "")) , -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"id"+"}", _neturl.QueryEscape(parameterToString(id, "")), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := _neturl.Values{}
@@ -546,8 +547,8 @@ func (a *CompaniesApiService) ListPrices(ctx _context.Context, id string, localV
 
 // ReadCompaniesOpts Optional parameters for the method 'ReadCompanies'
 type ReadCompaniesOpts struct {
-    Include optional.String
-    Version optional.String
+	Include optional.String
+	Version optional.String
 }
 
 /*
@@ -575,13 +576,13 @@ func (a *CompaniesApiService) ReadCompanies(ctx _context.Context, exchange strin
 
 	// create path and map variables
 	localVarPath := a.client.cfg.BasePath + "/api/company/stocks/{exchange}/{sector}/{ticker}/{company}"
-	localVarPath = strings.Replace(localVarPath, "{"+"exchange"+"}", _neturl.QueryEscape(parameterToString(exchange, "")) , -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"exchange"+"}", _neturl.QueryEscape(parameterToString(exchange, "")), -1)
 
-	localVarPath = strings.Replace(localVarPath, "{"+"sector"+"}", _neturl.QueryEscape(parameterToString(sector, "")) , -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"sector"+"}", _neturl.QueryEscape(parameterToString(sector, "")), -1)
 
-	localVarPath = strings.Replace(localVarPath, "{"+"ticker"+"}", _neturl.QueryEscape(parameterToString(ticker, "")) , -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"ticker"+"}", _neturl.QueryEscape(parameterToString(ticker, "")), -1)
 
-	localVarPath = strings.Replace(localVarPath, "{"+"company"+"}", _neturl.QueryEscape(parameterToString(company, "")) , -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"company"+"}", _neturl.QueryEscape(parameterToString(company, "")), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := _neturl.Values{}

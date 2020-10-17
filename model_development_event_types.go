@@ -8,6 +8,7 @@
  */
 
 package openapi
+
 // DevelopmentEventTypes struct for DevelopmentEventTypes
 type DevelopmentEventTypes struct {
 	Data []DevelopmentEventType `json:"data,omitempty"`

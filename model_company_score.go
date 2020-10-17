@@ -8,6 +8,7 @@
  */
 
 package openapi
+
 // CompanyScore struct for CompanyScore
 type CompanyScore struct {
 	Data CompanyScore `json:"data,omitempty"`

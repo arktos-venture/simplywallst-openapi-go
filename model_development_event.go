@@ -8,10 +8,11 @@
  */
 
 package openapi
+
 // DevelopmentEvent struct for DevelopmentEvent
 type DevelopmentEvent struct {
-	CompanyId string `json:"company_id,omitempty"`
-	Id int32 `json:"id,omitempty"`
-	Priority bool `json:"priority,omitempty"`
-	Types DevelopmentEventTypes `json:"types,omitempty"`
+	CompanyId string                `json:"company_id,omitempty"`
+	Id        int32                 `json:"id,omitempty"`
+	Priority  bool                  `json:"priority,omitempty"`
+	Types     DevelopmentEventTypes `json:"types,omitempty"`
 }

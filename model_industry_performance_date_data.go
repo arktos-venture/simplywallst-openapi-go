@@ -8,16 +8,17 @@
  */
 
 package openapi
+
 // IndustryPerformanceDateData struct for IndustryPerformanceDateData
 type IndustryPerformanceDateData struct {
-	Id string `json:"id,omitempty"`
-	Industry string `json:"industry,omitempty"`
-	Country string `json:"country,omitempty"`
-	CurrencyIso string `json:"currency_iso,omitempty"`
-	Return7d int32 `json:"return_7d,omitempty"`
-	Return30d int32 `json:"return_30d,omitempty"`
-	Return90d int32 `json:"return_90d,omitempty"`
-	Return1yrAbs int32 `json:"return_1yr_abs,omitempty"`
-	Return3yrAbs int32 `json:"return_3yr_abs,omitempty"`
-	Return5yrAbs int32 `json:"return_5yr_abs,omitempty"`
+	Id           string `json:"id,omitempty"`
+	Industry     string `json:"industry,omitempty"`
+	Country      string `json:"country,omitempty"`
+	CurrencyIso  string `json:"currency_iso,omitempty"`
+	Return7d     int32  `json:"return_7d,omitempty"`
+	Return30d    int32  `json:"return_30d,omitempty"`
+	Return90d    int32  `json:"return_90d,omitempty"`
+	Return1yrAbs int32  `json:"return_1yr_abs,omitempty"`
+	Return3yrAbs int32  `json:"return_3yr_abs,omitempty"`
+	Return5yrAbs int32  `json:"return_5yr_abs,omitempty"`
 }

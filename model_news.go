@@ -8,6 +8,7 @@
  */
 
 package openapi
+
 // News struct for News
 type News struct {
 	Data []New `json:"data,omitempty"`

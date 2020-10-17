@@ -8,7 +8,11 @@
  */
 
 package openapi
+
 // CompanyDividend struct for CompanyDividend
 type CompanyDividend struct {
-	Id string `json:"id,omitempty"`
+	Current  float32 `json:"current,omitempty"`
+	Future   float32 `json:"future,omitempty"`
+	Upcoming bool    `json:"upcoming,omitempty"`
+	ExDate   int32   `json:"ex_date,omitempty"`
 }

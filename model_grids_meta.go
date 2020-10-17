@@ -8,10 +8,11 @@
  */
 
 package openapi
+
 // GridsMeta struct for GridsMeta
 type GridsMeta struct {
-	TotalRecords int32 `json:"total_records,omitempty"`
-	RealTotalRecords int32 `json:"real_total_records,omitempty"`
-	State string `json:"state,omitempty"`
-	NoResultIfLimit bool `json:"noResultIfLimit,omitempty"`
+	TotalRecords     int32  `json:"total_records,omitempty"`
+	RealTotalRecords int32  `json:"real_total_records,omitempty"`
+	State            string `json:"state,omitempty"`
+	NoResultIfLimit  bool   `json:"noResultIfLimit,omitempty"`
 }

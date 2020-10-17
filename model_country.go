@@ -8,12 +8,13 @@
  */
 
 package openapi
+
 // Country struct for Country
 type Country struct {
-	Name string `json:"name,omitempty"`
-	Iso2 string `json:"iso2,omitempty"`
-	Iso3 string `json:"iso3,omitempty"`
-	Type string `json:"type,omitempty"`
-	Links CountryLinks `json:"links,omitempty"`
+	Name   string        `json:"name,omitempty"`
+	Iso2   string        `json:"iso2,omitempty"`
+	Iso3   string        `json:"iso3,omitempty"`
+	Type   string        `json:"type,omitempty"`
+	Links  CountryLinks  `json:"links,omitempty"`
 	Fields CountryFields `json:"fields,omitempty"`
 }

@@ -14,6 +14,7 @@ import (
 	_ioutil "io/ioutil"
 	_nethttp "net/http"
 	_neturl "net/url"
+
 	"github.com/antihax/optional"
 )
 
@@ -27,7 +28,7 @@ type ScreenerApiService service
 
 // ListGridViewSearchOpts Optional parameters for the method 'ListGridViewSearch'
 type ListGridViewSearchOpts struct {
-    GridViewSearchAdd optional.Interface
+	GridViewSearchAdd optional.Interface
 }
 
 /*
@@ -35,7 +36,7 @@ ListGridViewSearch Method for ListGridViewSearch
 List properties of gridviewsearch
  * @param ctx _context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param optional nil or *ListGridViewSearchOpts - Optional Parameters:
- * @param "GridViewSearchAdd" (optional.Interface of GridViewSearchAdd) - 
+ * @param "GridViewSearchAdd" (optional.Interface of GridViewSearchAdd) -
 @return GridViewSearch
 */
 func (a *ScreenerApiService) ListGridViewSearch(ctx _context.Context, localVarOptionals *ListGridViewSearchOpts) (GridViewSearch, *_nethttp.Response, error) {
@@ -118,8 +119,8 @@ func (a *ScreenerApiService) ListGridViewSearch(ctx _context.Context, localVarOp
 
 // ListGridsOpts Optional parameters for the method 'ListGrids'
 type ListGridsOpts struct {
-    Include optional.String
-    GridsAdd optional.Interface
+	Include  optional.String
+	GridsAdd optional.Interface
 }
 
 /*
@@ -128,7 +129,7 @@ List properties of grids
  * @param ctx _context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param optional nil or *ListGridsOpts - Optional Parameters:
  * @param "Include" (optional.String) -  string include (name or id) of the grids
- * @param "GridsAdd" (optional.Interface of GridsAdd) - 
+ * @param "GridsAdd" (optional.Interface of GridsAdd) -
 @return Grids
 */
 func (a *ScreenerApiService) ListGrids(ctx _context.Context, localVarOptionals *ListGridsOpts) (Grids, *_nethttp.Response, error) {

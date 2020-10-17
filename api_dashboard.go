@@ -44,7 +44,7 @@ func (a *DashboardApiService) ListIndustryPerformance(ctx _context.Context, coun
 
 	// create path and map variables
 	localVarPath := a.client.cfg.BasePath + "/dashboard/industry-performance/{country}"
-	localVarPath = strings.Replace(localVarPath, "{"+"country"+"}", _neturl.QueryEscape(parameterToString(country, "")) , -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"country"+"}", _neturl.QueryEscape(parameterToString(country, "")), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := _neturl.Values{}
@@ -197,7 +197,7 @@ func (a *DashboardApiService) ListMarketPerformance(ctx _context.Context, countr
 
 	// create path and map variables
 	localVarPath := a.client.cfg.BasePath + "/dashboard/market-performance/{country}"
-	localVarPath = strings.Replace(localVarPath, "{"+"country"+"}", _neturl.QueryEscape(parameterToString(country, "")) , -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"country"+"}", _neturl.QueryEscape(parameterToString(country, "")), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := _neturl.Values{}

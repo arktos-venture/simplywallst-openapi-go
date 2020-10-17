@@ -8,6 +8,7 @@
  */
 
 package openapi
+
 // CountryLinks struct for CountryLinks
 type CountryLinks struct {
 	Self string `json:"self,omitempty"`

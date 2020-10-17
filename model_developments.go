@@ -8,6 +8,7 @@
  */
 
 package openapi
+
 // Developments struct for Developments
 type Developments struct {
 	Data []Development `json:"data,omitempty"`

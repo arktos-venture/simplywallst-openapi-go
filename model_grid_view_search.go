@@ -8,6 +8,7 @@
  */
 
 package openapi
+
 // GridViewSearch struct for GridViewSearch
 type GridViewSearch struct {
 	Data []Company `json:"data,omitempty"`

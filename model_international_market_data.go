@@ -8,8 +8,9 @@
  */
 
 package openapi
+
 // InternationalMarketData struct for InternationalMarketData
 type InternationalMarketData struct {
-	Top map[string]InternationalMarketReturn `json:"top,omitempty"`
+	Top   map[string]InternationalMarketReturn `json:"top,omitempty"`
 	Worst map[string]InternationalMarketReturn `json:"worst,omitempty"`
 }

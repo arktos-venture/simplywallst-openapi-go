@@ -9,8 +9,9 @@
 
 package openapi
 
-// IndustryCountryData struct for IndustryCountryData
-type IndustryCountryData struct {
-	Id   int32  `json:"id,omitempty"`
+// CompanyInfoCeo struct for CompanyInfoCeo
+type CompanyInfoCeo struct {
 	Name string `json:"name,omitempty"`
+	Age  int32  `json:"age,omitempty"`
+	Url  string `json:"url,omitempty"`
 }

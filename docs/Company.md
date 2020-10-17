@@ -19,6 +19,7 @@ Name | Type | Description | Notes
 **IsSearchable** | **bool** |  | [optional] 
 **IsinSymbol** | **string** |  | [optional] 
 **Analysis** | [**CompanyAnalysis**](company_analysis.md) |  | [optional] 
+**Info** | [**CompanyInfo**](company_info.md) |  | [optional] 
 **Score** | [**CompanyScore**](company_score.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

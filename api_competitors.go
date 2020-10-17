@@ -15,6 +15,7 @@ import (
 	_nethttp "net/http"
 	_neturl "net/url"
 	"strings"
+
 	"github.com/antihax/optional"
 )
 
@@ -28,8 +29,8 @@ type CompetitorsApiService service
 
 // ListCompetitorsOpts Optional parameters for the method 'ListCompetitors'
 type ListCompetitorsOpts struct {
-    Include optional.String
-    Version optional.String
+	Include optional.String
+	Version optional.String
 }
 
 /*
@@ -54,7 +55,7 @@ func (a *CompetitorsApiService) ListCompetitors(ctx _context.Context, id string,
 
 	// create path and map variables
 	localVarPath := a.client.cfg.BasePath + "/api/competitors/{id}"
-	localVarPath = strings.Replace(localVarPath, "{"+"id"+"}", _neturl.QueryEscape(parameterToString(id, "")) , -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"id"+"}", _neturl.QueryEscape(parameterToString(id, "")), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := _neturl.Values{}

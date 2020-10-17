@@ -8,6 +8,7 @@
  */
 
 package openapi
+
 // IndustryCountryCountries struct for IndustryCountryCountries
 type IndustryCountryCountries struct {
 	Data []Country `json:"data,omitempty"`

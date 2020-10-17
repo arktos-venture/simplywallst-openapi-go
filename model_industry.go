@@ -8,9 +8,10 @@
  */
 
 package openapi
+
 // Industry struct for Industry
 type Industry struct {
-	Id int32 `json:"id,omitempty"`
-	Type string `json:"type,omitempty"`
-	Parent int32 `json:"parent,omitempty"`
+	Id     int32  `json:"id,omitempty"`
+	Type   string `json:"type,omitempty"`
+	Parent int32  `json:"parent,omitempty"`
 }

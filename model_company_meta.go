@@ -8,6 +8,7 @@
  */
 
 package openapi
+
 // CompanyMeta struct for CompanyMeta
 type CompanyMeta struct {
 	PlanRestricted bool `json:"plan_restricted,omitempty"`

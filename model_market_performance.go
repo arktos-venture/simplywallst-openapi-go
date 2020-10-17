@@ -8,6 +8,7 @@
  */
 
 package openapi
+
 // MarketPerformance struct for MarketPerformance
 type MarketPerformance struct {
 	Data MarketPerformanceData `json:"data,omitempty"`

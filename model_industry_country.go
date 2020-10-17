@@ -8,9 +8,10 @@
  */
 
 package openapi
+
 // IndustryCountry struct for IndustryCountry
 type IndustryCountry struct {
-	Data IndustryCountryData `json:"data,omitempty"`
-	Links IndustryCountryLinks `json:"links,omitempty"`
+	Data      IndustryCountryData      `json:"data,omitempty"`
+	Links     IndustryCountryLinks     `json:"links,omitempty"`
 	Countries IndustryCountryCountries `json:"countries,omitempty"`
 }

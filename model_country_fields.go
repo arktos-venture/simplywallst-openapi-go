@@ -8,6 +8,7 @@
  */
 
 package openapi
+
 // CountryFields struct for CountryFields
 type CountryFields struct {
 	Data []CountryField `json:"data,omitempty"`

@@ -44,7 +44,7 @@ func (a *IndustriesApiService) ListIndustry(ctx _context.Context, id string) (In
 
 	// create path and map variables
 	localVarPath := a.client.cfg.BasePath + "/api/industry/company/{id}"
-	localVarPath = strings.Replace(localVarPath, "{"+"id"+"}", _neturl.QueryEscape(parameterToString(id, "")) , -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"id"+"}", _neturl.QueryEscape(parameterToString(id, "")), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := _neturl.Values{}
@@ -122,7 +122,7 @@ func (a *IndustriesApiService) ListIndustryCountry(ctx _context.Context, country
 
 	// create path and map variables
 	localVarPath := a.client.cfg.BasePath + "/industry/0/{country}"
-	localVarPath = strings.Replace(localVarPath, "{"+"country"+"}", _neturl.QueryEscape(parameterToString(country, "")) , -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"country"+"}", _neturl.QueryEscape(parameterToString(country, "")), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := _neturl.Values{}

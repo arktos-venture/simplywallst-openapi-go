@@ -8,6 +8,7 @@
  */
 
 package openapi
+
 // Prices struct for Prices
 type Prices struct {
 	Data []Price `json:"data,omitempty"`

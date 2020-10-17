@@ -8,6 +8,7 @@
  */
 
 package openapi
+
 // IndustryTree struct for IndustryTree
 type IndustryTree struct {
 	Data map[string]Industry `json:"data,omitempty"`

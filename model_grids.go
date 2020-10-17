@@ -8,6 +8,7 @@
  */
 
 package openapi
+
 // Grids struct for Grids
 type Grids struct {
 	Data []Company `json:"data,omitempty"`

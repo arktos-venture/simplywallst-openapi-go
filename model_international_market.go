@@ -8,6 +8,7 @@
  */
 
 package openapi
+
 // InternationalMarket struct for InternationalMarket
 type InternationalMarket struct {
 	Data InternationalMarketData `json:"data,omitempty"`

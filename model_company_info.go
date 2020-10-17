@@ -9,8 +9,7 @@
 
 package openapi
 
-// Companies struct for Companies
-type Companies struct {
-	Data Company     `json:"data,omitempty"`
-	Meta CompanyMeta `json:"meta,omitempty"`
+// CompanyInfo struct for CompanyInfo
+type CompanyInfo struct {
+	Data CompanyInfo `json:"data,omitempty"`
 }

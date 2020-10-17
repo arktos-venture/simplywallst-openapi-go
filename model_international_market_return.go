@@ -8,11 +8,12 @@
  */
 
 package openapi
+
 // InternationalMarketReturn struct for InternationalMarketReturn
 type InternationalMarketReturn struct {
-	Return7d []InternationalMarketReturnDate `json:"return_7d,omitempty"`
-	Return30d []InternationalMarketReturnDate `json:"return_30d,omitempty"`
-	Return90d []InternationalMarketReturnDate `json:"return_90d,omitempty"`
+	Return7d     []InternationalMarketReturnDate `json:"return_7d,omitempty"`
+	Return30d    []InternationalMarketReturnDate `json:"return_30d,omitempty"`
+	Return90d    []InternationalMarketReturnDate `json:"return_90d,omitempty"`
 	Return1yrAbs []InternationalMarketReturnDate `json:"return_1yr_abs,omitempty"`
 	Return3yrAbs []InternationalMarketReturnDate `json:"return_3yr_abs,omitempty"`
 	Return5yrAbs []InternationalMarketReturnDate `json:"return_5yr_abs,omitempty"`

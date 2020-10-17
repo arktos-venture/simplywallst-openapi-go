@@ -8,6 +8,7 @@
  */
 
 package openapi
+
 // EstimateCoverageBrokers struct for EstimateCoverageBrokers
 type EstimateCoverageBrokers struct {
 	Data []EstimateCoverageBrokers `json:"data,omitempty"`

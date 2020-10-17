@@ -8,8 +8,9 @@
  */
 
 package openapi
+
 // EstimateCoverage struct for EstimateCoverage
 type EstimateCoverage struct {
-	CompanyId int32 `json:"company_id,omitempty"`
-	Brokers EstimateCoverageBrokers `json:"brokers,omitempty"`
+	CompanyId int32                   `json:"company_id,omitempty"`
+	Brokers   EstimateCoverageBrokers `json:"brokers,omitempty"`
 }

@@ -8,6 +8,7 @@
  */
 
 package openapi
+
 // Competitors struct for Competitors
 type Competitors struct {
 	Data []Company `json:"data,omitempty"`
