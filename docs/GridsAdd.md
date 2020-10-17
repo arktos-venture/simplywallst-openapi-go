@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **int32** |  | [optional] 
+**Id** | **string** |  | [optional] 
 **NoResultIfLimit** | **bool** |  | [optional] 
 **Offset** | **int32** |  | [optional] 
 **Size** | **int32** |  | [optional] 

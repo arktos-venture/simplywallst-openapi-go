@@ -11,7 +11,7 @@ package openapi
 
 // GridsAdd struct for GridsAdd
 type GridsAdd struct {
-	Id              int32  `json:"id,omitempty"`
+	Id              string `json:"id,omitempty"`
 	NoResultIfLimit bool   `json:"no_result_if_limit,omitempty"`
 	Offset          int32  `json:"offset,omitempty"`
 	Size            int32  `json:"size,omitempty"`
