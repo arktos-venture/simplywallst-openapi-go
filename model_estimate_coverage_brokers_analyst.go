@@ -11,12 +11,12 @@ package openapi
 
 // EstimateCoverageBrokersAnalyst struct for EstimateCoverageBrokersAnalyst
 type EstimateCoverageBrokersAnalyst struct {
-	EstimateAnalystId int32  `json:"estimate_analyst_id,omitempty"`
+	EstimateAnalystId int64  `json:"estimate_analyst_id,omitempty"`
 	Prefix            string `json:"prefix,omitempty"`
 	FirstName         string `json:"first_name,omitempty"`
 	MiddleName        string `json:"middle_name,omitempty"`
 	LastName          string `json:"last_name,omitempty"`
 	Suffix            string `json:"suffix,omitempty"`
-	OriginalDate      int32  `json:"original_date,omitempty"`
-	ExpirationDate    int32  `json:"expiration_date,omitempty"`
+	OriginalDate      int64  `json:"original_date,omitempty"`
+	ExpirationDate    int64  `json:"expiration_date,omitempty"`
 }

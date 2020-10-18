@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **CompanyId** | **string** |  | [optional] 
-**Id** | **int32** |  | [optional] 
+**Id** | **int64** |  | [optional] 
 **Priority** | **bool** |  | [optional] 
 **Types** | [**DevelopmentEventTypes**](developmentEvent_types.md) |  | [optional] 
 

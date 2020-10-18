@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**TotalRecords** | **int32** |  | [optional] 
-**RealTotalRecords** | **int32** |  | [optional] 
+**TotalRecords** | **int64** |  | [optional] 
+**RealTotalRecords** | **int64** |  | [optional] 
 **State** | **string** |  | [optional] 
 **NoResultIfLimit** | **bool** |  | [optional] 
 

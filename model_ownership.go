@@ -11,16 +11,16 @@ package openapi
 
 // Ownership struct for Ownership
 type Ownership struct {
-	RankSharesHeld             int32          `json:"rank_shares_held,omitempty"`
+	RankSharesHeld             int64          `json:"rank_shares_held,omitempty"`
 	Owner                      OwnershipOwner `json:"owner,omitempty"`
 	HoldingDate                string         `json:"holding_date,omitempty"`
-	SharesHeld                 int32          `json:"shares_held,omitempty"`
+	SharesHeld                 int64          `json:"shares_held,omitempty"`
 	PercentOfPortfolio         float32        `json:"percent_of_portfolio,omitempty"`
 	PercentOfSharesOutstanding float32        `json:"percent_of_shares_outstanding,omitempty"`
 	SharesChanged              float32        `json:"shares_changed,omitempty"`
 	PercentSharesChanged       float32        `json:"percent_shares_changed,omitempty"`
-	RankSharesBought           int32          `json:"rank_shares_bought,omitempty"`
-	RankSharesSold             int32          `json:"rank_shares_sold,omitempty"`
-	PeriodStartDate            int32          `json:"period_start_date,omitempty"`
-	PeriodEndDate              int32          `json:"period_end_date,omitempty"`
+	RankSharesBought           int64          `json:"rank_shares_bought,omitempty"`
+	RankSharesSold             int64          `json:"rank_shares_sold,omitempty"`
+	PeriodStartDate            int64          `json:"period_start_date,omitempty"`
+	PeriodEndDate              int64          `json:"period_end_date,omitempty"`
 }

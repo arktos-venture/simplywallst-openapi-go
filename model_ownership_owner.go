@@ -14,5 +14,5 @@ type OwnershipOwner struct {
 	Name        string `json:"name,omitempty"`
 	Type        string `json:"type,omitempty"`
 	CompanyType int32  `json:"company_type,omitempty"`
-	ObjectId    int32  `json:"object_id,omitempty"`
+	ObjectId    int64  `json:"object_id,omitempty"`
 }

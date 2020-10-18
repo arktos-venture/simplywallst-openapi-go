@@ -13,5 +13,5 @@ package openapi
 type CountryField struct {
 	Name  string  `json:"name,omitempty"`
 	Value float32 `json:"value,omitempty"`
-	Count int32   `json:"count,omitempty"`
+	Count int64   `json:"count,omitempty"`
 }

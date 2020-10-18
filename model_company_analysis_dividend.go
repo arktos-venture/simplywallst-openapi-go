@@ -14,5 +14,5 @@ type CompanyAnalysisDividend struct {
 	Current  float32 `json:"current,omitempty"`
 	Future   float32 `json:"future,omitempty"`
 	Upcoming bool    `json:"upcoming,omitempty"`
-	ExDate   int32   `json:"ex_date,omitempty"`
+	ExDate   int64   `json:"ex_date,omitempty"`
 }

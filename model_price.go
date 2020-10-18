@@ -11,6 +11,6 @@ package openapi
 
 // Price struct for Price
 type Price struct {
-	Date  int32   `json:"date,omitempty"`
+	Date  int64   `json:"date,omitempty"`
 	Close float32 `json:"close,omitempty"`
 }

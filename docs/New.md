@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **CompanyId** | **string** |  | [optional] 
-**CiqCompanyId** | **int32** |  | [optional] 
+**CiqCompanyId** | **int64** |  | [optional] 
 **CompanySymbol** | **string** |  | [optional] 
 **Content** | **string** |  | [optional] 
 **Description** | **string** |  | [optional] 
@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 **OriginalUrl** | **string** |  | [optional] 
 **ProviderName** | **string** |  | [optional] 
 **Url** | **string** |  | [optional] 
-**Date** | **int32** |  | [optional] 
+**Date** | **int64** |  | [optional] 
 **DateDiffFriendly** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

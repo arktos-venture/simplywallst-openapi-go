@@ -12,7 +12,7 @@ package openapi
 // CompanyDataInfoIndustry struct for CompanyDataInfoIndustry
 type CompanyDataInfoIndustry struct {
 	Name        string `json:"name,omitempty"`
-	PrimaryId   int32  `json:"primary_id,omitempty"`
-	SecondaryId int32  `json:"secondary_id,omitempty"`
-	TertiaryId  int32  `json:"tertiary_id,omitempty"`
+	PrimaryId   int64  `json:"primary_id,omitempty"`
+	SecondaryId int64  `json:"secondary_id,omitempty"`
+	TertiaryId  int64  `json:"tertiary_id,omitempty"`
 }

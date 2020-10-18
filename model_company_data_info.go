@@ -13,7 +13,7 @@ package openapi
 type CompanyDataInfo struct {
 	Id            string                  `json:"id,omitempty"`
 	Description   string                  `json:"description,omitempty"`
-	WarningType   int32                   `json:"warning_type,omitempty"`
+	WarningType   int64                   `json:"warning_type,omitempty"`
 	Industry      CompanyDataInfoIndustry `json:"industry,omitempty"`
 	Fund          bool                    `json:"fund,omitempty"`
 	Status        string                  `json:"status,omitempty"`

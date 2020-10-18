@@ -17,11 +17,11 @@ type MarketPerformanceDateData struct {
 	UniqueSymbol   string  `json:"unique_symbol,omitempty"`
 	CurrencyIso    string  `json:"currency_iso,omitempty"`
 	LastSharePrice float32 `json:"last_share_price,omitempty"`
-	Return7d       int32   `json:"return_7d,omitempty"`
-	Return30d      int32   `json:"return_30d,omitempty"`
-	Return90d      int32   `json:"return_90d,omitempty"`
-	Return1yrAbs   int32   `json:"return_1yr_abs,omitempty"`
-	Return3yrAbs   int32   `json:"return_3yr_abs,omitempty"`
-	Return5yrAbs   int32   `json:"return_5yr_abs,omitempty"`
+	Return7d       float32 `json:"return_7d,omitempty"`
+	Return30d      float32 `json:"return_30d,omitempty"`
+	Return90d      float32 `json:"return_90d,omitempty"`
+	Return1yrAbs   float32 `json:"return_1yr_abs,omitempty"`
+	Return3yrAbs   float32 `json:"return_3yr_abs,omitempty"`
+	Return5yrAbs   float32 `json:"return_5yr_abs,omitempty"`
 	CanonicalUrl   string  `json:"canonical_url,omitempty"`
 }

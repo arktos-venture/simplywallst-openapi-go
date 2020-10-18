@@ -4,18 +4,18 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **int32** |  | [optional] 
+**Id** | **int64** |  | [optional] 
 **CompanyId** | **string** |  | [optional] 
-**TradingItemId** | **int32** |  | [optional] 
+**TradingItemId** | **int64** |  | [optional] 
 **Name** | **string** |  | [optional] 
 **Slug** | **string** |  | [optional] 
 **ExchangeSymbol** | **string** |  | [optional] 
 **TickerSymbol** | **string** |  | [optional] 
 **UniqueSymbol** | **string** |  | [optional] 
 **PrimaryTicker** | **bool** |  | [optional] 
-**LastUpdated** | **int32** |  | [optional] 
+**LastUpdated** | **int64** |  | [optional] 
 **CanonicalUrl** | **string** |  | [optional] 
-**PrimaryCanonicalUrl** | **string** |  | [optional] 
+**PrimaryCanonicalUrl** | Pointer to **string** |  | [optional] 
 **IsSearchable** | **bool** |  | [optional] 
 **IsinSymbol** | **string** |  | [optional] 
 **Analysis** | [**CompanyAnalysis**](company_analysis.md) |  | [optional] 

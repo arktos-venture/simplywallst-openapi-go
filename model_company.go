@@ -11,18 +11,18 @@ package openapi
 
 // Company struct for Company
 type Company struct {
-	Id                  int32           `json:"id,omitempty"`
+	Id                  int64           `json:"id,omitempty"`
 	CompanyId           string          `json:"company_id,omitempty"`
-	TradingItemId       int32           `json:"trading_item_id,omitempty"`
+	TradingItemId       int64           `json:"trading_item_id,omitempty"`
 	Name                string          `json:"name,omitempty"`
 	Slug                string          `json:"slug,omitempty"`
 	ExchangeSymbol      string          `json:"exchange_symbol,omitempty"`
 	TickerSymbol        string          `json:"ticker_symbol,omitempty"`
 	UniqueSymbol        string          `json:"unique_symbol,omitempty"`
 	PrimaryTicker       bool            `json:"primary_ticker,omitempty"`
-	LastUpdated         int32           `json:"last_updated,omitempty"`
+	LastUpdated         int64           `json:"last_updated,omitempty"`
 	CanonicalUrl        string          `json:"canonical_url,omitempty"`
-	PrimaryCanonicalUrl string          `json:"primary_canonical_url,omitempty"`
+	PrimaryCanonicalUrl *string         `json:"primary_canonical_url,omitempty"`
 	IsSearchable        bool            `json:"is_searchable,omitempty"`
 	IsinSymbol          string          `json:"isin_symbol,omitempty"`
 	Analysis            CompanyAnalysis `json:"analysis,omitempty"`

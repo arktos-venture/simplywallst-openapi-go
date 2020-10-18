@@ -11,7 +11,7 @@ package openapi
 
 // Industry struct for Industry
 type Industry struct {
-	Id     int32  `json:"id,omitempty"`
+	Id     int64  `json:"id,omitempty"`
 	Type   string `json:"type,omitempty"`
-	Parent int32  `json:"parent,omitempty"`
+	Parent int64  `json:"parent,omitempty"`
 }

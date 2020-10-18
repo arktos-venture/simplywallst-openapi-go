@@ -11,6 +11,6 @@ package openapi
 
 // Development struct for Development
 type Development struct {
-	Date   int32             `json:"date,omitempty"`
+	Date   int64             `json:"date,omitempty"`
 	Events DevelopmentEvents `json:"events,omitempty"`
 }

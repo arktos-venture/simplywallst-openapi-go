@@ -11,7 +11,7 @@ package openapi
 
 // DevelopmentInfoAdd struct for DevelopmentInfoAdd
 type DevelopmentInfoAdd struct {
-	Id        int32  `json:"id,omitempty"`
+	Id        int64  `json:"id,omitempty"`
 	Name      string `json:"name,omitempty"`
 	ShortName string `json:"shortName,omitempty"`
 	Group     string `json:"group,omitempty"`

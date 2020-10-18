@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **string** |  | [optional] 
 **Description** | **string** |  | [optional] 
-**WarningType** | **int32** |  | [optional] 
+**WarningType** | **int64** |  | [optional] 
 **Industry** | [**CompanyDataInfoIndustry**](companyDataInfo_industry.md) |  | [optional] 
 **Fund** | **bool** |  | [optional] 
 **Status** | **string** |  | [optional] 

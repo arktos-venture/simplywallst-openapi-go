@@ -11,10 +11,10 @@ package openapi
 
 // GridViewSearchAdd struct for GridViewSearchAdd
 type GridViewSearchAdd struct {
-	Id              int32  `json:"id,omitempty"`
+	Id              int64  `json:"id,omitempty"`
 	NoResultIfLimit bool   `json:"no_result_if_limit,omitempty"`
-	Offset          int32  `json:"offset,omitempty"`
-	Size            int32  `json:"size,omitempty"`
+	Offset          int64  `json:"offset,omitempty"`
+	Size            int64  `json:"size,omitempty"`
 	State           string `json:"state,omitempty"`
 	Rules           string `json:"rules,omitempty"`
 }
