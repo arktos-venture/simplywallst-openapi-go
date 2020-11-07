@@ -73,7 +73,7 @@ List properties of developments
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string**| string id (name or id) of the developments | 
+**id** | [**string**](.md)| string id (name or id) of the developments | 
 
 ### Return type
 
@@ -107,7 +107,7 @@ List properties of estimatecoverages
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string**| string id (name or id) of the estimatecoverages | 
+**id** | [**string**](.md)| string id (name or id) of the estimatecoverages | 
  **optional** | ***ListEstimateCoveragesOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -152,7 +152,7 @@ List properties of news
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string**| string id (name or id) of the news | 
+**id** | [**string**](.md)| string id (name or id) of the news | 
  **optional** | ***ListNewsOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -198,7 +198,7 @@ List properties of ownerships
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string**| string id (name or id) of the ownerships | 
+**id** | [**string**](.md)| string id (name or id) of the ownerships | 
 
 ### Return type
 
@@ -232,7 +232,7 @@ List properties of prices
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string**| string id (name or id) of the prices | 
+**id** | [**string**](.md)| string id (name or id) of the prices | 
  **optional** | ***ListPricesOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -243,7 +243,7 @@ Optional parameters are passed through a pointer to a ListPricesOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
- **startTimestamp** | **optional.Int32**| integer start_timestamp (name or id) of the prices | 
+ **startTimestamp** | **optional.Int64**| integer start_timestamp (name or id) of the prices | 
 
 ### Return type
 

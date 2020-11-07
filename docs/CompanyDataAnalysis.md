@@ -15,10 +15,11 @@ Name | Type | Description | Notes
 **Roa** | **float32** |  | [optional] 
 **Eps** | **float32** |  | [optional] 
 **DebtEquity** | **float32** |  | [optional] 
-**AnalystCount** | **int32** |  | [optional] 
+**AnalystCount** | **float32** |  | [optional] 
 **Dividend** | [**CompanyAnalysisDividend**](companyAnalysisDividend.md) |  | [optional] 
 **Future** | [**CompanyAnalysisFuture**](companyAnalysisFuture.md) |  | [optional] 
 **Past** | [**CompanyAnalysisPast**](companyAnalysisPast.md) |  | [optional] 
+**Extended** | [**CompanyAnalysisExtendedData**](companyAnalysisExtendedData.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

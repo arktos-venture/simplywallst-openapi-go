@@ -17,7 +17,7 @@ type Company struct {
 	Name                string          `json:"name,omitempty"`
 	Slug                string          `json:"slug,omitempty"`
 	ExchangeSymbol      string          `json:"exchange_symbol,omitempty"`
-	TickerSymbol        string          `json:"ticker_symbol,omitempty"`
+	TickerSymbol        interface{}     `json:"ticker_symbol,omitempty"`
 	UniqueSymbol        string          `json:"unique_symbol,omitempty"`
 	PrimaryTicker       bool            `json:"primary_ticker,omitempty"`
 	LastUpdated         int64           `json:"last_updated,omitempty"`

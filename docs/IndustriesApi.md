@@ -24,7 +24,7 @@ List properties of industry
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string**| string id (name or id) of the industry | 
+**id** | [**string**](.md)| string id (name or id) of the industry | 
 
 ### Return type
 

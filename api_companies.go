@@ -459,7 +459,7 @@ func (a *CompaniesApiService) ListOwnerships(ctx _context.Context, id string) (O
 
 // ListPricesOpts Optional parameters for the method 'ListPrices'
 type ListPricesOpts struct {
-	StartTimestamp optional.Int32
+	StartTimestamp optional.Int64
 }
 
 /*
@@ -468,7 +468,7 @@ List properties of prices
  * @param ctx _context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param id string id (name or id) of the prices
  * @param optional nil or *ListPricesOpts - Optional Parameters:
- * @param "StartTimestamp" (optional.Int32) -  integer start_timestamp (name or id) of the prices
+ * @param "StartTimestamp" (optional.Int64) -  integer start_timestamp (name or id) of the prices
 @return Prices
 */
 func (a *CompaniesApiService) ListPrices(ctx _context.Context, id string, localVarOptionals *ListPricesOpts) (Prices, *_nethttp.Response, error) {

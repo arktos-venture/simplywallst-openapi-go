@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **Name** | **string** |  | [optional] 
 **Slug** | **string** |  | [optional] 
 **ExchangeSymbol** | **string** |  | [optional] 
-**TickerSymbol** | **string** |  | [optional] 
+**TickerSymbol** | [**OneOfstringinteger**](oneOf&lt;string,integer&gt;.md) |  | [optional] 
 **UniqueSymbol** | **string** |  | [optional] 
 **PrimaryTicker** | **bool** |  | [optional] 
 **LastUpdated** | **int64** |  | [optional] 
