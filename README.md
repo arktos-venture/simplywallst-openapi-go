@@ -59,6 +59,8 @@ Class | Method | HTTP request | Description
  - [CompanyAnalysisExtended](docs/CompanyAnalysisExtended.md)
  - [CompanyAnalysisExtendedAnalysis](docs/CompanyAnalysisExtendedAnalysis.md)
  - [CompanyAnalysisExtendedAnalysisDividend](docs/CompanyAnalysisExtendedAnalysisDividend.md)
+ - [CompanyAnalysisExtendedAnalysisMisc](docs/CompanyAnalysisExtendedAnalysisMisc.md)
+ - [CompanyAnalysisExtendedAnalysisValue](docs/CompanyAnalysisExtendedAnalysisValue.md)
  - [CompanyAnalysisExtendedData](docs/CompanyAnalysisExtendedData.md)
  - [CompanyAnalysisExtendedIndustryAverages](docs/CompanyAnalysisExtendedIndustryAverages.md)
  - [CompanyAnalysisExtendedIndustryAveragesAll](docs/CompanyAnalysisExtendedIndustryAveragesAll.md)

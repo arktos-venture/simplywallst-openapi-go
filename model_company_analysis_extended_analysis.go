@@ -12,4 +12,6 @@ package openapi
 // CompanyAnalysisExtendedAnalysis struct for CompanyAnalysisExtendedAnalysis
 type CompanyAnalysisExtendedAnalysis struct {
 	Dividend CompanyAnalysisExtendedAnalysisDividend `json:"dividend,omitempty"`
+	Misc     CompanyAnalysisExtendedAnalysisMisc     `json:"misc,omitempty"`
+	Value    CompanyAnalysisExtendedAnalysisValue    `json:"value,omitempty"`
 }
