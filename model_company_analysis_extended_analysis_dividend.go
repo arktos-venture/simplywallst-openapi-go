@@ -27,7 +27,7 @@ type CompanyAnalysisExtendedAnalysisDividend struct {
 	DividendPaymentsSingleGrowth1y float32            `json:"dividend_payments_single_growth_1y,omitempty"`
 	DividendPaymentsSingleGrowth3y float32            `json:"dividend_payments_single_growth_3y,omitempty"`
 	DividendPaymentsSingleGrowth5y float32            `json:"dividend_payments_single_growth_5y,omitempty"`
-	PayoutRatioHistory             map[string]float32 `json:"payout_ratio_history,omitempty"`
+	PayoutRatioHistory             interface{}        `json:"payout_ratio_history,omitempty"`
 	HistoricalDividendYield        map[string]float32 `json:"historical_dividend_yield,omitempty"`
 	HistoricalDividendPayments     map[string]float32 `json:"historical_dividend_payments,omitempty"`
 	MergedFutureDividendsPerShare  map[string]float32 `json:"merged_future_dividends_per_share,omitempty"`

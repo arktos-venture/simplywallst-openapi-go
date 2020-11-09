@@ -11,6 +11,7 @@ package openapi
 
 // CompanyAnalysisExtendedRawData struct for CompanyAnalysisExtendedRawData
 type CompanyAnalysisExtendedRawData struct {
-	MarketCap  CompanyAnalysisExtendedRawDataMarketCap  `json:"market_cap,omitempty"`
-	Industries CompanyAnalysisExtendedRawDataIndustries `json:"industries,omitempty"`
+	MarketCap    CompanyAnalysisExtendedRawDataMarketCap    `json:"market_cap,omitempty"`
+	Industries   CompanyAnalysisExtendedRawDataIndustries   `json:"industries,omitempty"`
+	CurrencyInfo CompanyAnalysisExtendedRawDataCurrencyInfo `json:"currency_info,omitempty"`
 }

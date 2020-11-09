@@ -66,6 +66,7 @@ Class | Method | HTTP request | Description
  - [CompanyAnalysisExtendedIndustryAveragesAll](docs/CompanyAnalysisExtendedIndustryAveragesAll.md)
  - [CompanyAnalysisExtendedRaw](docs/CompanyAnalysisExtendedRaw.md)
  - [CompanyAnalysisExtendedRawData](docs/CompanyAnalysisExtendedRawData.md)
+ - [CompanyAnalysisExtendedRawDataCurrencyInfo](docs/CompanyAnalysisExtendedRawDataCurrencyInfo.md)
  - [CompanyAnalysisExtendedRawDataIndustries](docs/CompanyAnalysisExtendedRawDataIndustries.md)
  - [CompanyAnalysisExtendedRawDataIndustriesData](docs/CompanyAnalysisExtendedRawDataIndustriesData.md)
  - [CompanyAnalysisExtendedRawDataMarketCap](docs/CompanyAnalysisExtendedRawDataMarketCap.md)
