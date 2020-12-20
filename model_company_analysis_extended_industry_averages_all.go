@@ -28,10 +28,11 @@ type CompanyAnalysisExtendedIndustryAveragesAll struct {
 	PB                           float32  `json:"PB,omitempty"`
 	PEG                          float32  `json:"PEG,omitempty"`
 	FutureOneYearGrowth          float32  `json:"futureOneYearGrowth,omitempty"`
+	FutureThreeYearGrowth        float32  `json:"futureThreeYearGrowth,omitempty"`
 	HistoricalDividendYield      float32  `json:"historical_dividend_yield,omitempty"`
 	FutureOneYearROE             *float32 `json:"futureOneYearROE,omitempty"`
 	FutureThreeYearROE           *float32 `json:"futureThreeYearROE,omitempty"`
-	PastOneYearGrowth            *float32 `json:"pastOneYearGrowth,omitempty"`
+	PastOneYearGrowth            float32  `json:"pastOneYearGrowth,omitempty"`
 	PastFiveYearGrowth           float32  `json:"pastFiveYearGrowth,omitempty"`
 	ROE                          float32  `json:"ROE,omitempty"`
 	ROA                          float32  `json:"ROA,omitempty"`

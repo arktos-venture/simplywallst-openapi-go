@@ -5,6 +5,9 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Dividend** | [**CompanyAnalysisExtendedAnalysisDividend**](companyAnalysisExtendedAnalysisDividend.md) |  | [optional] 
+**Past** | [**CompanyAnalysisExtendedAnalysisPast**](companyAnalysisExtendedAnalysisPast.md) |  | [optional] 
+**Future** | [**CompanyAnalysisExtendedAnalysisFuture**](companyAnalysisExtendedAnalysisFuture.md) |  | [optional] 
+**Health** | [**CompanyAnalysisExtendedAnalysisHealth**](companyAnalysisExtendedAnalysisHealth.md) |  | [optional] 
 **Misc** | [**CompanyAnalysisExtendedAnalysisMisc**](companyAnalysisExtendedAnalysisMisc.md) |  | [optional] 
 **Value** | [**CompanyAnalysisExtendedAnalysisValue**](companyAnalysisExtendedAnalysisValue.md) |  | [optional] 
 

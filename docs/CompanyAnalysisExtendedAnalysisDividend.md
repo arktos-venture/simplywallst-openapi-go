@@ -20,11 +20,6 @@ Name | Type | Description | Notes
 **DividendPaymentsSingleGrowth1y** | **float32** |  | [optional] 
 **DividendPaymentsSingleGrowth3y** | **float32** |  | [optional] 
 **DividendPaymentsSingleGrowth5y** | **float32** |  | [optional] 
-**PayoutRatioHistory** | **map[string]float32** |  | [optional] 
-**HistoricalDividendYield** | **map[string]float32** |  | [optional] 
-**HistoricalDividendPayments** | **map[string]float32** |  | [optional] 
-**MergedFutureDividendsPerShare** | **map[string]float32** |  | [optional] 
-**MergedFutureYield** | **map[string]float32** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
