@@ -20,7 +20,7 @@ type Ownership struct {
 	SharesChanged              float32        `json:"shares_changed,omitempty"`
 	PercentSharesChanged       float32        `json:"percent_shares_changed,omitempty"`
 	RankSharesBought           int64          `json:"rank_shares_bought,omitempty"`
-	RankSharesSold             int64          `json:"rank_shares_sold,omitempty"`
+	RankSharesSold             float32        `json:"rank_shares_sold,omitempty"`
 	PeriodStartDate            int64          `json:"period_start_date,omitempty"`
 	PeriodEndDate              int64          `json:"period_end_date,omitempty"`
 }

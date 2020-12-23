@@ -5,6 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **MarketCap** | [**CompanyAnalysisExtendedRawDataMarketCap**](companyAnalysisExtendedRawDataMarketCap.md) |  | [optional] 
+**Members** | [**CompanyAnalysisExtendedRawDataMembers**](companyAnalysisExtendedRawData_members.md) |  | [optional] 
 **Industries** | [**CompanyAnalysisExtendedRawDataIndustries**](companyAnalysisExtendedRawData_industries.md) |  | [optional] 
 **CurrencyInfo** | [**CompanyAnalysisExtendedRawDataCurrencyInfo**](companyAnalysisExtendedRawDataCurrencyInfo.md) |  | [optional] 
 

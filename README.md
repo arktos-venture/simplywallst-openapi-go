@@ -73,6 +73,8 @@ Class | Method | HTTP request | Description
  - [CompanyAnalysisExtendedRawDataIndustries](docs/CompanyAnalysisExtendedRawDataIndustries.md)
  - [CompanyAnalysisExtendedRawDataIndustriesData](docs/CompanyAnalysisExtendedRawDataIndustriesData.md)
  - [CompanyAnalysisExtendedRawDataMarketCap](docs/CompanyAnalysisExtendedRawDataMarketCap.md)
+ - [CompanyAnalysisExtendedRawDataMembers](docs/CompanyAnalysisExtendedRawDataMembers.md)
+ - [CompanyAnalysisExtendedRawDataMembersData](docs/CompanyAnalysisExtendedRawDataMembersData.md)
  - [CompanyAnalysisFuture](docs/CompanyAnalysisFuture.md)
  - [CompanyAnalysisPast](docs/CompanyAnalysisPast.md)
  - [CompanyDataAnalysis](docs/CompanyDataAnalysis.md)

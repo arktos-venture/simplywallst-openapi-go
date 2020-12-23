@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 **SharesChanged** | **float32** |  | [optional] 
 **PercentSharesChanged** | **float32** |  | [optional] 
 **RankSharesBought** | **int64** |  | [optional] 
-**RankSharesSold** | **int64** |  | [optional] 
+**RankSharesSold** | **float32** |  | [optional] 
 **PeriodStartDate** | **int64** |  | [optional] 
 **PeriodEndDate** | **int64** |  | [optional] 
 
