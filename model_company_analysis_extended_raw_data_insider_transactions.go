@@ -16,7 +16,7 @@ import (
 
 // CompanyAnalysisExtendedRawDataInsiderTransactions struct for CompanyAnalysisExtendedRawDataInsiderTransactions
 type CompanyAnalysisExtendedRawDataInsiderTransactions struct {
-	Data *[]CompanyAnalysisExtendedRawDataInsiderTransactions `json:"data,omitempty"`
+	Data *[]CompanyAnalysisExtendedRawDataInsiderTransactionsData `json:"data,omitempty"`
 }
 
 // NewCompanyAnalysisExtendedRawDataInsiderTransactions instantiates a new CompanyAnalysisExtendedRawDataInsiderTransactions object
@@ -37,9 +37,9 @@ func NewCompanyAnalysisExtendedRawDataInsiderTransactionsWithDefaults() *Company
 }
 
 // GetData returns the Data field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedRawDataInsiderTransactions) GetData() []CompanyAnalysisExtendedRawDataInsiderTransactions {
+func (o *CompanyAnalysisExtendedRawDataInsiderTransactions) GetData() []CompanyAnalysisExtendedRawDataInsiderTransactionsData {
 	if o == nil || o.Data == nil {
-		var ret []CompanyAnalysisExtendedRawDataInsiderTransactions
+		var ret []CompanyAnalysisExtendedRawDataInsiderTransactionsData
 		return ret
 	}
 	return *o.Data
@@ -47,7 +47,7 @@ func (o *CompanyAnalysisExtendedRawDataInsiderTransactions) GetData() []CompanyA
 
 // GetDataOk returns a tuple with the Data field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedRawDataInsiderTransactions) GetDataOk() (*[]CompanyAnalysisExtendedRawDataInsiderTransactions, bool) {
+func (o *CompanyAnalysisExtendedRawDataInsiderTransactions) GetDataOk() (*[]CompanyAnalysisExtendedRawDataInsiderTransactionsData, bool) {
 	if o == nil || o.Data == nil {
 		return nil, false
 	}
@@ -63,8 +63,8 @@ func (o *CompanyAnalysisExtendedRawDataInsiderTransactions) HasData() bool {
 	return false
 }
 
-// SetData gets a reference to the given []CompanyAnalysisExtendedRawDataInsiderTransactions and assigns it to the Data field.
-func (o *CompanyAnalysisExtendedRawDataInsiderTransactions) SetData(v []CompanyAnalysisExtendedRawDataInsiderTransactions) {
+// SetData gets a reference to the given []CompanyAnalysisExtendedRawDataInsiderTransactionsData and assigns it to the Data field.
+func (o *CompanyAnalysisExtendedRawDataInsiderTransactions) SetData(v []CompanyAnalysisExtendedRawDataInsiderTransactionsData) {
 	o.Data = &v
 }
 
