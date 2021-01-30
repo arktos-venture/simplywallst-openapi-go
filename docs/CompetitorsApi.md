@@ -10,31 +10,59 @@ Method | HTTP request | Description
 
 ## ListCompetitors
 
-> Competitors ListCompetitors(ctx, id, optional)
+> Competitors ListCompetitors(ctx, id).Include(include).Version(version).Execute()
 
 
 
-List properties of competitors
 
-### Required Parameters
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    id := "["C163BA6A-EA32-4730-99B2-376697240A73"]" // string | string id (name or id) of the competitors
+    include := "["info","score","analysis.raw_data","score.snowflake","analysis.extended.raw_data","analysis.extended.raw_data.insider_transactions","analysis.raw_data.insider_transactions"]" // string | string include (name or id) of the competitors (optional)
+    version := "[2]" // string | string version (name or id) of the competitors (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.CompetitorsApi.ListCompetitors(context.Background(), id).Include(include).Version(version).Execute()
+    if err.Error() != "" {
+        fmt.Fprintf(os.Stderr, "Error when calling `CompetitorsApi.ListCompetitors``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `ListCompetitors`: Competitors
+    fmt.Fprintf(os.Stdout, "Response from `CompetitorsApi.ListCompetitors`: %v\n", resp)
+}
+```
+
+### Path Parameters
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string**| string id (name or id) of the competitors | 
- **optional** | ***ListCompetitorsOpts** | optional parameters | nil if no parameters
+**id** | **string** | string id (name or id) of the competitors | 
 
-### Optional Parameters
+### Other Parameters
 
-Optional parameters are passed through a pointer to a ListCompetitorsOpts struct
+Other parameters are passed through a pointer to a apiListCompetitorsRequest struct via the builder pattern
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
- **include** | **optional.String**| string include (name or id) of the competitors | 
- **version** | **optional.String**| string version (name or id) of the competitors | 
+ **include** | **string** | string include (name or id) of the competitors | 
+ **version** | **string** | string version (name or id) of the competitors | 
 
 ### Return type
 

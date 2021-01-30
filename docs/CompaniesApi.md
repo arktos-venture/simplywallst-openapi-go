@@ -16,30 +16,53 @@ Method | HTTP request | Description
 
 ## ListDevelopmentInfo
 
-> DevelopmentInfo ListDevelopmentInfo(ctx, include, optional)
+> DevelopmentInfo ListDevelopmentInfo(ctx).Include(include).DevelopmentInfoAdd(developmentInfoAdd).Execute()
 
 
 
-List properties of developmentinfo
 
-### Required Parameters
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    include := "["info","score","analysis.raw_data","score.snowflake","analysis.extended.raw_data","analysis.extended.raw_data.insider_transactions","analysis.raw_data.insider_transactions"]" // string | string include (name or id) of the developmentinfo
+    developmentInfoAdd := *openapiclient.NewDevelopmentInfoAdd() // DevelopmentInfoAdd |  (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.CompaniesApi.ListDevelopmentInfo(context.Background()).Include(include).DevelopmentInfoAdd(developmentInfoAdd).Execute()
+    if err.Error() != "" {
+        fmt.Fprintf(os.Stderr, "Error when calling `CompaniesApi.ListDevelopmentInfo``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `ListDevelopmentInfo`: DevelopmentInfo
+    fmt.Fprintf(os.Stdout, "Response from `CompaniesApi.ListDevelopmentInfo`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiListDevelopmentInfoRequest struct via the builder pattern
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**include** | **string**| string include (name or id) of the developmentinfo | 
- **optional** | ***ListDevelopmentInfoOpts** | optional parameters | nil if no parameters
-
-### Optional Parameters
-
-Optional parameters are passed through a pointer to a ListDevelopmentInfoOpts struct
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **developmentInfoAdd** | [**optional.Interface of DevelopmentInfoAdd**](DevelopmentInfoAdd.md)|  | 
+ **include** | **string** | string include (name or id) of the developmentinfo | 
+ **developmentInfoAdd** | [**DevelopmentInfoAdd**](DevelopmentInfoAdd.md) |  | 
 
 ### Return type
 
@@ -61,19 +84,55 @@ No authorization required
 
 ## ListDevelopments
 
-> Developments ListDevelopments(ctx, id)
+> Developments ListDevelopments(ctx, id).Execute()
 
 
 
-List properties of developments
 
-### Required Parameters
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    id := TODO // string | string id (name or id) of the developments
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.CompaniesApi.ListDevelopments(context.Background(), id).Execute()
+    if err.Error() != "" {
+        fmt.Fprintf(os.Stderr, "Error when calling `CompaniesApi.ListDevelopments``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `ListDevelopments`: Developments
+    fmt.Fprintf(os.Stdout, "Response from `CompaniesApi.ListDevelopments`: %v\n", resp)
+}
+```
+
+### Path Parameters
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | [**string**](.md)| string id (name or id) of the developments | 
+**id** | [**string**](.md) | string id (name or id) of the developments | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiListDevelopmentsRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
 
 ### Return type
 
@@ -95,30 +154,57 @@ No authorization required
 
 ## ListEstimateCoverages
 
-> EstimateCoverages ListEstimateCoverages(ctx, id, optional)
+> EstimateCoverages ListEstimateCoverages(ctx, id).Version(version).Execute()
 
 
 
-List properties of estimatecoverages
 
-### Required Parameters
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    id := TODO // string | string id (name or id) of the estimatecoverages
+    version := "[2]" // string | string version (name or id) of the estimatecoverages (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.CompaniesApi.ListEstimateCoverages(context.Background(), id).Version(version).Execute()
+    if err.Error() != "" {
+        fmt.Fprintf(os.Stderr, "Error when calling `CompaniesApi.ListEstimateCoverages``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `ListEstimateCoverages`: EstimateCoverages
+    fmt.Fprintf(os.Stdout, "Response from `CompaniesApi.ListEstimateCoverages`: %v\n", resp)
+}
+```
+
+### Path Parameters
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | [**string**](.md)| string id (name or id) of the estimatecoverages | 
- **optional** | ***ListEstimateCoveragesOpts** | optional parameters | nil if no parameters
+**id** | [**string**](.md) | string id (name or id) of the estimatecoverages | 
 
-### Optional Parameters
+### Other Parameters
 
-Optional parameters are passed through a pointer to a ListEstimateCoveragesOpts struct
+Other parameters are passed through a pointer to a apiListEstimateCoveragesRequest struct via the builder pattern
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
- **version** | **optional.String**| string version (name or id) of the estimatecoverages | 
+ **version** | **string** | string version (name or id) of the estimatecoverages | 
 
 ### Return type
 
@@ -140,31 +226,59 @@ No authorization required
 
 ## ListNews
 
-> News ListNews(ctx, id, optional)
+> News ListNews(ctx, id).SimplywallSt(simplywallSt).Version(version).Execute()
 
 
 
-List properties of news
 
-### Required Parameters
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    id := TODO // string | string id (name or id) of the news
+    simplywallSt := false // bool | boolean simplywall.st (name or id) of the news (optional)
+    version := "[2]" // string | string version (name or id) of the news (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.CompaniesApi.ListNews(context.Background(), id).SimplywallSt(simplywallSt).Version(version).Execute()
+    if err.Error() != "" {
+        fmt.Fprintf(os.Stderr, "Error when calling `CompaniesApi.ListNews``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `ListNews`: News
+    fmt.Fprintf(os.Stdout, "Response from `CompaniesApi.ListNews`: %v\n", resp)
+}
+```
+
+### Path Parameters
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | [**string**](.md)| string id (name or id) of the news | 
- **optional** | ***ListNewsOpts** | optional parameters | nil if no parameters
+**id** | [**string**](.md) | string id (name or id) of the news | 
 
-### Optional Parameters
+### Other Parameters
 
-Optional parameters are passed through a pointer to a ListNewsOpts struct
+Other parameters are passed through a pointer to a apiListNewsRequest struct via the builder pattern
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
- **simplywallSt** | **optional.Bool**| boolean simplywall.st (name or id) of the news | 
- **version** | **optional.String**| string version (name or id) of the news | 
+ **simplywallSt** | **bool** | boolean simplywall.st (name or id) of the news | 
+ **version** | **string** | string version (name or id) of the news | 
 
 ### Return type
 
@@ -186,19 +300,55 @@ No authorization required
 
 ## ListOwnerships
 
-> Ownerships ListOwnerships(ctx, id)
+> Ownerships ListOwnerships(ctx, id).Execute()
 
 
 
-List properties of ownerships
 
-### Required Parameters
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    id := TODO // string | string id (name or id) of the ownerships
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.CompaniesApi.ListOwnerships(context.Background(), id).Execute()
+    if err.Error() != "" {
+        fmt.Fprintf(os.Stderr, "Error when calling `CompaniesApi.ListOwnerships``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `ListOwnerships`: Ownerships
+    fmt.Fprintf(os.Stdout, "Response from `CompaniesApi.ListOwnerships`: %v\n", resp)
+}
+```
+
+### Path Parameters
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | [**string**](.md)| string id (name or id) of the ownerships | 
+**id** | [**string**](.md) | string id (name or id) of the ownerships | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiListOwnershipsRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
 
 ### Return type
 
@@ -220,30 +370,57 @@ No authorization required
 
 ## ListPrices
 
-> Prices ListPrices(ctx, id, optional)
+> Prices ListPrices(ctx, id).StartTimestamp(startTimestamp).Execute()
 
 
 
-List properties of prices
 
-### Required Parameters
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    id := TODO // string | string id (name or id) of the prices
+    startTimestamp := int64(789) // int64 | integer start_timestamp (name or id) of the prices (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.CompaniesApi.ListPrices(context.Background(), id).StartTimestamp(startTimestamp).Execute()
+    if err.Error() != "" {
+        fmt.Fprintf(os.Stderr, "Error when calling `CompaniesApi.ListPrices``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `ListPrices`: Prices
+    fmt.Fprintf(os.Stdout, "Response from `CompaniesApi.ListPrices`: %v\n", resp)
+}
+```
+
+### Path Parameters
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | [**string**](.md)| string id (name or id) of the prices | 
- **optional** | ***ListPricesOpts** | optional parameters | nil if no parameters
+**id** | [**string**](.md) | string id (name or id) of the prices | 
 
-### Optional Parameters
+### Other Parameters
 
-Optional parameters are passed through a pointer to a ListPricesOpts struct
+Other parameters are passed through a pointer to a apiListPricesRequest struct via the builder pattern
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
- **startTimestamp** | **optional.Int64**| integer start_timestamp (name or id) of the prices | 
+ **startTimestamp** | **int64** | integer start_timestamp (name or id) of the prices | 
 
 ### Return type
 
@@ -265,27 +442,58 @@ No authorization required
 
 ## ReadCompanies
 
-> Companies ReadCompanies(ctx, exchange, sector, ticker, company, optional)
+> Companies ReadCompanies(ctx, exchange, sector, ticker, company).Include(include).Version(version).Execute()
 
 
 
-Read properties of companies
 
-### Required Parameters
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    exchange := "["us","hk"]" // string | string exchange (name or id) of the companies
+    sector := "["energy"]" // string | string sector (name or id) of the companies
+    ticker := "["nyse-tot"]" // string | string ticker (name or id) of the companies
+    company := "["total","apple"]" // string | string company (name or id) of the companies
+    include := "["info","score","analysis.raw_data","score.snowflake","analysis.extended.raw_data","analysis.extended.raw_data.insider_transactions","analysis.raw_data.insider_transactions"]" // string | string include (name or id) of the companies (optional)
+    version := "[2]" // string | string version (name or id) of the companies (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.CompaniesApi.ReadCompanies(context.Background(), exchange, sector, ticker, company).Include(include).Version(version).Execute()
+    if err.Error() != "" {
+        fmt.Fprintf(os.Stderr, "Error when calling `CompaniesApi.ReadCompanies``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `ReadCompanies`: Companies
+    fmt.Fprintf(os.Stdout, "Response from `CompaniesApi.ReadCompanies`: %v\n", resp)
+}
+```
+
+### Path Parameters
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**exchange** | **string**| string exchange (name or id) of the companies | 
-**sector** | **string**| string sector (name or id) of the companies | 
-**ticker** | **string**| string ticker (name or id) of the companies | 
-**company** | **string**| string company (name or id) of the companies | 
- **optional** | ***ReadCompaniesOpts** | optional parameters | nil if no parameters
+**exchange** | **string** | string exchange (name or id) of the companies | 
+**sector** | **string** | string sector (name or id) of the companies | 
+**ticker** | **string** | string ticker (name or id) of the companies | 
+**company** | **string** | string company (name or id) of the companies | 
 
-### Optional Parameters
+### Other Parameters
 
-Optional parameters are passed through a pointer to a ReadCompaniesOpts struct
+Other parameters are passed through a pointer to a apiReadCompaniesRequest struct via the builder pattern
 
 
 Name | Type | Description  | Notes
@@ -294,8 +502,8 @@ Name | Type | Description  | Notes
 
 
 
- **include** | **optional.String**| string include (name or id) of the companies | 
- **version** | **optional.String**| string version (name or id) of the companies | 
+ **include** | **string** | string include (name or id) of the companies | 
+ **version** | **string** | string version (name or id) of the companies | 
 
 ### Return type
 

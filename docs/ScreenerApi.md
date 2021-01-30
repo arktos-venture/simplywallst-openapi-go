@@ -11,28 +11,51 @@ Method | HTTP request | Description
 
 ## ListGridViewSearch
 
-> GridViewSearch ListGridViewSearch(ctx, optional)
+> GridViewSearch ListGridViewSearch(ctx).GridViewSearchAdd(gridViewSearchAdd).Execute()
 
 
 
-List properties of gridviewsearch
 
-### Required Parameters
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    gridViewSearchAdd := *openapiclient.NewGridViewSearchAdd() // GridViewSearchAdd |  (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.ScreenerApi.ListGridViewSearch(context.Background()).GridViewSearchAdd(gridViewSearchAdd).Execute()
+    if err.Error() != "" {
+        fmt.Fprintf(os.Stderr, "Error when calling `ScreenerApi.ListGridViewSearch``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `ListGridViewSearch`: GridViewSearch
+    fmt.Fprintf(os.Stdout, "Response from `ScreenerApi.ListGridViewSearch`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiListGridViewSearchRequest struct via the builder pattern
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
- **optional** | ***ListGridViewSearchOpts** | optional parameters | nil if no parameters
-
-### Optional Parameters
-
-Optional parameters are passed through a pointer to a ListGridViewSearchOpts struct
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **gridViewSearchAdd** | [**optional.Interface of GridViewSearchAdd**](GridViewSearchAdd.md)|  | 
+ **gridViewSearchAdd** | [**GridViewSearchAdd**](GridViewSearchAdd.md) |  | 
 
 ### Return type
 
@@ -54,29 +77,53 @@ No authorization required
 
 ## ListGrids
 
-> Grids ListGrids(ctx, optional)
+> Grids ListGrids(ctx).Include(include).GridsAdd(gridsAdd).Execute()
 
 
 
-List properties of grids
 
-### Required Parameters
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    include := "["info","score","analysis.raw_data","score.snowflake","analysis.extended.raw_data","analysis.extended.raw_data.insider_transactions","analysis.raw_data.insider_transactions"]" // string | string include (name or id) of the grids (optional)
+    gridsAdd := *openapiclient.NewGridsAdd() // GridsAdd |  (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.ScreenerApi.ListGrids(context.Background()).Include(include).GridsAdd(gridsAdd).Execute()
+    if err.Error() != "" {
+        fmt.Fprintf(os.Stderr, "Error when calling `ScreenerApi.ListGrids``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `ListGrids`: Grids
+    fmt.Fprintf(os.Stdout, "Response from `ScreenerApi.ListGrids`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiListGridsRequest struct via the builder pattern
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
- **optional** | ***ListGridsOpts** | optional parameters | nil if no parameters
-
-### Optional Parameters
-
-Optional parameters are passed through a pointer to a ListGridsOpts struct
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **include** | **optional.String**| string include (name or id) of the grids | 
- **gridsAdd** | [**optional.Interface of GridsAdd**](GridsAdd.md)|  | 
+ **include** | **string** | string include (name or id) of the grids | 
+ **gridsAdd** | [**GridsAdd**](GridsAdd.md) |  | 
 
 ### Return type
 
