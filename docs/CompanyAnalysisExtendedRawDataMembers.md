@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Board** | Pointer to [**map[string]CompanyAnalysisExtendedRawDataMembersData**](companyAnalysisExtendedRawDataMembersData.md) |  | [optional] 
 **Management** | Pointer to [**map[string]CompanyAnalysisExtendedRawDataMembersData**](companyAnalysisExtendedRawDataMembersData.md) |  | [optional] 
-**Leader** | Pointer to [**map[string]CompanyAnalysisExtendedRawDataMembersData**](companyAnalysisExtendedRawDataMembersData.md) |  | [optional] 
+**Leader** | Pointer to [**CompanyAnalysisExtendedRawDataMembersLeaderData**](companyAnalysisExtendedRawDataMembersLeaderData.md) |  | [optional] 
 
 ## Methods
 
@@ -79,20 +79,20 @@ HasManagement returns a boolean if a field has been set.
 
 ### GetLeader
 
-`func (o *CompanyAnalysisExtendedRawDataMembers) GetLeader() map[string]CompanyAnalysisExtendedRawDataMembersData`
+`func (o *CompanyAnalysisExtendedRawDataMembers) GetLeader() CompanyAnalysisExtendedRawDataMembersLeaderData`
 
 GetLeader returns the Leader field if non-nil, zero value otherwise.
 
 ### GetLeaderOk
 
-`func (o *CompanyAnalysisExtendedRawDataMembers) GetLeaderOk() (*map[string]CompanyAnalysisExtendedRawDataMembersData, bool)`
+`func (o *CompanyAnalysisExtendedRawDataMembers) GetLeaderOk() (*CompanyAnalysisExtendedRawDataMembersLeaderData, bool)`
 
 GetLeaderOk returns a tuple with the Leader field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetLeader
 
-`func (o *CompanyAnalysisExtendedRawDataMembers) SetLeader(v map[string]CompanyAnalysisExtendedRawDataMembersData)`
+`func (o *CompanyAnalysisExtendedRawDataMembers) SetLeader(v CompanyAnalysisExtendedRawDataMembersLeaderData)`
 
 SetLeader sets Leader field to given value.
 

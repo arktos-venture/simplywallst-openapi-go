@@ -18,7 +18,7 @@ import (
 type CompanyAnalysisExtendedRawDataMembers struct {
 	Board      *map[int64]CompanyAnalysisExtendedRawDataMembersData `json:"board,omitempty"`
 	Management *map[int64]CompanyAnalysisExtendedRawDataMembersData `json:"management,omitempty"`
-	// Leader     *map[string]CompanyAnalysisExtendedRawDataMembersData `json:"leader,omitempty"`
+	Leader     *CompanyAnalysisExtendedRawDataMembersLeaderData     `json:"leader,omitempty"`
 }
 
 // NewCompanyAnalysisExtendedRawDataMembers instantiates a new CompanyAnalysisExtendedRawDataMembers object
@@ -103,36 +103,36 @@ func (o *CompanyAnalysisExtendedRawDataMembers) SetManagement(v map[int64]Compan
 }
 
 // GetLeader returns the Leader field value if set, zero value otherwise.
-// func (o *CompanyAnalysisExtendedRawDataMembers) GetLeader() map[int64]CompanyAnalysisExtendedRawDataMembersData {
-// 	if o == nil || o.Leader == nil {
-// 		var ret map[string]CompanyAnalysisExtendedRawDataMembersData
-// 		return ret
-// 	}
-// 	return *o.Leader
-// }
+func (o *CompanyAnalysisExtendedRawDataMembers) GetLeader() CompanyAnalysisExtendedRawDataMembersLeaderData {
+	if o == nil || o.Leader == nil {
+		var ret CompanyAnalysisExtendedRawDataMembersLeaderData
+		return ret
+	}
+	return *o.Leader
+}
 
-// // GetLeaderOk returns a tuple with the Leader field value if set, nil otherwise
-// // and a boolean to check if the value has been set.
-// func (o *CompanyAnalysisExtendedRawDataMembers) GetLeaderOk() (*map[string]CompanyAnalysisExtendedRawDataMembersData, bool) {
-// 	if o == nil || o.Leader == nil {
-// 		return nil, false
-// 	}
-// 	return o.Leader, true
-// }
+// GetLeaderOk returns a tuple with the Leader field value if set, nil otherwise
+// and a boolean to check if the value has been set.
+func (o *CompanyAnalysisExtendedRawDataMembers) GetLeaderOk() (*CompanyAnalysisExtendedRawDataMembersLeaderData, bool) {
+	if o == nil || o.Leader == nil {
+		return nil, false
+	}
+	return o.Leader, true
+}
 
 // HasLeader returns a boolean if a field has been set.
-// func (o *CompanyAnalysisExtendedRawDataMembers) HasLeader() bool {
-// 	if o != nil && o.Leader != nil {
-// 		return true
-// 	}
+func (o *CompanyAnalysisExtendedRawDataMembers) HasLeader() bool {
+	if o != nil && o.Leader != nil {
+		return true
+	}
 
-// 	return false
-// }
+	return false
+}
 
-// SetLeader gets a reference to the given map[string]CompanyAnalysisExtendedRawDataMembersData and assigns it to the Leader field.
-// func (o *CompanyAnalysisExtendedRawDataMembers) SetLeader(v map[string]CompanyAnalysisExtendedRawDataMembersData) {
-// 	o.Leader = &v
-// }
+// SetLeader gets a reference to the given CompanyAnalysisExtendedRawDataMembersLeaderData and assigns it to the Leader field.
+func (o *CompanyAnalysisExtendedRawDataMembers) SetLeader(v CompanyAnalysisExtendedRawDataMembersLeaderData) {
+	o.Leader = &v
+}
 
 func (o CompanyAnalysisExtendedRawDataMembers) MarshalJSON() ([]byte, error) {
 	toSerialize := map[string]interface{}{}
@@ -142,9 +142,9 @@ func (o CompanyAnalysisExtendedRawDataMembers) MarshalJSON() ([]byte, error) {
 	if o.Management != nil {
 		toSerialize["management"] = o.Management
 	}
-	// if o.Leader != nil {
-	// 	toSerialize["leader"] = o.Leader
-	// }
+	if o.Leader != nil {
+		toSerialize["leader"] = o.Leader
+	}
 	return json.Marshal(toSerialize)
 }
 

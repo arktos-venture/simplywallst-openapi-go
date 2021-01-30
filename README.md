@@ -123,6 +123,7 @@ Class | Method | HTTP request | Description
  - [CompanyAnalysisExtendedRawDataMarketCap](docs/CompanyAnalysisExtendedRawDataMarketCap.md)
  - [CompanyAnalysisExtendedRawDataMembers](docs/CompanyAnalysisExtendedRawDataMembers.md)
  - [CompanyAnalysisExtendedRawDataMembersData](docs/CompanyAnalysisExtendedRawDataMembersData.md)
+ - [CompanyAnalysisExtendedRawDataMembersLeaderData](docs/CompanyAnalysisExtendedRawDataMembersLeaderData.md)
  - [CompanyAnalysisFuture](docs/CompanyAnalysisFuture.md)
  - [CompanyAnalysisPast](docs/CompanyAnalysisPast.md)
  - [CompanyDataAnalysis](docs/CompanyDataAnalysis.md)
