@@ -14,32 +14,32 @@ import (
 	"encoding/json"
 )
 
-// Industry struct for Industry
-type Industry struct {
+// IndustryValues struct for IndustryValues
+type IndustryValues struct {
 	Id     *int64  `json:"id,omitempty"`
 	Type   *string `json:"type,omitempty"`
 	Parent *int64  `json:"parent,omitempty"`
 }
 
-// NewIndustry instantiates a new Industry object
+// NewIndustryValues instantiates a new IndustryValues object
 // This constructor will assign default values to properties that have it defined,
 // and makes sure properties required by API are set, but the set of arguments
 // will change when the set of required properties is changed
-func NewIndustry() *Industry {
-	this := Industry{}
+func NewIndustryValues() *IndustryValues {
+	this := IndustryValues{}
 	return &this
 }
 
-// NewIndustryWithDefaults instantiates a new Industry object
+// NewIndustryValuesWithDefaults instantiates a new IndustryValues object
 // This constructor will only assign default values to properties that have it defined,
 // but it doesn't guarantee that properties required by API are set
-func NewIndustryWithDefaults() *Industry {
-	this := Industry{}
+func NewIndustryValuesWithDefaults() *IndustryValues {
+	this := IndustryValues{}
 	return &this
 }
 
 // GetId returns the Id field value if set, zero value otherwise.
-func (o *Industry) GetId() int64 {
+func (o *IndustryValues) GetId() int64 {
 	if o == nil || o.Id == nil {
 		var ret int64
 		return ret
@@ -49,7 +49,7 @@ func (o *Industry) GetId() int64 {
 
 // GetIdOk returns a tuple with the Id field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *Industry) GetIdOk() (*int64, bool) {
+func (o *IndustryValues) GetIdOk() (*int64, bool) {
 	if o == nil || o.Id == nil {
 		return nil, false
 	}
@@ -57,7 +57,7 @@ func (o *Industry) GetIdOk() (*int64, bool) {
 }
 
 // HasId returns a boolean if a field has been set.
-func (o *Industry) HasId() bool {
+func (o *IndustryValues) HasId() bool {
 	if o != nil && o.Id != nil {
 		return true
 	}
@@ -66,12 +66,12 @@ func (o *Industry) HasId() bool {
 }
 
 // SetId gets a reference to the given int64 and assigns it to the Id field.
-func (o *Industry) SetId(v int64) {
+func (o *IndustryValues) SetId(v int64) {
 	o.Id = &v
 }
 
 // GetType returns the Type field value if set, zero value otherwise.
-func (o *Industry) GetType() string {
+func (o *IndustryValues) GetType() string {
 	if o == nil || o.Type == nil {
 		var ret string
 		return ret
@@ -81,7 +81,7 @@ func (o *Industry) GetType() string {
 
 // GetTypeOk returns a tuple with the Type field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *Industry) GetTypeOk() (*string, bool) {
+func (o *IndustryValues) GetTypeOk() (*string, bool) {
 	if o == nil || o.Type == nil {
 		return nil, false
 	}
@@ -89,7 +89,7 @@ func (o *Industry) GetTypeOk() (*string, bool) {
 }
 
 // HasType returns a boolean if a field has been set.
-func (o *Industry) HasType() bool {
+func (o *IndustryValues) HasType() bool {
 	if o != nil && o.Type != nil {
 		return true
 	}
@@ -98,12 +98,12 @@ func (o *Industry) HasType() bool {
 }
 
 // SetType gets a reference to the given string and assigns it to the Type field.
-func (o *Industry) SetType(v string) {
+func (o *IndustryValues) SetType(v string) {
 	o.Type = &v
 }
 
 // GetParent returns the Parent field value if set, zero value otherwise.
-func (o *Industry) GetParent() int64 {
+func (o *IndustryValues) GetParent() int64 {
 	if o == nil || o.Parent == nil {
 		var ret int64
 		return ret
@@ -113,7 +113,7 @@ func (o *Industry) GetParent() int64 {
 
 // GetParentOk returns a tuple with the Parent field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *Industry) GetParentOk() (*int64, bool) {
+func (o *IndustryValues) GetParentOk() (*int64, bool) {
 	if o == nil || o.Parent == nil {
 		return nil, false
 	}
@@ -121,7 +121,7 @@ func (o *Industry) GetParentOk() (*int64, bool) {
 }
 
 // HasParent returns a boolean if a field has been set.
-func (o *Industry) HasParent() bool {
+func (o *IndustryValues) HasParent() bool {
 	if o != nil && o.Parent != nil {
 		return true
 	}
@@ -130,11 +130,11 @@ func (o *Industry) HasParent() bool {
 }
 
 // SetParent gets a reference to the given int64 and assigns it to the Parent field.
-func (o *Industry) SetParent(v int64) {
+func (o *IndustryValues) SetParent(v int64) {
 	o.Parent = &v
 }
 
-func (o Industry) MarshalJSON() ([]byte, error) {
+func (o IndustryValues) MarshalJSON() ([]byte, error) {
 	toSerialize := map[string]interface{}{}
 	if o.Id != nil {
 		toSerialize["id"] = o.Id
@@ -148,38 +148,38 @@ func (o Industry) MarshalJSON() ([]byte, error) {
 	return json.Marshal(toSerialize)
 }
 
-type NullableIndustry struct {
-	value *Industry
+type NullableIndustryValues struct {
+	value *IndustryValues
 	isSet bool
 }
 
-func (v NullableIndustry) Get() *Industry {
+func (v NullableIndustryValues) Get() *IndustryValues {
 	return v.value
 }
 
-func (v *NullableIndustry) Set(val *Industry) {
+func (v *NullableIndustryValues) Set(val *IndustryValues) {
 	v.value = val
 	v.isSet = true
 }
 
-func (v NullableIndustry) IsSet() bool {
+func (v NullableIndustryValues) IsSet() bool {
 	return v.isSet
 }
 
-func (v *NullableIndustry) Unset() {
+func (v *NullableIndustryValues) Unset() {
 	v.value = nil
 	v.isSet = false
 }
 
-func NewNullableIndustry(val *Industry) *NullableIndustry {
-	return &NullableIndustry{value: val, isSet: true}
+func NewNullableIndustryValues(val *IndustryValues) *NullableIndustryValues {
+	return &NullableIndustryValues{value: val, isSet: true}
 }
 
-func (v NullableIndustry) MarshalJSON() ([]byte, error) {
+func (v NullableIndustryValues) MarshalJSON() ([]byte, error) {
 	return json.Marshal(v.value)
 }
 
-func (v *NullableIndustry) UnmarshalJSON(src []byte) error {
+func (v *NullableIndustryValues) UnmarshalJSON(src []byte) error {
 	v.isSet = true
 	return json.Unmarshal(src, &v.value)
 }

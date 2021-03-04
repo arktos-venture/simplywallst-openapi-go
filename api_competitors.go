@@ -44,7 +44,7 @@ func (r ApiListCompetitorsRequest) Version(version string) ApiListCompetitorsReq
 	return r
 }
 
-func (r ApiListCompetitorsRequest) Execute() (Competitors, *_nethttp.Response, GenericOpenAPIError) {
+func (r ApiListCompetitorsRequest) Execute() (Competitors, *_nethttp.Response, error) {
 	return r.ApiService.ListCompetitorsExecute(r)
 }
 
@@ -67,21 +67,19 @@ func (a *CompetitorsApiService) ListCompetitors(ctx _context.Context, id string)
  * Execute executes the request
  * @return Competitors
  */
-func (a *CompetitorsApiService) ListCompetitorsExecute(r ApiListCompetitorsRequest) (Competitors, *_nethttp.Response, GenericOpenAPIError) {
+func (a *CompetitorsApiService) ListCompetitorsExecute(r ApiListCompetitorsRequest) (Competitors, *_nethttp.Response, error) {
 	var (
 		localVarHTTPMethod   = _nethttp.MethodGet
 		localVarPostBody     interface{}
 		localVarFormFileName string
 		localVarFileName     string
 		localVarFileBytes    []byte
-		executionError       GenericOpenAPIError
 		localVarReturnValue  Competitors
 	)
 
 	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "CompetitorsApiService.ListCompetitors")
 	if err != nil {
-		executionError.error = err.Error()
-		return localVarReturnValue, nil, executionError
+		return localVarReturnValue, nil, GenericOpenAPIError{error: err.Error()}
 	}
 
 	localVarPath := localBasePath + "/api/competitors/{id}"
@@ -116,22 +114,19 @@ func (a *CompetitorsApiService) ListCompetitorsExecute(r ApiListCompetitorsReque
 	}
 	req, err := a.client.prepareRequest(r.ctx, localVarPath, localVarHTTPMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFormFileName, localVarFileName, localVarFileBytes)
 	if err != nil {
-		executionError.error = err.Error()
-		return localVarReturnValue, nil, executionError
+		return localVarReturnValue, nil, err
 	}
 
 	localVarHTTPResponse, err := a.client.callAPI(req)
 	if err != nil || localVarHTTPResponse == nil {
-		executionError.error = err.Error()
-		return localVarReturnValue, localVarHTTPResponse, executionError
+		return localVarReturnValue, localVarHTTPResponse, err
 	}
 
 	localVarBody, err := _ioutil.ReadAll(localVarHTTPResponse.Body)
 	localVarHTTPResponse.Body.Close()
 	localVarHTTPResponse.Body = _ioutil.NopCloser(bytes.NewBuffer(localVarBody))
 	if err != nil {
-		executionError.error = err.Error()
-		return localVarReturnValue, localVarHTTPResponse, executionError
+		return localVarReturnValue, localVarHTTPResponse, err
 	}
 
 	if localVarHTTPResponse.StatusCode >= 300 {
@@ -151,5 +146,5 @@ func (a *CompetitorsApiService) ListCompetitorsExecute(r ApiListCompetitorsReque
 		return localVarReturnValue, localVarHTTPResponse, newErr
 	}
 
-	return localVarReturnValue, localVarHTTPResponse, executionError
+	return localVarReturnValue, localVarHTTPResponse, nil
 }

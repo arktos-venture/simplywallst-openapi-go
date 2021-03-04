@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Data** | Pointer to [**map[string]Industry**](industry.md) |  | [optional] 
+**Data** | Pointer to [**map[string]map[string]IndustryValues**](map.md) |  | [optional] 
 
 ## Methods
 
@@ -27,20 +27,20 @@ but it doesn't guarantee that properties required by API are set
 
 ### GetData
 
-`func (o *IndustryTree) GetData() map[string]Industry`
+`func (o *IndustryTree) GetData() map[string]map[string]IndustryValues`
 
 GetData returns the Data field if non-nil, zero value otherwise.
 
 ### GetDataOk
 
-`func (o *IndustryTree) GetDataOk() (*map[string]Industry, bool)`
+`func (o *IndustryTree) GetDataOk() (*map[string]map[string]IndustryValues, bool)`
 
 GetDataOk returns a tuple with the Data field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetData
 
-`func (o *IndustryTree) SetData(v map[string]Industry)`
+`func (o *IndustryTree) SetData(v map[string]map[string]IndustryValues)`
 
 SetData sets Data field to given value.
 

@@ -33,7 +33,7 @@ type ApiListIndustryPerformanceRequest struct {
 	country    string
 }
 
-func (r ApiListIndustryPerformanceRequest) Execute() (IndustryPerformance, *_nethttp.Response, GenericOpenAPIError) {
+func (r ApiListIndustryPerformanceRequest) Execute() (IndustryPerformance, *_nethttp.Response, error) {
 	return r.ApiService.ListIndustryPerformanceExecute(r)
 }
 
@@ -56,21 +56,19 @@ func (a *DashboardApiService) ListIndustryPerformance(ctx _context.Context, coun
  * Execute executes the request
  * @return IndustryPerformance
  */
-func (a *DashboardApiService) ListIndustryPerformanceExecute(r ApiListIndustryPerformanceRequest) (IndustryPerformance, *_nethttp.Response, GenericOpenAPIError) {
+func (a *DashboardApiService) ListIndustryPerformanceExecute(r ApiListIndustryPerformanceRequest) (IndustryPerformance, *_nethttp.Response, error) {
 	var (
 		localVarHTTPMethod   = _nethttp.MethodGet
 		localVarPostBody     interface{}
 		localVarFormFileName string
 		localVarFileName     string
 		localVarFileBytes    []byte
-		executionError       GenericOpenAPIError
 		localVarReturnValue  IndustryPerformance
 	)
 
 	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "DashboardApiService.ListIndustryPerformance")
 	if err != nil {
-		executionError.error = err.Error()
-		return localVarReturnValue, nil, executionError
+		return localVarReturnValue, nil, GenericOpenAPIError{error: err.Error()}
 	}
 
 	localVarPath := localBasePath + "/dashboard/industry-performance/{country}"
@@ -99,22 +97,19 @@ func (a *DashboardApiService) ListIndustryPerformanceExecute(r ApiListIndustryPe
 	}
 	req, err := a.client.prepareRequest(r.ctx, localVarPath, localVarHTTPMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFormFileName, localVarFileName, localVarFileBytes)
 	if err != nil {
-		executionError.error = err.Error()
-		return localVarReturnValue, nil, executionError
+		return localVarReturnValue, nil, err
 	}
 
 	localVarHTTPResponse, err := a.client.callAPI(req)
 	if err != nil || localVarHTTPResponse == nil {
-		executionError.error = err.Error()
-		return localVarReturnValue, localVarHTTPResponse, executionError
+		return localVarReturnValue, localVarHTTPResponse, err
 	}
 
 	localVarBody, err := _ioutil.ReadAll(localVarHTTPResponse.Body)
 	localVarHTTPResponse.Body.Close()
 	localVarHTTPResponse.Body = _ioutil.NopCloser(bytes.NewBuffer(localVarBody))
 	if err != nil {
-		executionError.error = err.Error()
-		return localVarReturnValue, localVarHTTPResponse, executionError
+		return localVarReturnValue, localVarHTTPResponse, err
 	}
 
 	if localVarHTTPResponse.StatusCode >= 300 {
@@ -134,7 +129,7 @@ func (a *DashboardApiService) ListIndustryPerformanceExecute(r ApiListIndustryPe
 		return localVarReturnValue, localVarHTTPResponse, newErr
 	}
 
-	return localVarReturnValue, localVarHTTPResponse, executionError
+	return localVarReturnValue, localVarHTTPResponse, nil
 }
 
 type ApiListInternationalMarketRequest struct {
@@ -142,7 +137,7 @@ type ApiListInternationalMarketRequest struct {
 	ApiService *DashboardApiService
 }
 
-func (r ApiListInternationalMarketRequest) Execute() (InternationalMarket, *_nethttp.Response, GenericOpenAPIError) {
+func (r ApiListInternationalMarketRequest) Execute() (InternationalMarket, *_nethttp.Response, error) {
 	return r.ApiService.ListInternationalMarketExecute(r)
 }
 
@@ -163,21 +158,19 @@ func (a *DashboardApiService) ListInternationalMarket(ctx _context.Context) ApiL
  * Execute executes the request
  * @return InternationalMarket
  */
-func (a *DashboardApiService) ListInternationalMarketExecute(r ApiListInternationalMarketRequest) (InternationalMarket, *_nethttp.Response, GenericOpenAPIError) {
+func (a *DashboardApiService) ListInternationalMarketExecute(r ApiListInternationalMarketRequest) (InternationalMarket, *_nethttp.Response, error) {
 	var (
 		localVarHTTPMethod   = _nethttp.MethodGet
 		localVarPostBody     interface{}
 		localVarFormFileName string
 		localVarFileName     string
 		localVarFileBytes    []byte
-		executionError       GenericOpenAPIError
 		localVarReturnValue  InternationalMarket
 	)
 
 	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "DashboardApiService.ListInternationalMarket")
 	if err != nil {
-		executionError.error = err.Error()
-		return localVarReturnValue, nil, executionError
+		return localVarReturnValue, nil, GenericOpenAPIError{error: err.Error()}
 	}
 
 	localVarPath := localBasePath + "/dashboard/international-markets"
@@ -205,22 +198,19 @@ func (a *DashboardApiService) ListInternationalMarketExecute(r ApiListInternatio
 	}
 	req, err := a.client.prepareRequest(r.ctx, localVarPath, localVarHTTPMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFormFileName, localVarFileName, localVarFileBytes)
 	if err != nil {
-		executionError.error = err.Error()
-		return localVarReturnValue, nil, executionError
+		return localVarReturnValue, nil, err
 	}
 
 	localVarHTTPResponse, err := a.client.callAPI(req)
 	if err != nil || localVarHTTPResponse == nil {
-		executionError.error = err.Error()
-		return localVarReturnValue, localVarHTTPResponse, executionError
+		return localVarReturnValue, localVarHTTPResponse, err
 	}
 
 	localVarBody, err := _ioutil.ReadAll(localVarHTTPResponse.Body)
 	localVarHTTPResponse.Body.Close()
 	localVarHTTPResponse.Body = _ioutil.NopCloser(bytes.NewBuffer(localVarBody))
 	if err != nil {
-		executionError.error = err.Error()
-		return localVarReturnValue, localVarHTTPResponse, executionError
+		return localVarReturnValue, localVarHTTPResponse, err
 	}
 
 	if localVarHTTPResponse.StatusCode >= 300 {
@@ -240,7 +230,7 @@ func (a *DashboardApiService) ListInternationalMarketExecute(r ApiListInternatio
 		return localVarReturnValue, localVarHTTPResponse, newErr
 	}
 
-	return localVarReturnValue, localVarHTTPResponse, executionError
+	return localVarReturnValue, localVarHTTPResponse, nil
 }
 
 type ApiListMarketPerformanceRequest struct {
@@ -249,7 +239,7 @@ type ApiListMarketPerformanceRequest struct {
 	country    string
 }
 
-func (r ApiListMarketPerformanceRequest) Execute() (MarketPerformance, *_nethttp.Response, GenericOpenAPIError) {
+func (r ApiListMarketPerformanceRequest) Execute() (MarketPerformance, *_nethttp.Response, error) {
 	return r.ApiService.ListMarketPerformanceExecute(r)
 }
 
@@ -272,21 +262,19 @@ func (a *DashboardApiService) ListMarketPerformance(ctx _context.Context, countr
  * Execute executes the request
  * @return MarketPerformance
  */
-func (a *DashboardApiService) ListMarketPerformanceExecute(r ApiListMarketPerformanceRequest) (MarketPerformance, *_nethttp.Response, GenericOpenAPIError) {
+func (a *DashboardApiService) ListMarketPerformanceExecute(r ApiListMarketPerformanceRequest) (MarketPerformance, *_nethttp.Response, error) {
 	var (
 		localVarHTTPMethod   = _nethttp.MethodGet
 		localVarPostBody     interface{}
 		localVarFormFileName string
 		localVarFileName     string
 		localVarFileBytes    []byte
-		executionError       GenericOpenAPIError
 		localVarReturnValue  MarketPerformance
 	)
 
 	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "DashboardApiService.ListMarketPerformance")
 	if err != nil {
-		executionError.error = err.Error()
-		return localVarReturnValue, nil, executionError
+		return localVarReturnValue, nil, GenericOpenAPIError{error: err.Error()}
 	}
 
 	localVarPath := localBasePath + "/dashboard/market-performance/{country}"
@@ -315,22 +303,19 @@ func (a *DashboardApiService) ListMarketPerformanceExecute(r ApiListMarketPerfor
 	}
 	req, err := a.client.prepareRequest(r.ctx, localVarPath, localVarHTTPMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFormFileName, localVarFileName, localVarFileBytes)
 	if err != nil {
-		executionError.error = err.Error()
-		return localVarReturnValue, nil, executionError
+		return localVarReturnValue, nil, err
 	}
 
 	localVarHTTPResponse, err := a.client.callAPI(req)
 	if err != nil || localVarHTTPResponse == nil {
-		executionError.error = err.Error()
-		return localVarReturnValue, localVarHTTPResponse, executionError
+		return localVarReturnValue, localVarHTTPResponse, err
 	}
 
 	localVarBody, err := _ioutil.ReadAll(localVarHTTPResponse.Body)
 	localVarHTTPResponse.Body.Close()
 	localVarHTTPResponse.Body = _ioutil.NopCloser(bytes.NewBuffer(localVarBody))
 	if err != nil {
-		executionError.error = err.Error()
-		return localVarReturnValue, localVarHTTPResponse, executionError
+		return localVarReturnValue, localVarHTTPResponse, err
 	}
 
 	if localVarHTTPResponse.StatusCode >= 300 {
@@ -350,5 +335,5 @@ func (a *DashboardApiService) ListMarketPerformanceExecute(r ApiListMarketPerfor
 		return localVarReturnValue, localVarHTTPResponse, newErr
 	}
 
-	return localVarReturnValue, localVarHTTPResponse, executionError
+	return localVarReturnValue, localVarHTTPResponse, nil
 }

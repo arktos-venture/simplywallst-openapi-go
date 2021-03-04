@@ -35,7 +35,7 @@ func main() {
     configuration := openapiclient.NewConfiguration()
     api_client := openapiclient.NewAPIClient(configuration)
     resp, r, err := api_client.ScreenerApi.ListGridViewSearch(context.Background()).GridViewSearchAdd(gridViewSearchAdd).Execute()
-    if err.Error() != "" {
+    if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ScreenerApi.ListGridViewSearch``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
@@ -102,7 +102,7 @@ func main() {
     configuration := openapiclient.NewConfiguration()
     api_client := openapiclient.NewAPIClient(configuration)
     resp, r, err := api_client.ScreenerApi.ListGrids(context.Background()).Include(include).GridsAdd(gridsAdd).Execute()
-    if err.Error() != "" {
+    if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `ScreenerApi.ListGrids``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }

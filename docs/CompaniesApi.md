@@ -41,7 +41,7 @@ func main() {
     configuration := openapiclient.NewConfiguration()
     api_client := openapiclient.NewAPIClient(configuration)
     resp, r, err := api_client.CompaniesApi.ListDevelopmentInfo(context.Background()).Include(include).DevelopmentInfoAdd(developmentInfoAdd).Execute()
-    if err.Error() != "" {
+    if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `CompaniesApi.ListDevelopmentInfo``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
@@ -108,7 +108,7 @@ func main() {
     configuration := openapiclient.NewConfiguration()
     api_client := openapiclient.NewAPIClient(configuration)
     resp, r, err := api_client.CompaniesApi.ListDevelopments(context.Background(), id).Execute()
-    if err.Error() != "" {
+    if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `CompaniesApi.ListDevelopments``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
@@ -179,7 +179,7 @@ func main() {
     configuration := openapiclient.NewConfiguration()
     api_client := openapiclient.NewAPIClient(configuration)
     resp, r, err := api_client.CompaniesApi.ListEstimateCoverages(context.Background(), id).Version(version).Execute()
-    if err.Error() != "" {
+    if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `CompaniesApi.ListEstimateCoverages``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
@@ -252,7 +252,7 @@ func main() {
     configuration := openapiclient.NewConfiguration()
     api_client := openapiclient.NewAPIClient(configuration)
     resp, r, err := api_client.CompaniesApi.ListNews(context.Background(), id).SimplywallSt(simplywallSt).Version(version).Execute()
-    if err.Error() != "" {
+    if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `CompaniesApi.ListNews``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
@@ -324,7 +324,7 @@ func main() {
     configuration := openapiclient.NewConfiguration()
     api_client := openapiclient.NewAPIClient(configuration)
     resp, r, err := api_client.CompaniesApi.ListOwnerships(context.Background(), id).Execute()
-    if err.Error() != "" {
+    if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `CompaniesApi.ListOwnerships``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
@@ -395,7 +395,7 @@ func main() {
     configuration := openapiclient.NewConfiguration()
     api_client := openapiclient.NewAPIClient(configuration)
     resp, r, err := api_client.CompaniesApi.ListPrices(context.Background(), id).StartTimestamp(startTimestamp).Execute()
-    if err.Error() != "" {
+    if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `CompaniesApi.ListPrices``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
@@ -471,7 +471,7 @@ func main() {
     configuration := openapiclient.NewConfiguration()
     api_client := openapiclient.NewAPIClient(configuration)
     resp, r, err := api_client.CompaniesApi.ReadCompanies(context.Background(), exchange, sector, ticker, company).Include(include).Version(version).Execute()
-    if err.Error() != "" {
+    if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `CompaniesApi.ReadCompanies``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }

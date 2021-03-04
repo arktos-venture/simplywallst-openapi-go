@@ -72,7 +72,6 @@ docs/Grids.md
 docs/GridsAdd.md
 docs/GridsMeta.md
 docs/IndustriesApi.md
-docs/Industry.md
 docs/IndustryCountry.md
 docs/IndustryCountryCountries.md
 docs/IndustryCountryData.md
@@ -82,6 +81,7 @@ docs/IndustryPerformanceData.md
 docs/IndustryPerformanceDate.md
 docs/IndustryPerformanceDateData.md
 docs/IndustryTree.md
+docs/IndustryValues.md
 docs/InternationalMarket.md
 docs/InternationalMarketData.md
 docs/InternationalMarketReturn.md
@@ -160,7 +160,6 @@ model_grid_view_search_add.go
 model_grids.go
 model_grids_add.go
 model_grids_meta.go
-model_industry.go
 model_industry_country.go
 model_industry_country_countries.go
 model_industry_country_data.go
@@ -170,6 +169,7 @@ model_industry_performance_data.go
 model_industry_performance_date.go
 model_industry_performance_date_data.go
 model_industry_tree.go
+model_industry_values.go
 model_international_market.go
 model_international_market_data.go
 model_international_market_return.go

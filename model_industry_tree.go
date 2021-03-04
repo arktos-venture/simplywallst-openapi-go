@@ -16,7 +16,7 @@ import (
 
 // IndustryTree struct for IndustryTree
 type IndustryTree struct {
-	Data *map[string]Industry `json:"data,omitempty"`
+	Data *map[string]map[string]IndustryValues `json:"data,omitempty"`
 }
 
 // NewIndustryTree instantiates a new IndustryTree object
@@ -37,9 +37,9 @@ func NewIndustryTreeWithDefaults() *IndustryTree {
 }
 
 // GetData returns the Data field value if set, zero value otherwise.
-func (o *IndustryTree) GetData() map[string]Industry {
+func (o *IndustryTree) GetData() map[string]map[string]IndustryValues {
 	if o == nil || o.Data == nil {
-		var ret map[string]Industry
+		var ret map[string]map[string]IndustryValues
 		return ret
 	}
 	return *o.Data
@@ -47,7 +47,7 @@ func (o *IndustryTree) GetData() map[string]Industry {
 
 // GetDataOk returns a tuple with the Data field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *IndustryTree) GetDataOk() (*map[string]Industry, bool) {
+func (o *IndustryTree) GetDataOk() (*map[string]map[string]IndustryValues, bool) {
 	if o == nil || o.Data == nil {
 		return nil, false
 	}
@@ -63,8 +63,8 @@ func (o *IndustryTree) HasData() bool {
 	return false
 }
 
-// SetData gets a reference to the given map[string]Industry and assigns it to the Data field.
-func (o *IndustryTree) SetData(v map[string]Industry) {
+// SetData gets a reference to the given map[string]map[string]IndustryValues and assigns it to the Data field.
+func (o *IndustryTree) SetData(v map[string]map[string]IndustryValues) {
 	o.Data = &v
 }
 

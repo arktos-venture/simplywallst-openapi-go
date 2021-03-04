@@ -37,7 +37,7 @@ func (r ApiListGridViewSearchRequest) GridViewSearchAdd(gridViewSearchAdd GridVi
 	return r
 }
 
-func (r ApiListGridViewSearchRequest) Execute() (GridViewSearch, *_nethttp.Response, GenericOpenAPIError) {
+func (r ApiListGridViewSearchRequest) Execute() (GridViewSearch, *_nethttp.Response, error) {
 	return r.ApiService.ListGridViewSearchExecute(r)
 }
 
@@ -58,21 +58,19 @@ func (a *ScreenerApiService) ListGridViewSearch(ctx _context.Context) ApiListGri
  * Execute executes the request
  * @return GridViewSearch
  */
-func (a *ScreenerApiService) ListGridViewSearchExecute(r ApiListGridViewSearchRequest) (GridViewSearch, *_nethttp.Response, GenericOpenAPIError) {
+func (a *ScreenerApiService) ListGridViewSearchExecute(r ApiListGridViewSearchRequest) (GridViewSearch, *_nethttp.Response, error) {
 	var (
 		localVarHTTPMethod   = _nethttp.MethodPost
 		localVarPostBody     interface{}
 		localVarFormFileName string
 		localVarFileName     string
 		localVarFileBytes    []byte
-		executionError       GenericOpenAPIError
 		localVarReturnValue  GridViewSearch
 	)
 
 	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "ScreenerApiService.ListGridViewSearch")
 	if err != nil {
-		executionError.error = err.Error()
-		return localVarReturnValue, nil, executionError
+		return localVarReturnValue, nil, GenericOpenAPIError{error: err.Error()}
 	}
 
 	localVarPath := localBasePath + "/api/grid/view/search"
@@ -102,22 +100,19 @@ func (a *ScreenerApiService) ListGridViewSearchExecute(r ApiListGridViewSearchRe
 	localVarPostBody = r.gridViewSearchAdd
 	req, err := a.client.prepareRequest(r.ctx, localVarPath, localVarHTTPMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFormFileName, localVarFileName, localVarFileBytes)
 	if err != nil {
-		executionError.error = err.Error()
-		return localVarReturnValue, nil, executionError
+		return localVarReturnValue, nil, err
 	}
 
 	localVarHTTPResponse, err := a.client.callAPI(req)
 	if err != nil || localVarHTTPResponse == nil {
-		executionError.error = err.Error()
-		return localVarReturnValue, localVarHTTPResponse, executionError
+		return localVarReturnValue, localVarHTTPResponse, err
 	}
 
 	localVarBody, err := _ioutil.ReadAll(localVarHTTPResponse.Body)
 	localVarHTTPResponse.Body.Close()
 	localVarHTTPResponse.Body = _ioutil.NopCloser(bytes.NewBuffer(localVarBody))
 	if err != nil {
-		executionError.error = err.Error()
-		return localVarReturnValue, localVarHTTPResponse, executionError
+		return localVarReturnValue, localVarHTTPResponse, err
 	}
 
 	if localVarHTTPResponse.StatusCode >= 300 {
@@ -137,7 +132,7 @@ func (a *ScreenerApiService) ListGridViewSearchExecute(r ApiListGridViewSearchRe
 		return localVarReturnValue, localVarHTTPResponse, newErr
 	}
 
-	return localVarReturnValue, localVarHTTPResponse, executionError
+	return localVarReturnValue, localVarHTTPResponse, nil
 }
 
 type ApiListGridsRequest struct {
@@ -156,7 +151,7 @@ func (r ApiListGridsRequest) GridsAdd(gridsAdd GridsAdd) ApiListGridsRequest {
 	return r
 }
 
-func (r ApiListGridsRequest) Execute() (Grids, *_nethttp.Response, GenericOpenAPIError) {
+func (r ApiListGridsRequest) Execute() (Grids, *_nethttp.Response, error) {
 	return r.ApiService.ListGridsExecute(r)
 }
 
@@ -177,21 +172,19 @@ func (a *ScreenerApiService) ListGrids(ctx _context.Context) ApiListGridsRequest
  * Execute executes the request
  * @return Grids
  */
-func (a *ScreenerApiService) ListGridsExecute(r ApiListGridsRequest) (Grids, *_nethttp.Response, GenericOpenAPIError) {
+func (a *ScreenerApiService) ListGridsExecute(r ApiListGridsRequest) (Grids, *_nethttp.Response, error) {
 	var (
 		localVarHTTPMethod   = _nethttp.MethodPost
 		localVarPostBody     interface{}
 		localVarFormFileName string
 		localVarFileName     string
 		localVarFileBytes    []byte
-		executionError       GenericOpenAPIError
 		localVarReturnValue  Grids
 	)
 
 	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "ScreenerApiService.ListGrids")
 	if err != nil {
-		executionError.error = err.Error()
-		return localVarReturnValue, nil, executionError
+		return localVarReturnValue, nil, GenericOpenAPIError{error: err.Error()}
 	}
 
 	localVarPath := localBasePath + "/api/grid/filter"
@@ -224,22 +217,19 @@ func (a *ScreenerApiService) ListGridsExecute(r ApiListGridsRequest) (Grids, *_n
 	localVarPostBody = r.gridsAdd
 	req, err := a.client.prepareRequest(r.ctx, localVarPath, localVarHTTPMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFormFileName, localVarFileName, localVarFileBytes)
 	if err != nil {
-		executionError.error = err.Error()
-		return localVarReturnValue, nil, executionError
+		return localVarReturnValue, nil, err
 	}
 
 	localVarHTTPResponse, err := a.client.callAPI(req)
 	if err != nil || localVarHTTPResponse == nil {
-		executionError.error = err.Error()
-		return localVarReturnValue, localVarHTTPResponse, executionError
+		return localVarReturnValue, localVarHTTPResponse, err
 	}
 
 	localVarBody, err := _ioutil.ReadAll(localVarHTTPResponse.Body)
 	localVarHTTPResponse.Body.Close()
 	localVarHTTPResponse.Body = _ioutil.NopCloser(bytes.NewBuffer(localVarBody))
 	if err != nil {
-		executionError.error = err.Error()
-		return localVarReturnValue, localVarHTTPResponse, executionError
+		return localVarReturnValue, localVarHTTPResponse, err
 	}
 
 	if localVarHTTPResponse.StatusCode >= 300 {
@@ -259,5 +249,5 @@ func (a *ScreenerApiService) ListGridsExecute(r ApiListGridsRequest) (Grids, *_n
 		return localVarReturnValue, localVarHTTPResponse, newErr
 	}
 
-	return localVarReturnValue, localVarHTTPResponse, executionError
+	return localVarReturnValue, localVarHTTPResponse, nil
 }

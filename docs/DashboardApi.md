@@ -36,7 +36,7 @@ func main() {
     configuration := openapiclient.NewConfiguration()
     api_client := openapiclient.NewAPIClient(configuration)
     resp, r, err := api_client.DashboardApi.ListIndustryPerformance(context.Background(), country).Execute()
-    if err.Error() != "" {
+    if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `DashboardApi.ListIndustryPerformance``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
@@ -105,7 +105,7 @@ func main() {
     configuration := openapiclient.NewConfiguration()
     api_client := openapiclient.NewAPIClient(configuration)
     resp, r, err := api_client.DashboardApi.ListInternationalMarket(context.Background()).Execute()
-    if err.Error() != "" {
+    if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `DashboardApi.ListInternationalMarket``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
@@ -167,7 +167,7 @@ func main() {
     configuration := openapiclient.NewConfiguration()
     api_client := openapiclient.NewAPIClient(configuration)
     resp, r, err := api_client.DashboardApi.ListMarketPerformance(context.Background(), country).Execute()
-    if err.Error() != "" {
+    if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `DashboardApi.ListMarketPerformance``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }

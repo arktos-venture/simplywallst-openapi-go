@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 ## ListIndustry
 
-> Industry ListIndustry(ctx, id).Execute()
+> map[string]IndustryValues ListIndustry(ctx, id).Execute()
 
 
 
@@ -36,11 +36,11 @@ func main() {
     configuration := openapiclient.NewConfiguration()
     api_client := openapiclient.NewAPIClient(configuration)
     resp, r, err := api_client.IndustriesApi.ListIndustry(context.Background(), id).Execute()
-    if err.Error() != "" {
+    if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `IndustriesApi.ListIndustry``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
-    // response from `ListIndustry`: Industry
+    // response from `ListIndustry`: map[string]IndustryValues
     fmt.Fprintf(os.Stdout, "Response from `IndustriesApi.ListIndustry`: %v\n", resp)
 }
 ```
@@ -64,7 +64,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Industry**](industry.md)
+[**map[string]IndustryValues**](industryValues.md)
 
 ### Authorization
 
@@ -106,7 +106,7 @@ func main() {
     configuration := openapiclient.NewConfiguration()
     api_client := openapiclient.NewAPIClient(configuration)
     resp, r, err := api_client.IndustriesApi.ListIndustryCountry(context.Background(), country).Execute()
-    if err.Error() != "" {
+    if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `IndustriesApi.ListIndustryCountry``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
@@ -175,7 +175,7 @@ func main() {
     configuration := openapiclient.NewConfiguration()
     api_client := openapiclient.NewAPIClient(configuration)
     resp, r, err := api_client.IndustriesApi.ListIndustryTree(context.Background()).Execute()
-    if err.Error() != "" {
+    if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `IndustriesApi.ListIndustryTree``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }

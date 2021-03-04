@@ -43,7 +43,7 @@ func (r ApiListDevelopmentInfoRequest) DevelopmentInfoAdd(developmentInfoAdd Dev
 	return r
 }
 
-func (r ApiListDevelopmentInfoRequest) Execute() (DevelopmentInfo, *_nethttp.Response, GenericOpenAPIError) {
+func (r ApiListDevelopmentInfoRequest) Execute() (DevelopmentInfo, *_nethttp.Response, error) {
 	return r.ApiService.ListDevelopmentInfoExecute(r)
 }
 
@@ -64,21 +64,19 @@ func (a *CompaniesApiService) ListDevelopmentInfo(ctx _context.Context) ApiListD
  * Execute executes the request
  * @return DevelopmentInfo
  */
-func (a *CompaniesApiService) ListDevelopmentInfoExecute(r ApiListDevelopmentInfoRequest) (DevelopmentInfo, *_nethttp.Response, GenericOpenAPIError) {
+func (a *CompaniesApiService) ListDevelopmentInfoExecute(r ApiListDevelopmentInfoRequest) (DevelopmentInfo, *_nethttp.Response, error) {
 	var (
 		localVarHTTPMethod   = _nethttp.MethodPost
 		localVarPostBody     interface{}
 		localVarFormFileName string
 		localVarFileName     string
 		localVarFileBytes    []byte
-		executionError       GenericOpenAPIError
 		localVarReturnValue  DevelopmentInfo
 	)
 
 	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "CompaniesApiService.ListDevelopmentInfo")
 	if err != nil {
-		executionError.error = err.Error()
-		return localVarReturnValue, nil, executionError
+		return localVarReturnValue, nil, GenericOpenAPIError{error: err.Error()}
 	}
 
 	localVarPath := localBasePath + "/api/company/developments/info"
@@ -87,8 +85,7 @@ func (a *CompaniesApiService) ListDevelopmentInfoExecute(r ApiListDevelopmentInf
 	localVarQueryParams := _neturl.Values{}
 	localVarFormParams := _neturl.Values{}
 	if r.include == nil {
-		executionError.error = "include is required and must be specified"
-		return localVarReturnValue, nil, executionError
+		return localVarReturnValue, nil, reportError("include is required and must be specified")
 	}
 
 	localVarQueryParams.Add("include", parameterToString(*r.include, ""))
@@ -113,22 +110,19 @@ func (a *CompaniesApiService) ListDevelopmentInfoExecute(r ApiListDevelopmentInf
 	localVarPostBody = r.developmentInfoAdd
 	req, err := a.client.prepareRequest(r.ctx, localVarPath, localVarHTTPMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFormFileName, localVarFileName, localVarFileBytes)
 	if err != nil {
-		executionError.error = err.Error()
-		return localVarReturnValue, nil, executionError
+		return localVarReturnValue, nil, err
 	}
 
 	localVarHTTPResponse, err := a.client.callAPI(req)
 	if err != nil || localVarHTTPResponse == nil {
-		executionError.error = err.Error()
-		return localVarReturnValue, localVarHTTPResponse, executionError
+		return localVarReturnValue, localVarHTTPResponse, err
 	}
 
 	localVarBody, err := _ioutil.ReadAll(localVarHTTPResponse.Body)
 	localVarHTTPResponse.Body.Close()
 	localVarHTTPResponse.Body = _ioutil.NopCloser(bytes.NewBuffer(localVarBody))
 	if err != nil {
-		executionError.error = err.Error()
-		return localVarReturnValue, localVarHTTPResponse, executionError
+		return localVarReturnValue, localVarHTTPResponse, err
 	}
 
 	if localVarHTTPResponse.StatusCode >= 300 {
@@ -148,7 +142,7 @@ func (a *CompaniesApiService) ListDevelopmentInfoExecute(r ApiListDevelopmentInf
 		return localVarReturnValue, localVarHTTPResponse, newErr
 	}
 
-	return localVarReturnValue, localVarHTTPResponse, executionError
+	return localVarReturnValue, localVarHTTPResponse, nil
 }
 
 type ApiListDevelopmentsRequest struct {
@@ -157,7 +151,7 @@ type ApiListDevelopmentsRequest struct {
 	id         string
 }
 
-func (r ApiListDevelopmentsRequest) Execute() (Developments, *_nethttp.Response, GenericOpenAPIError) {
+func (r ApiListDevelopmentsRequest) Execute() (Developments, *_nethttp.Response, error) {
 	return r.ApiService.ListDevelopmentsExecute(r)
 }
 
@@ -180,21 +174,19 @@ func (a *CompaniesApiService) ListDevelopments(ctx _context.Context, id string) 
  * Execute executes the request
  * @return Developments
  */
-func (a *CompaniesApiService) ListDevelopmentsExecute(r ApiListDevelopmentsRequest) (Developments, *_nethttp.Response, GenericOpenAPIError) {
+func (a *CompaniesApiService) ListDevelopmentsExecute(r ApiListDevelopmentsRequest) (Developments, *_nethttp.Response, error) {
 	var (
 		localVarHTTPMethod   = _nethttp.MethodGet
 		localVarPostBody     interface{}
 		localVarFormFileName string
 		localVarFileName     string
 		localVarFileBytes    []byte
-		executionError       GenericOpenAPIError
 		localVarReturnValue  Developments
 	)
 
 	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "CompaniesApiService.ListDevelopments")
 	if err != nil {
-		executionError.error = err.Error()
-		return localVarReturnValue, nil, executionError
+		return localVarReturnValue, nil, GenericOpenAPIError{error: err.Error()}
 	}
 
 	localVarPath := localBasePath + "/api/company/developments/{id}"
@@ -223,22 +215,19 @@ func (a *CompaniesApiService) ListDevelopmentsExecute(r ApiListDevelopmentsReque
 	}
 	req, err := a.client.prepareRequest(r.ctx, localVarPath, localVarHTTPMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFormFileName, localVarFileName, localVarFileBytes)
 	if err != nil {
-		executionError.error = err.Error()
-		return localVarReturnValue, nil, executionError
+		return localVarReturnValue, nil, err
 	}
 
 	localVarHTTPResponse, err := a.client.callAPI(req)
 	if err != nil || localVarHTTPResponse == nil {
-		executionError.error = err.Error()
-		return localVarReturnValue, localVarHTTPResponse, executionError
+		return localVarReturnValue, localVarHTTPResponse, err
 	}
 
 	localVarBody, err := _ioutil.ReadAll(localVarHTTPResponse.Body)
 	localVarHTTPResponse.Body.Close()
 	localVarHTTPResponse.Body = _ioutil.NopCloser(bytes.NewBuffer(localVarBody))
 	if err != nil {
-		executionError.error = err.Error()
-		return localVarReturnValue, localVarHTTPResponse, executionError
+		return localVarReturnValue, localVarHTTPResponse, err
 	}
 
 	if localVarHTTPResponse.StatusCode >= 300 {
@@ -258,7 +247,7 @@ func (a *CompaniesApiService) ListDevelopmentsExecute(r ApiListDevelopmentsReque
 		return localVarReturnValue, localVarHTTPResponse, newErr
 	}
 
-	return localVarReturnValue, localVarHTTPResponse, executionError
+	return localVarReturnValue, localVarHTTPResponse, nil
 }
 
 type ApiListEstimateCoveragesRequest struct {
@@ -273,7 +262,7 @@ func (r ApiListEstimateCoveragesRequest) Version(version string) ApiListEstimate
 	return r
 }
 
-func (r ApiListEstimateCoveragesRequest) Execute() (EstimateCoverages, *_nethttp.Response, GenericOpenAPIError) {
+func (r ApiListEstimateCoveragesRequest) Execute() (EstimateCoverages, *_nethttp.Response, error) {
 	return r.ApiService.ListEstimateCoveragesExecute(r)
 }
 
@@ -296,21 +285,19 @@ func (a *CompaniesApiService) ListEstimateCoverages(ctx _context.Context, id str
  * Execute executes the request
  * @return EstimateCoverages
  */
-func (a *CompaniesApiService) ListEstimateCoveragesExecute(r ApiListEstimateCoveragesRequest) (EstimateCoverages, *_nethttp.Response, GenericOpenAPIError) {
+func (a *CompaniesApiService) ListEstimateCoveragesExecute(r ApiListEstimateCoveragesRequest) (EstimateCoverages, *_nethttp.Response, error) {
 	var (
 		localVarHTTPMethod   = _nethttp.MethodGet
 		localVarPostBody     interface{}
 		localVarFormFileName string
 		localVarFileName     string
 		localVarFileBytes    []byte
-		executionError       GenericOpenAPIError
 		localVarReturnValue  EstimateCoverages
 	)
 
 	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "CompaniesApiService.ListEstimateCoverages")
 	if err != nil {
-		executionError.error = err.Error()
-		return localVarReturnValue, nil, executionError
+		return localVarReturnValue, nil, GenericOpenAPIError{error: err.Error()}
 	}
 
 	localVarPath := localBasePath + "/api/company/estimates/coverage/{id}"
@@ -342,22 +329,19 @@ func (a *CompaniesApiService) ListEstimateCoveragesExecute(r ApiListEstimateCove
 	}
 	req, err := a.client.prepareRequest(r.ctx, localVarPath, localVarHTTPMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFormFileName, localVarFileName, localVarFileBytes)
 	if err != nil {
-		executionError.error = err.Error()
-		return localVarReturnValue, nil, executionError
+		return localVarReturnValue, nil, err
 	}
 
 	localVarHTTPResponse, err := a.client.callAPI(req)
 	if err != nil || localVarHTTPResponse == nil {
-		executionError.error = err.Error()
-		return localVarReturnValue, localVarHTTPResponse, executionError
+		return localVarReturnValue, localVarHTTPResponse, err
 	}
 
 	localVarBody, err := _ioutil.ReadAll(localVarHTTPResponse.Body)
 	localVarHTTPResponse.Body.Close()
 	localVarHTTPResponse.Body = _ioutil.NopCloser(bytes.NewBuffer(localVarBody))
 	if err != nil {
-		executionError.error = err.Error()
-		return localVarReturnValue, localVarHTTPResponse, executionError
+		return localVarReturnValue, localVarHTTPResponse, err
 	}
 
 	if localVarHTTPResponse.StatusCode >= 300 {
@@ -377,7 +361,7 @@ func (a *CompaniesApiService) ListEstimateCoveragesExecute(r ApiListEstimateCove
 		return localVarReturnValue, localVarHTTPResponse, newErr
 	}
 
-	return localVarReturnValue, localVarHTTPResponse, executionError
+	return localVarReturnValue, localVarHTTPResponse, nil
 }
 
 type ApiListNewsRequest struct {
@@ -397,7 +381,7 @@ func (r ApiListNewsRequest) Version(version string) ApiListNewsRequest {
 	return r
 }
 
-func (r ApiListNewsRequest) Execute() (News, *_nethttp.Response, GenericOpenAPIError) {
+func (r ApiListNewsRequest) Execute() (News, *_nethttp.Response, error) {
 	return r.ApiService.ListNewsExecute(r)
 }
 
@@ -420,21 +404,19 @@ func (a *CompaniesApiService) ListNews(ctx _context.Context, id string) ApiListN
  * Execute executes the request
  * @return News
  */
-func (a *CompaniesApiService) ListNewsExecute(r ApiListNewsRequest) (News, *_nethttp.Response, GenericOpenAPIError) {
+func (a *CompaniesApiService) ListNewsExecute(r ApiListNewsRequest) (News, *_nethttp.Response, error) {
 	var (
 		localVarHTTPMethod   = _nethttp.MethodGet
 		localVarPostBody     interface{}
 		localVarFormFileName string
 		localVarFileName     string
 		localVarFileBytes    []byte
-		executionError       GenericOpenAPIError
 		localVarReturnValue  News
 	)
 
 	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "CompaniesApiService.ListNews")
 	if err != nil {
-		executionError.error = err.Error()
-		return localVarReturnValue, nil, executionError
+		return localVarReturnValue, nil, GenericOpenAPIError{error: err.Error()}
 	}
 
 	localVarPath := localBasePath + "/api/news/{id}"
@@ -469,22 +451,19 @@ func (a *CompaniesApiService) ListNewsExecute(r ApiListNewsRequest) (News, *_net
 	}
 	req, err := a.client.prepareRequest(r.ctx, localVarPath, localVarHTTPMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFormFileName, localVarFileName, localVarFileBytes)
 	if err != nil {
-		executionError.error = err.Error()
-		return localVarReturnValue, nil, executionError
+		return localVarReturnValue, nil, err
 	}
 
 	localVarHTTPResponse, err := a.client.callAPI(req)
 	if err != nil || localVarHTTPResponse == nil {
-		executionError.error = err.Error()
-		return localVarReturnValue, localVarHTTPResponse, executionError
+		return localVarReturnValue, localVarHTTPResponse, err
 	}
 
 	localVarBody, err := _ioutil.ReadAll(localVarHTTPResponse.Body)
 	localVarHTTPResponse.Body.Close()
 	localVarHTTPResponse.Body = _ioutil.NopCloser(bytes.NewBuffer(localVarBody))
 	if err != nil {
-		executionError.error = err.Error()
-		return localVarReturnValue, localVarHTTPResponse, executionError
+		return localVarReturnValue, localVarHTTPResponse, err
 	}
 
 	if localVarHTTPResponse.StatusCode >= 300 {
@@ -504,7 +483,7 @@ func (a *CompaniesApiService) ListNewsExecute(r ApiListNewsRequest) (News, *_net
 		return localVarReturnValue, localVarHTTPResponse, newErr
 	}
 
-	return localVarReturnValue, localVarHTTPResponse, executionError
+	return localVarReturnValue, localVarHTTPResponse, nil
 }
 
 type ApiListOwnershipsRequest struct {
@@ -513,7 +492,7 @@ type ApiListOwnershipsRequest struct {
 	id         string
 }
 
-func (r ApiListOwnershipsRequest) Execute() (Ownerships, *_nethttp.Response, GenericOpenAPIError) {
+func (r ApiListOwnershipsRequest) Execute() (Ownerships, *_nethttp.Response, error) {
 	return r.ApiService.ListOwnershipsExecute(r)
 }
 
@@ -536,21 +515,19 @@ func (a *CompaniesApiService) ListOwnerships(ctx _context.Context, id string) Ap
  * Execute executes the request
  * @return Ownerships
  */
-func (a *CompaniesApiService) ListOwnershipsExecute(r ApiListOwnershipsRequest) (Ownerships, *_nethttp.Response, GenericOpenAPIError) {
+func (a *CompaniesApiService) ListOwnershipsExecute(r ApiListOwnershipsRequest) (Ownerships, *_nethttp.Response, error) {
 	var (
 		localVarHTTPMethod   = _nethttp.MethodGet
 		localVarPostBody     interface{}
 		localVarFormFileName string
 		localVarFileName     string
 		localVarFileBytes    []byte
-		executionError       GenericOpenAPIError
 		localVarReturnValue  Ownerships
 	)
 
 	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "CompaniesApiService.ListOwnerships")
 	if err != nil {
-		executionError.error = err.Error()
-		return localVarReturnValue, nil, executionError
+		return localVarReturnValue, nil, GenericOpenAPIError{error: err.Error()}
 	}
 
 	localVarPath := localBasePath + "/api/company/ownership/shareholders/{id}"
@@ -579,22 +556,19 @@ func (a *CompaniesApiService) ListOwnershipsExecute(r ApiListOwnershipsRequest) 
 	}
 	req, err := a.client.prepareRequest(r.ctx, localVarPath, localVarHTTPMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFormFileName, localVarFileName, localVarFileBytes)
 	if err != nil {
-		executionError.error = err.Error()
-		return localVarReturnValue, nil, executionError
+		return localVarReturnValue, nil, err
 	}
 
 	localVarHTTPResponse, err := a.client.callAPI(req)
 	if err != nil || localVarHTTPResponse == nil {
-		executionError.error = err.Error()
-		return localVarReturnValue, localVarHTTPResponse, executionError
+		return localVarReturnValue, localVarHTTPResponse, err
 	}
 
 	localVarBody, err := _ioutil.ReadAll(localVarHTTPResponse.Body)
 	localVarHTTPResponse.Body.Close()
 	localVarHTTPResponse.Body = _ioutil.NopCloser(bytes.NewBuffer(localVarBody))
 	if err != nil {
-		executionError.error = err.Error()
-		return localVarReturnValue, localVarHTTPResponse, executionError
+		return localVarReturnValue, localVarHTTPResponse, err
 	}
 
 	if localVarHTTPResponse.StatusCode >= 300 {
@@ -614,7 +588,7 @@ func (a *CompaniesApiService) ListOwnershipsExecute(r ApiListOwnershipsRequest) 
 		return localVarReturnValue, localVarHTTPResponse, newErr
 	}
 
-	return localVarReturnValue, localVarHTTPResponse, executionError
+	return localVarReturnValue, localVarHTTPResponse, nil
 }
 
 type ApiListPricesRequest struct {
@@ -629,7 +603,7 @@ func (r ApiListPricesRequest) StartTimestamp(startTimestamp int64) ApiListPrices
 	return r
 }
 
-func (r ApiListPricesRequest) Execute() (Prices, *_nethttp.Response, GenericOpenAPIError) {
+func (r ApiListPricesRequest) Execute() (Prices, *_nethttp.Response, error) {
 	return r.ApiService.ListPricesExecute(r)
 }
 
@@ -652,21 +626,19 @@ func (a *CompaniesApiService) ListPrices(ctx _context.Context, id string) ApiLis
  * Execute executes the request
  * @return Prices
  */
-func (a *CompaniesApiService) ListPricesExecute(r ApiListPricesRequest) (Prices, *_nethttp.Response, GenericOpenAPIError) {
+func (a *CompaniesApiService) ListPricesExecute(r ApiListPricesRequest) (Prices, *_nethttp.Response, error) {
 	var (
 		localVarHTTPMethod   = _nethttp.MethodGet
 		localVarPostBody     interface{}
 		localVarFormFileName string
 		localVarFileName     string
 		localVarFileBytes    []byte
-		executionError       GenericOpenAPIError
 		localVarReturnValue  Prices
 	)
 
 	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "CompaniesApiService.ListPrices")
 	if err != nil {
-		executionError.error = err.Error()
-		return localVarReturnValue, nil, executionError
+		return localVarReturnValue, nil, GenericOpenAPIError{error: err.Error()}
 	}
 
 	localVarPath := localBasePath + "/api/company/price/{id}"
@@ -698,22 +670,19 @@ func (a *CompaniesApiService) ListPricesExecute(r ApiListPricesRequest) (Prices,
 	}
 	req, err := a.client.prepareRequest(r.ctx, localVarPath, localVarHTTPMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFormFileName, localVarFileName, localVarFileBytes)
 	if err != nil {
-		executionError.error = err.Error()
-		return localVarReturnValue, nil, executionError
+		return localVarReturnValue, nil, err
 	}
 
 	localVarHTTPResponse, err := a.client.callAPI(req)
 	if err != nil || localVarHTTPResponse == nil {
-		executionError.error = err.Error()
-		return localVarReturnValue, localVarHTTPResponse, executionError
+		return localVarReturnValue, localVarHTTPResponse, err
 	}
 
 	localVarBody, err := _ioutil.ReadAll(localVarHTTPResponse.Body)
 	localVarHTTPResponse.Body.Close()
 	localVarHTTPResponse.Body = _ioutil.NopCloser(bytes.NewBuffer(localVarBody))
 	if err != nil {
-		executionError.error = err.Error()
-		return localVarReturnValue, localVarHTTPResponse, executionError
+		return localVarReturnValue, localVarHTTPResponse, err
 	}
 
 	if localVarHTTPResponse.StatusCode >= 300 {
@@ -733,7 +702,7 @@ func (a *CompaniesApiService) ListPricesExecute(r ApiListPricesRequest) (Prices,
 		return localVarReturnValue, localVarHTTPResponse, newErr
 	}
 
-	return localVarReturnValue, localVarHTTPResponse, executionError
+	return localVarReturnValue, localVarHTTPResponse, nil
 }
 
 type ApiReadCompaniesRequest struct {
@@ -756,7 +725,7 @@ func (r ApiReadCompaniesRequest) Version(version string) ApiReadCompaniesRequest
 	return r
 }
 
-func (r ApiReadCompaniesRequest) Execute() (Companies, *_nethttp.Response, GenericOpenAPIError) {
+func (r ApiReadCompaniesRequest) Execute() (Companies, *_nethttp.Response, error) {
 	return r.ApiService.ReadCompaniesExecute(r)
 }
 
@@ -785,21 +754,19 @@ func (a *CompaniesApiService) ReadCompanies(ctx _context.Context, exchange strin
  * Execute executes the request
  * @return Companies
  */
-func (a *CompaniesApiService) ReadCompaniesExecute(r ApiReadCompaniesRequest) (Companies, *_nethttp.Response, GenericOpenAPIError) {
+func (a *CompaniesApiService) ReadCompaniesExecute(r ApiReadCompaniesRequest) (Companies, *_nethttp.Response, error) {
 	var (
 		localVarHTTPMethod   = _nethttp.MethodGet
 		localVarPostBody     interface{}
 		localVarFormFileName string
 		localVarFileName     string
 		localVarFileBytes    []byte
-		executionError       GenericOpenAPIError
 		localVarReturnValue  Companies
 	)
 
 	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "CompaniesApiService.ReadCompanies")
 	if err != nil {
-		executionError.error = err.Error()
-		return localVarReturnValue, nil, executionError
+		return localVarReturnValue, nil, GenericOpenAPIError{error: err.Error()}
 	}
 
 	localVarPath := localBasePath + "/api/company/stocks/{exchange}/{sector}/{ticker}/{company}"
@@ -837,22 +804,19 @@ func (a *CompaniesApiService) ReadCompaniesExecute(r ApiReadCompaniesRequest) (C
 	}
 	req, err := a.client.prepareRequest(r.ctx, localVarPath, localVarHTTPMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFormFileName, localVarFileName, localVarFileBytes)
 	if err != nil {
-		executionError.error = err.Error()
-		return localVarReturnValue, nil, executionError
+		return localVarReturnValue, nil, err
 	}
 
 	localVarHTTPResponse, err := a.client.callAPI(req)
 	if err != nil || localVarHTTPResponse == nil {
-		executionError.error = err.Error()
-		return localVarReturnValue, localVarHTTPResponse, executionError
+		return localVarReturnValue, localVarHTTPResponse, err
 	}
 
 	localVarBody, err := _ioutil.ReadAll(localVarHTTPResponse.Body)
 	localVarHTTPResponse.Body.Close()
 	localVarHTTPResponse.Body = _ioutil.NopCloser(bytes.NewBuffer(localVarBody))
 	if err != nil {
-		executionError.error = err.Error()
-		return localVarReturnValue, localVarHTTPResponse, executionError
+		return localVarReturnValue, localVarHTTPResponse, err
 	}
 
 	if localVarHTTPResponse.StatusCode >= 300 {
@@ -872,5 +836,5 @@ func (a *CompaniesApiService) ReadCompaniesExecute(r ApiReadCompaniesRequest) (C
 		return localVarReturnValue, localVarHTTPResponse, newErr
 	}
 
-	return localVarReturnValue, localVarHTTPResponse, executionError
+	return localVarReturnValue, localVarHTTPResponse, nil
 }
