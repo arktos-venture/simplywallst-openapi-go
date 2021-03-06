@@ -7,8 +7,8 @@ Name | Type | Description | Notes
 **Id** | Pointer to **int64** |  | [optional] 
 **CompanyId** | Pointer to **string** |  | [optional] 
 **TradingItemId** | Pointer to **int64** |  | [optional] 
-**Name** | Pointer to **string** |  | [optional] 
-**Slug** | Pointer to **string** |  | [optional] 
+**Name** | Pointer to [**OneOfstringinteger**](oneOf&lt;string,integer&gt;.md) |  | [optional] 
+**Slug** | Pointer to [**OneOfstringinteger**](oneOf&lt;string,integer&gt;.md) |  | [optional] 
 **ExchangeSymbol** | Pointer to **string** |  | [optional] 
 **UniqueSymbol** | Pointer to **string** |  | [optional] 
 **PrimaryTicker** | Pointer to **bool** |  | [optional] 
@@ -117,20 +117,20 @@ HasTradingItemId returns a boolean if a field has been set.
 
 ### GetName
 
-`func (o *Company) GetName() string`
+`func (o *Company) GetName() OneOfstringinteger`
 
 GetName returns the Name field if non-nil, zero value otherwise.
 
 ### GetNameOk
 
-`func (o *Company) GetNameOk() (*string, bool)`
+`func (o *Company) GetNameOk() (*OneOfstringinteger, bool)`
 
 GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetName
 
-`func (o *Company) SetName(v string)`
+`func (o *Company) SetName(v OneOfstringinteger)`
 
 SetName sets Name field to given value.
 
@@ -142,20 +142,20 @@ HasName returns a boolean if a field has been set.
 
 ### GetSlug
 
-`func (o *Company) GetSlug() string`
+`func (o *Company) GetSlug() OneOfstringinteger`
 
 GetSlug returns the Slug field if non-nil, zero value otherwise.
 
 ### GetSlugOk
 
-`func (o *Company) GetSlugOk() (*string, bool)`
+`func (o *Company) GetSlugOk() (*OneOfstringinteger, bool)`
 
 GetSlugOk returns a tuple with the Slug field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetSlug
 
-`func (o *Company) SetSlug(v string)`
+`func (o *Company) SetSlug(v OneOfstringinteger)`
 
 SetSlug sets Slug field to given value.
 

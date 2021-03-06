@@ -19,8 +19,8 @@ type Company struct {
 	Id                  *int64           `json:"id,omitempty"`
 	CompanyId           *string          `json:"company_id,omitempty"`
 	TradingItemId       *int64           `json:"trading_item_id,omitempty"`
-	Name                *string          `json:"name,omitempty"`
-	Slug                *string          `json:"slug,omitempty"`
+	Name                interface{}      `json:"name,omitempty"`
+	Slug                interface{}      `json:"slug,omitempty"`
 	ExchangeSymbol      *string          `json:"exchange_symbol,omitempty"`
 	UniqueSymbol        *string          `json:"unique_symbol,omitempty"`
 	PrimaryTicker       *bool            `json:"primary_ticker,omitempty"`
@@ -148,17 +148,17 @@ func (o *Company) SetTradingItemId(v int64) {
 }
 
 // GetName returns the Name field value if set, zero value otherwise.
-func (o *Company) GetName() string {
+func (o *Company) GetName() interface{} {
 	if o == nil || o.Name == nil {
-		var ret string
+		var ret interface{}
 		return ret
 	}
-	return *o.Name
+	return o.Name
 }
 
 // GetNameOk returns a tuple with the Name field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *Company) GetNameOk() (*string, bool) {
+func (o *Company) GetNameOk() (interface{}, bool) {
 	if o == nil || o.Name == nil {
 		return nil, false
 	}
@@ -174,23 +174,23 @@ func (o *Company) HasName() bool {
 	return false
 }
 
-// SetName gets a reference to the given string and assigns it to the Name field.
-func (o *Company) SetName(v string) {
+// SetName gets a reference to the given interface{} and assigns it to the Name field.
+func (o *Company) SetName(v interface{}) {
 	o.Name = &v
 }
 
 // GetSlug returns the Slug field value if set, zero value otherwise.
-func (o *Company) GetSlug() string {
+func (o *Company) GetSlug() interface{} {
 	if o == nil || o.Slug == nil {
-		var ret string
+		var ret interface{}
 		return ret
 	}
-	return *o.Slug
+	return o.Slug
 }
 
 // GetSlugOk returns a tuple with the Slug field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *Company) GetSlugOk() (*string, bool) {
+func (o *Company) GetSlugOk() (interface{}, bool) {
 	if o == nil || o.Slug == nil {
 		return nil, false
 	}
@@ -206,8 +206,8 @@ func (o *Company) HasSlug() bool {
 	return false
 }
 
-// SetSlug gets a reference to the given string and assigns it to the Slug field.
-func (o *Company) SetSlug(v string) {
+// SetSlug gets a reference to the given interface{} and assigns it to the Slug field.
+func (o *Company) SetSlug(v interface{}) {
 	o.Slug = &v
 }
 
