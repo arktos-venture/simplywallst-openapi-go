@@ -26,13 +26,13 @@ type CompanyAnalysisExtendedRawDataInsiderTransactionsData struct {
 	ManagementInsider           *bool    `json:"management_insider,omitempty"`
 	TradeDateMin                *int64   `json:"trade_date_min,omitempty"`
 	TradeDateMax                *int64   `json:"trade_date_max,omitempty"`
-	Shares                      *float32 `json:"shares,omitempty"`
-	PriceMin                    *float32 `json:"price_min,omitempty"`
-	PriceMax                    *float32 `json:"price_max,omitempty"`
-	TransactionValue            *float32 `json:"transaction_value,omitempty"`
-	PercentageSharesTraded      *float32 `json:"percentage_shares_traded,omitempty"`
-	PercentageChangeTransShares *float32 `json:"percentage_change_trans_shares,omitempty"`
-	FilingEndShares             *float32 `json:"filing_end_shares,omitempty"`
+	Shares                      *float64 `json:"shares,omitempty"`
+	PriceMin                    *float64 `json:"price_min,omitempty"`
+	PriceMax                    *float64 `json:"price_max,omitempty"`
+	TransactionValue            *float64 `json:"transaction_value,omitempty"`
+	PercentageSharesTraded      *float64 `json:"percentage_shares_traded,omitempty"`
+	PercentageChangeTransShares *float64 `json:"percentage_change_trans_shares,omitempty"`
+	FilingEndShares             *float64 `json:"filing_end_shares,omitempty"`
 	FilingDate                  *int64   `json:"filing_date,omitempty"`
 	MonthDiff                   *int32   `json:"month_diff,omitempty"`
 }
@@ -375,9 +375,9 @@ func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) SetTradeDateMax(
 }
 
 // GetShares returns the Shares field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) GetShares() float32 {
+func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) GetShares() float64 {
 	if o == nil || o.Shares == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.Shares
@@ -385,7 +385,7 @@ func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) GetShares() floa
 
 // GetSharesOk returns a tuple with the Shares field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) GetSharesOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) GetSharesOk() (*float64, bool) {
 	if o == nil || o.Shares == nil {
 		return nil, false
 	}
@@ -401,15 +401,15 @@ func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) HasShares() bool
 	return false
 }
 
-// SetShares gets a reference to the given float32 and assigns it to the Shares field.
-func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) SetShares(v float32) {
+// SetShares gets a reference to the given float64 and assigns it to the Shares field.
+func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) SetShares(v float64) {
 	o.Shares = &v
 }
 
 // GetPriceMin returns the PriceMin field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) GetPriceMin() float32 {
+func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) GetPriceMin() float64 {
 	if o == nil || o.PriceMin == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.PriceMin
@@ -417,7 +417,7 @@ func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) GetPriceMin() fl
 
 // GetPriceMinOk returns a tuple with the PriceMin field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) GetPriceMinOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) GetPriceMinOk() (*float64, bool) {
 	if o == nil || o.PriceMin == nil {
 		return nil, false
 	}
@@ -433,15 +433,15 @@ func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) HasPriceMin() bo
 	return false
 }
 
-// SetPriceMin gets a reference to the given float32 and assigns it to the PriceMin field.
-func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) SetPriceMin(v float32) {
+// SetPriceMin gets a reference to the given float64 and assigns it to the PriceMin field.
+func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) SetPriceMin(v float64) {
 	o.PriceMin = &v
 }
 
 // GetPriceMax returns the PriceMax field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) GetPriceMax() float32 {
+func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) GetPriceMax() float64 {
 	if o == nil || o.PriceMax == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.PriceMax
@@ -449,7 +449,7 @@ func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) GetPriceMax() fl
 
 // GetPriceMaxOk returns a tuple with the PriceMax field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) GetPriceMaxOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) GetPriceMaxOk() (*float64, bool) {
 	if o == nil || o.PriceMax == nil {
 		return nil, false
 	}
@@ -465,15 +465,15 @@ func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) HasPriceMax() bo
 	return false
 }
 
-// SetPriceMax gets a reference to the given float32 and assigns it to the PriceMax field.
-func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) SetPriceMax(v float32) {
+// SetPriceMax gets a reference to the given float64 and assigns it to the PriceMax field.
+func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) SetPriceMax(v float64) {
 	o.PriceMax = &v
 }
 
 // GetTransactionValue returns the TransactionValue field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) GetTransactionValue() float32 {
+func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) GetTransactionValue() float64 {
 	if o == nil || o.TransactionValue == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.TransactionValue
@@ -481,7 +481,7 @@ func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) GetTransactionVa
 
 // GetTransactionValueOk returns a tuple with the TransactionValue field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) GetTransactionValueOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) GetTransactionValueOk() (*float64, bool) {
 	if o == nil || o.TransactionValue == nil {
 		return nil, false
 	}
@@ -497,15 +497,15 @@ func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) HasTransactionVa
 	return false
 }
 
-// SetTransactionValue gets a reference to the given float32 and assigns it to the TransactionValue field.
-func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) SetTransactionValue(v float32) {
+// SetTransactionValue gets a reference to the given float64 and assigns it to the TransactionValue field.
+func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) SetTransactionValue(v float64) {
 	o.TransactionValue = &v
 }
 
 // GetPercentageSharesTraded returns the PercentageSharesTraded field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) GetPercentageSharesTraded() float32 {
+func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) GetPercentageSharesTraded() float64 {
 	if o == nil || o.PercentageSharesTraded == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.PercentageSharesTraded
@@ -513,7 +513,7 @@ func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) GetPercentageSha
 
 // GetPercentageSharesTradedOk returns a tuple with the PercentageSharesTraded field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) GetPercentageSharesTradedOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) GetPercentageSharesTradedOk() (*float64, bool) {
 	if o == nil || o.PercentageSharesTraded == nil {
 		return nil, false
 	}
@@ -529,15 +529,15 @@ func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) HasPercentageSha
 	return false
 }
 
-// SetPercentageSharesTraded gets a reference to the given float32 and assigns it to the PercentageSharesTraded field.
-func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) SetPercentageSharesTraded(v float32) {
+// SetPercentageSharesTraded gets a reference to the given float64 and assigns it to the PercentageSharesTraded field.
+func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) SetPercentageSharesTraded(v float64) {
 	o.PercentageSharesTraded = &v
 }
 
 // GetPercentageChangeTransShares returns the PercentageChangeTransShares field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) GetPercentageChangeTransShares() float32 {
+func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) GetPercentageChangeTransShares() float64 {
 	if o == nil || o.PercentageChangeTransShares == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.PercentageChangeTransShares
@@ -545,7 +545,7 @@ func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) GetPercentageCha
 
 // GetPercentageChangeTransSharesOk returns a tuple with the PercentageChangeTransShares field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) GetPercentageChangeTransSharesOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) GetPercentageChangeTransSharesOk() (*float64, bool) {
 	if o == nil || o.PercentageChangeTransShares == nil {
 		return nil, false
 	}
@@ -561,15 +561,15 @@ func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) HasPercentageCha
 	return false
 }
 
-// SetPercentageChangeTransShares gets a reference to the given float32 and assigns it to the PercentageChangeTransShares field.
-func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) SetPercentageChangeTransShares(v float32) {
+// SetPercentageChangeTransShares gets a reference to the given float64 and assigns it to the PercentageChangeTransShares field.
+func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) SetPercentageChangeTransShares(v float64) {
 	o.PercentageChangeTransShares = &v
 }
 
 // GetFilingEndShares returns the FilingEndShares field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) GetFilingEndShares() float32 {
+func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) GetFilingEndShares() float64 {
 	if o == nil || o.FilingEndShares == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.FilingEndShares
@@ -577,7 +577,7 @@ func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) GetFilingEndShar
 
 // GetFilingEndSharesOk returns a tuple with the FilingEndShares field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) GetFilingEndSharesOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) GetFilingEndSharesOk() (*float64, bool) {
 	if o == nil || o.FilingEndShares == nil {
 		return nil, false
 	}
@@ -593,8 +593,8 @@ func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) HasFilingEndShar
 	return false
 }
 
-// SetFilingEndShares gets a reference to the given float32 and assigns it to the FilingEndShares field.
-func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) SetFilingEndShares(v float32) {
+// SetFilingEndShares gets a reference to the given float64 and assigns it to the FilingEndShares field.
+func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) SetFilingEndShares(v float64) {
 	o.FilingEndShares = &v
 }
 

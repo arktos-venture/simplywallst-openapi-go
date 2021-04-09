@@ -20,12 +20,12 @@ type Ownership struct {
 	Owner                      *OwnershipOwner `json:"owner,omitempty"`
 	HoldingDate                *string         `json:"holding_date,omitempty"`
 	SharesHeld                 *int64          `json:"shares_held,omitempty"`
-	PercentOfPortfolio         *float32        `json:"percent_of_portfolio,omitempty"`
-	PercentOfSharesOutstanding *float32        `json:"percent_of_shares_outstanding,omitempty"`
-	SharesChanged              *float32        `json:"shares_changed,omitempty"`
-	PercentSharesChanged       *float32        `json:"percent_shares_changed,omitempty"`
+	PercentOfPortfolio         *float64        `json:"percent_of_portfolio,omitempty"`
+	PercentOfSharesOutstanding *float64        `json:"percent_of_shares_outstanding,omitempty"`
+	SharesChanged              *float64        `json:"shares_changed,omitempty"`
+	PercentSharesChanged       *float64        `json:"percent_shares_changed,omitempty"`
 	RankSharesBought           *int64          `json:"rank_shares_bought,omitempty"`
-	RankSharesSold             *float32        `json:"rank_shares_sold,omitempty"`
+	RankSharesSold             *float64        `json:"rank_shares_sold,omitempty"`
 	PeriodStartDate            *int64          `json:"period_start_date,omitempty"`
 	PeriodEndDate              *int64          `json:"period_end_date,omitempty"`
 }
@@ -176,9 +176,9 @@ func (o *Ownership) SetSharesHeld(v int64) {
 }
 
 // GetPercentOfPortfolio returns the PercentOfPortfolio field value if set, zero value otherwise.
-func (o *Ownership) GetPercentOfPortfolio() float32 {
+func (o *Ownership) GetPercentOfPortfolio() float64 {
 	if o == nil || o.PercentOfPortfolio == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.PercentOfPortfolio
@@ -186,7 +186,7 @@ func (o *Ownership) GetPercentOfPortfolio() float32 {
 
 // GetPercentOfPortfolioOk returns a tuple with the PercentOfPortfolio field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *Ownership) GetPercentOfPortfolioOk() (*float32, bool) {
+func (o *Ownership) GetPercentOfPortfolioOk() (*float64, bool) {
 	if o == nil || o.PercentOfPortfolio == nil {
 		return nil, false
 	}
@@ -202,15 +202,15 @@ func (o *Ownership) HasPercentOfPortfolio() bool {
 	return false
 }
 
-// SetPercentOfPortfolio gets a reference to the given float32 and assigns it to the PercentOfPortfolio field.
-func (o *Ownership) SetPercentOfPortfolio(v float32) {
+// SetPercentOfPortfolio gets a reference to the given float64 and assigns it to the PercentOfPortfolio field.
+func (o *Ownership) SetPercentOfPortfolio(v float64) {
 	o.PercentOfPortfolio = &v
 }
 
 // GetPercentOfSharesOutstanding returns the PercentOfSharesOutstanding field value if set, zero value otherwise.
-func (o *Ownership) GetPercentOfSharesOutstanding() float32 {
+func (o *Ownership) GetPercentOfSharesOutstanding() float64 {
 	if o == nil || o.PercentOfSharesOutstanding == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.PercentOfSharesOutstanding
@@ -218,7 +218,7 @@ func (o *Ownership) GetPercentOfSharesOutstanding() float32 {
 
 // GetPercentOfSharesOutstandingOk returns a tuple with the PercentOfSharesOutstanding field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *Ownership) GetPercentOfSharesOutstandingOk() (*float32, bool) {
+func (o *Ownership) GetPercentOfSharesOutstandingOk() (*float64, bool) {
 	if o == nil || o.PercentOfSharesOutstanding == nil {
 		return nil, false
 	}
@@ -234,15 +234,15 @@ func (o *Ownership) HasPercentOfSharesOutstanding() bool {
 	return false
 }
 
-// SetPercentOfSharesOutstanding gets a reference to the given float32 and assigns it to the PercentOfSharesOutstanding field.
-func (o *Ownership) SetPercentOfSharesOutstanding(v float32) {
+// SetPercentOfSharesOutstanding gets a reference to the given float64 and assigns it to the PercentOfSharesOutstanding field.
+func (o *Ownership) SetPercentOfSharesOutstanding(v float64) {
 	o.PercentOfSharesOutstanding = &v
 }
 
 // GetSharesChanged returns the SharesChanged field value if set, zero value otherwise.
-func (o *Ownership) GetSharesChanged() float32 {
+func (o *Ownership) GetSharesChanged() float64 {
 	if o == nil || o.SharesChanged == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.SharesChanged
@@ -250,7 +250,7 @@ func (o *Ownership) GetSharesChanged() float32 {
 
 // GetSharesChangedOk returns a tuple with the SharesChanged field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *Ownership) GetSharesChangedOk() (*float32, bool) {
+func (o *Ownership) GetSharesChangedOk() (*float64, bool) {
 	if o == nil || o.SharesChanged == nil {
 		return nil, false
 	}
@@ -266,15 +266,15 @@ func (o *Ownership) HasSharesChanged() bool {
 	return false
 }
 
-// SetSharesChanged gets a reference to the given float32 and assigns it to the SharesChanged field.
-func (o *Ownership) SetSharesChanged(v float32) {
+// SetSharesChanged gets a reference to the given float64 and assigns it to the SharesChanged field.
+func (o *Ownership) SetSharesChanged(v float64) {
 	o.SharesChanged = &v
 }
 
 // GetPercentSharesChanged returns the PercentSharesChanged field value if set, zero value otherwise.
-func (o *Ownership) GetPercentSharesChanged() float32 {
+func (o *Ownership) GetPercentSharesChanged() float64 {
 	if o == nil || o.PercentSharesChanged == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.PercentSharesChanged
@@ -282,7 +282,7 @@ func (o *Ownership) GetPercentSharesChanged() float32 {
 
 // GetPercentSharesChangedOk returns a tuple with the PercentSharesChanged field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *Ownership) GetPercentSharesChangedOk() (*float32, bool) {
+func (o *Ownership) GetPercentSharesChangedOk() (*float64, bool) {
 	if o == nil || o.PercentSharesChanged == nil {
 		return nil, false
 	}
@@ -298,8 +298,8 @@ func (o *Ownership) HasPercentSharesChanged() bool {
 	return false
 }
 
-// SetPercentSharesChanged gets a reference to the given float32 and assigns it to the PercentSharesChanged field.
-func (o *Ownership) SetPercentSharesChanged(v float32) {
+// SetPercentSharesChanged gets a reference to the given float64 and assigns it to the PercentSharesChanged field.
+func (o *Ownership) SetPercentSharesChanged(v float64) {
 	o.PercentSharesChanged = &v
 }
 
@@ -336,9 +336,9 @@ func (o *Ownership) SetRankSharesBought(v int64) {
 }
 
 // GetRankSharesSold returns the RankSharesSold field value if set, zero value otherwise.
-func (o *Ownership) GetRankSharesSold() float32 {
+func (o *Ownership) GetRankSharesSold() float64 {
 	if o == nil || o.RankSharesSold == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.RankSharesSold
@@ -346,7 +346,7 @@ func (o *Ownership) GetRankSharesSold() float32 {
 
 // GetRankSharesSoldOk returns a tuple with the RankSharesSold field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *Ownership) GetRankSharesSoldOk() (*float32, bool) {
+func (o *Ownership) GetRankSharesSoldOk() (*float64, bool) {
 	if o == nil || o.RankSharesSold == nil {
 		return nil, false
 	}
@@ -362,8 +362,8 @@ func (o *Ownership) HasRankSharesSold() bool {
 	return false
 }
 
-// SetRankSharesSold gets a reference to the given float32 and assigns it to the RankSharesSold field.
-func (o *Ownership) SetRankSharesSold(v float32) {
+// SetRankSharesSold gets a reference to the given float64 and assigns it to the RankSharesSold field.
+func (o *Ownership) SetRankSharesSold(v float64) {
 	o.RankSharesSold = &v
 }
 

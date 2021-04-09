@@ -16,22 +16,22 @@ import (
 
 // CompanyAnalysisExtendedAnalysisDividend struct for CompanyAnalysisExtendedAnalysisDividend
 type CompanyAnalysisExtendedAnalysisDividend struct {
-	DividendYield                  *float32 `json:"dividend_yield,omitempty"`
-	DividendYieldFuture            *float32 `json:"dividend_yield_future,omitempty"`
+	DividendYield                  *float64 `json:"dividend_yield,omitempty"`
+	DividendYieldFuture            *float64 `json:"dividend_yield_future,omitempty"`
 	DividendVolatility             *bool    `json:"dividend_volatility,omitempty"`
-	DividendPayingYears            *float32 `json:"dividend_paying_years,omitempty"`
-	PayoutRatio                    *float32 `json:"payout_ratio,omitempty"`
-	PayoutRatio3y                  *float32 `json:"payout_ratio_3y,omitempty"`
-	DividendYieldGrowthAnnual      *float32 `json:"dividend_yield_growth_annual,omitempty"`
-	FirstPayment                   *float32 `json:"first_payment,omitempty"`
-	LastPayment                    *float32 `json:"last_payment,omitempty"`
-	BuybackYield                   *float32 `json:"buyback_yield,omitempty"`
-	TotalShareholderYield          *float32 `json:"total_shareholder_yield,omitempty"`
-	PayoutRatioMedian3yr           *float32 `json:"payout_ratio_median_3yr,omitempty"`
-	DividendPaymentsGrowthAnnual   *float32 `json:"dividend_payments_growth_annual,omitempty"`
-	DividendPaymentsSingleGrowth1y *float32 `json:"dividend_payments_single_growth_1y,omitempty"`
-	DividendPaymentsSingleGrowth3y *float32 `json:"dividend_payments_single_growth_3y,omitempty"`
-	DividendPaymentsSingleGrowth5y *float32 `json:"dividend_payments_single_growth_5y,omitempty"`
+	DividendPayingYears            *float64 `json:"dividend_paying_years,omitempty"`
+	PayoutRatio                    *float64 `json:"payout_ratio,omitempty"`
+	PayoutRatio3y                  *float64 `json:"payout_ratio_3y,omitempty"`
+	DividendYieldGrowthAnnual      *float64 `json:"dividend_yield_growth_annual,omitempty"`
+	FirstPayment                   *float64 `json:"first_payment,omitempty"`
+	LastPayment                    *float64 `json:"last_payment,omitempty"`
+	BuybackYield                   *float64 `json:"buyback_yield,omitempty"`
+	TotalShareholderYield          *float64 `json:"total_shareholder_yield,omitempty"`
+	PayoutRatioMedian3yr           *float64 `json:"payout_ratio_median_3yr,omitempty"`
+	DividendPaymentsGrowthAnnual   *float64 `json:"dividend_payments_growth_annual,omitempty"`
+	DividendPaymentsSingleGrowth1y *float64 `json:"dividend_payments_single_growth_1y,omitempty"`
+	DividendPaymentsSingleGrowth3y *float64 `json:"dividend_payments_single_growth_3y,omitempty"`
+	DividendPaymentsSingleGrowth5y *float64 `json:"dividend_payments_single_growth_5y,omitempty"`
 }
 
 // NewCompanyAnalysisExtendedAnalysisDividend instantiates a new CompanyAnalysisExtendedAnalysisDividend object
@@ -52,9 +52,9 @@ func NewCompanyAnalysisExtendedAnalysisDividendWithDefaults() *CompanyAnalysisEx
 }
 
 // GetDividendYield returns the DividendYield field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisDividend) GetDividendYield() float32 {
+func (o *CompanyAnalysisExtendedAnalysisDividend) GetDividendYield() float64 {
 	if o == nil || o.DividendYield == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.DividendYield
@@ -62,7 +62,7 @@ func (o *CompanyAnalysisExtendedAnalysisDividend) GetDividendYield() float32 {
 
 // GetDividendYieldOk returns a tuple with the DividendYield field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisDividend) GetDividendYieldOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisDividend) GetDividendYieldOk() (*float64, bool) {
 	if o == nil || o.DividendYield == nil {
 		return nil, false
 	}
@@ -78,15 +78,15 @@ func (o *CompanyAnalysisExtendedAnalysisDividend) HasDividendYield() bool {
 	return false
 }
 
-// SetDividendYield gets a reference to the given float32 and assigns it to the DividendYield field.
-func (o *CompanyAnalysisExtendedAnalysisDividend) SetDividendYield(v float32) {
+// SetDividendYield gets a reference to the given float64 and assigns it to the DividendYield field.
+func (o *CompanyAnalysisExtendedAnalysisDividend) SetDividendYield(v float64) {
 	o.DividendYield = &v
 }
 
 // GetDividendYieldFuture returns the DividendYieldFuture field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisDividend) GetDividendYieldFuture() float32 {
+func (o *CompanyAnalysisExtendedAnalysisDividend) GetDividendYieldFuture() float64 {
 	if o == nil || o.DividendYieldFuture == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.DividendYieldFuture
@@ -94,7 +94,7 @@ func (o *CompanyAnalysisExtendedAnalysisDividend) GetDividendYieldFuture() float
 
 // GetDividendYieldFutureOk returns a tuple with the DividendYieldFuture field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisDividend) GetDividendYieldFutureOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisDividend) GetDividendYieldFutureOk() (*float64, bool) {
 	if o == nil || o.DividendYieldFuture == nil {
 		return nil, false
 	}
@@ -110,8 +110,8 @@ func (o *CompanyAnalysisExtendedAnalysisDividend) HasDividendYieldFuture() bool 
 	return false
 }
 
-// SetDividendYieldFuture gets a reference to the given float32 and assigns it to the DividendYieldFuture field.
-func (o *CompanyAnalysisExtendedAnalysisDividend) SetDividendYieldFuture(v float32) {
+// SetDividendYieldFuture gets a reference to the given float64 and assigns it to the DividendYieldFuture field.
+func (o *CompanyAnalysisExtendedAnalysisDividend) SetDividendYieldFuture(v float64) {
 	o.DividendYieldFuture = &v
 }
 
@@ -148,9 +148,9 @@ func (o *CompanyAnalysisExtendedAnalysisDividend) SetDividendVolatility(v bool) 
 }
 
 // GetDividendPayingYears returns the DividendPayingYears field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisDividend) GetDividendPayingYears() float32 {
+func (o *CompanyAnalysisExtendedAnalysisDividend) GetDividendPayingYears() float64 {
 	if o == nil || o.DividendPayingYears == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.DividendPayingYears
@@ -158,7 +158,7 @@ func (o *CompanyAnalysisExtendedAnalysisDividend) GetDividendPayingYears() float
 
 // GetDividendPayingYearsOk returns a tuple with the DividendPayingYears field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisDividend) GetDividendPayingYearsOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisDividend) GetDividendPayingYearsOk() (*float64, bool) {
 	if o == nil || o.DividendPayingYears == nil {
 		return nil, false
 	}
@@ -174,15 +174,15 @@ func (o *CompanyAnalysisExtendedAnalysisDividend) HasDividendPayingYears() bool 
 	return false
 }
 
-// SetDividendPayingYears gets a reference to the given float32 and assigns it to the DividendPayingYears field.
-func (o *CompanyAnalysisExtendedAnalysisDividend) SetDividendPayingYears(v float32) {
+// SetDividendPayingYears gets a reference to the given float64 and assigns it to the DividendPayingYears field.
+func (o *CompanyAnalysisExtendedAnalysisDividend) SetDividendPayingYears(v float64) {
 	o.DividendPayingYears = &v
 }
 
 // GetPayoutRatio returns the PayoutRatio field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisDividend) GetPayoutRatio() float32 {
+func (o *CompanyAnalysisExtendedAnalysisDividend) GetPayoutRatio() float64 {
 	if o == nil || o.PayoutRatio == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.PayoutRatio
@@ -190,7 +190,7 @@ func (o *CompanyAnalysisExtendedAnalysisDividend) GetPayoutRatio() float32 {
 
 // GetPayoutRatioOk returns a tuple with the PayoutRatio field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisDividend) GetPayoutRatioOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisDividend) GetPayoutRatioOk() (*float64, bool) {
 	if o == nil || o.PayoutRatio == nil {
 		return nil, false
 	}
@@ -206,15 +206,15 @@ func (o *CompanyAnalysisExtendedAnalysisDividend) HasPayoutRatio() bool {
 	return false
 }
 
-// SetPayoutRatio gets a reference to the given float32 and assigns it to the PayoutRatio field.
-func (o *CompanyAnalysisExtendedAnalysisDividend) SetPayoutRatio(v float32) {
+// SetPayoutRatio gets a reference to the given float64 and assigns it to the PayoutRatio field.
+func (o *CompanyAnalysisExtendedAnalysisDividend) SetPayoutRatio(v float64) {
 	o.PayoutRatio = &v
 }
 
 // GetPayoutRatio3y returns the PayoutRatio3y field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisDividend) GetPayoutRatio3y() float32 {
+func (o *CompanyAnalysisExtendedAnalysisDividend) GetPayoutRatio3y() float64 {
 	if o == nil || o.PayoutRatio3y == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.PayoutRatio3y
@@ -222,7 +222,7 @@ func (o *CompanyAnalysisExtendedAnalysisDividend) GetPayoutRatio3y() float32 {
 
 // GetPayoutRatio3yOk returns a tuple with the PayoutRatio3y field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisDividend) GetPayoutRatio3yOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisDividend) GetPayoutRatio3yOk() (*float64, bool) {
 	if o == nil || o.PayoutRatio3y == nil {
 		return nil, false
 	}
@@ -238,15 +238,15 @@ func (o *CompanyAnalysisExtendedAnalysisDividend) HasPayoutRatio3y() bool {
 	return false
 }
 
-// SetPayoutRatio3y gets a reference to the given float32 and assigns it to the PayoutRatio3y field.
-func (o *CompanyAnalysisExtendedAnalysisDividend) SetPayoutRatio3y(v float32) {
+// SetPayoutRatio3y gets a reference to the given float64 and assigns it to the PayoutRatio3y field.
+func (o *CompanyAnalysisExtendedAnalysisDividend) SetPayoutRatio3y(v float64) {
 	o.PayoutRatio3y = &v
 }
 
 // GetDividendYieldGrowthAnnual returns the DividendYieldGrowthAnnual field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisDividend) GetDividendYieldGrowthAnnual() float32 {
+func (o *CompanyAnalysisExtendedAnalysisDividend) GetDividendYieldGrowthAnnual() float64 {
 	if o == nil || o.DividendYieldGrowthAnnual == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.DividendYieldGrowthAnnual
@@ -254,7 +254,7 @@ func (o *CompanyAnalysisExtendedAnalysisDividend) GetDividendYieldGrowthAnnual()
 
 // GetDividendYieldGrowthAnnualOk returns a tuple with the DividendYieldGrowthAnnual field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisDividend) GetDividendYieldGrowthAnnualOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisDividend) GetDividendYieldGrowthAnnualOk() (*float64, bool) {
 	if o == nil || o.DividendYieldGrowthAnnual == nil {
 		return nil, false
 	}
@@ -270,15 +270,15 @@ func (o *CompanyAnalysisExtendedAnalysisDividend) HasDividendYieldGrowthAnnual()
 	return false
 }
 
-// SetDividendYieldGrowthAnnual gets a reference to the given float32 and assigns it to the DividendYieldGrowthAnnual field.
-func (o *CompanyAnalysisExtendedAnalysisDividend) SetDividendYieldGrowthAnnual(v float32) {
+// SetDividendYieldGrowthAnnual gets a reference to the given float64 and assigns it to the DividendYieldGrowthAnnual field.
+func (o *CompanyAnalysisExtendedAnalysisDividend) SetDividendYieldGrowthAnnual(v float64) {
 	o.DividendYieldGrowthAnnual = &v
 }
 
 // GetFirstPayment returns the FirstPayment field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisDividend) GetFirstPayment() float32 {
+func (o *CompanyAnalysisExtendedAnalysisDividend) GetFirstPayment() float64 {
 	if o == nil || o.FirstPayment == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.FirstPayment
@@ -286,7 +286,7 @@ func (o *CompanyAnalysisExtendedAnalysisDividend) GetFirstPayment() float32 {
 
 // GetFirstPaymentOk returns a tuple with the FirstPayment field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisDividend) GetFirstPaymentOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisDividend) GetFirstPaymentOk() (*float64, bool) {
 	if o == nil || o.FirstPayment == nil {
 		return nil, false
 	}
@@ -302,15 +302,15 @@ func (o *CompanyAnalysisExtendedAnalysisDividend) HasFirstPayment() bool {
 	return false
 }
 
-// SetFirstPayment gets a reference to the given float32 and assigns it to the FirstPayment field.
-func (o *CompanyAnalysisExtendedAnalysisDividend) SetFirstPayment(v float32) {
+// SetFirstPayment gets a reference to the given float64 and assigns it to the FirstPayment field.
+func (o *CompanyAnalysisExtendedAnalysisDividend) SetFirstPayment(v float64) {
 	o.FirstPayment = &v
 }
 
 // GetLastPayment returns the LastPayment field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisDividend) GetLastPayment() float32 {
+func (o *CompanyAnalysisExtendedAnalysisDividend) GetLastPayment() float64 {
 	if o == nil || o.LastPayment == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.LastPayment
@@ -318,7 +318,7 @@ func (o *CompanyAnalysisExtendedAnalysisDividend) GetLastPayment() float32 {
 
 // GetLastPaymentOk returns a tuple with the LastPayment field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisDividend) GetLastPaymentOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisDividend) GetLastPaymentOk() (*float64, bool) {
 	if o == nil || o.LastPayment == nil {
 		return nil, false
 	}
@@ -334,15 +334,15 @@ func (o *CompanyAnalysisExtendedAnalysisDividend) HasLastPayment() bool {
 	return false
 }
 
-// SetLastPayment gets a reference to the given float32 and assigns it to the LastPayment field.
-func (o *CompanyAnalysisExtendedAnalysisDividend) SetLastPayment(v float32) {
+// SetLastPayment gets a reference to the given float64 and assigns it to the LastPayment field.
+func (o *CompanyAnalysisExtendedAnalysisDividend) SetLastPayment(v float64) {
 	o.LastPayment = &v
 }
 
 // GetBuybackYield returns the BuybackYield field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisDividend) GetBuybackYield() float32 {
+func (o *CompanyAnalysisExtendedAnalysisDividend) GetBuybackYield() float64 {
 	if o == nil || o.BuybackYield == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.BuybackYield
@@ -350,7 +350,7 @@ func (o *CompanyAnalysisExtendedAnalysisDividend) GetBuybackYield() float32 {
 
 // GetBuybackYieldOk returns a tuple with the BuybackYield field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisDividend) GetBuybackYieldOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisDividend) GetBuybackYieldOk() (*float64, bool) {
 	if o == nil || o.BuybackYield == nil {
 		return nil, false
 	}
@@ -366,15 +366,15 @@ func (o *CompanyAnalysisExtendedAnalysisDividend) HasBuybackYield() bool {
 	return false
 }
 
-// SetBuybackYield gets a reference to the given float32 and assigns it to the BuybackYield field.
-func (o *CompanyAnalysisExtendedAnalysisDividend) SetBuybackYield(v float32) {
+// SetBuybackYield gets a reference to the given float64 and assigns it to the BuybackYield field.
+func (o *CompanyAnalysisExtendedAnalysisDividend) SetBuybackYield(v float64) {
 	o.BuybackYield = &v
 }
 
 // GetTotalShareholderYield returns the TotalShareholderYield field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisDividend) GetTotalShareholderYield() float32 {
+func (o *CompanyAnalysisExtendedAnalysisDividend) GetTotalShareholderYield() float64 {
 	if o == nil || o.TotalShareholderYield == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.TotalShareholderYield
@@ -382,7 +382,7 @@ func (o *CompanyAnalysisExtendedAnalysisDividend) GetTotalShareholderYield() flo
 
 // GetTotalShareholderYieldOk returns a tuple with the TotalShareholderYield field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisDividend) GetTotalShareholderYieldOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisDividend) GetTotalShareholderYieldOk() (*float64, bool) {
 	if o == nil || o.TotalShareholderYield == nil {
 		return nil, false
 	}
@@ -398,15 +398,15 @@ func (o *CompanyAnalysisExtendedAnalysisDividend) HasTotalShareholderYield() boo
 	return false
 }
 
-// SetTotalShareholderYield gets a reference to the given float32 and assigns it to the TotalShareholderYield field.
-func (o *CompanyAnalysisExtendedAnalysisDividend) SetTotalShareholderYield(v float32) {
+// SetTotalShareholderYield gets a reference to the given float64 and assigns it to the TotalShareholderYield field.
+func (o *CompanyAnalysisExtendedAnalysisDividend) SetTotalShareholderYield(v float64) {
 	o.TotalShareholderYield = &v
 }
 
 // GetPayoutRatioMedian3yr returns the PayoutRatioMedian3yr field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisDividend) GetPayoutRatioMedian3yr() float32 {
+func (o *CompanyAnalysisExtendedAnalysisDividend) GetPayoutRatioMedian3yr() float64 {
 	if o == nil || o.PayoutRatioMedian3yr == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.PayoutRatioMedian3yr
@@ -414,7 +414,7 @@ func (o *CompanyAnalysisExtendedAnalysisDividend) GetPayoutRatioMedian3yr() floa
 
 // GetPayoutRatioMedian3yrOk returns a tuple with the PayoutRatioMedian3yr field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisDividend) GetPayoutRatioMedian3yrOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisDividend) GetPayoutRatioMedian3yrOk() (*float64, bool) {
 	if o == nil || o.PayoutRatioMedian3yr == nil {
 		return nil, false
 	}
@@ -430,15 +430,15 @@ func (o *CompanyAnalysisExtendedAnalysisDividend) HasPayoutRatioMedian3yr() bool
 	return false
 }
 
-// SetPayoutRatioMedian3yr gets a reference to the given float32 and assigns it to the PayoutRatioMedian3yr field.
-func (o *CompanyAnalysisExtendedAnalysisDividend) SetPayoutRatioMedian3yr(v float32) {
+// SetPayoutRatioMedian3yr gets a reference to the given float64 and assigns it to the PayoutRatioMedian3yr field.
+func (o *CompanyAnalysisExtendedAnalysisDividend) SetPayoutRatioMedian3yr(v float64) {
 	o.PayoutRatioMedian3yr = &v
 }
 
 // GetDividendPaymentsGrowthAnnual returns the DividendPaymentsGrowthAnnual field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisDividend) GetDividendPaymentsGrowthAnnual() float32 {
+func (o *CompanyAnalysisExtendedAnalysisDividend) GetDividendPaymentsGrowthAnnual() float64 {
 	if o == nil || o.DividendPaymentsGrowthAnnual == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.DividendPaymentsGrowthAnnual
@@ -446,7 +446,7 @@ func (o *CompanyAnalysisExtendedAnalysisDividend) GetDividendPaymentsGrowthAnnua
 
 // GetDividendPaymentsGrowthAnnualOk returns a tuple with the DividendPaymentsGrowthAnnual field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisDividend) GetDividendPaymentsGrowthAnnualOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisDividend) GetDividendPaymentsGrowthAnnualOk() (*float64, bool) {
 	if o == nil || o.DividendPaymentsGrowthAnnual == nil {
 		return nil, false
 	}
@@ -462,15 +462,15 @@ func (o *CompanyAnalysisExtendedAnalysisDividend) HasDividendPaymentsGrowthAnnua
 	return false
 }
 
-// SetDividendPaymentsGrowthAnnual gets a reference to the given float32 and assigns it to the DividendPaymentsGrowthAnnual field.
-func (o *CompanyAnalysisExtendedAnalysisDividend) SetDividendPaymentsGrowthAnnual(v float32) {
+// SetDividendPaymentsGrowthAnnual gets a reference to the given float64 and assigns it to the DividendPaymentsGrowthAnnual field.
+func (o *CompanyAnalysisExtendedAnalysisDividend) SetDividendPaymentsGrowthAnnual(v float64) {
 	o.DividendPaymentsGrowthAnnual = &v
 }
 
 // GetDividendPaymentsSingleGrowth1y returns the DividendPaymentsSingleGrowth1y field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisDividend) GetDividendPaymentsSingleGrowth1y() float32 {
+func (o *CompanyAnalysisExtendedAnalysisDividend) GetDividendPaymentsSingleGrowth1y() float64 {
 	if o == nil || o.DividendPaymentsSingleGrowth1y == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.DividendPaymentsSingleGrowth1y
@@ -478,7 +478,7 @@ func (o *CompanyAnalysisExtendedAnalysisDividend) GetDividendPaymentsSingleGrowt
 
 // GetDividendPaymentsSingleGrowth1yOk returns a tuple with the DividendPaymentsSingleGrowth1y field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisDividend) GetDividendPaymentsSingleGrowth1yOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisDividend) GetDividendPaymentsSingleGrowth1yOk() (*float64, bool) {
 	if o == nil || o.DividendPaymentsSingleGrowth1y == nil {
 		return nil, false
 	}
@@ -494,15 +494,15 @@ func (o *CompanyAnalysisExtendedAnalysisDividend) HasDividendPaymentsSingleGrowt
 	return false
 }
 
-// SetDividendPaymentsSingleGrowth1y gets a reference to the given float32 and assigns it to the DividendPaymentsSingleGrowth1y field.
-func (o *CompanyAnalysisExtendedAnalysisDividend) SetDividendPaymentsSingleGrowth1y(v float32) {
+// SetDividendPaymentsSingleGrowth1y gets a reference to the given float64 and assigns it to the DividendPaymentsSingleGrowth1y field.
+func (o *CompanyAnalysisExtendedAnalysisDividend) SetDividendPaymentsSingleGrowth1y(v float64) {
 	o.DividendPaymentsSingleGrowth1y = &v
 }
 
 // GetDividendPaymentsSingleGrowth3y returns the DividendPaymentsSingleGrowth3y field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisDividend) GetDividendPaymentsSingleGrowth3y() float32 {
+func (o *CompanyAnalysisExtendedAnalysisDividend) GetDividendPaymentsSingleGrowth3y() float64 {
 	if o == nil || o.DividendPaymentsSingleGrowth3y == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.DividendPaymentsSingleGrowth3y
@@ -510,7 +510,7 @@ func (o *CompanyAnalysisExtendedAnalysisDividend) GetDividendPaymentsSingleGrowt
 
 // GetDividendPaymentsSingleGrowth3yOk returns a tuple with the DividendPaymentsSingleGrowth3y field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisDividend) GetDividendPaymentsSingleGrowth3yOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisDividend) GetDividendPaymentsSingleGrowth3yOk() (*float64, bool) {
 	if o == nil || o.DividendPaymentsSingleGrowth3y == nil {
 		return nil, false
 	}
@@ -526,15 +526,15 @@ func (o *CompanyAnalysisExtendedAnalysisDividend) HasDividendPaymentsSingleGrowt
 	return false
 }
 
-// SetDividendPaymentsSingleGrowth3y gets a reference to the given float32 and assigns it to the DividendPaymentsSingleGrowth3y field.
-func (o *CompanyAnalysisExtendedAnalysisDividend) SetDividendPaymentsSingleGrowth3y(v float32) {
+// SetDividendPaymentsSingleGrowth3y gets a reference to the given float64 and assigns it to the DividendPaymentsSingleGrowth3y field.
+func (o *CompanyAnalysisExtendedAnalysisDividend) SetDividendPaymentsSingleGrowth3y(v float64) {
 	o.DividendPaymentsSingleGrowth3y = &v
 }
 
 // GetDividendPaymentsSingleGrowth5y returns the DividendPaymentsSingleGrowth5y field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisDividend) GetDividendPaymentsSingleGrowth5y() float32 {
+func (o *CompanyAnalysisExtendedAnalysisDividend) GetDividendPaymentsSingleGrowth5y() float64 {
 	if o == nil || o.DividendPaymentsSingleGrowth5y == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.DividendPaymentsSingleGrowth5y
@@ -542,7 +542,7 @@ func (o *CompanyAnalysisExtendedAnalysisDividend) GetDividendPaymentsSingleGrowt
 
 // GetDividendPaymentsSingleGrowth5yOk returns a tuple with the DividendPaymentsSingleGrowth5y field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisDividend) GetDividendPaymentsSingleGrowth5yOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisDividend) GetDividendPaymentsSingleGrowth5yOk() (*float64, bool) {
 	if o == nil || o.DividendPaymentsSingleGrowth5y == nil {
 		return nil, false
 	}
@@ -558,8 +558,8 @@ func (o *CompanyAnalysisExtendedAnalysisDividend) HasDividendPaymentsSingleGrowt
 	return false
 }
 
-// SetDividendPaymentsSingleGrowth5y gets a reference to the given float32 and assigns it to the DividendPaymentsSingleGrowth5y field.
-func (o *CompanyAnalysisExtendedAnalysisDividend) SetDividendPaymentsSingleGrowth5y(v float32) {
+// SetDividendPaymentsSingleGrowth5y gets a reference to the given float64 and assigns it to the DividendPaymentsSingleGrowth5y field.
+func (o *CompanyAnalysisExtendedAnalysisDividend) SetDividendPaymentsSingleGrowth5y(v float64) {
 	o.DividendPaymentsSingleGrowth5y = &v
 }
 

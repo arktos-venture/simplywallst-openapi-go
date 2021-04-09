@@ -16,32 +16,32 @@ import (
 
 // CompanyAnalysisExtendedAnalysisValue struct for CompanyAnalysisExtendedAnalysisValue
 type CompanyAnalysisExtendedAnalysisValue struct {
-	Pe                      *float32 `json:"pe,omitempty"`
-	Pb                      *float32 `json:"pb,omitempty"`
-	Peg                     *float32 `json:"peg,omitempty"`
-	Beta5y                  *float32 `json:"beta_5y,omitempty"`
-	Beta5yUnlevered         *float32 `json:"beta_5y_unlevered,omitempty"`
-	IntrinsicDiscount       *float32 `json:"intrinsic_discount,omitempty"`
-	NpvPerShare             *float32 `json:"npv_per_share,omitempty"`
-	MarketCapUsd            *float32 `json:"market_cap_usd,omitempty"`
-	MarketCap               *float32 `json:"market_cap,omitempty"`
-	LastSharePrice          *float32 `json:"last_share_price,omitempty"`
-	PriceToSales            *float32 `json:"price_to_sales,omitempty"`
-	EvToSales               *float32 `json:"ev_to_sales,omitempty"`
-	EvToEbitda              *float32 `json:"ev_to_ebitda,omitempty"`
-	Return7d                *float32 `json:"return_7d,omitempty"`
-	Return30d               *float32 `json:"return_30d,omitempty"`
-	Return90d               *float32 `json:"return_90d,omitempty"`
-	Return1yrAbs            *float32 `json:"return_1yr_abs,omitempty"`
-	Return3yrAbs            *float32 `json:"return_3yr_abs,omitempty"`
-	Return5yrAbs            *float32 `json:"return_5yr_abs,omitempty"`
-	Return1yrTotalReturn    *float32 `json:"return_1yr_total_return,omitempty"`
-	Return3yrTotalReturn    *float32 `json:"return_3yr_total_return,omitempty"`
-	Return5yrTotalReturn    *float32 `json:"return_5yr_total_return,omitempty"`
-	PriceTarget             *float32 `json:"price_target,omitempty"`
-	PriceTargetLow          *float32 `json:"price_target_low,omitempty"`
-	PriceTargetHigh         *float32 `json:"price_target_high,omitempty"`
-	PriceTargetAnalystCount *float32 `json:"price_target_analyst_count,omitempty"`
+	Pe                      *float64 `json:"pe,omitempty"`
+	Pb                      *float64 `json:"pb,omitempty"`
+	Peg                     *float64 `json:"peg,omitempty"`
+	Beta5y                  *float64 `json:"beta_5y,omitempty"`
+	Beta5yUnlevered         *float64 `json:"beta_5y_unlevered,omitempty"`
+	IntrinsicDiscount       *float64 `json:"intrinsic_discount,omitempty"`
+	NpvPerShare             *float64 `json:"npv_per_share,omitempty"`
+	MarketCapUsd            *float64 `json:"market_cap_usd,omitempty"`
+	MarketCap               *float64 `json:"market_cap,omitempty"`
+	LastSharePrice          *float64 `json:"last_share_price,omitempty"`
+	PriceToSales            *float64 `json:"price_to_sales,omitempty"`
+	EvToSales               *float64 `json:"ev_to_sales,omitempty"`
+	EvToEbitda              *float64 `json:"ev_to_ebitda,omitempty"`
+	Return7d                *float64 `json:"return_7d,omitempty"`
+	Return30d               *float64 `json:"return_30d,omitempty"`
+	Return90d               *float64 `json:"return_90d,omitempty"`
+	Return1yrAbs            *float64 `json:"return_1yr_abs,omitempty"`
+	Return3yrAbs            *float64 `json:"return_3yr_abs,omitempty"`
+	Return5yrAbs            *float64 `json:"return_5yr_abs,omitempty"`
+	Return1yrTotalReturn    *float64 `json:"return_1yr_total_return,omitempty"`
+	Return3yrTotalReturn    *float64 `json:"return_3yr_total_return,omitempty"`
+	Return5yrTotalReturn    *float64 `json:"return_5yr_total_return,omitempty"`
+	PriceTarget             *float64 `json:"price_target,omitempty"`
+	PriceTargetLow          *float64 `json:"price_target_low,omitempty"`
+	PriceTargetHigh         *float64 `json:"price_target_high,omitempty"`
+	PriceTargetAnalystCount *float64 `json:"price_target_analyst_count,omitempty"`
 }
 
 // NewCompanyAnalysisExtendedAnalysisValue instantiates a new CompanyAnalysisExtendedAnalysisValue object
@@ -62,9 +62,9 @@ func NewCompanyAnalysisExtendedAnalysisValueWithDefaults() *CompanyAnalysisExten
 }
 
 // GetPe returns the Pe field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisValue) GetPe() float32 {
+func (o *CompanyAnalysisExtendedAnalysisValue) GetPe() float64 {
 	if o == nil || o.Pe == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.Pe
@@ -72,7 +72,7 @@ func (o *CompanyAnalysisExtendedAnalysisValue) GetPe() float32 {
 
 // GetPeOk returns a tuple with the Pe field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisValue) GetPeOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisValue) GetPeOk() (*float64, bool) {
 	if o == nil || o.Pe == nil {
 		return nil, false
 	}
@@ -88,15 +88,15 @@ func (o *CompanyAnalysisExtendedAnalysisValue) HasPe() bool {
 	return false
 }
 
-// SetPe gets a reference to the given float32 and assigns it to the Pe field.
-func (o *CompanyAnalysisExtendedAnalysisValue) SetPe(v float32) {
+// SetPe gets a reference to the given float64 and assigns it to the Pe field.
+func (o *CompanyAnalysisExtendedAnalysisValue) SetPe(v float64) {
 	o.Pe = &v
 }
 
 // GetPb returns the Pb field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisValue) GetPb() float32 {
+func (o *CompanyAnalysisExtendedAnalysisValue) GetPb() float64 {
 	if o == nil || o.Pb == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.Pb
@@ -104,7 +104,7 @@ func (o *CompanyAnalysisExtendedAnalysisValue) GetPb() float32 {
 
 // GetPbOk returns a tuple with the Pb field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisValue) GetPbOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisValue) GetPbOk() (*float64, bool) {
 	if o == nil || o.Pb == nil {
 		return nil, false
 	}
@@ -120,15 +120,15 @@ func (o *CompanyAnalysisExtendedAnalysisValue) HasPb() bool {
 	return false
 }
 
-// SetPb gets a reference to the given float32 and assigns it to the Pb field.
-func (o *CompanyAnalysisExtendedAnalysisValue) SetPb(v float32) {
+// SetPb gets a reference to the given float64 and assigns it to the Pb field.
+func (o *CompanyAnalysisExtendedAnalysisValue) SetPb(v float64) {
 	o.Pb = &v
 }
 
 // GetPeg returns the Peg field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisValue) GetPeg() float32 {
+func (o *CompanyAnalysisExtendedAnalysisValue) GetPeg() float64 {
 	if o == nil || o.Peg == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.Peg
@@ -136,7 +136,7 @@ func (o *CompanyAnalysisExtendedAnalysisValue) GetPeg() float32 {
 
 // GetPegOk returns a tuple with the Peg field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisValue) GetPegOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisValue) GetPegOk() (*float64, bool) {
 	if o == nil || o.Peg == nil {
 		return nil, false
 	}
@@ -152,15 +152,15 @@ func (o *CompanyAnalysisExtendedAnalysisValue) HasPeg() bool {
 	return false
 }
 
-// SetPeg gets a reference to the given float32 and assigns it to the Peg field.
-func (o *CompanyAnalysisExtendedAnalysisValue) SetPeg(v float32) {
+// SetPeg gets a reference to the given float64 and assigns it to the Peg field.
+func (o *CompanyAnalysisExtendedAnalysisValue) SetPeg(v float64) {
 	o.Peg = &v
 }
 
 // GetBeta5y returns the Beta5y field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisValue) GetBeta5y() float32 {
+func (o *CompanyAnalysisExtendedAnalysisValue) GetBeta5y() float64 {
 	if o == nil || o.Beta5y == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.Beta5y
@@ -168,7 +168,7 @@ func (o *CompanyAnalysisExtendedAnalysisValue) GetBeta5y() float32 {
 
 // GetBeta5yOk returns a tuple with the Beta5y field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisValue) GetBeta5yOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisValue) GetBeta5yOk() (*float64, bool) {
 	if o == nil || o.Beta5y == nil {
 		return nil, false
 	}
@@ -184,15 +184,15 @@ func (o *CompanyAnalysisExtendedAnalysisValue) HasBeta5y() bool {
 	return false
 }
 
-// SetBeta5y gets a reference to the given float32 and assigns it to the Beta5y field.
-func (o *CompanyAnalysisExtendedAnalysisValue) SetBeta5y(v float32) {
+// SetBeta5y gets a reference to the given float64 and assigns it to the Beta5y field.
+func (o *CompanyAnalysisExtendedAnalysisValue) SetBeta5y(v float64) {
 	o.Beta5y = &v
 }
 
 // GetBeta5yUnlevered returns the Beta5yUnlevered field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisValue) GetBeta5yUnlevered() float32 {
+func (o *CompanyAnalysisExtendedAnalysisValue) GetBeta5yUnlevered() float64 {
 	if o == nil || o.Beta5yUnlevered == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.Beta5yUnlevered
@@ -200,7 +200,7 @@ func (o *CompanyAnalysisExtendedAnalysisValue) GetBeta5yUnlevered() float32 {
 
 // GetBeta5yUnleveredOk returns a tuple with the Beta5yUnlevered field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisValue) GetBeta5yUnleveredOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisValue) GetBeta5yUnleveredOk() (*float64, bool) {
 	if o == nil || o.Beta5yUnlevered == nil {
 		return nil, false
 	}
@@ -216,15 +216,15 @@ func (o *CompanyAnalysisExtendedAnalysisValue) HasBeta5yUnlevered() bool {
 	return false
 }
 
-// SetBeta5yUnlevered gets a reference to the given float32 and assigns it to the Beta5yUnlevered field.
-func (o *CompanyAnalysisExtendedAnalysisValue) SetBeta5yUnlevered(v float32) {
+// SetBeta5yUnlevered gets a reference to the given float64 and assigns it to the Beta5yUnlevered field.
+func (o *CompanyAnalysisExtendedAnalysisValue) SetBeta5yUnlevered(v float64) {
 	o.Beta5yUnlevered = &v
 }
 
 // GetIntrinsicDiscount returns the IntrinsicDiscount field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisValue) GetIntrinsicDiscount() float32 {
+func (o *CompanyAnalysisExtendedAnalysisValue) GetIntrinsicDiscount() float64 {
 	if o == nil || o.IntrinsicDiscount == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.IntrinsicDiscount
@@ -232,7 +232,7 @@ func (o *CompanyAnalysisExtendedAnalysisValue) GetIntrinsicDiscount() float32 {
 
 // GetIntrinsicDiscountOk returns a tuple with the IntrinsicDiscount field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisValue) GetIntrinsicDiscountOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisValue) GetIntrinsicDiscountOk() (*float64, bool) {
 	if o == nil || o.IntrinsicDiscount == nil {
 		return nil, false
 	}
@@ -248,15 +248,15 @@ func (o *CompanyAnalysisExtendedAnalysisValue) HasIntrinsicDiscount() bool {
 	return false
 }
 
-// SetIntrinsicDiscount gets a reference to the given float32 and assigns it to the IntrinsicDiscount field.
-func (o *CompanyAnalysisExtendedAnalysisValue) SetIntrinsicDiscount(v float32) {
+// SetIntrinsicDiscount gets a reference to the given float64 and assigns it to the IntrinsicDiscount field.
+func (o *CompanyAnalysisExtendedAnalysisValue) SetIntrinsicDiscount(v float64) {
 	o.IntrinsicDiscount = &v
 }
 
 // GetNpvPerShare returns the NpvPerShare field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisValue) GetNpvPerShare() float32 {
+func (o *CompanyAnalysisExtendedAnalysisValue) GetNpvPerShare() float64 {
 	if o == nil || o.NpvPerShare == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.NpvPerShare
@@ -264,7 +264,7 @@ func (o *CompanyAnalysisExtendedAnalysisValue) GetNpvPerShare() float32 {
 
 // GetNpvPerShareOk returns a tuple with the NpvPerShare field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisValue) GetNpvPerShareOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisValue) GetNpvPerShareOk() (*float64, bool) {
 	if o == nil || o.NpvPerShare == nil {
 		return nil, false
 	}
@@ -280,15 +280,15 @@ func (o *CompanyAnalysisExtendedAnalysisValue) HasNpvPerShare() bool {
 	return false
 }
 
-// SetNpvPerShare gets a reference to the given float32 and assigns it to the NpvPerShare field.
-func (o *CompanyAnalysisExtendedAnalysisValue) SetNpvPerShare(v float32) {
+// SetNpvPerShare gets a reference to the given float64 and assigns it to the NpvPerShare field.
+func (o *CompanyAnalysisExtendedAnalysisValue) SetNpvPerShare(v float64) {
 	o.NpvPerShare = &v
 }
 
 // GetMarketCapUsd returns the MarketCapUsd field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisValue) GetMarketCapUsd() float32 {
+func (o *CompanyAnalysisExtendedAnalysisValue) GetMarketCapUsd() float64 {
 	if o == nil || o.MarketCapUsd == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.MarketCapUsd
@@ -296,7 +296,7 @@ func (o *CompanyAnalysisExtendedAnalysisValue) GetMarketCapUsd() float32 {
 
 // GetMarketCapUsdOk returns a tuple with the MarketCapUsd field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisValue) GetMarketCapUsdOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisValue) GetMarketCapUsdOk() (*float64, bool) {
 	if o == nil || o.MarketCapUsd == nil {
 		return nil, false
 	}
@@ -312,15 +312,15 @@ func (o *CompanyAnalysisExtendedAnalysisValue) HasMarketCapUsd() bool {
 	return false
 }
 
-// SetMarketCapUsd gets a reference to the given float32 and assigns it to the MarketCapUsd field.
-func (o *CompanyAnalysisExtendedAnalysisValue) SetMarketCapUsd(v float32) {
+// SetMarketCapUsd gets a reference to the given float64 and assigns it to the MarketCapUsd field.
+func (o *CompanyAnalysisExtendedAnalysisValue) SetMarketCapUsd(v float64) {
 	o.MarketCapUsd = &v
 }
 
 // GetMarketCap returns the MarketCap field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisValue) GetMarketCap() float32 {
+func (o *CompanyAnalysisExtendedAnalysisValue) GetMarketCap() float64 {
 	if o == nil || o.MarketCap == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.MarketCap
@@ -328,7 +328,7 @@ func (o *CompanyAnalysisExtendedAnalysisValue) GetMarketCap() float32 {
 
 // GetMarketCapOk returns a tuple with the MarketCap field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisValue) GetMarketCapOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisValue) GetMarketCapOk() (*float64, bool) {
 	if o == nil || o.MarketCap == nil {
 		return nil, false
 	}
@@ -344,15 +344,15 @@ func (o *CompanyAnalysisExtendedAnalysisValue) HasMarketCap() bool {
 	return false
 }
 
-// SetMarketCap gets a reference to the given float32 and assigns it to the MarketCap field.
-func (o *CompanyAnalysisExtendedAnalysisValue) SetMarketCap(v float32) {
+// SetMarketCap gets a reference to the given float64 and assigns it to the MarketCap field.
+func (o *CompanyAnalysisExtendedAnalysisValue) SetMarketCap(v float64) {
 	o.MarketCap = &v
 }
 
 // GetLastSharePrice returns the LastSharePrice field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisValue) GetLastSharePrice() float32 {
+func (o *CompanyAnalysisExtendedAnalysisValue) GetLastSharePrice() float64 {
 	if o == nil || o.LastSharePrice == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.LastSharePrice
@@ -360,7 +360,7 @@ func (o *CompanyAnalysisExtendedAnalysisValue) GetLastSharePrice() float32 {
 
 // GetLastSharePriceOk returns a tuple with the LastSharePrice field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisValue) GetLastSharePriceOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisValue) GetLastSharePriceOk() (*float64, bool) {
 	if o == nil || o.LastSharePrice == nil {
 		return nil, false
 	}
@@ -376,15 +376,15 @@ func (o *CompanyAnalysisExtendedAnalysisValue) HasLastSharePrice() bool {
 	return false
 }
 
-// SetLastSharePrice gets a reference to the given float32 and assigns it to the LastSharePrice field.
-func (o *CompanyAnalysisExtendedAnalysisValue) SetLastSharePrice(v float32) {
+// SetLastSharePrice gets a reference to the given float64 and assigns it to the LastSharePrice field.
+func (o *CompanyAnalysisExtendedAnalysisValue) SetLastSharePrice(v float64) {
 	o.LastSharePrice = &v
 }
 
 // GetPriceToSales returns the PriceToSales field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisValue) GetPriceToSales() float32 {
+func (o *CompanyAnalysisExtendedAnalysisValue) GetPriceToSales() float64 {
 	if o == nil || o.PriceToSales == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.PriceToSales
@@ -392,7 +392,7 @@ func (o *CompanyAnalysisExtendedAnalysisValue) GetPriceToSales() float32 {
 
 // GetPriceToSalesOk returns a tuple with the PriceToSales field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisValue) GetPriceToSalesOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisValue) GetPriceToSalesOk() (*float64, bool) {
 	if o == nil || o.PriceToSales == nil {
 		return nil, false
 	}
@@ -408,15 +408,15 @@ func (o *CompanyAnalysisExtendedAnalysisValue) HasPriceToSales() bool {
 	return false
 }
 
-// SetPriceToSales gets a reference to the given float32 and assigns it to the PriceToSales field.
-func (o *CompanyAnalysisExtendedAnalysisValue) SetPriceToSales(v float32) {
+// SetPriceToSales gets a reference to the given float64 and assigns it to the PriceToSales field.
+func (o *CompanyAnalysisExtendedAnalysisValue) SetPriceToSales(v float64) {
 	o.PriceToSales = &v
 }
 
 // GetEvToSales returns the EvToSales field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisValue) GetEvToSales() float32 {
+func (o *CompanyAnalysisExtendedAnalysisValue) GetEvToSales() float64 {
 	if o == nil || o.EvToSales == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.EvToSales
@@ -424,7 +424,7 @@ func (o *CompanyAnalysisExtendedAnalysisValue) GetEvToSales() float32 {
 
 // GetEvToSalesOk returns a tuple with the EvToSales field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisValue) GetEvToSalesOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisValue) GetEvToSalesOk() (*float64, bool) {
 	if o == nil || o.EvToSales == nil {
 		return nil, false
 	}
@@ -440,15 +440,15 @@ func (o *CompanyAnalysisExtendedAnalysisValue) HasEvToSales() bool {
 	return false
 }
 
-// SetEvToSales gets a reference to the given float32 and assigns it to the EvToSales field.
-func (o *CompanyAnalysisExtendedAnalysisValue) SetEvToSales(v float32) {
+// SetEvToSales gets a reference to the given float64 and assigns it to the EvToSales field.
+func (o *CompanyAnalysisExtendedAnalysisValue) SetEvToSales(v float64) {
 	o.EvToSales = &v
 }
 
 // GetEvToEbitda returns the EvToEbitda field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisValue) GetEvToEbitda() float32 {
+func (o *CompanyAnalysisExtendedAnalysisValue) GetEvToEbitda() float64 {
 	if o == nil || o.EvToEbitda == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.EvToEbitda
@@ -456,7 +456,7 @@ func (o *CompanyAnalysisExtendedAnalysisValue) GetEvToEbitda() float32 {
 
 // GetEvToEbitdaOk returns a tuple with the EvToEbitda field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisValue) GetEvToEbitdaOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisValue) GetEvToEbitdaOk() (*float64, bool) {
 	if o == nil || o.EvToEbitda == nil {
 		return nil, false
 	}
@@ -472,15 +472,15 @@ func (o *CompanyAnalysisExtendedAnalysisValue) HasEvToEbitda() bool {
 	return false
 }
 
-// SetEvToEbitda gets a reference to the given float32 and assigns it to the EvToEbitda field.
-func (o *CompanyAnalysisExtendedAnalysisValue) SetEvToEbitda(v float32) {
+// SetEvToEbitda gets a reference to the given float64 and assigns it to the EvToEbitda field.
+func (o *CompanyAnalysisExtendedAnalysisValue) SetEvToEbitda(v float64) {
 	o.EvToEbitda = &v
 }
 
 // GetReturn7d returns the Return7d field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisValue) GetReturn7d() float32 {
+func (o *CompanyAnalysisExtendedAnalysisValue) GetReturn7d() float64 {
 	if o == nil || o.Return7d == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.Return7d
@@ -488,7 +488,7 @@ func (o *CompanyAnalysisExtendedAnalysisValue) GetReturn7d() float32 {
 
 // GetReturn7dOk returns a tuple with the Return7d field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisValue) GetReturn7dOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisValue) GetReturn7dOk() (*float64, bool) {
 	if o == nil || o.Return7d == nil {
 		return nil, false
 	}
@@ -504,15 +504,15 @@ func (o *CompanyAnalysisExtendedAnalysisValue) HasReturn7d() bool {
 	return false
 }
 
-// SetReturn7d gets a reference to the given float32 and assigns it to the Return7d field.
-func (o *CompanyAnalysisExtendedAnalysisValue) SetReturn7d(v float32) {
+// SetReturn7d gets a reference to the given float64 and assigns it to the Return7d field.
+func (o *CompanyAnalysisExtendedAnalysisValue) SetReturn7d(v float64) {
 	o.Return7d = &v
 }
 
 // GetReturn30d returns the Return30d field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisValue) GetReturn30d() float32 {
+func (o *CompanyAnalysisExtendedAnalysisValue) GetReturn30d() float64 {
 	if o == nil || o.Return30d == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.Return30d
@@ -520,7 +520,7 @@ func (o *CompanyAnalysisExtendedAnalysisValue) GetReturn30d() float32 {
 
 // GetReturn30dOk returns a tuple with the Return30d field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisValue) GetReturn30dOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisValue) GetReturn30dOk() (*float64, bool) {
 	if o == nil || o.Return30d == nil {
 		return nil, false
 	}
@@ -536,15 +536,15 @@ func (o *CompanyAnalysisExtendedAnalysisValue) HasReturn30d() bool {
 	return false
 }
 
-// SetReturn30d gets a reference to the given float32 and assigns it to the Return30d field.
-func (o *CompanyAnalysisExtendedAnalysisValue) SetReturn30d(v float32) {
+// SetReturn30d gets a reference to the given float64 and assigns it to the Return30d field.
+func (o *CompanyAnalysisExtendedAnalysisValue) SetReturn30d(v float64) {
 	o.Return30d = &v
 }
 
 // GetReturn90d returns the Return90d field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisValue) GetReturn90d() float32 {
+func (o *CompanyAnalysisExtendedAnalysisValue) GetReturn90d() float64 {
 	if o == nil || o.Return90d == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.Return90d
@@ -552,7 +552,7 @@ func (o *CompanyAnalysisExtendedAnalysisValue) GetReturn90d() float32 {
 
 // GetReturn90dOk returns a tuple with the Return90d field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisValue) GetReturn90dOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisValue) GetReturn90dOk() (*float64, bool) {
 	if o == nil || o.Return90d == nil {
 		return nil, false
 	}
@@ -568,15 +568,15 @@ func (o *CompanyAnalysisExtendedAnalysisValue) HasReturn90d() bool {
 	return false
 }
 
-// SetReturn90d gets a reference to the given float32 and assigns it to the Return90d field.
-func (o *CompanyAnalysisExtendedAnalysisValue) SetReturn90d(v float32) {
+// SetReturn90d gets a reference to the given float64 and assigns it to the Return90d field.
+func (o *CompanyAnalysisExtendedAnalysisValue) SetReturn90d(v float64) {
 	o.Return90d = &v
 }
 
 // GetReturn1yrAbs returns the Return1yrAbs field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisValue) GetReturn1yrAbs() float32 {
+func (o *CompanyAnalysisExtendedAnalysisValue) GetReturn1yrAbs() float64 {
 	if o == nil || o.Return1yrAbs == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.Return1yrAbs
@@ -584,7 +584,7 @@ func (o *CompanyAnalysisExtendedAnalysisValue) GetReturn1yrAbs() float32 {
 
 // GetReturn1yrAbsOk returns a tuple with the Return1yrAbs field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisValue) GetReturn1yrAbsOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisValue) GetReturn1yrAbsOk() (*float64, bool) {
 	if o == nil || o.Return1yrAbs == nil {
 		return nil, false
 	}
@@ -600,15 +600,15 @@ func (o *CompanyAnalysisExtendedAnalysisValue) HasReturn1yrAbs() bool {
 	return false
 }
 
-// SetReturn1yrAbs gets a reference to the given float32 and assigns it to the Return1yrAbs field.
-func (o *CompanyAnalysisExtendedAnalysisValue) SetReturn1yrAbs(v float32) {
+// SetReturn1yrAbs gets a reference to the given float64 and assigns it to the Return1yrAbs field.
+func (o *CompanyAnalysisExtendedAnalysisValue) SetReturn1yrAbs(v float64) {
 	o.Return1yrAbs = &v
 }
 
 // GetReturn3yrAbs returns the Return3yrAbs field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisValue) GetReturn3yrAbs() float32 {
+func (o *CompanyAnalysisExtendedAnalysisValue) GetReturn3yrAbs() float64 {
 	if o == nil || o.Return3yrAbs == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.Return3yrAbs
@@ -616,7 +616,7 @@ func (o *CompanyAnalysisExtendedAnalysisValue) GetReturn3yrAbs() float32 {
 
 // GetReturn3yrAbsOk returns a tuple with the Return3yrAbs field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisValue) GetReturn3yrAbsOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisValue) GetReturn3yrAbsOk() (*float64, bool) {
 	if o == nil || o.Return3yrAbs == nil {
 		return nil, false
 	}
@@ -632,15 +632,15 @@ func (o *CompanyAnalysisExtendedAnalysisValue) HasReturn3yrAbs() bool {
 	return false
 }
 
-// SetReturn3yrAbs gets a reference to the given float32 and assigns it to the Return3yrAbs field.
-func (o *CompanyAnalysisExtendedAnalysisValue) SetReturn3yrAbs(v float32) {
+// SetReturn3yrAbs gets a reference to the given float64 and assigns it to the Return3yrAbs field.
+func (o *CompanyAnalysisExtendedAnalysisValue) SetReturn3yrAbs(v float64) {
 	o.Return3yrAbs = &v
 }
 
 // GetReturn5yrAbs returns the Return5yrAbs field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisValue) GetReturn5yrAbs() float32 {
+func (o *CompanyAnalysisExtendedAnalysisValue) GetReturn5yrAbs() float64 {
 	if o == nil || o.Return5yrAbs == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.Return5yrAbs
@@ -648,7 +648,7 @@ func (o *CompanyAnalysisExtendedAnalysisValue) GetReturn5yrAbs() float32 {
 
 // GetReturn5yrAbsOk returns a tuple with the Return5yrAbs field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisValue) GetReturn5yrAbsOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisValue) GetReturn5yrAbsOk() (*float64, bool) {
 	if o == nil || o.Return5yrAbs == nil {
 		return nil, false
 	}
@@ -664,15 +664,15 @@ func (o *CompanyAnalysisExtendedAnalysisValue) HasReturn5yrAbs() bool {
 	return false
 }
 
-// SetReturn5yrAbs gets a reference to the given float32 and assigns it to the Return5yrAbs field.
-func (o *CompanyAnalysisExtendedAnalysisValue) SetReturn5yrAbs(v float32) {
+// SetReturn5yrAbs gets a reference to the given float64 and assigns it to the Return5yrAbs field.
+func (o *CompanyAnalysisExtendedAnalysisValue) SetReturn5yrAbs(v float64) {
 	o.Return5yrAbs = &v
 }
 
 // GetReturn1yrTotalReturn returns the Return1yrTotalReturn field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisValue) GetReturn1yrTotalReturn() float32 {
+func (o *CompanyAnalysisExtendedAnalysisValue) GetReturn1yrTotalReturn() float64 {
 	if o == nil || o.Return1yrTotalReturn == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.Return1yrTotalReturn
@@ -680,7 +680,7 @@ func (o *CompanyAnalysisExtendedAnalysisValue) GetReturn1yrTotalReturn() float32
 
 // GetReturn1yrTotalReturnOk returns a tuple with the Return1yrTotalReturn field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisValue) GetReturn1yrTotalReturnOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisValue) GetReturn1yrTotalReturnOk() (*float64, bool) {
 	if o == nil || o.Return1yrTotalReturn == nil {
 		return nil, false
 	}
@@ -696,15 +696,15 @@ func (o *CompanyAnalysisExtendedAnalysisValue) HasReturn1yrTotalReturn() bool {
 	return false
 }
 
-// SetReturn1yrTotalReturn gets a reference to the given float32 and assigns it to the Return1yrTotalReturn field.
-func (o *CompanyAnalysisExtendedAnalysisValue) SetReturn1yrTotalReturn(v float32) {
+// SetReturn1yrTotalReturn gets a reference to the given float64 and assigns it to the Return1yrTotalReturn field.
+func (o *CompanyAnalysisExtendedAnalysisValue) SetReturn1yrTotalReturn(v float64) {
 	o.Return1yrTotalReturn = &v
 }
 
 // GetReturn3yrTotalReturn returns the Return3yrTotalReturn field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisValue) GetReturn3yrTotalReturn() float32 {
+func (o *CompanyAnalysisExtendedAnalysisValue) GetReturn3yrTotalReturn() float64 {
 	if o == nil || o.Return3yrTotalReturn == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.Return3yrTotalReturn
@@ -712,7 +712,7 @@ func (o *CompanyAnalysisExtendedAnalysisValue) GetReturn3yrTotalReturn() float32
 
 // GetReturn3yrTotalReturnOk returns a tuple with the Return3yrTotalReturn field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisValue) GetReturn3yrTotalReturnOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisValue) GetReturn3yrTotalReturnOk() (*float64, bool) {
 	if o == nil || o.Return3yrTotalReturn == nil {
 		return nil, false
 	}
@@ -728,15 +728,15 @@ func (o *CompanyAnalysisExtendedAnalysisValue) HasReturn3yrTotalReturn() bool {
 	return false
 }
 
-// SetReturn3yrTotalReturn gets a reference to the given float32 and assigns it to the Return3yrTotalReturn field.
-func (o *CompanyAnalysisExtendedAnalysisValue) SetReturn3yrTotalReturn(v float32) {
+// SetReturn3yrTotalReturn gets a reference to the given float64 and assigns it to the Return3yrTotalReturn field.
+func (o *CompanyAnalysisExtendedAnalysisValue) SetReturn3yrTotalReturn(v float64) {
 	o.Return3yrTotalReturn = &v
 }
 
 // GetReturn5yrTotalReturn returns the Return5yrTotalReturn field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisValue) GetReturn5yrTotalReturn() float32 {
+func (o *CompanyAnalysisExtendedAnalysisValue) GetReturn5yrTotalReturn() float64 {
 	if o == nil || o.Return5yrTotalReturn == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.Return5yrTotalReturn
@@ -744,7 +744,7 @@ func (o *CompanyAnalysisExtendedAnalysisValue) GetReturn5yrTotalReturn() float32
 
 // GetReturn5yrTotalReturnOk returns a tuple with the Return5yrTotalReturn field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisValue) GetReturn5yrTotalReturnOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisValue) GetReturn5yrTotalReturnOk() (*float64, bool) {
 	if o == nil || o.Return5yrTotalReturn == nil {
 		return nil, false
 	}
@@ -760,15 +760,15 @@ func (o *CompanyAnalysisExtendedAnalysisValue) HasReturn5yrTotalReturn() bool {
 	return false
 }
 
-// SetReturn5yrTotalReturn gets a reference to the given float32 and assigns it to the Return5yrTotalReturn field.
-func (o *CompanyAnalysisExtendedAnalysisValue) SetReturn5yrTotalReturn(v float32) {
+// SetReturn5yrTotalReturn gets a reference to the given float64 and assigns it to the Return5yrTotalReturn field.
+func (o *CompanyAnalysisExtendedAnalysisValue) SetReturn5yrTotalReturn(v float64) {
 	o.Return5yrTotalReturn = &v
 }
 
 // GetPriceTarget returns the PriceTarget field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisValue) GetPriceTarget() float32 {
+func (o *CompanyAnalysisExtendedAnalysisValue) GetPriceTarget() float64 {
 	if o == nil || o.PriceTarget == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.PriceTarget
@@ -776,7 +776,7 @@ func (o *CompanyAnalysisExtendedAnalysisValue) GetPriceTarget() float32 {
 
 // GetPriceTargetOk returns a tuple with the PriceTarget field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisValue) GetPriceTargetOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisValue) GetPriceTargetOk() (*float64, bool) {
 	if o == nil || o.PriceTarget == nil {
 		return nil, false
 	}
@@ -792,15 +792,15 @@ func (o *CompanyAnalysisExtendedAnalysisValue) HasPriceTarget() bool {
 	return false
 }
 
-// SetPriceTarget gets a reference to the given float32 and assigns it to the PriceTarget field.
-func (o *CompanyAnalysisExtendedAnalysisValue) SetPriceTarget(v float32) {
+// SetPriceTarget gets a reference to the given float64 and assigns it to the PriceTarget field.
+func (o *CompanyAnalysisExtendedAnalysisValue) SetPriceTarget(v float64) {
 	o.PriceTarget = &v
 }
 
 // GetPriceTargetLow returns the PriceTargetLow field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisValue) GetPriceTargetLow() float32 {
+func (o *CompanyAnalysisExtendedAnalysisValue) GetPriceTargetLow() float64 {
 	if o == nil || o.PriceTargetLow == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.PriceTargetLow
@@ -808,7 +808,7 @@ func (o *CompanyAnalysisExtendedAnalysisValue) GetPriceTargetLow() float32 {
 
 // GetPriceTargetLowOk returns a tuple with the PriceTargetLow field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisValue) GetPriceTargetLowOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisValue) GetPriceTargetLowOk() (*float64, bool) {
 	if o == nil || o.PriceTargetLow == nil {
 		return nil, false
 	}
@@ -824,15 +824,15 @@ func (o *CompanyAnalysisExtendedAnalysisValue) HasPriceTargetLow() bool {
 	return false
 }
 
-// SetPriceTargetLow gets a reference to the given float32 and assigns it to the PriceTargetLow field.
-func (o *CompanyAnalysisExtendedAnalysisValue) SetPriceTargetLow(v float32) {
+// SetPriceTargetLow gets a reference to the given float64 and assigns it to the PriceTargetLow field.
+func (o *CompanyAnalysisExtendedAnalysisValue) SetPriceTargetLow(v float64) {
 	o.PriceTargetLow = &v
 }
 
 // GetPriceTargetHigh returns the PriceTargetHigh field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisValue) GetPriceTargetHigh() float32 {
+func (o *CompanyAnalysisExtendedAnalysisValue) GetPriceTargetHigh() float64 {
 	if o == nil || o.PriceTargetHigh == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.PriceTargetHigh
@@ -840,7 +840,7 @@ func (o *CompanyAnalysisExtendedAnalysisValue) GetPriceTargetHigh() float32 {
 
 // GetPriceTargetHighOk returns a tuple with the PriceTargetHigh field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisValue) GetPriceTargetHighOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisValue) GetPriceTargetHighOk() (*float64, bool) {
 	if o == nil || o.PriceTargetHigh == nil {
 		return nil, false
 	}
@@ -856,15 +856,15 @@ func (o *CompanyAnalysisExtendedAnalysisValue) HasPriceTargetHigh() bool {
 	return false
 }
 
-// SetPriceTargetHigh gets a reference to the given float32 and assigns it to the PriceTargetHigh field.
-func (o *CompanyAnalysisExtendedAnalysisValue) SetPriceTargetHigh(v float32) {
+// SetPriceTargetHigh gets a reference to the given float64 and assigns it to the PriceTargetHigh field.
+func (o *CompanyAnalysisExtendedAnalysisValue) SetPriceTargetHigh(v float64) {
 	o.PriceTargetHigh = &v
 }
 
 // GetPriceTargetAnalystCount returns the PriceTargetAnalystCount field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisValue) GetPriceTargetAnalystCount() float32 {
+func (o *CompanyAnalysisExtendedAnalysisValue) GetPriceTargetAnalystCount() float64 {
 	if o == nil || o.PriceTargetAnalystCount == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.PriceTargetAnalystCount
@@ -872,7 +872,7 @@ func (o *CompanyAnalysisExtendedAnalysisValue) GetPriceTargetAnalystCount() floa
 
 // GetPriceTargetAnalystCountOk returns a tuple with the PriceTargetAnalystCount field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisValue) GetPriceTargetAnalystCountOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisValue) GetPriceTargetAnalystCountOk() (*float64, bool) {
 	if o == nil || o.PriceTargetAnalystCount == nil {
 		return nil, false
 	}
@@ -888,8 +888,8 @@ func (o *CompanyAnalysisExtendedAnalysisValue) HasPriceTargetAnalystCount() bool
 	return false
 }
 
-// SetPriceTargetAnalystCount gets a reference to the given float32 and assigns it to the PriceTargetAnalystCount field.
-func (o *CompanyAnalysisExtendedAnalysisValue) SetPriceTargetAnalystCount(v float32) {
+// SetPriceTargetAnalystCount gets a reference to the given float64 and assigns it to the PriceTargetAnalystCount field.
+func (o *CompanyAnalysisExtendedAnalysisValue) SetPriceTargetAnalystCount(v float64) {
 	o.PriceTargetAnalystCount = &v
 }
 
