@@ -4,9 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Board** | Pointer to [**map[string]CompanyAnalysisExtendedRawDataMembersData**](companyAnalysisExtendedRawDataMembersData.md) |  | [optional] 
-**Management** | Pointer to [**map[string]CompanyAnalysisExtendedRawDataMembersData**](companyAnalysisExtendedRawDataMembersData.md) |  | [optional] 
-**Leader** | Pointer to [**CompanyAnalysisExtendedRawDataMembersLeaderData**](companyAnalysisExtendedRawDataMembersLeaderData.md) |  | [optional] 
+**Board** | Pointer to [**map[string]CompanyAnalysisExtendedRawDataMembersData**](CompanyAnalysisExtendedRawDataMembersData.md) |  | [optional] 
+**Management** | Pointer to [**map[string]CompanyAnalysisExtendedRawDataMembersData**](CompanyAnalysisExtendedRawDataMembersData.md) |  | [optional] 
+**Leader** | Pointer to [**CompanyAnalysisExtendedRawDataMembersLeaderData**](CompanyAnalysisExtendedRawDataMembersLeaderData.md) |  | [optional] 
 
 ## Methods
 

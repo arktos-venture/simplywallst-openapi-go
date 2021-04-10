@@ -8,8 +8,8 @@ Name | Type | Description | Notes
 **Iso2** | Pointer to **string** |  | [optional] 
 **Iso3** | Pointer to **string** |  | [optional] 
 **Type** | Pointer to **string** |  | [optional] 
-**Links** | Pointer to [**CountryLinks**](country_links.md) |  | [optional] 
-**Fields** | Pointer to [**CountryFields**](country_fields.md) |  | [optional] 
+**Links** | Pointer to [**CountryLinks**](CountryLinks.md) |  | [optional] 
+**Fields** | Pointer to [**CountryFields**](CountryFields.md) |  | [optional] 
 
 ## Methods
 

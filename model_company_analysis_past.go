@@ -16,8 +16,8 @@ import (
 
 // CompanyAnalysisPast struct for CompanyAnalysisPast
 type CompanyAnalysisPast struct {
-	Growth1y *float32 `json:"growth_1y,omitempty"`
-	Growth5y *float32 `json:"growth_5y,omitempty"`
+	Growth1y *float64 `json:"growth_1y,omitempty"`
+	Growth5y *float64 `json:"growth_5y,omitempty"`
 }
 
 // NewCompanyAnalysisPast instantiates a new CompanyAnalysisPast object
@@ -38,9 +38,9 @@ func NewCompanyAnalysisPastWithDefaults() *CompanyAnalysisPast {
 }
 
 // GetGrowth1y returns the Growth1y field value if set, zero value otherwise.
-func (o *CompanyAnalysisPast) GetGrowth1y() float32 {
+func (o *CompanyAnalysisPast) GetGrowth1y() float64 {
 	if o == nil || o.Growth1y == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.Growth1y
@@ -48,7 +48,7 @@ func (o *CompanyAnalysisPast) GetGrowth1y() float32 {
 
 // GetGrowth1yOk returns a tuple with the Growth1y field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisPast) GetGrowth1yOk() (*float32, bool) {
+func (o *CompanyAnalysisPast) GetGrowth1yOk() (*float64, bool) {
 	if o == nil || o.Growth1y == nil {
 		return nil, false
 	}
@@ -64,15 +64,15 @@ func (o *CompanyAnalysisPast) HasGrowth1y() bool {
 	return false
 }
 
-// SetGrowth1y gets a reference to the given float32 and assigns it to the Growth1y field.
-func (o *CompanyAnalysisPast) SetGrowth1y(v float32) {
+// SetGrowth1y gets a reference to the given float64 and assigns it to the Growth1y field.
+func (o *CompanyAnalysisPast) SetGrowth1y(v float64) {
 	o.Growth1y = &v
 }
 
 // GetGrowth5y returns the Growth5y field value if set, zero value otherwise.
-func (o *CompanyAnalysisPast) GetGrowth5y() float32 {
+func (o *CompanyAnalysisPast) GetGrowth5y() float64 {
 	if o == nil || o.Growth5y == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.Growth5y
@@ -80,7 +80,7 @@ func (o *CompanyAnalysisPast) GetGrowth5y() float32 {
 
 // GetGrowth5yOk returns a tuple with the Growth5y field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisPast) GetGrowth5yOk() (*float32, bool) {
+func (o *CompanyAnalysisPast) GetGrowth5yOk() (*float64, bool) {
 	if o == nil || o.Growth5y == nil {
 		return nil, false
 	}
@@ -96,8 +96,8 @@ func (o *CompanyAnalysisPast) HasGrowth5y() bool {
 	return false
 }
 
-// SetGrowth5y gets a reference to the given float32 and assigns it to the Growth5y field.
-func (o *CompanyAnalysisPast) SetGrowth5y(v float32) {
+// SetGrowth5y gets a reference to the given float64 and assigns it to the Growth5y field.
+func (o *CompanyAnalysisPast) SetGrowth5y(v float64) {
 	o.Growth5y = &v
 }
 

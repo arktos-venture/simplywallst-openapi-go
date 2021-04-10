@@ -5,21 +5,21 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | Pointer to **string** |  | [optional] 
-**SharePrice** | Pointer to **float32** |  | [optional] 
-**MarketCap** | Pointer to **float32** |  | [optional] 
-**IntrinsicDiscount** | Pointer to **float32** |  | [optional] 
-**Pe** | Pointer to **float32** |  | [optional] 
-**Pb** | Pointer to **float32** |  | [optional] 
-**Peg** | Pointer to **float32** |  | [optional] 
-**Roe** | Pointer to **float32** |  | [optional] 
-**Roa** | Pointer to **float32** |  | [optional] 
-**Eps** | Pointer to **float32** |  | [optional] 
-**DebtEquity** | Pointer to **float32** |  | [optional] 
-**AnalystCount** | Pointer to **float32** |  | [optional] 
-**Dividend** | Pointer to [**CompanyAnalysisDividend**](companyAnalysisDividend.md) |  | [optional] 
-**Future** | Pointer to [**CompanyAnalysisFuture**](companyAnalysisFuture.md) |  | [optional] 
-**Past** | Pointer to [**CompanyAnalysisPast**](companyAnalysisPast.md) |  | [optional] 
-**Extended** | Pointer to [**CompanyAnalysisExtendedData**](companyAnalysisExtendedData.md) |  | [optional] 
+**SharePrice** | Pointer to **float64** |  | [optional] 
+**MarketCap** | Pointer to **float64** |  | [optional] 
+**IntrinsicDiscount** | Pointer to **float64** |  | [optional] 
+**Pe** | Pointer to **float64** |  | [optional] 
+**Pb** | Pointer to **float64** |  | [optional] 
+**Peg** | Pointer to **float64** |  | [optional] 
+**Roe** | Pointer to **float64** |  | [optional] 
+**Roa** | Pointer to **float64** |  | [optional] 
+**Eps** | Pointer to **float64** |  | [optional] 
+**DebtEquity** | Pointer to **float64** |  | [optional] 
+**AnalystCount** | Pointer to **float64** |  | [optional] 
+**Dividend** | Pointer to [**CompanyAnalysisDividend**](CompanyAnalysisDividend.md) |  | [optional] 
+**Future** | Pointer to [**CompanyAnalysisFuture**](CompanyAnalysisFuture.md) |  | [optional] 
+**Past** | Pointer to [**CompanyAnalysisPast**](CompanyAnalysisPast.md) |  | [optional] 
+**Extended** | Pointer to [**CompanyAnalysisExtendedData**](CompanyAnalysisExtendedData.md) |  | [optional] 
 
 ## Methods
 
@@ -67,20 +67,20 @@ HasId returns a boolean if a field has been set.
 
 ### GetSharePrice
 
-`func (o *CompanyDataAnalysis) GetSharePrice() float32`
+`func (o *CompanyDataAnalysis) GetSharePrice() float64`
 
 GetSharePrice returns the SharePrice field if non-nil, zero value otherwise.
 
 ### GetSharePriceOk
 
-`func (o *CompanyDataAnalysis) GetSharePriceOk() (*float32, bool)`
+`func (o *CompanyDataAnalysis) GetSharePriceOk() (*float64, bool)`
 
 GetSharePriceOk returns a tuple with the SharePrice field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetSharePrice
 
-`func (o *CompanyDataAnalysis) SetSharePrice(v float32)`
+`func (o *CompanyDataAnalysis) SetSharePrice(v float64)`
 
 SetSharePrice sets SharePrice field to given value.
 
@@ -92,20 +92,20 @@ HasSharePrice returns a boolean if a field has been set.
 
 ### GetMarketCap
 
-`func (o *CompanyDataAnalysis) GetMarketCap() float32`
+`func (o *CompanyDataAnalysis) GetMarketCap() float64`
 
 GetMarketCap returns the MarketCap field if non-nil, zero value otherwise.
 
 ### GetMarketCapOk
 
-`func (o *CompanyDataAnalysis) GetMarketCapOk() (*float32, bool)`
+`func (o *CompanyDataAnalysis) GetMarketCapOk() (*float64, bool)`
 
 GetMarketCapOk returns a tuple with the MarketCap field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetMarketCap
 
-`func (o *CompanyDataAnalysis) SetMarketCap(v float32)`
+`func (o *CompanyDataAnalysis) SetMarketCap(v float64)`
 
 SetMarketCap sets MarketCap field to given value.
 
@@ -117,20 +117,20 @@ HasMarketCap returns a boolean if a field has been set.
 
 ### GetIntrinsicDiscount
 
-`func (o *CompanyDataAnalysis) GetIntrinsicDiscount() float32`
+`func (o *CompanyDataAnalysis) GetIntrinsicDiscount() float64`
 
 GetIntrinsicDiscount returns the IntrinsicDiscount field if non-nil, zero value otherwise.
 
 ### GetIntrinsicDiscountOk
 
-`func (o *CompanyDataAnalysis) GetIntrinsicDiscountOk() (*float32, bool)`
+`func (o *CompanyDataAnalysis) GetIntrinsicDiscountOk() (*float64, bool)`
 
 GetIntrinsicDiscountOk returns a tuple with the IntrinsicDiscount field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetIntrinsicDiscount
 
-`func (o *CompanyDataAnalysis) SetIntrinsicDiscount(v float32)`
+`func (o *CompanyDataAnalysis) SetIntrinsicDiscount(v float64)`
 
 SetIntrinsicDiscount sets IntrinsicDiscount field to given value.
 
@@ -142,20 +142,20 @@ HasIntrinsicDiscount returns a boolean if a field has been set.
 
 ### GetPe
 
-`func (o *CompanyDataAnalysis) GetPe() float32`
+`func (o *CompanyDataAnalysis) GetPe() float64`
 
 GetPe returns the Pe field if non-nil, zero value otherwise.
 
 ### GetPeOk
 
-`func (o *CompanyDataAnalysis) GetPeOk() (*float32, bool)`
+`func (o *CompanyDataAnalysis) GetPeOk() (*float64, bool)`
 
 GetPeOk returns a tuple with the Pe field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetPe
 
-`func (o *CompanyDataAnalysis) SetPe(v float32)`
+`func (o *CompanyDataAnalysis) SetPe(v float64)`
 
 SetPe sets Pe field to given value.
 
@@ -167,20 +167,20 @@ HasPe returns a boolean if a field has been set.
 
 ### GetPb
 
-`func (o *CompanyDataAnalysis) GetPb() float32`
+`func (o *CompanyDataAnalysis) GetPb() float64`
 
 GetPb returns the Pb field if non-nil, zero value otherwise.
 
 ### GetPbOk
 
-`func (o *CompanyDataAnalysis) GetPbOk() (*float32, bool)`
+`func (o *CompanyDataAnalysis) GetPbOk() (*float64, bool)`
 
 GetPbOk returns a tuple with the Pb field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetPb
 
-`func (o *CompanyDataAnalysis) SetPb(v float32)`
+`func (o *CompanyDataAnalysis) SetPb(v float64)`
 
 SetPb sets Pb field to given value.
 
@@ -192,20 +192,20 @@ HasPb returns a boolean if a field has been set.
 
 ### GetPeg
 
-`func (o *CompanyDataAnalysis) GetPeg() float32`
+`func (o *CompanyDataAnalysis) GetPeg() float64`
 
 GetPeg returns the Peg field if non-nil, zero value otherwise.
 
 ### GetPegOk
 
-`func (o *CompanyDataAnalysis) GetPegOk() (*float32, bool)`
+`func (o *CompanyDataAnalysis) GetPegOk() (*float64, bool)`
 
 GetPegOk returns a tuple with the Peg field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetPeg
 
-`func (o *CompanyDataAnalysis) SetPeg(v float32)`
+`func (o *CompanyDataAnalysis) SetPeg(v float64)`
 
 SetPeg sets Peg field to given value.
 
@@ -217,20 +217,20 @@ HasPeg returns a boolean if a field has been set.
 
 ### GetRoe
 
-`func (o *CompanyDataAnalysis) GetRoe() float32`
+`func (o *CompanyDataAnalysis) GetRoe() float64`
 
 GetRoe returns the Roe field if non-nil, zero value otherwise.
 
 ### GetRoeOk
 
-`func (o *CompanyDataAnalysis) GetRoeOk() (*float32, bool)`
+`func (o *CompanyDataAnalysis) GetRoeOk() (*float64, bool)`
 
 GetRoeOk returns a tuple with the Roe field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRoe
 
-`func (o *CompanyDataAnalysis) SetRoe(v float32)`
+`func (o *CompanyDataAnalysis) SetRoe(v float64)`
 
 SetRoe sets Roe field to given value.
 
@@ -242,20 +242,20 @@ HasRoe returns a boolean if a field has been set.
 
 ### GetRoa
 
-`func (o *CompanyDataAnalysis) GetRoa() float32`
+`func (o *CompanyDataAnalysis) GetRoa() float64`
 
 GetRoa returns the Roa field if non-nil, zero value otherwise.
 
 ### GetRoaOk
 
-`func (o *CompanyDataAnalysis) GetRoaOk() (*float32, bool)`
+`func (o *CompanyDataAnalysis) GetRoaOk() (*float64, bool)`
 
 GetRoaOk returns a tuple with the Roa field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRoa
 
-`func (o *CompanyDataAnalysis) SetRoa(v float32)`
+`func (o *CompanyDataAnalysis) SetRoa(v float64)`
 
 SetRoa sets Roa field to given value.
 
@@ -267,20 +267,20 @@ HasRoa returns a boolean if a field has been set.
 
 ### GetEps
 
-`func (o *CompanyDataAnalysis) GetEps() float32`
+`func (o *CompanyDataAnalysis) GetEps() float64`
 
 GetEps returns the Eps field if non-nil, zero value otherwise.
 
 ### GetEpsOk
 
-`func (o *CompanyDataAnalysis) GetEpsOk() (*float32, bool)`
+`func (o *CompanyDataAnalysis) GetEpsOk() (*float64, bool)`
 
 GetEpsOk returns a tuple with the Eps field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetEps
 
-`func (o *CompanyDataAnalysis) SetEps(v float32)`
+`func (o *CompanyDataAnalysis) SetEps(v float64)`
 
 SetEps sets Eps field to given value.
 
@@ -292,20 +292,20 @@ HasEps returns a boolean if a field has been set.
 
 ### GetDebtEquity
 
-`func (o *CompanyDataAnalysis) GetDebtEquity() float32`
+`func (o *CompanyDataAnalysis) GetDebtEquity() float64`
 
 GetDebtEquity returns the DebtEquity field if non-nil, zero value otherwise.
 
 ### GetDebtEquityOk
 
-`func (o *CompanyDataAnalysis) GetDebtEquityOk() (*float32, bool)`
+`func (o *CompanyDataAnalysis) GetDebtEquityOk() (*float64, bool)`
 
 GetDebtEquityOk returns a tuple with the DebtEquity field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetDebtEquity
 
-`func (o *CompanyDataAnalysis) SetDebtEquity(v float32)`
+`func (o *CompanyDataAnalysis) SetDebtEquity(v float64)`
 
 SetDebtEquity sets DebtEquity field to given value.
 
@@ -317,20 +317,20 @@ HasDebtEquity returns a boolean if a field has been set.
 
 ### GetAnalystCount
 
-`func (o *CompanyDataAnalysis) GetAnalystCount() float32`
+`func (o *CompanyDataAnalysis) GetAnalystCount() float64`
 
 GetAnalystCount returns the AnalystCount field if non-nil, zero value otherwise.
 
 ### GetAnalystCountOk
 
-`func (o *CompanyDataAnalysis) GetAnalystCountOk() (*float32, bool)`
+`func (o *CompanyDataAnalysis) GetAnalystCountOk() (*float64, bool)`
 
 GetAnalystCountOk returns a tuple with the AnalystCount field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetAnalystCount
 
-`func (o *CompanyDataAnalysis) SetAnalystCount(v float32)`
+`func (o *CompanyDataAnalysis) SetAnalystCount(v float64)`
 
 SetAnalystCount sets AnalystCount field to given value.
 

@@ -16,10 +16,10 @@ import (
 
 // CompanyAnalysisFuture struct for CompanyAnalysisFuture
 type CompanyAnalysisFuture struct {
-	Growth1y *float32 `json:"growth_1y,omitempty"`
-	Growth3y *float32 `json:"growth_3y,omitempty"`
-	Roe1y    *float32 `json:"roe_1y,omitempty"`
-	Roe3y    *float32 `json:"roe_3y,omitempty"`
+	Growth1y *float64 `json:"growth_1y,omitempty"`
+	Growth3y *float64 `json:"growth_3y,omitempty"`
+	Roe1y    *float64 `json:"roe_1y,omitempty"`
+	Roe3y    *float64 `json:"roe_3y,omitempty"`
 }
 
 // NewCompanyAnalysisFuture instantiates a new CompanyAnalysisFuture object
@@ -40,9 +40,9 @@ func NewCompanyAnalysisFutureWithDefaults() *CompanyAnalysisFuture {
 }
 
 // GetGrowth1y returns the Growth1y field value if set, zero value otherwise.
-func (o *CompanyAnalysisFuture) GetGrowth1y() float32 {
+func (o *CompanyAnalysisFuture) GetGrowth1y() float64 {
 	if o == nil || o.Growth1y == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.Growth1y
@@ -50,7 +50,7 @@ func (o *CompanyAnalysisFuture) GetGrowth1y() float32 {
 
 // GetGrowth1yOk returns a tuple with the Growth1y field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisFuture) GetGrowth1yOk() (*float32, bool) {
+func (o *CompanyAnalysisFuture) GetGrowth1yOk() (*float64, bool) {
 	if o == nil || o.Growth1y == nil {
 		return nil, false
 	}
@@ -66,15 +66,15 @@ func (o *CompanyAnalysisFuture) HasGrowth1y() bool {
 	return false
 }
 
-// SetGrowth1y gets a reference to the given float32 and assigns it to the Growth1y field.
-func (o *CompanyAnalysisFuture) SetGrowth1y(v float32) {
+// SetGrowth1y gets a reference to the given float64 and assigns it to the Growth1y field.
+func (o *CompanyAnalysisFuture) SetGrowth1y(v float64) {
 	o.Growth1y = &v
 }
 
 // GetGrowth3y returns the Growth3y field value if set, zero value otherwise.
-func (o *CompanyAnalysisFuture) GetGrowth3y() float32 {
+func (o *CompanyAnalysisFuture) GetGrowth3y() float64 {
 	if o == nil || o.Growth3y == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.Growth3y
@@ -82,7 +82,7 @@ func (o *CompanyAnalysisFuture) GetGrowth3y() float32 {
 
 // GetGrowth3yOk returns a tuple with the Growth3y field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisFuture) GetGrowth3yOk() (*float32, bool) {
+func (o *CompanyAnalysisFuture) GetGrowth3yOk() (*float64, bool) {
 	if o == nil || o.Growth3y == nil {
 		return nil, false
 	}
@@ -98,15 +98,15 @@ func (o *CompanyAnalysisFuture) HasGrowth3y() bool {
 	return false
 }
 
-// SetGrowth3y gets a reference to the given float32 and assigns it to the Growth3y field.
-func (o *CompanyAnalysisFuture) SetGrowth3y(v float32) {
+// SetGrowth3y gets a reference to the given float64 and assigns it to the Growth3y field.
+func (o *CompanyAnalysisFuture) SetGrowth3y(v float64) {
 	o.Growth3y = &v
 }
 
 // GetRoe1y returns the Roe1y field value if set, zero value otherwise.
-func (o *CompanyAnalysisFuture) GetRoe1y() float32 {
+func (o *CompanyAnalysisFuture) GetRoe1y() float64 {
 	if o == nil || o.Roe1y == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.Roe1y
@@ -114,7 +114,7 @@ func (o *CompanyAnalysisFuture) GetRoe1y() float32 {
 
 // GetRoe1yOk returns a tuple with the Roe1y field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisFuture) GetRoe1yOk() (*float32, bool) {
+func (o *CompanyAnalysisFuture) GetRoe1yOk() (*float64, bool) {
 	if o == nil || o.Roe1y == nil {
 		return nil, false
 	}
@@ -130,15 +130,15 @@ func (o *CompanyAnalysisFuture) HasRoe1y() bool {
 	return false
 }
 
-// SetRoe1y gets a reference to the given float32 and assigns it to the Roe1y field.
-func (o *CompanyAnalysisFuture) SetRoe1y(v float32) {
+// SetRoe1y gets a reference to the given float64 and assigns it to the Roe1y field.
+func (o *CompanyAnalysisFuture) SetRoe1y(v float64) {
 	o.Roe1y = &v
 }
 
 // GetRoe3y returns the Roe3y field value if set, zero value otherwise.
-func (o *CompanyAnalysisFuture) GetRoe3y() float32 {
+func (o *CompanyAnalysisFuture) GetRoe3y() float64 {
 	if o == nil || o.Roe3y == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.Roe3y
@@ -146,7 +146,7 @@ func (o *CompanyAnalysisFuture) GetRoe3y() float32 {
 
 // GetRoe3yOk returns a tuple with the Roe3y field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisFuture) GetRoe3yOk() (*float32, bool) {
+func (o *CompanyAnalysisFuture) GetRoe3yOk() (*float64, bool) {
 	if o == nil || o.Roe3y == nil {
 		return nil, false
 	}
@@ -162,8 +162,8 @@ func (o *CompanyAnalysisFuture) HasRoe3y() bool {
 	return false
 }
 
-// SetRoe3y gets a reference to the given float32 and assigns it to the Roe3y field.
-func (o *CompanyAnalysisFuture) SetRoe3y(v float32) {
+// SetRoe3y gets a reference to the given float64 and assigns it to the Roe3y field.
+func (o *CompanyAnalysisFuture) SetRoe3y(v float64) {
 	o.Roe3y = &v
 }
 

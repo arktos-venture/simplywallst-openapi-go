@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **Id** | Pointer to **string** |  | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
 **WarningType** | Pointer to **int64** |  | [optional] 
-**Industry** | Pointer to [**CompanyDataInfoIndustry**](companyDataInfo_industry.md) |  | [optional] 
+**Industry** | Pointer to [**CompanyDataInfoIndustry**](CompanyDataInfoIndustry.md) |  | [optional] 
 **Fund** | Pointer to **bool** |  | [optional] 
 **Status** | Pointer to **string** |  | [optional] 
 **Currency** | Pointer to **string** |  | [optional] 
@@ -19,7 +19,7 @@ Name | Type | Description | Notes
 **LogoUrl** | Pointer to **string** |  | [optional] 
 **CoverUrl** | Pointer to **string** |  | [optional] 
 **CoverSmallUrl** | Pointer to **string** |  | [optional] 
-**Ceo** | Pointer to [**CompanyDataInfoCeo**](companyDataInfo_ceo.md) |  | [optional] 
+**Ceo** | Pointer to [**CompanyDataInfoCeo**](CompanyDataInfoCeo.md) |  | [optional] 
 **LegalName** | Pointer to **string** |  | [optional] 
 
 ## Methods

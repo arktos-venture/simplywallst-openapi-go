@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **CompanyId** | Pointer to **int64** |  | [optional] 
-**Brokers** | Pointer to [**EstimateCoverageBrokers**](estimateCoverage_brokers.md) |  | [optional] 
+**Brokers** | Pointer to [**EstimateCoverageBrokers**](EstimateCoverageBrokers.md) |  | [optional] 
 
 ## Methods
 

@@ -19,12 +19,12 @@ type InternationalMarketReturnDate struct {
 	CountryId    *int64   `json:"country_id,omitempty"`
 	Country      *string  `json:"country,omitempty"`
 	CountryIso   *string  `json:"country_iso,omitempty"`
-	Return7d     *float32 `json:"return_7d,omitempty"`
-	Return30d    *float32 `json:"return_30d,omitempty"`
-	Return90d    *float32 `json:"return_90d,omitempty"`
-	Return1yrAbs *float32 `json:"return_1yr_abs,omitempty"`
-	Return3yrAbs *float32 `json:"return_3yr_abs,omitempty"`
-	Return5yrAbs *float32 `json:"return_5yr_abs,omitempty"`
+	Return7d     *float64 `json:"return_7d,omitempty"`
+	Return30d    *float64 `json:"return_30d,omitempty"`
+	Return90d    *float64 `json:"return_90d,omitempty"`
+	Return1yrAbs *float64 `json:"return_1yr_abs,omitempty"`
+	Return3yrAbs *float64 `json:"return_3yr_abs,omitempty"`
+	Return5yrAbs *float64 `json:"return_5yr_abs,omitempty"`
 }
 
 // NewInternationalMarketReturnDate instantiates a new InternationalMarketReturnDate object
@@ -141,9 +141,9 @@ func (o *InternationalMarketReturnDate) SetCountryIso(v string) {
 }
 
 // GetReturn7d returns the Return7d field value if set, zero value otherwise.
-func (o *InternationalMarketReturnDate) GetReturn7d() float32 {
+func (o *InternationalMarketReturnDate) GetReturn7d() float64 {
 	if o == nil || o.Return7d == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.Return7d
@@ -151,7 +151,7 @@ func (o *InternationalMarketReturnDate) GetReturn7d() float32 {
 
 // GetReturn7dOk returns a tuple with the Return7d field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *InternationalMarketReturnDate) GetReturn7dOk() (*float32, bool) {
+func (o *InternationalMarketReturnDate) GetReturn7dOk() (*float64, bool) {
 	if o == nil || o.Return7d == nil {
 		return nil, false
 	}
@@ -167,15 +167,15 @@ func (o *InternationalMarketReturnDate) HasReturn7d() bool {
 	return false
 }
 
-// SetReturn7d gets a reference to the given float32 and assigns it to the Return7d field.
-func (o *InternationalMarketReturnDate) SetReturn7d(v float32) {
+// SetReturn7d gets a reference to the given float64 and assigns it to the Return7d field.
+func (o *InternationalMarketReturnDate) SetReturn7d(v float64) {
 	o.Return7d = &v
 }
 
 // GetReturn30d returns the Return30d field value if set, zero value otherwise.
-func (o *InternationalMarketReturnDate) GetReturn30d() float32 {
+func (o *InternationalMarketReturnDate) GetReturn30d() float64 {
 	if o == nil || o.Return30d == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.Return30d
@@ -183,7 +183,7 @@ func (o *InternationalMarketReturnDate) GetReturn30d() float32 {
 
 // GetReturn30dOk returns a tuple with the Return30d field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *InternationalMarketReturnDate) GetReturn30dOk() (*float32, bool) {
+func (o *InternationalMarketReturnDate) GetReturn30dOk() (*float64, bool) {
 	if o == nil || o.Return30d == nil {
 		return nil, false
 	}
@@ -199,15 +199,15 @@ func (o *InternationalMarketReturnDate) HasReturn30d() bool {
 	return false
 }
 
-// SetReturn30d gets a reference to the given float32 and assigns it to the Return30d field.
-func (o *InternationalMarketReturnDate) SetReturn30d(v float32) {
+// SetReturn30d gets a reference to the given float64 and assigns it to the Return30d field.
+func (o *InternationalMarketReturnDate) SetReturn30d(v float64) {
 	o.Return30d = &v
 }
 
 // GetReturn90d returns the Return90d field value if set, zero value otherwise.
-func (o *InternationalMarketReturnDate) GetReturn90d() float32 {
+func (o *InternationalMarketReturnDate) GetReturn90d() float64 {
 	if o == nil || o.Return90d == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.Return90d
@@ -215,7 +215,7 @@ func (o *InternationalMarketReturnDate) GetReturn90d() float32 {
 
 // GetReturn90dOk returns a tuple with the Return90d field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *InternationalMarketReturnDate) GetReturn90dOk() (*float32, bool) {
+func (o *InternationalMarketReturnDate) GetReturn90dOk() (*float64, bool) {
 	if o == nil || o.Return90d == nil {
 		return nil, false
 	}
@@ -231,15 +231,15 @@ func (o *InternationalMarketReturnDate) HasReturn90d() bool {
 	return false
 }
 
-// SetReturn90d gets a reference to the given float32 and assigns it to the Return90d field.
-func (o *InternationalMarketReturnDate) SetReturn90d(v float32) {
+// SetReturn90d gets a reference to the given float64 and assigns it to the Return90d field.
+func (o *InternationalMarketReturnDate) SetReturn90d(v float64) {
 	o.Return90d = &v
 }
 
 // GetReturn1yrAbs returns the Return1yrAbs field value if set, zero value otherwise.
-func (o *InternationalMarketReturnDate) GetReturn1yrAbs() float32 {
+func (o *InternationalMarketReturnDate) GetReturn1yrAbs() float64 {
 	if o == nil || o.Return1yrAbs == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.Return1yrAbs
@@ -247,7 +247,7 @@ func (o *InternationalMarketReturnDate) GetReturn1yrAbs() float32 {
 
 // GetReturn1yrAbsOk returns a tuple with the Return1yrAbs field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *InternationalMarketReturnDate) GetReturn1yrAbsOk() (*float32, bool) {
+func (o *InternationalMarketReturnDate) GetReturn1yrAbsOk() (*float64, bool) {
 	if o == nil || o.Return1yrAbs == nil {
 		return nil, false
 	}
@@ -263,15 +263,15 @@ func (o *InternationalMarketReturnDate) HasReturn1yrAbs() bool {
 	return false
 }
 
-// SetReturn1yrAbs gets a reference to the given float32 and assigns it to the Return1yrAbs field.
-func (o *InternationalMarketReturnDate) SetReturn1yrAbs(v float32) {
+// SetReturn1yrAbs gets a reference to the given float64 and assigns it to the Return1yrAbs field.
+func (o *InternationalMarketReturnDate) SetReturn1yrAbs(v float64) {
 	o.Return1yrAbs = &v
 }
 
 // GetReturn3yrAbs returns the Return3yrAbs field value if set, zero value otherwise.
-func (o *InternationalMarketReturnDate) GetReturn3yrAbs() float32 {
+func (o *InternationalMarketReturnDate) GetReturn3yrAbs() float64 {
 	if o == nil || o.Return3yrAbs == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.Return3yrAbs
@@ -279,7 +279,7 @@ func (o *InternationalMarketReturnDate) GetReturn3yrAbs() float32 {
 
 // GetReturn3yrAbsOk returns a tuple with the Return3yrAbs field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *InternationalMarketReturnDate) GetReturn3yrAbsOk() (*float32, bool) {
+func (o *InternationalMarketReturnDate) GetReturn3yrAbsOk() (*float64, bool) {
 	if o == nil || o.Return3yrAbs == nil {
 		return nil, false
 	}
@@ -295,15 +295,15 @@ func (o *InternationalMarketReturnDate) HasReturn3yrAbs() bool {
 	return false
 }
 
-// SetReturn3yrAbs gets a reference to the given float32 and assigns it to the Return3yrAbs field.
-func (o *InternationalMarketReturnDate) SetReturn3yrAbs(v float32) {
+// SetReturn3yrAbs gets a reference to the given float64 and assigns it to the Return3yrAbs field.
+func (o *InternationalMarketReturnDate) SetReturn3yrAbs(v float64) {
 	o.Return3yrAbs = &v
 }
 
 // GetReturn5yrAbs returns the Return5yrAbs field value if set, zero value otherwise.
-func (o *InternationalMarketReturnDate) GetReturn5yrAbs() float32 {
+func (o *InternationalMarketReturnDate) GetReturn5yrAbs() float64 {
 	if o == nil || o.Return5yrAbs == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.Return5yrAbs
@@ -311,7 +311,7 @@ func (o *InternationalMarketReturnDate) GetReturn5yrAbs() float32 {
 
 // GetReturn5yrAbsOk returns a tuple with the Return5yrAbs field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *InternationalMarketReturnDate) GetReturn5yrAbsOk() (*float32, bool) {
+func (o *InternationalMarketReturnDate) GetReturn5yrAbsOk() (*float64, bool) {
 	if o == nil || o.Return5yrAbs == nil {
 		return nil, false
 	}
@@ -327,8 +327,8 @@ func (o *InternationalMarketReturnDate) HasReturn5yrAbs() bool {
 	return false
 }
 
-// SetReturn5yrAbs gets a reference to the given float32 and assigns it to the Return5yrAbs field.
-func (o *InternationalMarketReturnDate) SetReturn5yrAbs(v float32) {
+// SetReturn5yrAbs gets a reference to the given float64 and assigns it to the Return5yrAbs field.
+func (o *InternationalMarketReturnDate) SetReturn5yrAbs(v float64) {
 	o.Return5yrAbs = &v
 }
 

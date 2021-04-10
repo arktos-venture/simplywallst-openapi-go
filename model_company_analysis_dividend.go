@@ -16,8 +16,8 @@ import (
 
 // CompanyAnalysisDividend struct for CompanyAnalysisDividend
 type CompanyAnalysisDividend struct {
-	Current  *float32 `json:"current,omitempty"`
-	Future   *float32 `json:"future,omitempty"`
+	Current  *float64 `json:"current,omitempty"`
+	Future   *float64 `json:"future,omitempty"`
 	Upcoming *bool    `json:"upcoming,omitempty"`
 	ExDate   *int64   `json:"ex_date,omitempty"`
 }
@@ -40,9 +40,9 @@ func NewCompanyAnalysisDividendWithDefaults() *CompanyAnalysisDividend {
 }
 
 // GetCurrent returns the Current field value if set, zero value otherwise.
-func (o *CompanyAnalysisDividend) GetCurrent() float32 {
+func (o *CompanyAnalysisDividend) GetCurrent() float64 {
 	if o == nil || o.Current == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.Current
@@ -50,7 +50,7 @@ func (o *CompanyAnalysisDividend) GetCurrent() float32 {
 
 // GetCurrentOk returns a tuple with the Current field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisDividend) GetCurrentOk() (*float32, bool) {
+func (o *CompanyAnalysisDividend) GetCurrentOk() (*float64, bool) {
 	if o == nil || o.Current == nil {
 		return nil, false
 	}
@@ -66,15 +66,15 @@ func (o *CompanyAnalysisDividend) HasCurrent() bool {
 	return false
 }
 
-// SetCurrent gets a reference to the given float32 and assigns it to the Current field.
-func (o *CompanyAnalysisDividend) SetCurrent(v float32) {
+// SetCurrent gets a reference to the given float64 and assigns it to the Current field.
+func (o *CompanyAnalysisDividend) SetCurrent(v float64) {
 	o.Current = &v
 }
 
 // GetFuture returns the Future field value if set, zero value otherwise.
-func (o *CompanyAnalysisDividend) GetFuture() float32 {
+func (o *CompanyAnalysisDividend) GetFuture() float64 {
 	if o == nil || o.Future == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.Future
@@ -82,7 +82,7 @@ func (o *CompanyAnalysisDividend) GetFuture() float32 {
 
 // GetFutureOk returns a tuple with the Future field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisDividend) GetFutureOk() (*float32, bool) {
+func (o *CompanyAnalysisDividend) GetFutureOk() (*float64, bool) {
 	if o == nil || o.Future == nil {
 		return nil, false
 	}
@@ -98,8 +98,8 @@ func (o *CompanyAnalysisDividend) HasFuture() bool {
 	return false
 }
 
-// SetFuture gets a reference to the given float32 and assigns it to the Future field.
-func (o *CompanyAnalysisDividend) SetFuture(v float32) {
+// SetFuture gets a reference to the given float64 and assigns it to the Future field.
+func (o *CompanyAnalysisDividend) SetFuture(v float64) {
 	o.Future = &v
 }
 

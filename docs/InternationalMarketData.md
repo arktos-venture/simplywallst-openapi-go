@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Top** | Pointer to [**map[string]InternationalMarketReturn**](internationalMarketReturn.md) |  | [optional] 
-**Worst** | Pointer to [**map[string]InternationalMarketReturn**](internationalMarketReturn.md) |  | [optional] 
+**Top** | Pointer to [**map[string]InternationalMarketReturn**](InternationalMarketReturn.md) |  | [optional] 
+**Worst** | Pointer to [**map[string]InternationalMarketReturn**](InternationalMarketReturn.md) |  | [optional] 
 
 ## Methods
 

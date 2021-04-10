@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Top** | Pointer to [**map[string]IndustryPerformanceDate**](industryPerformanceDate.md) |  | [optional] 
-**Worst** | Pointer to [**map[string]IndustryPerformanceDate**](industryPerformanceDate.md) |  | [optional] 
+**Top** | Pointer to [**map[string]IndustryPerformanceDate**](IndustryPerformanceDate.md) |  | [optional] 
+**Worst** | Pointer to [**map[string]IndustryPerformanceDate**](IndustryPerformanceDate.md) |  | [optional] 
 
 ## Methods
 

@@ -16,15 +16,15 @@ import (
 
 // CompanyAnalysisExtendedRawDataMarketCap struct for CompanyAnalysisExtendedRawDataMarketCap
 type CompanyAnalysisExtendedRawDataMarketCap struct {
-	Listing                          *float32 `json:"listing,omitempty"`
-	Primary                          *float32 `json:"primary,omitempty"`
-	Reported                         *float32 `json:"reported,omitempty"`
-	Usd                              *float32 `json:"usd,omitempty"`
-	SharesOutstanding                *float32 `json:"shares_outstanding,omitempty"`
-	SharesOutstandingCommonEquity    *float32 `json:"shares_outstanding_common_equity,omitempty"`
-	RelativeListingSharesOutstanding *float32 `json:"relative_listing_shares_outstanding,omitempty"`
-	TradingItemToPrimaryRatio        *float32 `json:"trading_item_to_primary_ratio,omitempty"`
-	TotalEnterpriseValueReported     *float32 `json:"total_enterprise_value_reported,omitempty"`
+	Listing                          *float64 `json:"listing,omitempty"`
+	Primary                          *float64 `json:"primary,omitempty"`
+	Reported                         *float64 `json:"reported,omitempty"`
+	Usd                              *float64 `json:"usd,omitempty"`
+	SharesOutstanding                *float64 `json:"shares_outstanding,omitempty"`
+	SharesOutstandingCommonEquity    *float64 `json:"shares_outstanding_common_equity,omitempty"`
+	RelativeListingSharesOutstanding *float64 `json:"relative_listing_shares_outstanding,omitempty"`
+	TradingItemToPrimaryRatio        *float64 `json:"trading_item_to_primary_ratio,omitempty"`
+	TotalEnterpriseValueReported     *float64 `json:"total_enterprise_value_reported,omitempty"`
 	MarketCapBand                    *string  `json:"market_cap_band,omitempty"`
 }
 
@@ -46,9 +46,9 @@ func NewCompanyAnalysisExtendedRawDataMarketCapWithDefaults() *CompanyAnalysisEx
 }
 
 // GetListing returns the Listing field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedRawDataMarketCap) GetListing() float32 {
+func (o *CompanyAnalysisExtendedRawDataMarketCap) GetListing() float64 {
 	if o == nil || o.Listing == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.Listing
@@ -56,7 +56,7 @@ func (o *CompanyAnalysisExtendedRawDataMarketCap) GetListing() float32 {
 
 // GetListingOk returns a tuple with the Listing field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedRawDataMarketCap) GetListingOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedRawDataMarketCap) GetListingOk() (*float64, bool) {
 	if o == nil || o.Listing == nil {
 		return nil, false
 	}
@@ -72,15 +72,15 @@ func (o *CompanyAnalysisExtendedRawDataMarketCap) HasListing() bool {
 	return false
 }
 
-// SetListing gets a reference to the given float32 and assigns it to the Listing field.
-func (o *CompanyAnalysisExtendedRawDataMarketCap) SetListing(v float32) {
+// SetListing gets a reference to the given float64 and assigns it to the Listing field.
+func (o *CompanyAnalysisExtendedRawDataMarketCap) SetListing(v float64) {
 	o.Listing = &v
 }
 
 // GetPrimary returns the Primary field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedRawDataMarketCap) GetPrimary() float32 {
+func (o *CompanyAnalysisExtendedRawDataMarketCap) GetPrimary() float64 {
 	if o == nil || o.Primary == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.Primary
@@ -88,7 +88,7 @@ func (o *CompanyAnalysisExtendedRawDataMarketCap) GetPrimary() float32 {
 
 // GetPrimaryOk returns a tuple with the Primary field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedRawDataMarketCap) GetPrimaryOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedRawDataMarketCap) GetPrimaryOk() (*float64, bool) {
 	if o == nil || o.Primary == nil {
 		return nil, false
 	}
@@ -104,15 +104,15 @@ func (o *CompanyAnalysisExtendedRawDataMarketCap) HasPrimary() bool {
 	return false
 }
 
-// SetPrimary gets a reference to the given float32 and assigns it to the Primary field.
-func (o *CompanyAnalysisExtendedRawDataMarketCap) SetPrimary(v float32) {
+// SetPrimary gets a reference to the given float64 and assigns it to the Primary field.
+func (o *CompanyAnalysisExtendedRawDataMarketCap) SetPrimary(v float64) {
 	o.Primary = &v
 }
 
 // GetReported returns the Reported field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedRawDataMarketCap) GetReported() float32 {
+func (o *CompanyAnalysisExtendedRawDataMarketCap) GetReported() float64 {
 	if o == nil || o.Reported == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.Reported
@@ -120,7 +120,7 @@ func (o *CompanyAnalysisExtendedRawDataMarketCap) GetReported() float32 {
 
 // GetReportedOk returns a tuple with the Reported field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedRawDataMarketCap) GetReportedOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedRawDataMarketCap) GetReportedOk() (*float64, bool) {
 	if o == nil || o.Reported == nil {
 		return nil, false
 	}
@@ -136,15 +136,15 @@ func (o *CompanyAnalysisExtendedRawDataMarketCap) HasReported() bool {
 	return false
 }
 
-// SetReported gets a reference to the given float32 and assigns it to the Reported field.
-func (o *CompanyAnalysisExtendedRawDataMarketCap) SetReported(v float32) {
+// SetReported gets a reference to the given float64 and assigns it to the Reported field.
+func (o *CompanyAnalysisExtendedRawDataMarketCap) SetReported(v float64) {
 	o.Reported = &v
 }
 
 // GetUsd returns the Usd field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedRawDataMarketCap) GetUsd() float32 {
+func (o *CompanyAnalysisExtendedRawDataMarketCap) GetUsd() float64 {
 	if o == nil || o.Usd == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.Usd
@@ -152,7 +152,7 @@ func (o *CompanyAnalysisExtendedRawDataMarketCap) GetUsd() float32 {
 
 // GetUsdOk returns a tuple with the Usd field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedRawDataMarketCap) GetUsdOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedRawDataMarketCap) GetUsdOk() (*float64, bool) {
 	if o == nil || o.Usd == nil {
 		return nil, false
 	}
@@ -168,15 +168,15 @@ func (o *CompanyAnalysisExtendedRawDataMarketCap) HasUsd() bool {
 	return false
 }
 
-// SetUsd gets a reference to the given float32 and assigns it to the Usd field.
-func (o *CompanyAnalysisExtendedRawDataMarketCap) SetUsd(v float32) {
+// SetUsd gets a reference to the given float64 and assigns it to the Usd field.
+func (o *CompanyAnalysisExtendedRawDataMarketCap) SetUsd(v float64) {
 	o.Usd = &v
 }
 
 // GetSharesOutstanding returns the SharesOutstanding field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedRawDataMarketCap) GetSharesOutstanding() float32 {
+func (o *CompanyAnalysisExtendedRawDataMarketCap) GetSharesOutstanding() float64 {
 	if o == nil || o.SharesOutstanding == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.SharesOutstanding
@@ -184,7 +184,7 @@ func (o *CompanyAnalysisExtendedRawDataMarketCap) GetSharesOutstanding() float32
 
 // GetSharesOutstandingOk returns a tuple with the SharesOutstanding field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedRawDataMarketCap) GetSharesOutstandingOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedRawDataMarketCap) GetSharesOutstandingOk() (*float64, bool) {
 	if o == nil || o.SharesOutstanding == nil {
 		return nil, false
 	}
@@ -200,15 +200,15 @@ func (o *CompanyAnalysisExtendedRawDataMarketCap) HasSharesOutstanding() bool {
 	return false
 }
 
-// SetSharesOutstanding gets a reference to the given float32 and assigns it to the SharesOutstanding field.
-func (o *CompanyAnalysisExtendedRawDataMarketCap) SetSharesOutstanding(v float32) {
+// SetSharesOutstanding gets a reference to the given float64 and assigns it to the SharesOutstanding field.
+func (o *CompanyAnalysisExtendedRawDataMarketCap) SetSharesOutstanding(v float64) {
 	o.SharesOutstanding = &v
 }
 
 // GetSharesOutstandingCommonEquity returns the SharesOutstandingCommonEquity field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedRawDataMarketCap) GetSharesOutstandingCommonEquity() float32 {
+func (o *CompanyAnalysisExtendedRawDataMarketCap) GetSharesOutstandingCommonEquity() float64 {
 	if o == nil || o.SharesOutstandingCommonEquity == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.SharesOutstandingCommonEquity
@@ -216,7 +216,7 @@ func (o *CompanyAnalysisExtendedRawDataMarketCap) GetSharesOutstandingCommonEqui
 
 // GetSharesOutstandingCommonEquityOk returns a tuple with the SharesOutstandingCommonEquity field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedRawDataMarketCap) GetSharesOutstandingCommonEquityOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedRawDataMarketCap) GetSharesOutstandingCommonEquityOk() (*float64, bool) {
 	if o == nil || o.SharesOutstandingCommonEquity == nil {
 		return nil, false
 	}
@@ -232,15 +232,15 @@ func (o *CompanyAnalysisExtendedRawDataMarketCap) HasSharesOutstandingCommonEqui
 	return false
 }
 
-// SetSharesOutstandingCommonEquity gets a reference to the given float32 and assigns it to the SharesOutstandingCommonEquity field.
-func (o *CompanyAnalysisExtendedRawDataMarketCap) SetSharesOutstandingCommonEquity(v float32) {
+// SetSharesOutstandingCommonEquity gets a reference to the given float64 and assigns it to the SharesOutstandingCommonEquity field.
+func (o *CompanyAnalysisExtendedRawDataMarketCap) SetSharesOutstandingCommonEquity(v float64) {
 	o.SharesOutstandingCommonEquity = &v
 }
 
 // GetRelativeListingSharesOutstanding returns the RelativeListingSharesOutstanding field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedRawDataMarketCap) GetRelativeListingSharesOutstanding() float32 {
+func (o *CompanyAnalysisExtendedRawDataMarketCap) GetRelativeListingSharesOutstanding() float64 {
 	if o == nil || o.RelativeListingSharesOutstanding == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.RelativeListingSharesOutstanding
@@ -248,7 +248,7 @@ func (o *CompanyAnalysisExtendedRawDataMarketCap) GetRelativeListingSharesOutsta
 
 // GetRelativeListingSharesOutstandingOk returns a tuple with the RelativeListingSharesOutstanding field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedRawDataMarketCap) GetRelativeListingSharesOutstandingOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedRawDataMarketCap) GetRelativeListingSharesOutstandingOk() (*float64, bool) {
 	if o == nil || o.RelativeListingSharesOutstanding == nil {
 		return nil, false
 	}
@@ -264,15 +264,15 @@ func (o *CompanyAnalysisExtendedRawDataMarketCap) HasRelativeListingSharesOutsta
 	return false
 }
 
-// SetRelativeListingSharesOutstanding gets a reference to the given float32 and assigns it to the RelativeListingSharesOutstanding field.
-func (o *CompanyAnalysisExtendedRawDataMarketCap) SetRelativeListingSharesOutstanding(v float32) {
+// SetRelativeListingSharesOutstanding gets a reference to the given float64 and assigns it to the RelativeListingSharesOutstanding field.
+func (o *CompanyAnalysisExtendedRawDataMarketCap) SetRelativeListingSharesOutstanding(v float64) {
 	o.RelativeListingSharesOutstanding = &v
 }
 
 // GetTradingItemToPrimaryRatio returns the TradingItemToPrimaryRatio field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedRawDataMarketCap) GetTradingItemToPrimaryRatio() float32 {
+func (o *CompanyAnalysisExtendedRawDataMarketCap) GetTradingItemToPrimaryRatio() float64 {
 	if o == nil || o.TradingItemToPrimaryRatio == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.TradingItemToPrimaryRatio
@@ -280,7 +280,7 @@ func (o *CompanyAnalysisExtendedRawDataMarketCap) GetTradingItemToPrimaryRatio()
 
 // GetTradingItemToPrimaryRatioOk returns a tuple with the TradingItemToPrimaryRatio field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedRawDataMarketCap) GetTradingItemToPrimaryRatioOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedRawDataMarketCap) GetTradingItemToPrimaryRatioOk() (*float64, bool) {
 	if o == nil || o.TradingItemToPrimaryRatio == nil {
 		return nil, false
 	}
@@ -296,15 +296,15 @@ func (o *CompanyAnalysisExtendedRawDataMarketCap) HasTradingItemToPrimaryRatio()
 	return false
 }
 
-// SetTradingItemToPrimaryRatio gets a reference to the given float32 and assigns it to the TradingItemToPrimaryRatio field.
-func (o *CompanyAnalysisExtendedRawDataMarketCap) SetTradingItemToPrimaryRatio(v float32) {
+// SetTradingItemToPrimaryRatio gets a reference to the given float64 and assigns it to the TradingItemToPrimaryRatio field.
+func (o *CompanyAnalysisExtendedRawDataMarketCap) SetTradingItemToPrimaryRatio(v float64) {
 	o.TradingItemToPrimaryRatio = &v
 }
 
 // GetTotalEnterpriseValueReported returns the TotalEnterpriseValueReported field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedRawDataMarketCap) GetTotalEnterpriseValueReported() float32 {
+func (o *CompanyAnalysisExtendedRawDataMarketCap) GetTotalEnterpriseValueReported() float64 {
 	if o == nil || o.TotalEnterpriseValueReported == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.TotalEnterpriseValueReported
@@ -312,7 +312,7 @@ func (o *CompanyAnalysisExtendedRawDataMarketCap) GetTotalEnterpriseValueReporte
 
 // GetTotalEnterpriseValueReportedOk returns a tuple with the TotalEnterpriseValueReported field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedRawDataMarketCap) GetTotalEnterpriseValueReportedOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedRawDataMarketCap) GetTotalEnterpriseValueReportedOk() (*float64, bool) {
 	if o == nil || o.TotalEnterpriseValueReported == nil {
 		return nil, false
 	}
@@ -328,8 +328,8 @@ func (o *CompanyAnalysisExtendedRawDataMarketCap) HasTotalEnterpriseValueReporte
 	return false
 }
 
-// SetTotalEnterpriseValueReported gets a reference to the given float32 and assigns it to the TotalEnterpriseValueReported field.
-func (o *CompanyAnalysisExtendedRawDataMarketCap) SetTotalEnterpriseValueReported(v float32) {
+// SetTotalEnterpriseValueReported gets a reference to the given float64 and assigns it to the TotalEnterpriseValueReported field.
+func (o *CompanyAnalysisExtendedRawDataMarketCap) SetTotalEnterpriseValueReported(v float64) {
 	o.TotalEnterpriseValueReported = &v
 }
 

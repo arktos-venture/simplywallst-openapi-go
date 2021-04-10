@@ -17,7 +17,7 @@ import (
 // Price struct for Price
 type Price struct {
 	Date  *int64   `json:"date,omitempty"`
-	Close *float32 `json:"close,omitempty"`
+	Close *float64 `json:"close,omitempty"`
 }
 
 // NewPrice instantiates a new Price object
@@ -70,9 +70,9 @@ func (o *Price) SetDate(v int64) {
 }
 
 // GetClose returns the Close field value if set, zero value otherwise.
-func (o *Price) GetClose() float32 {
+func (o *Price) GetClose() float64 {
 	if o == nil || o.Close == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.Close
@@ -80,7 +80,7 @@ func (o *Price) GetClose() float32 {
 
 // GetCloseOk returns a tuple with the Close field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *Price) GetCloseOk() (*float32, bool) {
+func (o *Price) GetCloseOk() (*float64, bool) {
 	if o == nil || o.Close == nil {
 		return nil, false
 	}
@@ -96,8 +96,8 @@ func (o *Price) HasClose() bool {
 	return false
 }
 
-// SetClose gets a reference to the given float32 and assigns it to the Close field.
-func (o *Price) SetClose(v float32) {
+// SetClose gets a reference to the given float64 and assigns it to the Close field.
+func (o *Price) SetClose(v float64) {
 	o.Close = &v
 }
 

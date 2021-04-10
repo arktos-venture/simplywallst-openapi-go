@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Date** | Pointer to **int64** |  | [optional] 
-**Events** | Pointer to [**DevelopmentEvents**](development_events.md) |  | [optional] 
+**Events** | Pointer to [**DevelopmentEvents**](DevelopmentEvents.md) |  | [optional] 
 
 ## Methods
 

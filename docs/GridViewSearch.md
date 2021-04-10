@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Data** | Pointer to [**[]Company**](Company.md) |  | [optional] 
-**Meta** | Pointer to [**GridsMeta**](grids_meta.md) |  | [optional] 
+**Meta** | Pointer to [**GridsMeta**](GridsMeta.md) |  | [optional] 
 
 ## Methods
 

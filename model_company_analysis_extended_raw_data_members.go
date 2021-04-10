@@ -65,7 +65,7 @@ func (o *CompanyAnalysisExtendedRawDataMembers) HasBoard() bool {
 	return false
 }
 
-// SetBoard gets a reference to the given map[string]CompanyAnalysisExtendedRawDataMembersData and assigns it to the Board field.
+// SetBoard gets a reference to the given map[int64]CompanyAnalysisExtendedRawDataMembersData and assigns it to the Board field.
 func (o *CompanyAnalysisExtendedRawDataMembers) SetBoard(v map[int64]CompanyAnalysisExtendedRawDataMembersData) {
 	o.Board = &v
 }

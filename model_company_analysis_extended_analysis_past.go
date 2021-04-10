@@ -1187,7 +1187,7 @@ func (o *CompanyAnalysisExtendedAnalysisPast) HasDaysSinceLastUpdate() bool {
 	return false
 }
 
-// SetDaysSinceLastUpdate gets a reference to the given int32 and assigns it to the DaysSinceLastUpdate field.
+// SetDaysSinceLastUpdate gets a reference to the given int64 and assigns it to the DaysSinceLastUpdate field.
 func (o *CompanyAnalysisExtendedAnalysisPast) SetDaysSinceLastUpdate(v int64) {
 	o.DaysSinceLastUpdate = &v
 }
@@ -1219,7 +1219,7 @@ func (o *CompanyAnalysisExtendedAnalysisPast) HasLastEarningsUpdate() bool {
 	return false
 }
 
-// SetLastEarningsUpdate gets a reference to the given float64 and assigns it to the LastEarningsUpdate field.
+// SetLastEarningsUpdate gets a reference to the given int64 and assigns it to the LastEarningsUpdate field.
 func (o *CompanyAnalysisExtendedAnalysisPast) SetLastEarningsUpdate(v int64) {
 	o.LastEarningsUpdate = &v
 }
@@ -1251,7 +1251,7 @@ func (o *CompanyAnalysisExtendedAnalysisPast) HasLastEarningsUpdateAnnual() bool
 	return false
 }
 
-// SetLastEarningsUpdateAnnual gets a reference to the given float64 and assigns it to the LastEarningsUpdateAnnual field.
+// SetLastEarningsUpdateAnnual gets a reference to the given int64 and assigns it to the LastEarningsUpdateAnnual field.
 func (o *CompanyAnalysisExtendedAnalysisPast) SetLastEarningsUpdateAnnual(v int64) {
 	o.LastEarningsUpdateAnnual = &v
 }
@@ -2275,7 +2275,7 @@ func (o *CompanyAnalysisExtendedAnalysisPast) HasLatestFiscalYear() bool {
 	return false
 }
 
-// SetLatestFiscalYear gets a reference to the given int32 and assigns it to the LatestFiscalYear field.
+// SetLatestFiscalYear gets a reference to the given int64 and assigns it to the LatestFiscalYear field.
 func (o *CompanyAnalysisExtendedAnalysisPast) SetLatestFiscalYear(v int64) {
 	o.LatestFiscalYear = &v
 }
@@ -2307,7 +2307,7 @@ func (o *CompanyAnalysisExtendedAnalysisPast) HasLatestFiscalQuarter() bool {
 	return false
 }
 
-// SetLatestFiscalQuarter gets a reference to the given int32 and assigns it to the LatestFiscalQuarter field.
+// SetLatestFiscalQuarter gets a reference to the given int64 and assigns it to the LatestFiscalQuarter field.
 func (o *CompanyAnalysisExtendedAnalysisPast) SetLatestFiscalQuarter(v int64) {
 	o.LatestFiscalQuarter = &v
 }

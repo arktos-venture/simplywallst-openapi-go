@@ -5,15 +5,15 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **RankSharesHeld** | Pointer to **int64** |  | [optional] 
-**Owner** | Pointer to [**OwnershipOwner**](ownership_owner.md) |  | [optional] 
+**Owner** | Pointer to [**OwnershipOwner**](OwnershipOwner.md) |  | [optional] 
 **HoldingDate** | Pointer to **string** |  | [optional] 
 **SharesHeld** | Pointer to **int64** |  | [optional] 
-**PercentOfPortfolio** | Pointer to **float32** |  | [optional] 
-**PercentOfSharesOutstanding** | Pointer to **float32** |  | [optional] 
-**SharesChanged** | Pointer to **float32** |  | [optional] 
-**PercentSharesChanged** | Pointer to **float32** |  | [optional] 
+**PercentOfPortfolio** | Pointer to **float64** |  | [optional] 
+**PercentOfSharesOutstanding** | Pointer to **float64** |  | [optional] 
+**SharesChanged** | Pointer to **float64** |  | [optional] 
+**PercentSharesChanged** | Pointer to **float64** |  | [optional] 
 **RankSharesBought** | Pointer to **int64** |  | [optional] 
-**RankSharesSold** | Pointer to **float32** |  | [optional] 
+**RankSharesSold** | Pointer to **float64** |  | [optional] 
 **PeriodStartDate** | Pointer to **int64** |  | [optional] 
 **PeriodEndDate** | Pointer to **int64** |  | [optional] 
 
@@ -138,20 +138,20 @@ HasSharesHeld returns a boolean if a field has been set.
 
 ### GetPercentOfPortfolio
 
-`func (o *Ownership) GetPercentOfPortfolio() float32`
+`func (o *Ownership) GetPercentOfPortfolio() float64`
 
 GetPercentOfPortfolio returns the PercentOfPortfolio field if non-nil, zero value otherwise.
 
 ### GetPercentOfPortfolioOk
 
-`func (o *Ownership) GetPercentOfPortfolioOk() (*float32, bool)`
+`func (o *Ownership) GetPercentOfPortfolioOk() (*float64, bool)`
 
 GetPercentOfPortfolioOk returns a tuple with the PercentOfPortfolio field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetPercentOfPortfolio
 
-`func (o *Ownership) SetPercentOfPortfolio(v float32)`
+`func (o *Ownership) SetPercentOfPortfolio(v float64)`
 
 SetPercentOfPortfolio sets PercentOfPortfolio field to given value.
 
@@ -163,20 +163,20 @@ HasPercentOfPortfolio returns a boolean if a field has been set.
 
 ### GetPercentOfSharesOutstanding
 
-`func (o *Ownership) GetPercentOfSharesOutstanding() float32`
+`func (o *Ownership) GetPercentOfSharesOutstanding() float64`
 
 GetPercentOfSharesOutstanding returns the PercentOfSharesOutstanding field if non-nil, zero value otherwise.
 
 ### GetPercentOfSharesOutstandingOk
 
-`func (o *Ownership) GetPercentOfSharesOutstandingOk() (*float32, bool)`
+`func (o *Ownership) GetPercentOfSharesOutstandingOk() (*float64, bool)`
 
 GetPercentOfSharesOutstandingOk returns a tuple with the PercentOfSharesOutstanding field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetPercentOfSharesOutstanding
 
-`func (o *Ownership) SetPercentOfSharesOutstanding(v float32)`
+`func (o *Ownership) SetPercentOfSharesOutstanding(v float64)`
 
 SetPercentOfSharesOutstanding sets PercentOfSharesOutstanding field to given value.
 
@@ -188,20 +188,20 @@ HasPercentOfSharesOutstanding returns a boolean if a field has been set.
 
 ### GetSharesChanged
 
-`func (o *Ownership) GetSharesChanged() float32`
+`func (o *Ownership) GetSharesChanged() float64`
 
 GetSharesChanged returns the SharesChanged field if non-nil, zero value otherwise.
 
 ### GetSharesChangedOk
 
-`func (o *Ownership) GetSharesChangedOk() (*float32, bool)`
+`func (o *Ownership) GetSharesChangedOk() (*float64, bool)`
 
 GetSharesChangedOk returns a tuple with the SharesChanged field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetSharesChanged
 
-`func (o *Ownership) SetSharesChanged(v float32)`
+`func (o *Ownership) SetSharesChanged(v float64)`
 
 SetSharesChanged sets SharesChanged field to given value.
 
@@ -213,20 +213,20 @@ HasSharesChanged returns a boolean if a field has been set.
 
 ### GetPercentSharesChanged
 
-`func (o *Ownership) GetPercentSharesChanged() float32`
+`func (o *Ownership) GetPercentSharesChanged() float64`
 
 GetPercentSharesChanged returns the PercentSharesChanged field if non-nil, zero value otherwise.
 
 ### GetPercentSharesChangedOk
 
-`func (o *Ownership) GetPercentSharesChangedOk() (*float32, bool)`
+`func (o *Ownership) GetPercentSharesChangedOk() (*float64, bool)`
 
 GetPercentSharesChangedOk returns a tuple with the PercentSharesChanged field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetPercentSharesChanged
 
-`func (o *Ownership) SetPercentSharesChanged(v float32)`
+`func (o *Ownership) SetPercentSharesChanged(v float64)`
 
 SetPercentSharesChanged sets PercentSharesChanged field to given value.
 
@@ -263,20 +263,20 @@ HasRankSharesBought returns a boolean if a field has been set.
 
 ### GetRankSharesSold
 
-`func (o *Ownership) GetRankSharesSold() float32`
+`func (o *Ownership) GetRankSharesSold() float64`
 
 GetRankSharesSold returns the RankSharesSold field if non-nil, zero value otherwise.
 
 ### GetRankSharesSoldOk
 
-`func (o *Ownership) GetRankSharesSoldOk() (*float32, bool)`
+`func (o *Ownership) GetRankSharesSoldOk() (*float64, bool)`
 
 GetRankSharesSoldOk returns a tuple with the RankSharesSold field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRankSharesSold
 
-`func (o *Ownership) SetRankSharesSold(v float32)`
+`func (o *Ownership) SetRankSharesSold(v float64)`
 
 SetRankSharesSold sets RankSharesSold field to given value.
 

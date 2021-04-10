@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Data** | Pointer to [**InternationalMarketData**](internationalMarket_data.md) |  | [optional] 
+**Data** | Pointer to [**InternationalMarketData**](InternationalMarketData.md) |  | [optional] 
 
 ## Methods
 

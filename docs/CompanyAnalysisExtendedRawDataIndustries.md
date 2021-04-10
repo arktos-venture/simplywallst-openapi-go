@@ -4,9 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Primary** | Pointer to [**CompanyAnalysisExtendedRawDataIndustriesData**](companyAnalysisExtendedRawDataIndustriesData.md) |  | [optional] 
-**Secondary** | Pointer to [**CompanyAnalysisExtendedRawDataIndustriesData**](companyAnalysisExtendedRawDataIndustriesData.md) |  | [optional] 
-**Tertiary** | Pointer to [**CompanyAnalysisExtendedRawDataIndustriesData**](companyAnalysisExtendedRawDataIndustriesData.md) |  | [optional] 
+**Primary** | Pointer to [**CompanyAnalysisExtendedRawDataIndustriesData**](CompanyAnalysisExtendedRawDataIndustriesData.md) |  | [optional] 
+**Secondary** | Pointer to [**CompanyAnalysisExtendedRawDataIndustriesData**](CompanyAnalysisExtendedRawDataIndustriesData.md) |  | [optional] 
+**Tertiary** | Pointer to [**CompanyAnalysisExtendedRawDataIndustriesData**](CompanyAnalysisExtendedRawDataIndustriesData.md) |  | [optional] 
 
 ## Methods
 

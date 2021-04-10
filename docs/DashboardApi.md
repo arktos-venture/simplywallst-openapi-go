@@ -64,7 +64,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**IndustryPerformance**](industryPerformance.md)
+[**IndustryPerformance**](IndustryPerformance.md)
 
 ### Authorization
 
@@ -125,7 +125,7 @@ Other parameters are passed through a pointer to a apiListInternationalMarketReq
 
 ### Return type
 
-[**InternationalMarket**](internationalMarket.md)
+[**InternationalMarket**](InternationalMarket.md)
 
 ### Authorization
 
@@ -195,7 +195,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**MarketPerformance**](marketPerformance.md)
+[**MarketPerformance**](MarketPerformance.md)
 
 ### Authorization
 

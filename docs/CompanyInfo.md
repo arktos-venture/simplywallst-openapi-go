@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Data** | Pointer to [**CompanyDataInfo**](companyDataInfo.md) |  | [optional] 
+**Data** | Pointer to [**CompanyDataInfo**](CompanyDataInfo.md) |  | [optional] 
 
 ## Methods
 

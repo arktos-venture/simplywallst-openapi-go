@@ -66,7 +66,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Competitors**](competitors.md)
+[**Competitors**](Competitors.md)
 
 ### Authorization
 

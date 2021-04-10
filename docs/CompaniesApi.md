@@ -66,7 +66,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**DevelopmentInfo**](developmentInfo.md)
+[**DevelopmentInfo**](DevelopmentInfo.md)
 
 ### Authorization
 
@@ -136,7 +136,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Developments**](developments.md)
+[**Developments**](Developments.md)
 
 ### Authorization
 
@@ -208,7 +208,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**EstimateCoverages**](estimateCoverages.md)
+[**EstimateCoverages**](EstimateCoverages.md)
 
 ### Authorization
 
@@ -282,7 +282,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**News**](news.md)
+[**News**](News.md)
 
 ### Authorization
 
@@ -352,7 +352,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Ownerships**](ownerships.md)
+[**Ownerships**](Ownerships.md)
 
 ### Authorization
 
@@ -424,7 +424,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Prices**](prices.md)
+[**Prices**](Prices.md)
 
 ### Authorization
 
@@ -507,7 +507,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Companies**](companies.md)
+[**Companies**](Companies.md)
 
 ### Authorization
 

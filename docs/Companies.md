@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Data** | Pointer to [**Company**](company.md) |  | [optional] 
-**Meta** | Pointer to [**CompanyMeta**](companyMeta.md) |  | [optional] 
+**Data** | Pointer to [**Company**](Company.md) |  | [optional] 
+**Meta** | Pointer to [**CompanyMeta**](CompanyMeta.md) |  | [optional] 
 
 ## Methods
 

@@ -4,11 +4,11 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**MarketCap** | Pointer to [**CompanyAnalysisExtendedRawDataMarketCap**](companyAnalysisExtendedRawDataMarketCap.md) |  | [optional] 
-**Members** | Pointer to [**CompanyAnalysisExtendedRawDataMembers**](companyAnalysisExtendedRawData_members.md) |  | [optional] 
-**Industries** | Pointer to [**CompanyAnalysisExtendedRawDataIndustries**](companyAnalysisExtendedRawData_industries.md) |  | [optional] 
-**InsiderTransactions** | Pointer to [**CompanyAnalysisExtendedRawDataInsiderTransactions**](companyAnalysisExtendedRawData_insider_transactions.md) |  | [optional] 
-**CurrencyInfo** | Pointer to [**CompanyAnalysisExtendedRawDataCurrencyInfo**](companyAnalysisExtendedRawDataCurrencyInfo.md) |  | [optional] 
+**MarketCap** | Pointer to [**CompanyAnalysisExtendedRawDataMarketCap**](CompanyAnalysisExtendedRawDataMarketCap.md) |  | [optional] 
+**Members** | Pointer to [**CompanyAnalysisExtendedRawDataMembers**](CompanyAnalysisExtendedRawDataMembers.md) |  | [optional] 
+**Industries** | Pointer to [**CompanyAnalysisExtendedRawDataIndustries**](CompanyAnalysisExtendedRawDataIndustries.md) |  | [optional] 
+**InsiderTransactions** | Pointer to [**CompanyAnalysisExtendedRawDataInsiderTransactions**](CompanyAnalysisExtendedRawDataInsiderTransactions.md) |  | [optional] 
+**CurrencyInfo** | Pointer to [**CompanyAnalysisExtendedRawDataCurrencyInfo**](CompanyAnalysisExtendedRawDataCurrencyInfo.md) |  | [optional] 
 
 ## Methods
 

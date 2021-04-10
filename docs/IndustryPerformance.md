@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Data** | Pointer to [**IndustryPerformanceData**](industryPerformance_data.md) |  | [optional] 
+**Data** | Pointer to [**IndustryPerformanceData**](IndustryPerformanceData.md) |  | [optional] 
 
 ## Methods
 

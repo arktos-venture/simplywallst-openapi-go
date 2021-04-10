@@ -17,7 +17,7 @@ import (
 // CountryField struct for CountryField
 type CountryField struct {
 	Name  *string  `json:"name,omitempty"`
-	Value *float32 `json:"value,omitempty"`
+	Value *float64 `json:"value,omitempty"`
 	Count *int64   `json:"count,omitempty"`
 }
 
@@ -71,9 +71,9 @@ func (o *CountryField) SetName(v string) {
 }
 
 // GetValue returns the Value field value if set, zero value otherwise.
-func (o *CountryField) GetValue() float32 {
+func (o *CountryField) GetValue() float64 {
 	if o == nil || o.Value == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.Value
@@ -81,7 +81,7 @@ func (o *CountryField) GetValue() float32 {
 
 // GetValueOk returns a tuple with the Value field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CountryField) GetValueOk() (*float32, bool) {
+func (o *CountryField) GetValueOk() (*float64, bool) {
 	if o == nil || o.Value == nil {
 		return nil, false
 	}
@@ -97,8 +97,8 @@ func (o *CountryField) HasValue() bool {
 	return false
 }
 
-// SetValue gets a reference to the given float32 and assigns it to the Value field.
-func (o *CountryField) SetValue(v float32) {
+// SetValue gets a reference to the given float64 and assigns it to the Value field.
+func (o *CountryField) SetValue(v float64) {
 	o.Value = &v
 }
 

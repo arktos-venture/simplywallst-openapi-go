@@ -4,12 +4,12 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Dividend** | Pointer to [**CompanyAnalysisExtendedAnalysisDividend**](companyAnalysisExtendedAnalysisDividend.md) |  | [optional] 
-**Past** | Pointer to [**CompanyAnalysisExtendedAnalysisPast**](companyAnalysisExtendedAnalysisPast.md) |  | [optional] 
-**Future** | Pointer to [**CompanyAnalysisExtendedAnalysisFuture**](companyAnalysisExtendedAnalysisFuture.md) |  | [optional] 
-**Health** | Pointer to [**CompanyAnalysisExtendedAnalysisHealth**](companyAnalysisExtendedAnalysisHealth.md) |  | [optional] 
-**Misc** | Pointer to [**CompanyAnalysisExtendedAnalysisMisc**](companyAnalysisExtendedAnalysisMisc.md) |  | [optional] 
-**Value** | Pointer to [**CompanyAnalysisExtendedAnalysisValue**](companyAnalysisExtendedAnalysisValue.md) |  | [optional] 
+**Dividend** | Pointer to [**CompanyAnalysisExtendedAnalysisDividend**](CompanyAnalysisExtendedAnalysisDividend.md) |  | [optional] 
+**Past** | Pointer to [**CompanyAnalysisExtendedAnalysisPast**](CompanyAnalysisExtendedAnalysisPast.md) |  | [optional] 
+**Future** | Pointer to [**CompanyAnalysisExtendedAnalysisFuture**](CompanyAnalysisExtendedAnalysisFuture.md) |  | [optional] 
+**Health** | Pointer to [**CompanyAnalysisExtendedAnalysisHealth**](CompanyAnalysisExtendedAnalysisHealth.md) |  | [optional] 
+**Misc** | Pointer to [**CompanyAnalysisExtendedAnalysisMisc**](CompanyAnalysisExtendedAnalysisMisc.md) |  | [optional] 
+**Value** | Pointer to [**CompanyAnalysisExtendedAnalysisValue**](CompanyAnalysisExtendedAnalysisValue.md) |  | [optional] 
 
 ## Methods
 

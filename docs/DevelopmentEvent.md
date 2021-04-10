@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **CompanyId** | Pointer to **string** |  | [optional] 
 **Id** | Pointer to **int64** |  | [optional] 
 **Priority** | Pointer to **bool** |  | [optional] 
-**Types** | Pointer to [**DevelopmentEventTypes**](developmentEvent_types.md) |  | [optional] 
+**Types** | Pointer to [**DevelopmentEventTypes**](DevelopmentEventTypes.md) |  | [optional] 
 
 ## Methods
 

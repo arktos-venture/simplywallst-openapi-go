@@ -720,7 +720,7 @@ func (o *CompanyAnalysisExtendedIndustryAverages) HasFutureOneYearROE() bool {
 	return false
 }
 
-// SetFutureOneYearROE gets a reference to the given Nullablefloat64 and assigns it to the FutureOneYearROE field.
+// SetFutureOneYearROE gets a reference to the given NullableFloat64 and assigns it to the FutureOneYearROE field.
 func (o *CompanyAnalysisExtendedIndustryAverages) SetFutureOneYearROE(v float64) {
 	o.FutureOneYearROE.Set(&v)
 }
@@ -763,7 +763,7 @@ func (o *CompanyAnalysisExtendedIndustryAverages) HasFutureThreeYearROE() bool {
 	return false
 }
 
-// SetFutureThreeYearROE gets a reference to the given Nullablefloat64 and assigns it to the FutureThreeYearROE field.
+// SetFutureThreeYearROE gets a reference to the given NullableFloat64 and assigns it to the FutureThreeYearROE field.
 func (o *CompanyAnalysisExtendedIndustryAverages) SetFutureThreeYearROE(v float64) {
 	o.FutureThreeYearROE.Set(&v)
 }
@@ -998,7 +998,7 @@ func (o *CompanyAnalysisExtendedIndustryAverages) HasPayoutRatio() bool {
 	return false
 }
 
-// SetPayoutRatio gets a reference to the given Nullablefloat64 and assigns it to the PayoutRatio field.
+// SetPayoutRatio gets a reference to the given NullableFloat64 and assigns it to the PayoutRatio field.
 func (o *CompanyAnalysisExtendedIndustryAverages) SetPayoutRatio(v float64) {
 	o.PayoutRatio.Set(&v)
 }

@@ -18,19 +18,19 @@ Name | Type | Description | Notes
 **ProRank** | Pointer to **int32** |  | [optional] 
 **BoardRank** | Pointer to **int32** |  | [optional] 
 **Biography** | Pointer to **string** |  | [optional] 
-**HoldingDate** | Pointer to **float32** |  | [optional] 
-**SharesHeld** | Pointer to **float32** |  | [optional] 
-**PercentOfSharesOutstanding** | Pointer to **float32** |  | [optional] 
+**HoldingDate** | Pointer to **float64** |  | [optional] 
+**SharesHeld** | Pointer to **float64** |  | [optional] 
+**PercentOfSharesOutstanding** | Pointer to **float64** |  | [optional] 
 **OptionsHeld** | Pointer to **int32** |  | [optional] 
-**SharesChanged** | Pointer to **float32** |  | [optional] 
-**PercentSharesChanged** | Pointer to **float32** |  | [optional] 
+**SharesChanged** | Pointer to **float64** |  | [optional] 
+**PercentSharesChanged** | Pointer to **float64** |  | [optional] 
 **RankSharesHeld** | Pointer to **int32** |  | [optional] 
 **RankSharesBought** | Pointer to **int32** |  | [optional] 
 **RankSharesSold** | Pointer to **int32** |  | [optional] 
 **Age** | Pointer to **int32** |  | [optional] 
 **ShortTitle** | Pointer to **string** |  | [optional] 
-**Tenure** | Pointer to **float32** |  | [optional] 
-**StartDate** | Pointer to **float32** |  | [optional] 
+**Tenure** | Pointer to **float64** |  | [optional] 
+**StartDate** | Pointer to **float64** |  | [optional] 
 
 ## Methods
 
@@ -403,20 +403,20 @@ HasBiography returns a boolean if a field has been set.
 
 ### GetHoldingDate
 
-`func (o *CompanyAnalysisExtendedRawDataMembersLeaderData) GetHoldingDate() float32`
+`func (o *CompanyAnalysisExtendedRawDataMembersLeaderData) GetHoldingDate() float64`
 
 GetHoldingDate returns the HoldingDate field if non-nil, zero value otherwise.
 
 ### GetHoldingDateOk
 
-`func (o *CompanyAnalysisExtendedRawDataMembersLeaderData) GetHoldingDateOk() (*float32, bool)`
+`func (o *CompanyAnalysisExtendedRawDataMembersLeaderData) GetHoldingDateOk() (*float64, bool)`
 
 GetHoldingDateOk returns a tuple with the HoldingDate field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetHoldingDate
 
-`func (o *CompanyAnalysisExtendedRawDataMembersLeaderData) SetHoldingDate(v float32)`
+`func (o *CompanyAnalysisExtendedRawDataMembersLeaderData) SetHoldingDate(v float64)`
 
 SetHoldingDate sets HoldingDate field to given value.
 
@@ -428,20 +428,20 @@ HasHoldingDate returns a boolean if a field has been set.
 
 ### GetSharesHeld
 
-`func (o *CompanyAnalysisExtendedRawDataMembersLeaderData) GetSharesHeld() float32`
+`func (o *CompanyAnalysisExtendedRawDataMembersLeaderData) GetSharesHeld() float64`
 
 GetSharesHeld returns the SharesHeld field if non-nil, zero value otherwise.
 
 ### GetSharesHeldOk
 
-`func (o *CompanyAnalysisExtendedRawDataMembersLeaderData) GetSharesHeldOk() (*float32, bool)`
+`func (o *CompanyAnalysisExtendedRawDataMembersLeaderData) GetSharesHeldOk() (*float64, bool)`
 
 GetSharesHeldOk returns a tuple with the SharesHeld field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetSharesHeld
 
-`func (o *CompanyAnalysisExtendedRawDataMembersLeaderData) SetSharesHeld(v float32)`
+`func (o *CompanyAnalysisExtendedRawDataMembersLeaderData) SetSharesHeld(v float64)`
 
 SetSharesHeld sets SharesHeld field to given value.
 
@@ -453,20 +453,20 @@ HasSharesHeld returns a boolean if a field has been set.
 
 ### GetPercentOfSharesOutstanding
 
-`func (o *CompanyAnalysisExtendedRawDataMembersLeaderData) GetPercentOfSharesOutstanding() float32`
+`func (o *CompanyAnalysisExtendedRawDataMembersLeaderData) GetPercentOfSharesOutstanding() float64`
 
 GetPercentOfSharesOutstanding returns the PercentOfSharesOutstanding field if non-nil, zero value otherwise.
 
 ### GetPercentOfSharesOutstandingOk
 
-`func (o *CompanyAnalysisExtendedRawDataMembersLeaderData) GetPercentOfSharesOutstandingOk() (*float32, bool)`
+`func (o *CompanyAnalysisExtendedRawDataMembersLeaderData) GetPercentOfSharesOutstandingOk() (*float64, bool)`
 
 GetPercentOfSharesOutstandingOk returns a tuple with the PercentOfSharesOutstanding field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetPercentOfSharesOutstanding
 
-`func (o *CompanyAnalysisExtendedRawDataMembersLeaderData) SetPercentOfSharesOutstanding(v float32)`
+`func (o *CompanyAnalysisExtendedRawDataMembersLeaderData) SetPercentOfSharesOutstanding(v float64)`
 
 SetPercentOfSharesOutstanding sets PercentOfSharesOutstanding field to given value.
 
@@ -503,20 +503,20 @@ HasOptionsHeld returns a boolean if a field has been set.
 
 ### GetSharesChanged
 
-`func (o *CompanyAnalysisExtendedRawDataMembersLeaderData) GetSharesChanged() float32`
+`func (o *CompanyAnalysisExtendedRawDataMembersLeaderData) GetSharesChanged() float64`
 
 GetSharesChanged returns the SharesChanged field if non-nil, zero value otherwise.
 
 ### GetSharesChangedOk
 
-`func (o *CompanyAnalysisExtendedRawDataMembersLeaderData) GetSharesChangedOk() (*float32, bool)`
+`func (o *CompanyAnalysisExtendedRawDataMembersLeaderData) GetSharesChangedOk() (*float64, bool)`
 
 GetSharesChangedOk returns a tuple with the SharesChanged field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetSharesChanged
 
-`func (o *CompanyAnalysisExtendedRawDataMembersLeaderData) SetSharesChanged(v float32)`
+`func (o *CompanyAnalysisExtendedRawDataMembersLeaderData) SetSharesChanged(v float64)`
 
 SetSharesChanged sets SharesChanged field to given value.
 
@@ -528,20 +528,20 @@ HasSharesChanged returns a boolean if a field has been set.
 
 ### GetPercentSharesChanged
 
-`func (o *CompanyAnalysisExtendedRawDataMembersLeaderData) GetPercentSharesChanged() float32`
+`func (o *CompanyAnalysisExtendedRawDataMembersLeaderData) GetPercentSharesChanged() float64`
 
 GetPercentSharesChanged returns the PercentSharesChanged field if non-nil, zero value otherwise.
 
 ### GetPercentSharesChangedOk
 
-`func (o *CompanyAnalysisExtendedRawDataMembersLeaderData) GetPercentSharesChangedOk() (*float32, bool)`
+`func (o *CompanyAnalysisExtendedRawDataMembersLeaderData) GetPercentSharesChangedOk() (*float64, bool)`
 
 GetPercentSharesChangedOk returns a tuple with the PercentSharesChanged field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetPercentSharesChanged
 
-`func (o *CompanyAnalysisExtendedRawDataMembersLeaderData) SetPercentSharesChanged(v float32)`
+`func (o *CompanyAnalysisExtendedRawDataMembersLeaderData) SetPercentSharesChanged(v float64)`
 
 SetPercentSharesChanged sets PercentSharesChanged field to given value.
 
@@ -678,20 +678,20 @@ HasShortTitle returns a boolean if a field has been set.
 
 ### GetTenure
 
-`func (o *CompanyAnalysisExtendedRawDataMembersLeaderData) GetTenure() float32`
+`func (o *CompanyAnalysisExtendedRawDataMembersLeaderData) GetTenure() float64`
 
 GetTenure returns the Tenure field if non-nil, zero value otherwise.
 
 ### GetTenureOk
 
-`func (o *CompanyAnalysisExtendedRawDataMembersLeaderData) GetTenureOk() (*float32, bool)`
+`func (o *CompanyAnalysisExtendedRawDataMembersLeaderData) GetTenureOk() (*float64, bool)`
 
 GetTenureOk returns a tuple with the Tenure field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTenure
 
-`func (o *CompanyAnalysisExtendedRawDataMembersLeaderData) SetTenure(v float32)`
+`func (o *CompanyAnalysisExtendedRawDataMembersLeaderData) SetTenure(v float64)`
 
 SetTenure sets Tenure field to given value.
 
@@ -703,20 +703,20 @@ HasTenure returns a boolean if a field has been set.
 
 ### GetStartDate
 
-`func (o *CompanyAnalysisExtendedRawDataMembersLeaderData) GetStartDate() float32`
+`func (o *CompanyAnalysisExtendedRawDataMembersLeaderData) GetStartDate() float64`
 
 GetStartDate returns the StartDate field if non-nil, zero value otherwise.
 
 ### GetStartDateOk
 
-`func (o *CompanyAnalysisExtendedRawDataMembersLeaderData) GetStartDateOk() (*float32, bool)`
+`func (o *CompanyAnalysisExtendedRawDataMembersLeaderData) GetStartDateOk() (*float64, bool)`
 
 GetStartDateOk returns a tuple with the StartDate field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetStartDate
 
-`func (o *CompanyAnalysisExtendedRawDataMembersLeaderData) SetStartDate(v float32)`
+`func (o *CompanyAnalysisExtendedRawDataMembersLeaderData) SetStartDate(v float64)`
 
 SetStartDate sets StartDate field to given value.
 

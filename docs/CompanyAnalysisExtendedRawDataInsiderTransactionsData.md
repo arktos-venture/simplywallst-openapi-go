@@ -14,13 +14,13 @@ Name | Type | Description | Notes
 **ManagementInsider** | Pointer to **bool** |  | [optional] 
 **TradeDateMin** | Pointer to **int64** |  | [optional] 
 **TradeDateMax** | Pointer to **int64** |  | [optional] 
-**Shares** | Pointer to **float32** |  | [optional] 
-**PriceMin** | Pointer to **float32** |  | [optional] 
-**PriceMax** | Pointer to **float32** |  | [optional] 
-**TransactionValue** | Pointer to **float32** |  | [optional] 
-**PercentageSharesTraded** | Pointer to **float32** |  | [optional] 
-**PercentageChangeTransShares** | Pointer to **float32** |  | [optional] 
-**FilingEndShares** | Pointer to **float32** |  | [optional] 
+**Shares** | Pointer to **float64** |  | [optional] 
+**PriceMin** | Pointer to **float64** |  | [optional] 
+**PriceMax** | Pointer to **float64** |  | [optional] 
+**TransactionValue** | Pointer to **float64** |  | [optional] 
+**PercentageSharesTraded** | Pointer to **float64** |  | [optional] 
+**PercentageChangeTransShares** | Pointer to **float64** |  | [optional] 
+**FilingEndShares** | Pointer to **float64** |  | [optional] 
 **FilingDate** | Pointer to **int64** |  | [optional] 
 **MonthDiff** | Pointer to **int32** |  | [optional] 
 
@@ -295,20 +295,20 @@ HasTradeDateMax returns a boolean if a field has been set.
 
 ### GetShares
 
-`func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) GetShares() float32`
+`func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) GetShares() float64`
 
 GetShares returns the Shares field if non-nil, zero value otherwise.
 
 ### GetSharesOk
 
-`func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) GetSharesOk() (*float32, bool)`
+`func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) GetSharesOk() (*float64, bool)`
 
 GetSharesOk returns a tuple with the Shares field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetShares
 
-`func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) SetShares(v float32)`
+`func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) SetShares(v float64)`
 
 SetShares sets Shares field to given value.
 
@@ -320,20 +320,20 @@ HasShares returns a boolean if a field has been set.
 
 ### GetPriceMin
 
-`func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) GetPriceMin() float32`
+`func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) GetPriceMin() float64`
 
 GetPriceMin returns the PriceMin field if non-nil, zero value otherwise.
 
 ### GetPriceMinOk
 
-`func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) GetPriceMinOk() (*float32, bool)`
+`func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) GetPriceMinOk() (*float64, bool)`
 
 GetPriceMinOk returns a tuple with the PriceMin field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetPriceMin
 
-`func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) SetPriceMin(v float32)`
+`func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) SetPriceMin(v float64)`
 
 SetPriceMin sets PriceMin field to given value.
 
@@ -345,20 +345,20 @@ HasPriceMin returns a boolean if a field has been set.
 
 ### GetPriceMax
 
-`func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) GetPriceMax() float32`
+`func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) GetPriceMax() float64`
 
 GetPriceMax returns the PriceMax field if non-nil, zero value otherwise.
 
 ### GetPriceMaxOk
 
-`func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) GetPriceMaxOk() (*float32, bool)`
+`func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) GetPriceMaxOk() (*float64, bool)`
 
 GetPriceMaxOk returns a tuple with the PriceMax field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetPriceMax
 
-`func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) SetPriceMax(v float32)`
+`func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) SetPriceMax(v float64)`
 
 SetPriceMax sets PriceMax field to given value.
 
@@ -370,20 +370,20 @@ HasPriceMax returns a boolean if a field has been set.
 
 ### GetTransactionValue
 
-`func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) GetTransactionValue() float32`
+`func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) GetTransactionValue() float64`
 
 GetTransactionValue returns the TransactionValue field if non-nil, zero value otherwise.
 
 ### GetTransactionValueOk
 
-`func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) GetTransactionValueOk() (*float32, bool)`
+`func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) GetTransactionValueOk() (*float64, bool)`
 
 GetTransactionValueOk returns a tuple with the TransactionValue field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTransactionValue
 
-`func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) SetTransactionValue(v float32)`
+`func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) SetTransactionValue(v float64)`
 
 SetTransactionValue sets TransactionValue field to given value.
 
@@ -395,20 +395,20 @@ HasTransactionValue returns a boolean if a field has been set.
 
 ### GetPercentageSharesTraded
 
-`func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) GetPercentageSharesTraded() float32`
+`func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) GetPercentageSharesTraded() float64`
 
 GetPercentageSharesTraded returns the PercentageSharesTraded field if non-nil, zero value otherwise.
 
 ### GetPercentageSharesTradedOk
 
-`func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) GetPercentageSharesTradedOk() (*float32, bool)`
+`func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) GetPercentageSharesTradedOk() (*float64, bool)`
 
 GetPercentageSharesTradedOk returns a tuple with the PercentageSharesTraded field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetPercentageSharesTraded
 
-`func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) SetPercentageSharesTraded(v float32)`
+`func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) SetPercentageSharesTraded(v float64)`
 
 SetPercentageSharesTraded sets PercentageSharesTraded field to given value.
 
@@ -420,20 +420,20 @@ HasPercentageSharesTraded returns a boolean if a field has been set.
 
 ### GetPercentageChangeTransShares
 
-`func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) GetPercentageChangeTransShares() float32`
+`func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) GetPercentageChangeTransShares() float64`
 
 GetPercentageChangeTransShares returns the PercentageChangeTransShares field if non-nil, zero value otherwise.
 
 ### GetPercentageChangeTransSharesOk
 
-`func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) GetPercentageChangeTransSharesOk() (*float32, bool)`
+`func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) GetPercentageChangeTransSharesOk() (*float64, bool)`
 
 GetPercentageChangeTransSharesOk returns a tuple with the PercentageChangeTransShares field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetPercentageChangeTransShares
 
-`func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) SetPercentageChangeTransShares(v float32)`
+`func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) SetPercentageChangeTransShares(v float64)`
 
 SetPercentageChangeTransShares sets PercentageChangeTransShares field to given value.
 
@@ -445,20 +445,20 @@ HasPercentageChangeTransShares returns a boolean if a field has been set.
 
 ### GetFilingEndShares
 
-`func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) GetFilingEndShares() float32`
+`func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) GetFilingEndShares() float64`
 
 GetFilingEndShares returns the FilingEndShares field if non-nil, zero value otherwise.
 
 ### GetFilingEndSharesOk
 
-`func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) GetFilingEndSharesOk() (*float32, bool)`
+`func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) GetFilingEndSharesOk() (*float64, bool)`
 
 GetFilingEndSharesOk returns a tuple with the FilingEndShares field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetFilingEndShares
 
-`func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) SetFilingEndShares(v float32)`
+`func (o *CompanyAnalysisExtendedRawDataInsiderTransactionsData) SetFilingEndShares(v float64)`
 
 SetFilingEndShares sets FilingEndShares field to given value.
 

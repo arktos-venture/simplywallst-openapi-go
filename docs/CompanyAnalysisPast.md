@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Growth1y** | Pointer to **float32** |  | [optional] 
-**Growth5y** | Pointer to **float32** |  | [optional] 
+**Growth1y** | Pointer to **float64** |  | [optional] 
+**Growth5y** | Pointer to **float64** |  | [optional] 
 
 ## Methods
 
@@ -28,20 +28,20 @@ but it doesn't guarantee that properties required by API are set
 
 ### GetGrowth1y
 
-`func (o *CompanyAnalysisPast) GetGrowth1y() float32`
+`func (o *CompanyAnalysisPast) GetGrowth1y() float64`
 
 GetGrowth1y returns the Growth1y field if non-nil, zero value otherwise.
 
 ### GetGrowth1yOk
 
-`func (o *CompanyAnalysisPast) GetGrowth1yOk() (*float32, bool)`
+`func (o *CompanyAnalysisPast) GetGrowth1yOk() (*float64, bool)`
 
 GetGrowth1yOk returns a tuple with the Growth1y field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetGrowth1y
 
-`func (o *CompanyAnalysisPast) SetGrowth1y(v float32)`
+`func (o *CompanyAnalysisPast) SetGrowth1y(v float64)`
 
 SetGrowth1y sets Growth1y field to given value.
 
@@ -53,20 +53,20 @@ HasGrowth1y returns a boolean if a field has been set.
 
 ### GetGrowth5y
 
-`func (o *CompanyAnalysisPast) GetGrowth5y() float32`
+`func (o *CompanyAnalysisPast) GetGrowth5y() float64`
 
 GetGrowth5y returns the Growth5y field if non-nil, zero value otherwise.
 
 ### GetGrowth5yOk
 
-`func (o *CompanyAnalysisPast) GetGrowth5yOk() (*float32, bool)`
+`func (o *CompanyAnalysisPast) GetGrowth5yOk() (*float64, bool)`
 
 GetGrowth5yOk returns a tuple with the Growth5y field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetGrowth5y
 
-`func (o *CompanyAnalysisPast) SetGrowth5y(v float32)`
+`func (o *CompanyAnalysisPast) SetGrowth5y(v float64)`
 
 SetGrowth5y sets Growth5y field to given value.
 

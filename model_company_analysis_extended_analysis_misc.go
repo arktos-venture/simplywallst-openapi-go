@@ -16,15 +16,15 @@ import (
 
 // CompanyAnalysisExtendedAnalysisMisc struct for CompanyAnalysisExtendedAnalysisMisc
 type CompanyAnalysisExtendedAnalysisMisc struct {
-	MinPrice                        *float32 `json:"min_price,omitempty"`
-	MaxPrice                        *float32 `json:"max_price,omitempty"`
-	PriceSpread                     *float32 `json:"price_spread,omitempty"`
+	MinPrice                        *float64 `json:"min_price,omitempty"`
+	MaxPrice                        *float64 `json:"max_price,omitempty"`
+	PriceSpread                     *float64 `json:"price_spread,omitempty"`
 	IsVolatile                      *bool    `json:"is_volatile,omitempty"`
-	AnalystCount                    *float32 `json:"analyst_count,omitempty"`
+	AnalystCount                    *float64 `json:"analyst_count,omitempty"`
 	IsFund                          *bool    `json:"is_fund,omitempty"`
 	DaysSinceLastTrade              *int32   `json:"days_since_last_trade,omitempty"`
-	SharesOutstandingSingleGrowth1y *float32 `json:"shares_outstanding_single_growth_1y,omitempty"`
-	SharesOutstandingSingleGrowth5y *float32 `json:"shares_outstanding_single_growth_5y,omitempty"`
+	SharesOutstandingSingleGrowth1y *float64 `json:"shares_outstanding_single_growth_1y,omitempty"`
+	SharesOutstandingSingleGrowth5y *float64 `json:"shares_outstanding_single_growth_5y,omitempty"`
 }
 
 // NewCompanyAnalysisExtendedAnalysisMisc instantiates a new CompanyAnalysisExtendedAnalysisMisc object
@@ -45,9 +45,9 @@ func NewCompanyAnalysisExtendedAnalysisMiscWithDefaults() *CompanyAnalysisExtend
 }
 
 // GetMinPrice returns the MinPrice field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisMisc) GetMinPrice() float32 {
+func (o *CompanyAnalysisExtendedAnalysisMisc) GetMinPrice() float64 {
 	if o == nil || o.MinPrice == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.MinPrice
@@ -55,7 +55,7 @@ func (o *CompanyAnalysisExtendedAnalysisMisc) GetMinPrice() float32 {
 
 // GetMinPriceOk returns a tuple with the MinPrice field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisMisc) GetMinPriceOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisMisc) GetMinPriceOk() (*float64, bool) {
 	if o == nil || o.MinPrice == nil {
 		return nil, false
 	}
@@ -71,15 +71,15 @@ func (o *CompanyAnalysisExtendedAnalysisMisc) HasMinPrice() bool {
 	return false
 }
 
-// SetMinPrice gets a reference to the given float32 and assigns it to the MinPrice field.
-func (o *CompanyAnalysisExtendedAnalysisMisc) SetMinPrice(v float32) {
+// SetMinPrice gets a reference to the given float64 and assigns it to the MinPrice field.
+func (o *CompanyAnalysisExtendedAnalysisMisc) SetMinPrice(v float64) {
 	o.MinPrice = &v
 }
 
 // GetMaxPrice returns the MaxPrice field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisMisc) GetMaxPrice() float32 {
+func (o *CompanyAnalysisExtendedAnalysisMisc) GetMaxPrice() float64 {
 	if o == nil || o.MaxPrice == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.MaxPrice
@@ -87,7 +87,7 @@ func (o *CompanyAnalysisExtendedAnalysisMisc) GetMaxPrice() float32 {
 
 // GetMaxPriceOk returns a tuple with the MaxPrice field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisMisc) GetMaxPriceOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisMisc) GetMaxPriceOk() (*float64, bool) {
 	if o == nil || o.MaxPrice == nil {
 		return nil, false
 	}
@@ -103,15 +103,15 @@ func (o *CompanyAnalysisExtendedAnalysisMisc) HasMaxPrice() bool {
 	return false
 }
 
-// SetMaxPrice gets a reference to the given float32 and assigns it to the MaxPrice field.
-func (o *CompanyAnalysisExtendedAnalysisMisc) SetMaxPrice(v float32) {
+// SetMaxPrice gets a reference to the given float64 and assigns it to the MaxPrice field.
+func (o *CompanyAnalysisExtendedAnalysisMisc) SetMaxPrice(v float64) {
 	o.MaxPrice = &v
 }
 
 // GetPriceSpread returns the PriceSpread field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisMisc) GetPriceSpread() float32 {
+func (o *CompanyAnalysisExtendedAnalysisMisc) GetPriceSpread() float64 {
 	if o == nil || o.PriceSpread == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.PriceSpread
@@ -119,7 +119,7 @@ func (o *CompanyAnalysisExtendedAnalysisMisc) GetPriceSpread() float32 {
 
 // GetPriceSpreadOk returns a tuple with the PriceSpread field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisMisc) GetPriceSpreadOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisMisc) GetPriceSpreadOk() (*float64, bool) {
 	if o == nil || o.PriceSpread == nil {
 		return nil, false
 	}
@@ -135,8 +135,8 @@ func (o *CompanyAnalysisExtendedAnalysisMisc) HasPriceSpread() bool {
 	return false
 }
 
-// SetPriceSpread gets a reference to the given float32 and assigns it to the PriceSpread field.
-func (o *CompanyAnalysisExtendedAnalysisMisc) SetPriceSpread(v float32) {
+// SetPriceSpread gets a reference to the given float64 and assigns it to the PriceSpread field.
+func (o *CompanyAnalysisExtendedAnalysisMisc) SetPriceSpread(v float64) {
 	o.PriceSpread = &v
 }
 
@@ -173,9 +173,9 @@ func (o *CompanyAnalysisExtendedAnalysisMisc) SetIsVolatile(v bool) {
 }
 
 // GetAnalystCount returns the AnalystCount field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisMisc) GetAnalystCount() float32 {
+func (o *CompanyAnalysisExtendedAnalysisMisc) GetAnalystCount() float64 {
 	if o == nil || o.AnalystCount == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.AnalystCount
@@ -183,7 +183,7 @@ func (o *CompanyAnalysisExtendedAnalysisMisc) GetAnalystCount() float32 {
 
 // GetAnalystCountOk returns a tuple with the AnalystCount field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisMisc) GetAnalystCountOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisMisc) GetAnalystCountOk() (*float64, bool) {
 	if o == nil || o.AnalystCount == nil {
 		return nil, false
 	}
@@ -199,8 +199,8 @@ func (o *CompanyAnalysisExtendedAnalysisMisc) HasAnalystCount() bool {
 	return false
 }
 
-// SetAnalystCount gets a reference to the given float32 and assigns it to the AnalystCount field.
-func (o *CompanyAnalysisExtendedAnalysisMisc) SetAnalystCount(v float32) {
+// SetAnalystCount gets a reference to the given float64 and assigns it to the AnalystCount field.
+func (o *CompanyAnalysisExtendedAnalysisMisc) SetAnalystCount(v float64) {
 	o.AnalystCount = &v
 }
 
@@ -269,9 +269,9 @@ func (o *CompanyAnalysisExtendedAnalysisMisc) SetDaysSinceLastTrade(v int32) {
 }
 
 // GetSharesOutstandingSingleGrowth1y returns the SharesOutstandingSingleGrowth1y field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisMisc) GetSharesOutstandingSingleGrowth1y() float32 {
+func (o *CompanyAnalysisExtendedAnalysisMisc) GetSharesOutstandingSingleGrowth1y() float64 {
 	if o == nil || o.SharesOutstandingSingleGrowth1y == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.SharesOutstandingSingleGrowth1y
@@ -279,7 +279,7 @@ func (o *CompanyAnalysisExtendedAnalysisMisc) GetSharesOutstandingSingleGrowth1y
 
 // GetSharesOutstandingSingleGrowth1yOk returns a tuple with the SharesOutstandingSingleGrowth1y field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisMisc) GetSharesOutstandingSingleGrowth1yOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisMisc) GetSharesOutstandingSingleGrowth1yOk() (*float64, bool) {
 	if o == nil || o.SharesOutstandingSingleGrowth1y == nil {
 		return nil, false
 	}
@@ -295,15 +295,15 @@ func (o *CompanyAnalysisExtendedAnalysisMisc) HasSharesOutstandingSingleGrowth1y
 	return false
 }
 
-// SetSharesOutstandingSingleGrowth1y gets a reference to the given float32 and assigns it to the SharesOutstandingSingleGrowth1y field.
-func (o *CompanyAnalysisExtendedAnalysisMisc) SetSharesOutstandingSingleGrowth1y(v float32) {
+// SetSharesOutstandingSingleGrowth1y gets a reference to the given float64 and assigns it to the SharesOutstandingSingleGrowth1y field.
+func (o *CompanyAnalysisExtendedAnalysisMisc) SetSharesOutstandingSingleGrowth1y(v float64) {
 	o.SharesOutstandingSingleGrowth1y = &v
 }
 
 // GetSharesOutstandingSingleGrowth5y returns the SharesOutstandingSingleGrowth5y field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisMisc) GetSharesOutstandingSingleGrowth5y() float32 {
+func (o *CompanyAnalysisExtendedAnalysisMisc) GetSharesOutstandingSingleGrowth5y() float64 {
 	if o == nil || o.SharesOutstandingSingleGrowth5y == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.SharesOutstandingSingleGrowth5y
@@ -311,7 +311,7 @@ func (o *CompanyAnalysisExtendedAnalysisMisc) GetSharesOutstandingSingleGrowth5y
 
 // GetSharesOutstandingSingleGrowth5yOk returns a tuple with the SharesOutstandingSingleGrowth5y field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisMisc) GetSharesOutstandingSingleGrowth5yOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisMisc) GetSharesOutstandingSingleGrowth5yOk() (*float64, bool) {
 	if o == nil || o.SharesOutstandingSingleGrowth5y == nil {
 		return nil, false
 	}
@@ -327,8 +327,8 @@ func (o *CompanyAnalysisExtendedAnalysisMisc) HasSharesOutstandingSingleGrowth5y
 	return false
 }
 
-// SetSharesOutstandingSingleGrowth5y gets a reference to the given float32 and assigns it to the SharesOutstandingSingleGrowth5y field.
-func (o *CompanyAnalysisExtendedAnalysisMisc) SetSharesOutstandingSingleGrowth5y(v float32) {
+// SetSharesOutstandingSingleGrowth5y gets a reference to the given float64 and assigns it to the SharesOutstandingSingleGrowth5y field.
+func (o *CompanyAnalysisExtendedAnalysisMisc) SetSharesOutstandingSingleGrowth5y(v float64) {
 	o.SharesOutstandingSingleGrowth5y = &v
 }
 

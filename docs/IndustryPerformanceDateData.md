@@ -8,12 +8,12 @@ Name | Type | Description | Notes
 **Industry** | Pointer to **string** |  | [optional] 
 **Country** | Pointer to **string** |  | [optional] 
 **CurrencyIso** | Pointer to **string** |  | [optional] 
-**Return7d** | Pointer to **float32** |  | [optional] 
-**Return30d** | Pointer to **float32** |  | [optional] 
-**Return90d** | Pointer to **float32** |  | [optional] 
-**Return1yrAbs** | Pointer to **float32** |  | [optional] 
-**Return3yrAbs** | Pointer to **float32** |  | [optional] 
-**Return5yrAbs** | Pointer to **float32** |  | [optional] 
+**Return7d** | Pointer to **float64** |  | [optional] 
+**Return30d** | Pointer to **float64** |  | [optional] 
+**Return90d** | Pointer to **float64** |  | [optional] 
+**Return1yrAbs** | Pointer to **float64** |  | [optional] 
+**Return3yrAbs** | Pointer to **float64** |  | [optional] 
+**Return5yrAbs** | Pointer to **float64** |  | [optional] 
 
 ## Methods
 
@@ -136,20 +136,20 @@ HasCurrencyIso returns a boolean if a field has been set.
 
 ### GetReturn7d
 
-`func (o *IndustryPerformanceDateData) GetReturn7d() float32`
+`func (o *IndustryPerformanceDateData) GetReturn7d() float64`
 
 GetReturn7d returns the Return7d field if non-nil, zero value otherwise.
 
 ### GetReturn7dOk
 
-`func (o *IndustryPerformanceDateData) GetReturn7dOk() (*float32, bool)`
+`func (o *IndustryPerformanceDateData) GetReturn7dOk() (*float64, bool)`
 
 GetReturn7dOk returns a tuple with the Return7d field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetReturn7d
 
-`func (o *IndustryPerformanceDateData) SetReturn7d(v float32)`
+`func (o *IndustryPerformanceDateData) SetReturn7d(v float64)`
 
 SetReturn7d sets Return7d field to given value.
 
@@ -161,20 +161,20 @@ HasReturn7d returns a boolean if a field has been set.
 
 ### GetReturn30d
 
-`func (o *IndustryPerformanceDateData) GetReturn30d() float32`
+`func (o *IndustryPerformanceDateData) GetReturn30d() float64`
 
 GetReturn30d returns the Return30d field if non-nil, zero value otherwise.
 
 ### GetReturn30dOk
 
-`func (o *IndustryPerformanceDateData) GetReturn30dOk() (*float32, bool)`
+`func (o *IndustryPerformanceDateData) GetReturn30dOk() (*float64, bool)`
 
 GetReturn30dOk returns a tuple with the Return30d field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetReturn30d
 
-`func (o *IndustryPerformanceDateData) SetReturn30d(v float32)`
+`func (o *IndustryPerformanceDateData) SetReturn30d(v float64)`
 
 SetReturn30d sets Return30d field to given value.
 
@@ -186,20 +186,20 @@ HasReturn30d returns a boolean if a field has been set.
 
 ### GetReturn90d
 
-`func (o *IndustryPerformanceDateData) GetReturn90d() float32`
+`func (o *IndustryPerformanceDateData) GetReturn90d() float64`
 
 GetReturn90d returns the Return90d field if non-nil, zero value otherwise.
 
 ### GetReturn90dOk
 
-`func (o *IndustryPerformanceDateData) GetReturn90dOk() (*float32, bool)`
+`func (o *IndustryPerformanceDateData) GetReturn90dOk() (*float64, bool)`
 
 GetReturn90dOk returns a tuple with the Return90d field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetReturn90d
 
-`func (o *IndustryPerformanceDateData) SetReturn90d(v float32)`
+`func (o *IndustryPerformanceDateData) SetReturn90d(v float64)`
 
 SetReturn90d sets Return90d field to given value.
 
@@ -211,20 +211,20 @@ HasReturn90d returns a boolean if a field has been set.
 
 ### GetReturn1yrAbs
 
-`func (o *IndustryPerformanceDateData) GetReturn1yrAbs() float32`
+`func (o *IndustryPerformanceDateData) GetReturn1yrAbs() float64`
 
 GetReturn1yrAbs returns the Return1yrAbs field if non-nil, zero value otherwise.
 
 ### GetReturn1yrAbsOk
 
-`func (o *IndustryPerformanceDateData) GetReturn1yrAbsOk() (*float32, bool)`
+`func (o *IndustryPerformanceDateData) GetReturn1yrAbsOk() (*float64, bool)`
 
 GetReturn1yrAbsOk returns a tuple with the Return1yrAbs field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetReturn1yrAbs
 
-`func (o *IndustryPerformanceDateData) SetReturn1yrAbs(v float32)`
+`func (o *IndustryPerformanceDateData) SetReturn1yrAbs(v float64)`
 
 SetReturn1yrAbs sets Return1yrAbs field to given value.
 
@@ -236,20 +236,20 @@ HasReturn1yrAbs returns a boolean if a field has been set.
 
 ### GetReturn3yrAbs
 
-`func (o *IndustryPerformanceDateData) GetReturn3yrAbs() float32`
+`func (o *IndustryPerformanceDateData) GetReturn3yrAbs() float64`
 
 GetReturn3yrAbs returns the Return3yrAbs field if non-nil, zero value otherwise.
 
 ### GetReturn3yrAbsOk
 
-`func (o *IndustryPerformanceDateData) GetReturn3yrAbsOk() (*float32, bool)`
+`func (o *IndustryPerformanceDateData) GetReturn3yrAbsOk() (*float64, bool)`
 
 GetReturn3yrAbsOk returns a tuple with the Return3yrAbs field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetReturn3yrAbs
 
-`func (o *IndustryPerformanceDateData) SetReturn3yrAbs(v float32)`
+`func (o *IndustryPerformanceDateData) SetReturn3yrAbs(v float64)`
 
 SetReturn3yrAbs sets Return3yrAbs field to given value.
 
@@ -261,20 +261,20 @@ HasReturn3yrAbs returns a boolean if a field has been set.
 
 ### GetReturn5yrAbs
 
-`func (o *IndustryPerformanceDateData) GetReturn5yrAbs() float32`
+`func (o *IndustryPerformanceDateData) GetReturn5yrAbs() float64`
 
 GetReturn5yrAbs returns the Return5yrAbs field if non-nil, zero value otherwise.
 
 ### GetReturn5yrAbsOk
 
-`func (o *IndustryPerformanceDateData) GetReturn5yrAbsOk() (*float32, bool)`
+`func (o *IndustryPerformanceDateData) GetReturn5yrAbsOk() (*float64, bool)`
 
 GetReturn5yrAbsOk returns a tuple with the Return5yrAbs field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetReturn5yrAbs
 
-`func (o *IndustryPerformanceDateData) SetReturn5yrAbs(v float32)`
+`func (o *IndustryPerformanceDateData) SetReturn5yrAbs(v float64)`
 
 SetReturn5yrAbs sets Return5yrAbs field to given value.
 

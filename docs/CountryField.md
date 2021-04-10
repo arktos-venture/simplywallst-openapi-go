@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Name** | Pointer to **string** |  | [optional] 
-**Value** | Pointer to **float32** |  | [optional] 
+**Value** | Pointer to **float64** |  | [optional] 
 **Count** | Pointer to **int64** |  | [optional] 
 
 ## Methods
@@ -54,20 +54,20 @@ HasName returns a boolean if a field has been set.
 
 ### GetValue
 
-`func (o *CountryField) GetValue() float32`
+`func (o *CountryField) GetValue() float64`
 
 GetValue returns the Value field if non-nil, zero value otherwise.
 
 ### GetValueOk
 
-`func (o *CountryField) GetValueOk() (*float32, bool)`
+`func (o *CountryField) GetValueOk() (*float64, bool)`
 
 GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetValue
 
-`func (o *CountryField) SetValue(v float32)`
+`func (o *CountryField) SetValue(v float64)`
 
 SetValue sets Value field to given value.
 

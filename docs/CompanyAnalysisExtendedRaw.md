@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Data** | Pointer to [**CompanyAnalysisExtendedRawData**](companyAnalysisExtendedRawData.md) |  | [optional] 
+**Data** | Pointer to [**CompanyAnalysisExtendedRawData**](CompanyAnalysisExtendedRawData.md) |  | [optional] 
 
 ## Methods
 

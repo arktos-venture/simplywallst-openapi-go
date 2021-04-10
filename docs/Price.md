@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Date** | Pointer to **int64** |  | [optional] 
-**Close** | Pointer to **float32** |  | [optional] 
+**Close** | Pointer to **float64** |  | [optional] 
 
 ## Methods
 
@@ -53,20 +53,20 @@ HasDate returns a boolean if a field has been set.
 
 ### GetClose
 
-`func (o *Price) GetClose() float32`
+`func (o *Price) GetClose() float64`
 
 GetClose returns the Close field if non-nil, zero value otherwise.
 
 ### GetCloseOk
 
-`func (o *Price) GetCloseOk() (*float32, bool)`
+`func (o *Price) GetCloseOk() (*float64, bool)`
 
 GetCloseOk returns a tuple with the Close field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetClose
 
-`func (o *Price) SetClose(v float32)`
+`func (o *Price) SetClose(v float64)`
 
 SetClose sets Close field to given value.
 

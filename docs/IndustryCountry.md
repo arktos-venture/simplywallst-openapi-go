@@ -4,9 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Data** | Pointer to [**IndustryCountryData**](industryCountry_data.md) |  | [optional] 
-**Links** | Pointer to [**IndustryCountryLinks**](industryCountry_links.md) |  | [optional] 
-**Countries** | Pointer to [**IndustryCountryCountries**](industryCountry_countries.md) |  | [optional] 
+**Data** | Pointer to [**IndustryCountryData**](IndustryCountryData.md) |  | [optional] 
+**Links** | Pointer to [**IndustryCountryLinks**](IndustryCountryLinks.md) |  | [optional] 
+**Countries** | Pointer to [**IndustryCountryCountries**](IndustryCountryCountries.md) |  | [optional] 
 
 ## Methods
 

@@ -59,7 +59,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GridViewSearch**](gridViewSearch.md)
+[**GridViewSearch**](GridViewSearch.md)
 
 ### Authorization
 
@@ -127,7 +127,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Grids**](grids.md)
+[**Grids**](Grids.md)
 
 ### Authorization
 

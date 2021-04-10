@@ -16,71 +16,71 @@ import (
 
 // CompanyAnalysisExtendedAnalysisHealth struct for CompanyAnalysisExtendedAnalysisHealth
 type CompanyAnalysisExtendedAnalysisHealth struct {
-	NetIncome                         *float32 `json:"net_income,omitempty"`
-	NetInterestExpense                *float32 `json:"net_interest_expense,omitempty"`
-	CashOperating                     *float32 `json:"cash_operating,omitempty"`
-	TotalAssets                       *float32 `json:"total_assets,omitempty"`
-	Ppe                               *float32 `json:"ppe,omitempty"`
-	Inventory                         *float32 `json:"inventory,omitempty"`
-	CashStInvestments                 *float32 `json:"cash_st_investments,omitempty"`
-	Receivables                       *float32 `json:"receivables,omitempty"`
-	CurrentAssets                     *float32 `json:"current_assets,omitempty"`
-	TotalEquity                       *float32 `json:"total_equity,omitempty"`
-	TotalDebt                         *float32 `json:"total_debt,omitempty"`
-	LongTermDebt                      *float32 `json:"long_term_debt,omitempty"`
-	LongTermLiab                      *float32 `json:"long_term_liab,omitempty"`
-	AccountsPayable                   *float32 `json:"accounts_payable,omitempty"`
-	TotalCurrentLiab                  *float32 `json:"total_current_liab,omitempty"`
-	TotalLiabEquity                   *float32 `json:"total_liab_equity,omitempty"`
-	TotalDebtEquity                   *float32 `json:"total_debt_equity,omitempty"`
-	TotalInventory                    *float32 `json:"total_inventory,omitempty"`
-	DebtToEquityRatio                 *float32 `json:"debt_to_equity_ratio,omitempty"`
-	DebtToEquityRatioPast             *float32 `json:"debt_to_equity_ratio_past,omitempty"`
-	AssetsEquityRatio                 *float32 `json:"assets_equity_ratio,omitempty"`
-	FixedToTotalAssets                *float32 `json:"fixed_to_total_assets,omitempty"`
-	CurrentAssetsToTotalDebt          *float32 `json:"current_assets_to_total_debt,omitempty"`
-	OperatingCashFlowToTotalDebt      *float32 `json:"operating_cash_flow_to_total_debt,omitempty"`
-	NetInterestCover                  *float32 `json:"net_interest_cover,omitempty"`
-	CurrentSolvencyRatio              *float32 `json:"current_solvency_ratio,omitempty"`
-	CurrentAssetsToLongTermLiab       *float32 `json:"current_assets_to_long_term_liab,omitempty"`
-	OperatingExpenses                 *float32 `json:"operating_expenses,omitempty"`
-	OperatingExpensesGrowthAnnual     *float32 `json:"operating_expenses_growth_annual,omitempty"`
-	OperatingExpensesStableYears      *float32 `json:"operating_expenses_stable_years,omitempty"`
-	OperatingExpensesGrowthYears      *float32 `json:"operating_expenses_growth_years,omitempty"`
-	Median2yrNetIncome                *float32 `json:"median_2yr_net_income,omitempty"`
-	Capex                             *float32 `json:"capex,omitempty"`
-	CapexGrowth1y                     *float32 `json:"capex_growth_1y,omitempty"`
-	CapexGrowthAnnual                 *float32 `json:"capex_growth_annual,omitempty"`
-	NetDebt                           *float32 `json:"net_debt,omitempty"`
-	ManagementRateReturn              *float32 `json:"management_rate_return,omitempty"`
-	BookValuePerShare                 *float32 `json:"book_value_per_share,omitempty"`
-	LeveredFreeCashFlow               *float32 `json:"levered_free_cash_flow,omitempty"`
-	LeveredFreeCashFlow1y             *float32 `json:"levered_free_cash_flow_1y,omitempty"`
-	LeveredFreeCashFlow2y             *float32 `json:"levered_free_cash_flow_2y,omitempty"`
-	LeveredFreeCashGrowthAnnual       *float32 `json:"levered_free_cash_growth_annual,omitempty"`
-	LeveredFreeCashFlowGrowthAnnual   *float32 `json:"levered_free_cash_flow_growth_annual,omitempty"`
-	LeveredFreeCashFlowGrowthYears    *float32 `json:"levered_free_cash_flow_growth_years,omitempty"`
-	LeveredFreeCashFlowStableYears    *float32 `json:"levered_free_cash_flow_stable_years,omitempty"`
-	CashFromInvesting                 *float32 `json:"cash_from_investing,omitempty"`
-	NetDebtToEbitda                   *float32 `json:"net_debt_to_ebitda,omitempty"`
-	CapitalisationPercent             *float32 `json:"capitalisation_percent,omitempty"`
-	CapitalisationPercent1y           *float32 `json:"capitalisation_percent_1y,omitempty"`
-	CashOperatingGrowth1y             *float32 `json:"cash_operating_growth_1y,omitempty"`
-	CashFromInvesting1y               *float32 `json:"cash_from_investing_1y,omitempty"`
-	InventoryGrowth1y                 *float32 `json:"inventory_growth_1y,omitempty"`
-	NetOperatingAssets                *float32 `json:"net_operating_assets,omitempty"`
-	NetOperatingAssets1y              *float32 `json:"net_operating_assets_1y,omitempty"`
-	AggregateAccruals                 *float32 `json:"aggregate_accruals,omitempty"`
-	AccountsReceivableGrowth1y        *float32 `json:"accounts_receivable_growth_1y,omitempty"`
-	AccountsReceivablePercent         *float32 `json:"accounts_receivable_percent,omitempty"`
-	LongTermAssets                    *float32 `json:"long_term_assets,omitempty"`
-	LastBalanceSheetUpdate            *float32 `json:"last_balance_sheet_update,omitempty"`
-	CurrentPortionLeaseLiabilities    *float32 `json:"current_portion_lease_liabilities,omitempty"`
-	LongTermPortionLeaseLiabilities   *float32 `json:"long_term_portion_lease_liabilities,omitempty"`
-	TotalLeaseLiabilities             *float32 `json:"total_lease_liabilities,omitempty"`
-	RestrictedCash                    *float32 `json:"restricted_cash,omitempty"`
-	RestrictedCashRatio               *float32 `json:"restricted_cash_ratio,omitempty"`
-	LeveredFreeCashFlowBreakEvenYears *float32 `json:"levered_free_cash_flow_break_even_years,omitempty"`
+	NetIncome                         *float64 `json:"net_income,omitempty"`
+	NetInterestExpense                *float64 `json:"net_interest_expense,omitempty"`
+	CashOperating                     *float64 `json:"cash_operating,omitempty"`
+	TotalAssets                       *float64 `json:"total_assets,omitempty"`
+	Ppe                               *float64 `json:"ppe,omitempty"`
+	Inventory                         *float64 `json:"inventory,omitempty"`
+	CashStInvestments                 *float64 `json:"cash_st_investments,omitempty"`
+	Receivables                       *float64 `json:"receivables,omitempty"`
+	CurrentAssets                     *float64 `json:"current_assets,omitempty"`
+	TotalEquity                       *float64 `json:"total_equity,omitempty"`
+	TotalDebt                         *float64 `json:"total_debt,omitempty"`
+	LongTermDebt                      *float64 `json:"long_term_debt,omitempty"`
+	LongTermLiab                      *float64 `json:"long_term_liab,omitempty"`
+	AccountsPayable                   *float64 `json:"accounts_payable,omitempty"`
+	TotalCurrentLiab                  *float64 `json:"total_current_liab,omitempty"`
+	TotalLiabEquity                   *float64 `json:"total_liab_equity,omitempty"`
+	TotalDebtEquity                   *float64 `json:"total_debt_equity,omitempty"`
+	TotalInventory                    *float64 `json:"total_inventory,omitempty"`
+	DebtToEquityRatio                 *float64 `json:"debt_to_equity_ratio,omitempty"`
+	DebtToEquityRatioPast             *float64 `json:"debt_to_equity_ratio_past,omitempty"`
+	AssetsEquityRatio                 *float64 `json:"assets_equity_ratio,omitempty"`
+	FixedToTotalAssets                *float64 `json:"fixed_to_total_assets,omitempty"`
+	CurrentAssetsToTotalDebt          *float64 `json:"current_assets_to_total_debt,omitempty"`
+	OperatingCashFlowToTotalDebt      *float64 `json:"operating_cash_flow_to_total_debt,omitempty"`
+	NetInterestCover                  *float64 `json:"net_interest_cover,omitempty"`
+	CurrentSolvencyRatio              *float64 `json:"current_solvency_ratio,omitempty"`
+	CurrentAssetsToLongTermLiab       *float64 `json:"current_assets_to_long_term_liab,omitempty"`
+	OperatingExpenses                 *float64 `json:"operating_expenses,omitempty"`
+	OperatingExpensesGrowthAnnual     *float64 `json:"operating_expenses_growth_annual,omitempty"`
+	OperatingExpensesStableYears      *float64 `json:"operating_expenses_stable_years,omitempty"`
+	OperatingExpensesGrowthYears      *float64 `json:"operating_expenses_growth_years,omitempty"`
+	Median2yrNetIncome                *float64 `json:"median_2yr_net_income,omitempty"`
+	Capex                             *float64 `json:"capex,omitempty"`
+	CapexGrowth1y                     *float64 `json:"capex_growth_1y,omitempty"`
+	CapexGrowthAnnual                 *float64 `json:"capex_growth_annual,omitempty"`
+	NetDebt                           *float64 `json:"net_debt,omitempty"`
+	ManagementRateReturn              *float64 `json:"management_rate_return,omitempty"`
+	BookValuePerShare                 *float64 `json:"book_value_per_share,omitempty"`
+	LeveredFreeCashFlow               *float64 `json:"levered_free_cash_flow,omitempty"`
+	LeveredFreeCashFlow1y             *float64 `json:"levered_free_cash_flow_1y,omitempty"`
+	LeveredFreeCashFlow2y             *float64 `json:"levered_free_cash_flow_2y,omitempty"`
+	LeveredFreeCashGrowthAnnual       *float64 `json:"levered_free_cash_growth_annual,omitempty"`
+	LeveredFreeCashFlowGrowthAnnual   *float64 `json:"levered_free_cash_flow_growth_annual,omitempty"`
+	LeveredFreeCashFlowGrowthYears    *float64 `json:"levered_free_cash_flow_growth_years,omitempty"`
+	LeveredFreeCashFlowStableYears    *float64 `json:"levered_free_cash_flow_stable_years,omitempty"`
+	CashFromInvesting                 *float64 `json:"cash_from_investing,omitempty"`
+	NetDebtToEbitda                   *float64 `json:"net_debt_to_ebitda,omitempty"`
+	CapitalisationPercent             *float64 `json:"capitalisation_percent,omitempty"`
+	CapitalisationPercent1y           *float64 `json:"capitalisation_percent_1y,omitempty"`
+	CashOperatingGrowth1y             *float64 `json:"cash_operating_growth_1y,omitempty"`
+	CashFromInvesting1y               *float64 `json:"cash_from_investing_1y,omitempty"`
+	InventoryGrowth1y                 *float64 `json:"inventory_growth_1y,omitempty"`
+	NetOperatingAssets                *float64 `json:"net_operating_assets,omitempty"`
+	NetOperatingAssets1y              *float64 `json:"net_operating_assets_1y,omitempty"`
+	AggregateAccruals                 *float64 `json:"aggregate_accruals,omitempty"`
+	AccountsReceivableGrowth1y        *float64 `json:"accounts_receivable_growth_1y,omitempty"`
+	AccountsReceivablePercent         *float64 `json:"accounts_receivable_percent,omitempty"`
+	LongTermAssets                    *float64 `json:"long_term_assets,omitempty"`
+	LastBalanceSheetUpdate            *float64 `json:"last_balance_sheet_update,omitempty"`
+	CurrentPortionLeaseLiabilities    *float64 `json:"current_portion_lease_liabilities,omitempty"`
+	LongTermPortionLeaseLiabilities   *float64 `json:"long_term_portion_lease_liabilities,omitempty"`
+	TotalLeaseLiabilities             *float64 `json:"total_lease_liabilities,omitempty"`
+	RestrictedCash                    *float64 `json:"restricted_cash,omitempty"`
+	RestrictedCashRatio               *float64 `json:"restricted_cash_ratio,omitempty"`
+	LeveredFreeCashFlowBreakEvenYears *float64 `json:"levered_free_cash_flow_break_even_years,omitempty"`
 }
 
 // NewCompanyAnalysisExtendedAnalysisHealth instantiates a new CompanyAnalysisExtendedAnalysisHealth object
@@ -101,9 +101,9 @@ func NewCompanyAnalysisExtendedAnalysisHealthWithDefaults() *CompanyAnalysisExte
 }
 
 // GetNetIncome returns the NetIncome field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetNetIncome() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetNetIncome() float64 {
 	if o == nil || o.NetIncome == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.NetIncome
@@ -111,7 +111,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetNetIncome() float32 {
 
 // GetNetIncomeOk returns a tuple with the NetIncome field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetNetIncomeOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetNetIncomeOk() (*float64, bool) {
 	if o == nil || o.NetIncome == nil {
 		return nil, false
 	}
@@ -127,15 +127,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasNetIncome() bool {
 	return false
 }
 
-// SetNetIncome gets a reference to the given float32 and assigns it to the NetIncome field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetNetIncome(v float32) {
+// SetNetIncome gets a reference to the given float64 and assigns it to the NetIncome field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetNetIncome(v float64) {
 	o.NetIncome = &v
 }
 
 // GetNetInterestExpense returns the NetInterestExpense field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetNetInterestExpense() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetNetInterestExpense() float64 {
 	if o == nil || o.NetInterestExpense == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.NetInterestExpense
@@ -143,7 +143,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetNetInterestExpense() float32 
 
 // GetNetInterestExpenseOk returns a tuple with the NetInterestExpense field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetNetInterestExpenseOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetNetInterestExpenseOk() (*float64, bool) {
 	if o == nil || o.NetInterestExpense == nil {
 		return nil, false
 	}
@@ -159,15 +159,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasNetInterestExpense() bool {
 	return false
 }
 
-// SetNetInterestExpense gets a reference to the given float32 and assigns it to the NetInterestExpense field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetNetInterestExpense(v float32) {
+// SetNetInterestExpense gets a reference to the given float64 and assigns it to the NetInterestExpense field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetNetInterestExpense(v float64) {
 	o.NetInterestExpense = &v
 }
 
 // GetCashOperating returns the CashOperating field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetCashOperating() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetCashOperating() float64 {
 	if o == nil || o.CashOperating == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.CashOperating
@@ -175,7 +175,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetCashOperating() float32 {
 
 // GetCashOperatingOk returns a tuple with the CashOperating field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetCashOperatingOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetCashOperatingOk() (*float64, bool) {
 	if o == nil || o.CashOperating == nil {
 		return nil, false
 	}
@@ -191,15 +191,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasCashOperating() bool {
 	return false
 }
 
-// SetCashOperating gets a reference to the given float32 and assigns it to the CashOperating field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetCashOperating(v float32) {
+// SetCashOperating gets a reference to the given float64 and assigns it to the CashOperating field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetCashOperating(v float64) {
 	o.CashOperating = &v
 }
 
 // GetTotalAssets returns the TotalAssets field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetTotalAssets() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetTotalAssets() float64 {
 	if o == nil || o.TotalAssets == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.TotalAssets
@@ -207,7 +207,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetTotalAssets() float32 {
 
 // GetTotalAssetsOk returns a tuple with the TotalAssets field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetTotalAssetsOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetTotalAssetsOk() (*float64, bool) {
 	if o == nil || o.TotalAssets == nil {
 		return nil, false
 	}
@@ -223,15 +223,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasTotalAssets() bool {
 	return false
 }
 
-// SetTotalAssets gets a reference to the given float32 and assigns it to the TotalAssets field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetTotalAssets(v float32) {
+// SetTotalAssets gets a reference to the given float64 and assigns it to the TotalAssets field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetTotalAssets(v float64) {
 	o.TotalAssets = &v
 }
 
 // GetPpe returns the Ppe field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetPpe() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetPpe() float64 {
 	if o == nil || o.Ppe == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.Ppe
@@ -239,7 +239,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetPpe() float32 {
 
 // GetPpeOk returns a tuple with the Ppe field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetPpeOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetPpeOk() (*float64, bool) {
 	if o == nil || o.Ppe == nil {
 		return nil, false
 	}
@@ -255,15 +255,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasPpe() bool {
 	return false
 }
 
-// SetPpe gets a reference to the given float32 and assigns it to the Ppe field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetPpe(v float32) {
+// SetPpe gets a reference to the given float64 and assigns it to the Ppe field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetPpe(v float64) {
 	o.Ppe = &v
 }
 
 // GetInventory returns the Inventory field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetInventory() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetInventory() float64 {
 	if o == nil || o.Inventory == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.Inventory
@@ -271,7 +271,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetInventory() float32 {
 
 // GetInventoryOk returns a tuple with the Inventory field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetInventoryOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetInventoryOk() (*float64, bool) {
 	if o == nil || o.Inventory == nil {
 		return nil, false
 	}
@@ -287,15 +287,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasInventory() bool {
 	return false
 }
 
-// SetInventory gets a reference to the given float32 and assigns it to the Inventory field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetInventory(v float32) {
+// SetInventory gets a reference to the given float64 and assigns it to the Inventory field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetInventory(v float64) {
 	o.Inventory = &v
 }
 
 // GetCashStInvestments returns the CashStInvestments field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetCashStInvestments() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetCashStInvestments() float64 {
 	if o == nil || o.CashStInvestments == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.CashStInvestments
@@ -303,7 +303,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetCashStInvestments() float32 {
 
 // GetCashStInvestmentsOk returns a tuple with the CashStInvestments field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetCashStInvestmentsOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetCashStInvestmentsOk() (*float64, bool) {
 	if o == nil || o.CashStInvestments == nil {
 		return nil, false
 	}
@@ -319,15 +319,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasCashStInvestments() bool {
 	return false
 }
 
-// SetCashStInvestments gets a reference to the given float32 and assigns it to the CashStInvestments field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetCashStInvestments(v float32) {
+// SetCashStInvestments gets a reference to the given float64 and assigns it to the CashStInvestments field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetCashStInvestments(v float64) {
 	o.CashStInvestments = &v
 }
 
 // GetReceivables returns the Receivables field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetReceivables() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetReceivables() float64 {
 	if o == nil || o.Receivables == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.Receivables
@@ -335,7 +335,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetReceivables() float32 {
 
 // GetReceivablesOk returns a tuple with the Receivables field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetReceivablesOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetReceivablesOk() (*float64, bool) {
 	if o == nil || o.Receivables == nil {
 		return nil, false
 	}
@@ -351,15 +351,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasReceivables() bool {
 	return false
 }
 
-// SetReceivables gets a reference to the given float32 and assigns it to the Receivables field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetReceivables(v float32) {
+// SetReceivables gets a reference to the given float64 and assigns it to the Receivables field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetReceivables(v float64) {
 	o.Receivables = &v
 }
 
 // GetCurrentAssets returns the CurrentAssets field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetCurrentAssets() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetCurrentAssets() float64 {
 	if o == nil || o.CurrentAssets == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.CurrentAssets
@@ -367,7 +367,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetCurrentAssets() float32 {
 
 // GetCurrentAssetsOk returns a tuple with the CurrentAssets field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetCurrentAssetsOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetCurrentAssetsOk() (*float64, bool) {
 	if o == nil || o.CurrentAssets == nil {
 		return nil, false
 	}
@@ -383,15 +383,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasCurrentAssets() bool {
 	return false
 }
 
-// SetCurrentAssets gets a reference to the given float32 and assigns it to the CurrentAssets field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetCurrentAssets(v float32) {
+// SetCurrentAssets gets a reference to the given float64 and assigns it to the CurrentAssets field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetCurrentAssets(v float64) {
 	o.CurrentAssets = &v
 }
 
 // GetTotalEquity returns the TotalEquity field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetTotalEquity() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetTotalEquity() float64 {
 	if o == nil || o.TotalEquity == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.TotalEquity
@@ -399,7 +399,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetTotalEquity() float32 {
 
 // GetTotalEquityOk returns a tuple with the TotalEquity field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetTotalEquityOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetTotalEquityOk() (*float64, bool) {
 	if o == nil || o.TotalEquity == nil {
 		return nil, false
 	}
@@ -415,15 +415,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasTotalEquity() bool {
 	return false
 }
 
-// SetTotalEquity gets a reference to the given float32 and assigns it to the TotalEquity field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetTotalEquity(v float32) {
+// SetTotalEquity gets a reference to the given float64 and assigns it to the TotalEquity field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetTotalEquity(v float64) {
 	o.TotalEquity = &v
 }
 
 // GetTotalDebt returns the TotalDebt field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetTotalDebt() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetTotalDebt() float64 {
 	if o == nil || o.TotalDebt == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.TotalDebt
@@ -431,7 +431,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetTotalDebt() float32 {
 
 // GetTotalDebtOk returns a tuple with the TotalDebt field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetTotalDebtOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetTotalDebtOk() (*float64, bool) {
 	if o == nil || o.TotalDebt == nil {
 		return nil, false
 	}
@@ -447,15 +447,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasTotalDebt() bool {
 	return false
 }
 
-// SetTotalDebt gets a reference to the given float32 and assigns it to the TotalDebt field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetTotalDebt(v float32) {
+// SetTotalDebt gets a reference to the given float64 and assigns it to the TotalDebt field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetTotalDebt(v float64) {
 	o.TotalDebt = &v
 }
 
 // GetLongTermDebt returns the LongTermDebt field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetLongTermDebt() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetLongTermDebt() float64 {
 	if o == nil || o.LongTermDebt == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.LongTermDebt
@@ -463,7 +463,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetLongTermDebt() float32 {
 
 // GetLongTermDebtOk returns a tuple with the LongTermDebt field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetLongTermDebtOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetLongTermDebtOk() (*float64, bool) {
 	if o == nil || o.LongTermDebt == nil {
 		return nil, false
 	}
@@ -479,15 +479,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasLongTermDebt() bool {
 	return false
 }
 
-// SetLongTermDebt gets a reference to the given float32 and assigns it to the LongTermDebt field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetLongTermDebt(v float32) {
+// SetLongTermDebt gets a reference to the given float64 and assigns it to the LongTermDebt field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetLongTermDebt(v float64) {
 	o.LongTermDebt = &v
 }
 
 // GetLongTermLiab returns the LongTermLiab field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetLongTermLiab() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetLongTermLiab() float64 {
 	if o == nil || o.LongTermLiab == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.LongTermLiab
@@ -495,7 +495,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetLongTermLiab() float32 {
 
 // GetLongTermLiabOk returns a tuple with the LongTermLiab field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetLongTermLiabOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetLongTermLiabOk() (*float64, bool) {
 	if o == nil || o.LongTermLiab == nil {
 		return nil, false
 	}
@@ -511,15 +511,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasLongTermLiab() bool {
 	return false
 }
 
-// SetLongTermLiab gets a reference to the given float32 and assigns it to the LongTermLiab field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetLongTermLiab(v float32) {
+// SetLongTermLiab gets a reference to the given float64 and assigns it to the LongTermLiab field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetLongTermLiab(v float64) {
 	o.LongTermLiab = &v
 }
 
 // GetAccountsPayable returns the AccountsPayable field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetAccountsPayable() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetAccountsPayable() float64 {
 	if o == nil || o.AccountsPayable == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.AccountsPayable
@@ -527,7 +527,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetAccountsPayable() float32 {
 
 // GetAccountsPayableOk returns a tuple with the AccountsPayable field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetAccountsPayableOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetAccountsPayableOk() (*float64, bool) {
 	if o == nil || o.AccountsPayable == nil {
 		return nil, false
 	}
@@ -543,15 +543,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasAccountsPayable() bool {
 	return false
 }
 
-// SetAccountsPayable gets a reference to the given float32 and assigns it to the AccountsPayable field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetAccountsPayable(v float32) {
+// SetAccountsPayable gets a reference to the given float64 and assigns it to the AccountsPayable field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetAccountsPayable(v float64) {
 	o.AccountsPayable = &v
 }
 
 // GetTotalCurrentLiab returns the TotalCurrentLiab field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetTotalCurrentLiab() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetTotalCurrentLiab() float64 {
 	if o == nil || o.TotalCurrentLiab == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.TotalCurrentLiab
@@ -559,7 +559,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetTotalCurrentLiab() float32 {
 
 // GetTotalCurrentLiabOk returns a tuple with the TotalCurrentLiab field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetTotalCurrentLiabOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetTotalCurrentLiabOk() (*float64, bool) {
 	if o == nil || o.TotalCurrentLiab == nil {
 		return nil, false
 	}
@@ -575,15 +575,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasTotalCurrentLiab() bool {
 	return false
 }
 
-// SetTotalCurrentLiab gets a reference to the given float32 and assigns it to the TotalCurrentLiab field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetTotalCurrentLiab(v float32) {
+// SetTotalCurrentLiab gets a reference to the given float64 and assigns it to the TotalCurrentLiab field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetTotalCurrentLiab(v float64) {
 	o.TotalCurrentLiab = &v
 }
 
 // GetTotalLiabEquity returns the TotalLiabEquity field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetTotalLiabEquity() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetTotalLiabEquity() float64 {
 	if o == nil || o.TotalLiabEquity == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.TotalLiabEquity
@@ -591,7 +591,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetTotalLiabEquity() float32 {
 
 // GetTotalLiabEquityOk returns a tuple with the TotalLiabEquity field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetTotalLiabEquityOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetTotalLiabEquityOk() (*float64, bool) {
 	if o == nil || o.TotalLiabEquity == nil {
 		return nil, false
 	}
@@ -607,15 +607,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasTotalLiabEquity() bool {
 	return false
 }
 
-// SetTotalLiabEquity gets a reference to the given float32 and assigns it to the TotalLiabEquity field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetTotalLiabEquity(v float32) {
+// SetTotalLiabEquity gets a reference to the given float64 and assigns it to the TotalLiabEquity field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetTotalLiabEquity(v float64) {
 	o.TotalLiabEquity = &v
 }
 
 // GetTotalDebtEquity returns the TotalDebtEquity field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetTotalDebtEquity() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetTotalDebtEquity() float64 {
 	if o == nil || o.TotalDebtEquity == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.TotalDebtEquity
@@ -623,7 +623,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetTotalDebtEquity() float32 {
 
 // GetTotalDebtEquityOk returns a tuple with the TotalDebtEquity field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetTotalDebtEquityOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetTotalDebtEquityOk() (*float64, bool) {
 	if o == nil || o.TotalDebtEquity == nil {
 		return nil, false
 	}
@@ -639,15 +639,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasTotalDebtEquity() bool {
 	return false
 }
 
-// SetTotalDebtEquity gets a reference to the given float32 and assigns it to the TotalDebtEquity field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetTotalDebtEquity(v float32) {
+// SetTotalDebtEquity gets a reference to the given float64 and assigns it to the TotalDebtEquity field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetTotalDebtEquity(v float64) {
 	o.TotalDebtEquity = &v
 }
 
 // GetTotalInventory returns the TotalInventory field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetTotalInventory() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetTotalInventory() float64 {
 	if o == nil || o.TotalInventory == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.TotalInventory
@@ -655,7 +655,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetTotalInventory() float32 {
 
 // GetTotalInventoryOk returns a tuple with the TotalInventory field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetTotalInventoryOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetTotalInventoryOk() (*float64, bool) {
 	if o == nil || o.TotalInventory == nil {
 		return nil, false
 	}
@@ -671,15 +671,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasTotalInventory() bool {
 	return false
 }
 
-// SetTotalInventory gets a reference to the given float32 and assigns it to the TotalInventory field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetTotalInventory(v float32) {
+// SetTotalInventory gets a reference to the given float64 and assigns it to the TotalInventory field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetTotalInventory(v float64) {
 	o.TotalInventory = &v
 }
 
 // GetDebtToEquityRatio returns the DebtToEquityRatio field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetDebtToEquityRatio() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetDebtToEquityRatio() float64 {
 	if o == nil || o.DebtToEquityRatio == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.DebtToEquityRatio
@@ -687,7 +687,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetDebtToEquityRatio() float32 {
 
 // GetDebtToEquityRatioOk returns a tuple with the DebtToEquityRatio field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetDebtToEquityRatioOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetDebtToEquityRatioOk() (*float64, bool) {
 	if o == nil || o.DebtToEquityRatio == nil {
 		return nil, false
 	}
@@ -703,15 +703,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasDebtToEquityRatio() bool {
 	return false
 }
 
-// SetDebtToEquityRatio gets a reference to the given float32 and assigns it to the DebtToEquityRatio field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetDebtToEquityRatio(v float32) {
+// SetDebtToEquityRatio gets a reference to the given float64 and assigns it to the DebtToEquityRatio field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetDebtToEquityRatio(v float64) {
 	o.DebtToEquityRatio = &v
 }
 
 // GetDebtToEquityRatioPast returns the DebtToEquityRatioPast field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetDebtToEquityRatioPast() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetDebtToEquityRatioPast() float64 {
 	if o == nil || o.DebtToEquityRatioPast == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.DebtToEquityRatioPast
@@ -719,7 +719,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetDebtToEquityRatioPast() float
 
 // GetDebtToEquityRatioPastOk returns a tuple with the DebtToEquityRatioPast field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetDebtToEquityRatioPastOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetDebtToEquityRatioPastOk() (*float64, bool) {
 	if o == nil || o.DebtToEquityRatioPast == nil {
 		return nil, false
 	}
@@ -735,15 +735,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasDebtToEquityRatioPast() bool 
 	return false
 }
 
-// SetDebtToEquityRatioPast gets a reference to the given float32 and assigns it to the DebtToEquityRatioPast field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetDebtToEquityRatioPast(v float32) {
+// SetDebtToEquityRatioPast gets a reference to the given float64 and assigns it to the DebtToEquityRatioPast field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetDebtToEquityRatioPast(v float64) {
 	o.DebtToEquityRatioPast = &v
 }
 
 // GetAssetsEquityRatio returns the AssetsEquityRatio field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetAssetsEquityRatio() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetAssetsEquityRatio() float64 {
 	if o == nil || o.AssetsEquityRatio == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.AssetsEquityRatio
@@ -751,7 +751,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetAssetsEquityRatio() float32 {
 
 // GetAssetsEquityRatioOk returns a tuple with the AssetsEquityRatio field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetAssetsEquityRatioOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetAssetsEquityRatioOk() (*float64, bool) {
 	if o == nil || o.AssetsEquityRatio == nil {
 		return nil, false
 	}
@@ -767,15 +767,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasAssetsEquityRatio() bool {
 	return false
 }
 
-// SetAssetsEquityRatio gets a reference to the given float32 and assigns it to the AssetsEquityRatio field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetAssetsEquityRatio(v float32) {
+// SetAssetsEquityRatio gets a reference to the given float64 and assigns it to the AssetsEquityRatio field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetAssetsEquityRatio(v float64) {
 	o.AssetsEquityRatio = &v
 }
 
 // GetFixedToTotalAssets returns the FixedToTotalAssets field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetFixedToTotalAssets() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetFixedToTotalAssets() float64 {
 	if o == nil || o.FixedToTotalAssets == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.FixedToTotalAssets
@@ -783,7 +783,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetFixedToTotalAssets() float32 
 
 // GetFixedToTotalAssetsOk returns a tuple with the FixedToTotalAssets field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetFixedToTotalAssetsOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetFixedToTotalAssetsOk() (*float64, bool) {
 	if o == nil || o.FixedToTotalAssets == nil {
 		return nil, false
 	}
@@ -799,15 +799,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasFixedToTotalAssets() bool {
 	return false
 }
 
-// SetFixedToTotalAssets gets a reference to the given float32 and assigns it to the FixedToTotalAssets field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetFixedToTotalAssets(v float32) {
+// SetFixedToTotalAssets gets a reference to the given float64 and assigns it to the FixedToTotalAssets field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetFixedToTotalAssets(v float64) {
 	o.FixedToTotalAssets = &v
 }
 
 // GetCurrentAssetsToTotalDebt returns the CurrentAssetsToTotalDebt field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetCurrentAssetsToTotalDebt() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetCurrentAssetsToTotalDebt() float64 {
 	if o == nil || o.CurrentAssetsToTotalDebt == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.CurrentAssetsToTotalDebt
@@ -815,7 +815,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetCurrentAssetsToTotalDebt() fl
 
 // GetCurrentAssetsToTotalDebtOk returns a tuple with the CurrentAssetsToTotalDebt field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetCurrentAssetsToTotalDebtOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetCurrentAssetsToTotalDebtOk() (*float64, bool) {
 	if o == nil || o.CurrentAssetsToTotalDebt == nil {
 		return nil, false
 	}
@@ -831,15 +831,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasCurrentAssetsToTotalDebt() bo
 	return false
 }
 
-// SetCurrentAssetsToTotalDebt gets a reference to the given float32 and assigns it to the CurrentAssetsToTotalDebt field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetCurrentAssetsToTotalDebt(v float32) {
+// SetCurrentAssetsToTotalDebt gets a reference to the given float64 and assigns it to the CurrentAssetsToTotalDebt field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetCurrentAssetsToTotalDebt(v float64) {
 	o.CurrentAssetsToTotalDebt = &v
 }
 
 // GetOperatingCashFlowToTotalDebt returns the OperatingCashFlowToTotalDebt field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetOperatingCashFlowToTotalDebt() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetOperatingCashFlowToTotalDebt() float64 {
 	if o == nil || o.OperatingCashFlowToTotalDebt == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.OperatingCashFlowToTotalDebt
@@ -847,7 +847,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetOperatingCashFlowToTotalDebt(
 
 // GetOperatingCashFlowToTotalDebtOk returns a tuple with the OperatingCashFlowToTotalDebt field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetOperatingCashFlowToTotalDebtOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetOperatingCashFlowToTotalDebtOk() (*float64, bool) {
 	if o == nil || o.OperatingCashFlowToTotalDebt == nil {
 		return nil, false
 	}
@@ -863,15 +863,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasOperatingCashFlowToTotalDebt(
 	return false
 }
 
-// SetOperatingCashFlowToTotalDebt gets a reference to the given float32 and assigns it to the OperatingCashFlowToTotalDebt field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetOperatingCashFlowToTotalDebt(v float32) {
+// SetOperatingCashFlowToTotalDebt gets a reference to the given float64 and assigns it to the OperatingCashFlowToTotalDebt field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetOperatingCashFlowToTotalDebt(v float64) {
 	o.OperatingCashFlowToTotalDebt = &v
 }
 
 // GetNetInterestCover returns the NetInterestCover field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetNetInterestCover() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetNetInterestCover() float64 {
 	if o == nil || o.NetInterestCover == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.NetInterestCover
@@ -879,7 +879,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetNetInterestCover() float32 {
 
 // GetNetInterestCoverOk returns a tuple with the NetInterestCover field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetNetInterestCoverOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetNetInterestCoverOk() (*float64, bool) {
 	if o == nil || o.NetInterestCover == nil {
 		return nil, false
 	}
@@ -895,15 +895,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasNetInterestCover() bool {
 	return false
 }
 
-// SetNetInterestCover gets a reference to the given float32 and assigns it to the NetInterestCover field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetNetInterestCover(v float32) {
+// SetNetInterestCover gets a reference to the given float64 and assigns it to the NetInterestCover field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetNetInterestCover(v float64) {
 	o.NetInterestCover = &v
 }
 
 // GetCurrentSolvencyRatio returns the CurrentSolvencyRatio field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetCurrentSolvencyRatio() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetCurrentSolvencyRatio() float64 {
 	if o == nil || o.CurrentSolvencyRatio == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.CurrentSolvencyRatio
@@ -911,7 +911,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetCurrentSolvencyRatio() float3
 
 // GetCurrentSolvencyRatioOk returns a tuple with the CurrentSolvencyRatio field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetCurrentSolvencyRatioOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetCurrentSolvencyRatioOk() (*float64, bool) {
 	if o == nil || o.CurrentSolvencyRatio == nil {
 		return nil, false
 	}
@@ -927,15 +927,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasCurrentSolvencyRatio() bool {
 	return false
 }
 
-// SetCurrentSolvencyRatio gets a reference to the given float32 and assigns it to the CurrentSolvencyRatio field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetCurrentSolvencyRatio(v float32) {
+// SetCurrentSolvencyRatio gets a reference to the given float64 and assigns it to the CurrentSolvencyRatio field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetCurrentSolvencyRatio(v float64) {
 	o.CurrentSolvencyRatio = &v
 }
 
 // GetCurrentAssetsToLongTermLiab returns the CurrentAssetsToLongTermLiab field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetCurrentAssetsToLongTermLiab() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetCurrentAssetsToLongTermLiab() float64 {
 	if o == nil || o.CurrentAssetsToLongTermLiab == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.CurrentAssetsToLongTermLiab
@@ -943,7 +943,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetCurrentAssetsToLongTermLiab()
 
 // GetCurrentAssetsToLongTermLiabOk returns a tuple with the CurrentAssetsToLongTermLiab field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetCurrentAssetsToLongTermLiabOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetCurrentAssetsToLongTermLiabOk() (*float64, bool) {
 	if o == nil || o.CurrentAssetsToLongTermLiab == nil {
 		return nil, false
 	}
@@ -959,15 +959,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasCurrentAssetsToLongTermLiab()
 	return false
 }
 
-// SetCurrentAssetsToLongTermLiab gets a reference to the given float32 and assigns it to the CurrentAssetsToLongTermLiab field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetCurrentAssetsToLongTermLiab(v float32) {
+// SetCurrentAssetsToLongTermLiab gets a reference to the given float64 and assigns it to the CurrentAssetsToLongTermLiab field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetCurrentAssetsToLongTermLiab(v float64) {
 	o.CurrentAssetsToLongTermLiab = &v
 }
 
 // GetOperatingExpenses returns the OperatingExpenses field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetOperatingExpenses() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetOperatingExpenses() float64 {
 	if o == nil || o.OperatingExpenses == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.OperatingExpenses
@@ -975,7 +975,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetOperatingExpenses() float32 {
 
 // GetOperatingExpensesOk returns a tuple with the OperatingExpenses field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetOperatingExpensesOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetOperatingExpensesOk() (*float64, bool) {
 	if o == nil || o.OperatingExpenses == nil {
 		return nil, false
 	}
@@ -991,15 +991,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasOperatingExpenses() bool {
 	return false
 }
 
-// SetOperatingExpenses gets a reference to the given float32 and assigns it to the OperatingExpenses field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetOperatingExpenses(v float32) {
+// SetOperatingExpenses gets a reference to the given float64 and assigns it to the OperatingExpenses field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetOperatingExpenses(v float64) {
 	o.OperatingExpenses = &v
 }
 
 // GetOperatingExpensesGrowthAnnual returns the OperatingExpensesGrowthAnnual field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetOperatingExpensesGrowthAnnual() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetOperatingExpensesGrowthAnnual() float64 {
 	if o == nil || o.OperatingExpensesGrowthAnnual == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.OperatingExpensesGrowthAnnual
@@ -1007,7 +1007,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetOperatingExpensesGrowthAnnual
 
 // GetOperatingExpensesGrowthAnnualOk returns a tuple with the OperatingExpensesGrowthAnnual field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetOperatingExpensesGrowthAnnualOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetOperatingExpensesGrowthAnnualOk() (*float64, bool) {
 	if o == nil || o.OperatingExpensesGrowthAnnual == nil {
 		return nil, false
 	}
@@ -1023,15 +1023,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasOperatingExpensesGrowthAnnual
 	return false
 }
 
-// SetOperatingExpensesGrowthAnnual gets a reference to the given float32 and assigns it to the OperatingExpensesGrowthAnnual field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetOperatingExpensesGrowthAnnual(v float32) {
+// SetOperatingExpensesGrowthAnnual gets a reference to the given float64 and assigns it to the OperatingExpensesGrowthAnnual field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetOperatingExpensesGrowthAnnual(v float64) {
 	o.OperatingExpensesGrowthAnnual = &v
 }
 
 // GetOperatingExpensesStableYears returns the OperatingExpensesStableYears field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetOperatingExpensesStableYears() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetOperatingExpensesStableYears() float64 {
 	if o == nil || o.OperatingExpensesStableYears == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.OperatingExpensesStableYears
@@ -1039,7 +1039,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetOperatingExpensesStableYears(
 
 // GetOperatingExpensesStableYearsOk returns a tuple with the OperatingExpensesStableYears field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetOperatingExpensesStableYearsOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetOperatingExpensesStableYearsOk() (*float64, bool) {
 	if o == nil || o.OperatingExpensesStableYears == nil {
 		return nil, false
 	}
@@ -1055,15 +1055,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasOperatingExpensesStableYears(
 	return false
 }
 
-// SetOperatingExpensesStableYears gets a reference to the given float32 and assigns it to the OperatingExpensesStableYears field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetOperatingExpensesStableYears(v float32) {
+// SetOperatingExpensesStableYears gets a reference to the given float64 and assigns it to the OperatingExpensesStableYears field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetOperatingExpensesStableYears(v float64) {
 	o.OperatingExpensesStableYears = &v
 }
 
 // GetOperatingExpensesGrowthYears returns the OperatingExpensesGrowthYears field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetOperatingExpensesGrowthYears() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetOperatingExpensesGrowthYears() float64 {
 	if o == nil || o.OperatingExpensesGrowthYears == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.OperatingExpensesGrowthYears
@@ -1071,7 +1071,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetOperatingExpensesGrowthYears(
 
 // GetOperatingExpensesGrowthYearsOk returns a tuple with the OperatingExpensesGrowthYears field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetOperatingExpensesGrowthYearsOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetOperatingExpensesGrowthYearsOk() (*float64, bool) {
 	if o == nil || o.OperatingExpensesGrowthYears == nil {
 		return nil, false
 	}
@@ -1087,15 +1087,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasOperatingExpensesGrowthYears(
 	return false
 }
 
-// SetOperatingExpensesGrowthYears gets a reference to the given float32 and assigns it to the OperatingExpensesGrowthYears field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetOperatingExpensesGrowthYears(v float32) {
+// SetOperatingExpensesGrowthYears gets a reference to the given float64 and assigns it to the OperatingExpensesGrowthYears field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetOperatingExpensesGrowthYears(v float64) {
 	o.OperatingExpensesGrowthYears = &v
 }
 
 // GetMedian2yrNetIncome returns the Median2yrNetIncome field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetMedian2yrNetIncome() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetMedian2yrNetIncome() float64 {
 	if o == nil || o.Median2yrNetIncome == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.Median2yrNetIncome
@@ -1103,7 +1103,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetMedian2yrNetIncome() float32 
 
 // GetMedian2yrNetIncomeOk returns a tuple with the Median2yrNetIncome field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetMedian2yrNetIncomeOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetMedian2yrNetIncomeOk() (*float64, bool) {
 	if o == nil || o.Median2yrNetIncome == nil {
 		return nil, false
 	}
@@ -1119,15 +1119,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasMedian2yrNetIncome() bool {
 	return false
 }
 
-// SetMedian2yrNetIncome gets a reference to the given float32 and assigns it to the Median2yrNetIncome field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetMedian2yrNetIncome(v float32) {
+// SetMedian2yrNetIncome gets a reference to the given float64 and assigns it to the Median2yrNetIncome field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetMedian2yrNetIncome(v float64) {
 	o.Median2yrNetIncome = &v
 }
 
 // GetCapex returns the Capex field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetCapex() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetCapex() float64 {
 	if o == nil || o.Capex == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.Capex
@@ -1135,7 +1135,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetCapex() float32 {
 
 // GetCapexOk returns a tuple with the Capex field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetCapexOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetCapexOk() (*float64, bool) {
 	if o == nil || o.Capex == nil {
 		return nil, false
 	}
@@ -1151,15 +1151,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasCapex() bool {
 	return false
 }
 
-// SetCapex gets a reference to the given float32 and assigns it to the Capex field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetCapex(v float32) {
+// SetCapex gets a reference to the given float64 and assigns it to the Capex field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetCapex(v float64) {
 	o.Capex = &v
 }
 
 // GetCapexGrowth1y returns the CapexGrowth1y field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetCapexGrowth1y() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetCapexGrowth1y() float64 {
 	if o == nil || o.CapexGrowth1y == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.CapexGrowth1y
@@ -1167,7 +1167,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetCapexGrowth1y() float32 {
 
 // GetCapexGrowth1yOk returns a tuple with the CapexGrowth1y field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetCapexGrowth1yOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetCapexGrowth1yOk() (*float64, bool) {
 	if o == nil || o.CapexGrowth1y == nil {
 		return nil, false
 	}
@@ -1183,15 +1183,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasCapexGrowth1y() bool {
 	return false
 }
 
-// SetCapexGrowth1y gets a reference to the given float32 and assigns it to the CapexGrowth1y field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetCapexGrowth1y(v float32) {
+// SetCapexGrowth1y gets a reference to the given float64 and assigns it to the CapexGrowth1y field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetCapexGrowth1y(v float64) {
 	o.CapexGrowth1y = &v
 }
 
 // GetCapexGrowthAnnual returns the CapexGrowthAnnual field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetCapexGrowthAnnual() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetCapexGrowthAnnual() float64 {
 	if o == nil || o.CapexGrowthAnnual == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.CapexGrowthAnnual
@@ -1199,7 +1199,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetCapexGrowthAnnual() float32 {
 
 // GetCapexGrowthAnnualOk returns a tuple with the CapexGrowthAnnual field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetCapexGrowthAnnualOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetCapexGrowthAnnualOk() (*float64, bool) {
 	if o == nil || o.CapexGrowthAnnual == nil {
 		return nil, false
 	}
@@ -1215,15 +1215,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasCapexGrowthAnnual() bool {
 	return false
 }
 
-// SetCapexGrowthAnnual gets a reference to the given float32 and assigns it to the CapexGrowthAnnual field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetCapexGrowthAnnual(v float32) {
+// SetCapexGrowthAnnual gets a reference to the given float64 and assigns it to the CapexGrowthAnnual field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetCapexGrowthAnnual(v float64) {
 	o.CapexGrowthAnnual = &v
 }
 
 // GetNetDebt returns the NetDebt field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetNetDebt() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetNetDebt() float64 {
 	if o == nil || o.NetDebt == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.NetDebt
@@ -1231,7 +1231,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetNetDebt() float32 {
 
 // GetNetDebtOk returns a tuple with the NetDebt field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetNetDebtOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetNetDebtOk() (*float64, bool) {
 	if o == nil || o.NetDebt == nil {
 		return nil, false
 	}
@@ -1247,15 +1247,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasNetDebt() bool {
 	return false
 }
 
-// SetNetDebt gets a reference to the given float32 and assigns it to the NetDebt field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetNetDebt(v float32) {
+// SetNetDebt gets a reference to the given float64 and assigns it to the NetDebt field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetNetDebt(v float64) {
 	o.NetDebt = &v
 }
 
 // GetManagementRateReturn returns the ManagementRateReturn field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetManagementRateReturn() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetManagementRateReturn() float64 {
 	if o == nil || o.ManagementRateReturn == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.ManagementRateReturn
@@ -1263,7 +1263,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetManagementRateReturn() float3
 
 // GetManagementRateReturnOk returns a tuple with the ManagementRateReturn field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetManagementRateReturnOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetManagementRateReturnOk() (*float64, bool) {
 	if o == nil || o.ManagementRateReturn == nil {
 		return nil, false
 	}
@@ -1279,15 +1279,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasManagementRateReturn() bool {
 	return false
 }
 
-// SetManagementRateReturn gets a reference to the given float32 and assigns it to the ManagementRateReturn field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetManagementRateReturn(v float32) {
+// SetManagementRateReturn gets a reference to the given float64 and assigns it to the ManagementRateReturn field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetManagementRateReturn(v float64) {
 	o.ManagementRateReturn = &v
 }
 
 // GetBookValuePerShare returns the BookValuePerShare field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetBookValuePerShare() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetBookValuePerShare() float64 {
 	if o == nil || o.BookValuePerShare == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.BookValuePerShare
@@ -1295,7 +1295,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetBookValuePerShare() float32 {
 
 // GetBookValuePerShareOk returns a tuple with the BookValuePerShare field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetBookValuePerShareOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetBookValuePerShareOk() (*float64, bool) {
 	if o == nil || o.BookValuePerShare == nil {
 		return nil, false
 	}
@@ -1311,15 +1311,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasBookValuePerShare() bool {
 	return false
 }
 
-// SetBookValuePerShare gets a reference to the given float32 and assigns it to the BookValuePerShare field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetBookValuePerShare(v float32) {
+// SetBookValuePerShare gets a reference to the given float64 and assigns it to the BookValuePerShare field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetBookValuePerShare(v float64) {
 	o.BookValuePerShare = &v
 }
 
 // GetLeveredFreeCashFlow returns the LeveredFreeCashFlow field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetLeveredFreeCashFlow() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetLeveredFreeCashFlow() float64 {
 	if o == nil || o.LeveredFreeCashFlow == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.LeveredFreeCashFlow
@@ -1327,7 +1327,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetLeveredFreeCashFlow() float32
 
 // GetLeveredFreeCashFlowOk returns a tuple with the LeveredFreeCashFlow field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetLeveredFreeCashFlowOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetLeveredFreeCashFlowOk() (*float64, bool) {
 	if o == nil || o.LeveredFreeCashFlow == nil {
 		return nil, false
 	}
@@ -1343,15 +1343,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasLeveredFreeCashFlow() bool {
 	return false
 }
 
-// SetLeveredFreeCashFlow gets a reference to the given float32 and assigns it to the LeveredFreeCashFlow field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetLeveredFreeCashFlow(v float32) {
+// SetLeveredFreeCashFlow gets a reference to the given float64 and assigns it to the LeveredFreeCashFlow field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetLeveredFreeCashFlow(v float64) {
 	o.LeveredFreeCashFlow = &v
 }
 
 // GetLeveredFreeCashFlow1y returns the LeveredFreeCashFlow1y field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetLeveredFreeCashFlow1y() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetLeveredFreeCashFlow1y() float64 {
 	if o == nil || o.LeveredFreeCashFlow1y == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.LeveredFreeCashFlow1y
@@ -1359,7 +1359,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetLeveredFreeCashFlow1y() float
 
 // GetLeveredFreeCashFlow1yOk returns a tuple with the LeveredFreeCashFlow1y field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetLeveredFreeCashFlow1yOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetLeveredFreeCashFlow1yOk() (*float64, bool) {
 	if o == nil || o.LeveredFreeCashFlow1y == nil {
 		return nil, false
 	}
@@ -1375,15 +1375,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasLeveredFreeCashFlow1y() bool 
 	return false
 }
 
-// SetLeveredFreeCashFlow1y gets a reference to the given float32 and assigns it to the LeveredFreeCashFlow1y field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetLeveredFreeCashFlow1y(v float32) {
+// SetLeveredFreeCashFlow1y gets a reference to the given float64 and assigns it to the LeveredFreeCashFlow1y field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetLeveredFreeCashFlow1y(v float64) {
 	o.LeveredFreeCashFlow1y = &v
 }
 
 // GetLeveredFreeCashFlow2y returns the LeveredFreeCashFlow2y field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetLeveredFreeCashFlow2y() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetLeveredFreeCashFlow2y() float64 {
 	if o == nil || o.LeveredFreeCashFlow2y == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.LeveredFreeCashFlow2y
@@ -1391,7 +1391,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetLeveredFreeCashFlow2y() float
 
 // GetLeveredFreeCashFlow2yOk returns a tuple with the LeveredFreeCashFlow2y field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetLeveredFreeCashFlow2yOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetLeveredFreeCashFlow2yOk() (*float64, bool) {
 	if o == nil || o.LeveredFreeCashFlow2y == nil {
 		return nil, false
 	}
@@ -1407,15 +1407,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasLeveredFreeCashFlow2y() bool 
 	return false
 }
 
-// SetLeveredFreeCashFlow2y gets a reference to the given float32 and assigns it to the LeveredFreeCashFlow2y field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetLeveredFreeCashFlow2y(v float32) {
+// SetLeveredFreeCashFlow2y gets a reference to the given float64 and assigns it to the LeveredFreeCashFlow2y field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetLeveredFreeCashFlow2y(v float64) {
 	o.LeveredFreeCashFlow2y = &v
 }
 
 // GetLeveredFreeCashGrowthAnnual returns the LeveredFreeCashGrowthAnnual field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetLeveredFreeCashGrowthAnnual() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetLeveredFreeCashGrowthAnnual() float64 {
 	if o == nil || o.LeveredFreeCashGrowthAnnual == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.LeveredFreeCashGrowthAnnual
@@ -1423,7 +1423,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetLeveredFreeCashGrowthAnnual()
 
 // GetLeveredFreeCashGrowthAnnualOk returns a tuple with the LeveredFreeCashGrowthAnnual field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetLeveredFreeCashGrowthAnnualOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetLeveredFreeCashGrowthAnnualOk() (*float64, bool) {
 	if o == nil || o.LeveredFreeCashGrowthAnnual == nil {
 		return nil, false
 	}
@@ -1439,15 +1439,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasLeveredFreeCashGrowthAnnual()
 	return false
 }
 
-// SetLeveredFreeCashGrowthAnnual gets a reference to the given float32 and assigns it to the LeveredFreeCashGrowthAnnual field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetLeveredFreeCashGrowthAnnual(v float32) {
+// SetLeveredFreeCashGrowthAnnual gets a reference to the given float64 and assigns it to the LeveredFreeCashGrowthAnnual field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetLeveredFreeCashGrowthAnnual(v float64) {
 	o.LeveredFreeCashGrowthAnnual = &v
 }
 
 // GetLeveredFreeCashFlowGrowthAnnual returns the LeveredFreeCashFlowGrowthAnnual field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetLeveredFreeCashFlowGrowthAnnual() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetLeveredFreeCashFlowGrowthAnnual() float64 {
 	if o == nil || o.LeveredFreeCashFlowGrowthAnnual == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.LeveredFreeCashFlowGrowthAnnual
@@ -1455,7 +1455,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetLeveredFreeCashFlowGrowthAnnu
 
 // GetLeveredFreeCashFlowGrowthAnnualOk returns a tuple with the LeveredFreeCashFlowGrowthAnnual field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetLeveredFreeCashFlowGrowthAnnualOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetLeveredFreeCashFlowGrowthAnnualOk() (*float64, bool) {
 	if o == nil || o.LeveredFreeCashFlowGrowthAnnual == nil {
 		return nil, false
 	}
@@ -1471,15 +1471,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasLeveredFreeCashFlowGrowthAnnu
 	return false
 }
 
-// SetLeveredFreeCashFlowGrowthAnnual gets a reference to the given float32 and assigns it to the LeveredFreeCashFlowGrowthAnnual field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetLeveredFreeCashFlowGrowthAnnual(v float32) {
+// SetLeveredFreeCashFlowGrowthAnnual gets a reference to the given float64 and assigns it to the LeveredFreeCashFlowGrowthAnnual field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetLeveredFreeCashFlowGrowthAnnual(v float64) {
 	o.LeveredFreeCashFlowGrowthAnnual = &v
 }
 
 // GetLeveredFreeCashFlowGrowthYears returns the LeveredFreeCashFlowGrowthYears field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetLeveredFreeCashFlowGrowthYears() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetLeveredFreeCashFlowGrowthYears() float64 {
 	if o == nil || o.LeveredFreeCashFlowGrowthYears == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.LeveredFreeCashFlowGrowthYears
@@ -1487,7 +1487,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetLeveredFreeCashFlowGrowthYear
 
 // GetLeveredFreeCashFlowGrowthYearsOk returns a tuple with the LeveredFreeCashFlowGrowthYears field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetLeveredFreeCashFlowGrowthYearsOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetLeveredFreeCashFlowGrowthYearsOk() (*float64, bool) {
 	if o == nil || o.LeveredFreeCashFlowGrowthYears == nil {
 		return nil, false
 	}
@@ -1503,15 +1503,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasLeveredFreeCashFlowGrowthYear
 	return false
 }
 
-// SetLeveredFreeCashFlowGrowthYears gets a reference to the given float32 and assigns it to the LeveredFreeCashFlowGrowthYears field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetLeveredFreeCashFlowGrowthYears(v float32) {
+// SetLeveredFreeCashFlowGrowthYears gets a reference to the given float64 and assigns it to the LeveredFreeCashFlowGrowthYears field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetLeveredFreeCashFlowGrowthYears(v float64) {
 	o.LeveredFreeCashFlowGrowthYears = &v
 }
 
 // GetLeveredFreeCashFlowStableYears returns the LeveredFreeCashFlowStableYears field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetLeveredFreeCashFlowStableYears() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetLeveredFreeCashFlowStableYears() float64 {
 	if o == nil || o.LeveredFreeCashFlowStableYears == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.LeveredFreeCashFlowStableYears
@@ -1519,7 +1519,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetLeveredFreeCashFlowStableYear
 
 // GetLeveredFreeCashFlowStableYearsOk returns a tuple with the LeveredFreeCashFlowStableYears field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetLeveredFreeCashFlowStableYearsOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetLeveredFreeCashFlowStableYearsOk() (*float64, bool) {
 	if o == nil || o.LeveredFreeCashFlowStableYears == nil {
 		return nil, false
 	}
@@ -1535,15 +1535,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasLeveredFreeCashFlowStableYear
 	return false
 }
 
-// SetLeveredFreeCashFlowStableYears gets a reference to the given float32 and assigns it to the LeveredFreeCashFlowStableYears field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetLeveredFreeCashFlowStableYears(v float32) {
+// SetLeveredFreeCashFlowStableYears gets a reference to the given float64 and assigns it to the LeveredFreeCashFlowStableYears field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetLeveredFreeCashFlowStableYears(v float64) {
 	o.LeveredFreeCashFlowStableYears = &v
 }
 
 // GetCashFromInvesting returns the CashFromInvesting field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetCashFromInvesting() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetCashFromInvesting() float64 {
 	if o == nil || o.CashFromInvesting == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.CashFromInvesting
@@ -1551,7 +1551,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetCashFromInvesting() float32 {
 
 // GetCashFromInvestingOk returns a tuple with the CashFromInvesting field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetCashFromInvestingOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetCashFromInvestingOk() (*float64, bool) {
 	if o == nil || o.CashFromInvesting == nil {
 		return nil, false
 	}
@@ -1567,15 +1567,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasCashFromInvesting() bool {
 	return false
 }
 
-// SetCashFromInvesting gets a reference to the given float32 and assigns it to the CashFromInvesting field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetCashFromInvesting(v float32) {
+// SetCashFromInvesting gets a reference to the given float64 and assigns it to the CashFromInvesting field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetCashFromInvesting(v float64) {
 	o.CashFromInvesting = &v
 }
 
 // GetNetDebtToEbitda returns the NetDebtToEbitda field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetNetDebtToEbitda() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetNetDebtToEbitda() float64 {
 	if o == nil || o.NetDebtToEbitda == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.NetDebtToEbitda
@@ -1583,7 +1583,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetNetDebtToEbitda() float32 {
 
 // GetNetDebtToEbitdaOk returns a tuple with the NetDebtToEbitda field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetNetDebtToEbitdaOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetNetDebtToEbitdaOk() (*float64, bool) {
 	if o == nil || o.NetDebtToEbitda == nil {
 		return nil, false
 	}
@@ -1599,15 +1599,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasNetDebtToEbitda() bool {
 	return false
 }
 
-// SetNetDebtToEbitda gets a reference to the given float32 and assigns it to the NetDebtToEbitda field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetNetDebtToEbitda(v float32) {
+// SetNetDebtToEbitda gets a reference to the given float64 and assigns it to the NetDebtToEbitda field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetNetDebtToEbitda(v float64) {
 	o.NetDebtToEbitda = &v
 }
 
 // GetCapitalisationPercent returns the CapitalisationPercent field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetCapitalisationPercent() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetCapitalisationPercent() float64 {
 	if o == nil || o.CapitalisationPercent == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.CapitalisationPercent
@@ -1615,7 +1615,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetCapitalisationPercent() float
 
 // GetCapitalisationPercentOk returns a tuple with the CapitalisationPercent field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetCapitalisationPercentOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetCapitalisationPercentOk() (*float64, bool) {
 	if o == nil || o.CapitalisationPercent == nil {
 		return nil, false
 	}
@@ -1631,15 +1631,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasCapitalisationPercent() bool 
 	return false
 }
 
-// SetCapitalisationPercent gets a reference to the given float32 and assigns it to the CapitalisationPercent field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetCapitalisationPercent(v float32) {
+// SetCapitalisationPercent gets a reference to the given float64 and assigns it to the CapitalisationPercent field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetCapitalisationPercent(v float64) {
 	o.CapitalisationPercent = &v
 }
 
 // GetCapitalisationPercent1y returns the CapitalisationPercent1y field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetCapitalisationPercent1y() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetCapitalisationPercent1y() float64 {
 	if o == nil || o.CapitalisationPercent1y == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.CapitalisationPercent1y
@@ -1647,7 +1647,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetCapitalisationPercent1y() flo
 
 // GetCapitalisationPercent1yOk returns a tuple with the CapitalisationPercent1y field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetCapitalisationPercent1yOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetCapitalisationPercent1yOk() (*float64, bool) {
 	if o == nil || o.CapitalisationPercent1y == nil {
 		return nil, false
 	}
@@ -1663,15 +1663,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasCapitalisationPercent1y() boo
 	return false
 }
 
-// SetCapitalisationPercent1y gets a reference to the given float32 and assigns it to the CapitalisationPercent1y field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetCapitalisationPercent1y(v float32) {
+// SetCapitalisationPercent1y gets a reference to the given float64 and assigns it to the CapitalisationPercent1y field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetCapitalisationPercent1y(v float64) {
 	o.CapitalisationPercent1y = &v
 }
 
 // GetCashOperatingGrowth1y returns the CashOperatingGrowth1y field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetCashOperatingGrowth1y() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetCashOperatingGrowth1y() float64 {
 	if o == nil || o.CashOperatingGrowth1y == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.CashOperatingGrowth1y
@@ -1679,7 +1679,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetCashOperatingGrowth1y() float
 
 // GetCashOperatingGrowth1yOk returns a tuple with the CashOperatingGrowth1y field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetCashOperatingGrowth1yOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetCashOperatingGrowth1yOk() (*float64, bool) {
 	if o == nil || o.CashOperatingGrowth1y == nil {
 		return nil, false
 	}
@@ -1695,15 +1695,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasCashOperatingGrowth1y() bool 
 	return false
 }
 
-// SetCashOperatingGrowth1y gets a reference to the given float32 and assigns it to the CashOperatingGrowth1y field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetCashOperatingGrowth1y(v float32) {
+// SetCashOperatingGrowth1y gets a reference to the given float64 and assigns it to the CashOperatingGrowth1y field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetCashOperatingGrowth1y(v float64) {
 	o.CashOperatingGrowth1y = &v
 }
 
 // GetCashFromInvesting1y returns the CashFromInvesting1y field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetCashFromInvesting1y() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetCashFromInvesting1y() float64 {
 	if o == nil || o.CashFromInvesting1y == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.CashFromInvesting1y
@@ -1711,7 +1711,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetCashFromInvesting1y() float32
 
 // GetCashFromInvesting1yOk returns a tuple with the CashFromInvesting1y field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetCashFromInvesting1yOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetCashFromInvesting1yOk() (*float64, bool) {
 	if o == nil || o.CashFromInvesting1y == nil {
 		return nil, false
 	}
@@ -1727,15 +1727,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasCashFromInvesting1y() bool {
 	return false
 }
 
-// SetCashFromInvesting1y gets a reference to the given float32 and assigns it to the CashFromInvesting1y field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetCashFromInvesting1y(v float32) {
+// SetCashFromInvesting1y gets a reference to the given float64 and assigns it to the CashFromInvesting1y field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetCashFromInvesting1y(v float64) {
 	o.CashFromInvesting1y = &v
 }
 
 // GetInventoryGrowth1y returns the InventoryGrowth1y field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetInventoryGrowth1y() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetInventoryGrowth1y() float64 {
 	if o == nil || o.InventoryGrowth1y == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.InventoryGrowth1y
@@ -1743,7 +1743,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetInventoryGrowth1y() float32 {
 
 // GetInventoryGrowth1yOk returns a tuple with the InventoryGrowth1y field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetInventoryGrowth1yOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetInventoryGrowth1yOk() (*float64, bool) {
 	if o == nil || o.InventoryGrowth1y == nil {
 		return nil, false
 	}
@@ -1759,15 +1759,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasInventoryGrowth1y() bool {
 	return false
 }
 
-// SetInventoryGrowth1y gets a reference to the given float32 and assigns it to the InventoryGrowth1y field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetInventoryGrowth1y(v float32) {
+// SetInventoryGrowth1y gets a reference to the given float64 and assigns it to the InventoryGrowth1y field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetInventoryGrowth1y(v float64) {
 	o.InventoryGrowth1y = &v
 }
 
 // GetNetOperatingAssets returns the NetOperatingAssets field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetNetOperatingAssets() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetNetOperatingAssets() float64 {
 	if o == nil || o.NetOperatingAssets == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.NetOperatingAssets
@@ -1775,7 +1775,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetNetOperatingAssets() float32 
 
 // GetNetOperatingAssetsOk returns a tuple with the NetOperatingAssets field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetNetOperatingAssetsOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetNetOperatingAssetsOk() (*float64, bool) {
 	if o == nil || o.NetOperatingAssets == nil {
 		return nil, false
 	}
@@ -1791,15 +1791,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasNetOperatingAssets() bool {
 	return false
 }
 
-// SetNetOperatingAssets gets a reference to the given float32 and assigns it to the NetOperatingAssets field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetNetOperatingAssets(v float32) {
+// SetNetOperatingAssets gets a reference to the given float64 and assigns it to the NetOperatingAssets field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetNetOperatingAssets(v float64) {
 	o.NetOperatingAssets = &v
 }
 
 // GetNetOperatingAssets1y returns the NetOperatingAssets1y field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetNetOperatingAssets1y() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetNetOperatingAssets1y() float64 {
 	if o == nil || o.NetOperatingAssets1y == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.NetOperatingAssets1y
@@ -1807,7 +1807,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetNetOperatingAssets1y() float3
 
 // GetNetOperatingAssets1yOk returns a tuple with the NetOperatingAssets1y field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetNetOperatingAssets1yOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetNetOperatingAssets1yOk() (*float64, bool) {
 	if o == nil || o.NetOperatingAssets1y == nil {
 		return nil, false
 	}
@@ -1823,15 +1823,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasNetOperatingAssets1y() bool {
 	return false
 }
 
-// SetNetOperatingAssets1y gets a reference to the given float32 and assigns it to the NetOperatingAssets1y field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetNetOperatingAssets1y(v float32) {
+// SetNetOperatingAssets1y gets a reference to the given float64 and assigns it to the NetOperatingAssets1y field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetNetOperatingAssets1y(v float64) {
 	o.NetOperatingAssets1y = &v
 }
 
 // GetAggregateAccruals returns the AggregateAccruals field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetAggregateAccruals() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetAggregateAccruals() float64 {
 	if o == nil || o.AggregateAccruals == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.AggregateAccruals
@@ -1839,7 +1839,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetAggregateAccruals() float32 {
 
 // GetAggregateAccrualsOk returns a tuple with the AggregateAccruals field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetAggregateAccrualsOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetAggregateAccrualsOk() (*float64, bool) {
 	if o == nil || o.AggregateAccruals == nil {
 		return nil, false
 	}
@@ -1855,15 +1855,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasAggregateAccruals() bool {
 	return false
 }
 
-// SetAggregateAccruals gets a reference to the given float32 and assigns it to the AggregateAccruals field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetAggregateAccruals(v float32) {
+// SetAggregateAccruals gets a reference to the given float64 and assigns it to the AggregateAccruals field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetAggregateAccruals(v float64) {
 	o.AggregateAccruals = &v
 }
 
 // GetAccountsReceivableGrowth1y returns the AccountsReceivableGrowth1y field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetAccountsReceivableGrowth1y() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetAccountsReceivableGrowth1y() float64 {
 	if o == nil || o.AccountsReceivableGrowth1y == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.AccountsReceivableGrowth1y
@@ -1871,7 +1871,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetAccountsReceivableGrowth1y() 
 
 // GetAccountsReceivableGrowth1yOk returns a tuple with the AccountsReceivableGrowth1y field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetAccountsReceivableGrowth1yOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetAccountsReceivableGrowth1yOk() (*float64, bool) {
 	if o == nil || o.AccountsReceivableGrowth1y == nil {
 		return nil, false
 	}
@@ -1887,15 +1887,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasAccountsReceivableGrowth1y() 
 	return false
 }
 
-// SetAccountsReceivableGrowth1y gets a reference to the given float32 and assigns it to the AccountsReceivableGrowth1y field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetAccountsReceivableGrowth1y(v float32) {
+// SetAccountsReceivableGrowth1y gets a reference to the given float64 and assigns it to the AccountsReceivableGrowth1y field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetAccountsReceivableGrowth1y(v float64) {
 	o.AccountsReceivableGrowth1y = &v
 }
 
 // GetAccountsReceivablePercent returns the AccountsReceivablePercent field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetAccountsReceivablePercent() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetAccountsReceivablePercent() float64 {
 	if o == nil || o.AccountsReceivablePercent == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.AccountsReceivablePercent
@@ -1903,7 +1903,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetAccountsReceivablePercent() f
 
 // GetAccountsReceivablePercentOk returns a tuple with the AccountsReceivablePercent field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetAccountsReceivablePercentOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetAccountsReceivablePercentOk() (*float64, bool) {
 	if o == nil || o.AccountsReceivablePercent == nil {
 		return nil, false
 	}
@@ -1919,15 +1919,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasAccountsReceivablePercent() b
 	return false
 }
 
-// SetAccountsReceivablePercent gets a reference to the given float32 and assigns it to the AccountsReceivablePercent field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetAccountsReceivablePercent(v float32) {
+// SetAccountsReceivablePercent gets a reference to the given float64 and assigns it to the AccountsReceivablePercent field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetAccountsReceivablePercent(v float64) {
 	o.AccountsReceivablePercent = &v
 }
 
 // GetLongTermAssets returns the LongTermAssets field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetLongTermAssets() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetLongTermAssets() float64 {
 	if o == nil || o.LongTermAssets == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.LongTermAssets
@@ -1935,7 +1935,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetLongTermAssets() float32 {
 
 // GetLongTermAssetsOk returns a tuple with the LongTermAssets field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetLongTermAssetsOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetLongTermAssetsOk() (*float64, bool) {
 	if o == nil || o.LongTermAssets == nil {
 		return nil, false
 	}
@@ -1951,15 +1951,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasLongTermAssets() bool {
 	return false
 }
 
-// SetLongTermAssets gets a reference to the given float32 and assigns it to the LongTermAssets field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetLongTermAssets(v float32) {
+// SetLongTermAssets gets a reference to the given float64 and assigns it to the LongTermAssets field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetLongTermAssets(v float64) {
 	o.LongTermAssets = &v
 }
 
 // GetLastBalanceSheetUpdate returns the LastBalanceSheetUpdate field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetLastBalanceSheetUpdate() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetLastBalanceSheetUpdate() float64 {
 	if o == nil || o.LastBalanceSheetUpdate == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.LastBalanceSheetUpdate
@@ -1967,7 +1967,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetLastBalanceSheetUpdate() floa
 
 // GetLastBalanceSheetUpdateOk returns a tuple with the LastBalanceSheetUpdate field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetLastBalanceSheetUpdateOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetLastBalanceSheetUpdateOk() (*float64, bool) {
 	if o == nil || o.LastBalanceSheetUpdate == nil {
 		return nil, false
 	}
@@ -1983,15 +1983,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasLastBalanceSheetUpdate() bool
 	return false
 }
 
-// SetLastBalanceSheetUpdate gets a reference to the given float32 and assigns it to the LastBalanceSheetUpdate field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetLastBalanceSheetUpdate(v float32) {
+// SetLastBalanceSheetUpdate gets a reference to the given float64 and assigns it to the LastBalanceSheetUpdate field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetLastBalanceSheetUpdate(v float64) {
 	o.LastBalanceSheetUpdate = &v
 }
 
 // GetCurrentPortionLeaseLiabilities returns the CurrentPortionLeaseLiabilities field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetCurrentPortionLeaseLiabilities() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetCurrentPortionLeaseLiabilities() float64 {
 	if o == nil || o.CurrentPortionLeaseLiabilities == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.CurrentPortionLeaseLiabilities
@@ -1999,7 +1999,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetCurrentPortionLeaseLiabilitie
 
 // GetCurrentPortionLeaseLiabilitiesOk returns a tuple with the CurrentPortionLeaseLiabilities field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetCurrentPortionLeaseLiabilitiesOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetCurrentPortionLeaseLiabilitiesOk() (*float64, bool) {
 	if o == nil || o.CurrentPortionLeaseLiabilities == nil {
 		return nil, false
 	}
@@ -2015,15 +2015,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasCurrentPortionLeaseLiabilitie
 	return false
 }
 
-// SetCurrentPortionLeaseLiabilities gets a reference to the given float32 and assigns it to the CurrentPortionLeaseLiabilities field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetCurrentPortionLeaseLiabilities(v float32) {
+// SetCurrentPortionLeaseLiabilities gets a reference to the given float64 and assigns it to the CurrentPortionLeaseLiabilities field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetCurrentPortionLeaseLiabilities(v float64) {
 	o.CurrentPortionLeaseLiabilities = &v
 }
 
 // GetLongTermPortionLeaseLiabilities returns the LongTermPortionLeaseLiabilities field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetLongTermPortionLeaseLiabilities() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetLongTermPortionLeaseLiabilities() float64 {
 	if o == nil || o.LongTermPortionLeaseLiabilities == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.LongTermPortionLeaseLiabilities
@@ -2031,7 +2031,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetLongTermPortionLeaseLiabiliti
 
 // GetLongTermPortionLeaseLiabilitiesOk returns a tuple with the LongTermPortionLeaseLiabilities field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetLongTermPortionLeaseLiabilitiesOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetLongTermPortionLeaseLiabilitiesOk() (*float64, bool) {
 	if o == nil || o.LongTermPortionLeaseLiabilities == nil {
 		return nil, false
 	}
@@ -2047,15 +2047,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasLongTermPortionLeaseLiabiliti
 	return false
 }
 
-// SetLongTermPortionLeaseLiabilities gets a reference to the given float32 and assigns it to the LongTermPortionLeaseLiabilities field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetLongTermPortionLeaseLiabilities(v float32) {
+// SetLongTermPortionLeaseLiabilities gets a reference to the given float64 and assigns it to the LongTermPortionLeaseLiabilities field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetLongTermPortionLeaseLiabilities(v float64) {
 	o.LongTermPortionLeaseLiabilities = &v
 }
 
 // GetTotalLeaseLiabilities returns the TotalLeaseLiabilities field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetTotalLeaseLiabilities() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetTotalLeaseLiabilities() float64 {
 	if o == nil || o.TotalLeaseLiabilities == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.TotalLeaseLiabilities
@@ -2063,7 +2063,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetTotalLeaseLiabilities() float
 
 // GetTotalLeaseLiabilitiesOk returns a tuple with the TotalLeaseLiabilities field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetTotalLeaseLiabilitiesOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetTotalLeaseLiabilitiesOk() (*float64, bool) {
 	if o == nil || o.TotalLeaseLiabilities == nil {
 		return nil, false
 	}
@@ -2079,15 +2079,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasTotalLeaseLiabilities() bool 
 	return false
 }
 
-// SetTotalLeaseLiabilities gets a reference to the given float32 and assigns it to the TotalLeaseLiabilities field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetTotalLeaseLiabilities(v float32) {
+// SetTotalLeaseLiabilities gets a reference to the given float64 and assigns it to the TotalLeaseLiabilities field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetTotalLeaseLiabilities(v float64) {
 	o.TotalLeaseLiabilities = &v
 }
 
 // GetRestrictedCash returns the RestrictedCash field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetRestrictedCash() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetRestrictedCash() float64 {
 	if o == nil || o.RestrictedCash == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.RestrictedCash
@@ -2095,7 +2095,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetRestrictedCash() float32 {
 
 // GetRestrictedCashOk returns a tuple with the RestrictedCash field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetRestrictedCashOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetRestrictedCashOk() (*float64, bool) {
 	if o == nil || o.RestrictedCash == nil {
 		return nil, false
 	}
@@ -2111,15 +2111,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasRestrictedCash() bool {
 	return false
 }
 
-// SetRestrictedCash gets a reference to the given float32 and assigns it to the RestrictedCash field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetRestrictedCash(v float32) {
+// SetRestrictedCash gets a reference to the given float64 and assigns it to the RestrictedCash field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetRestrictedCash(v float64) {
 	o.RestrictedCash = &v
 }
 
 // GetRestrictedCashRatio returns the RestrictedCashRatio field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetRestrictedCashRatio() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetRestrictedCashRatio() float64 {
 	if o == nil || o.RestrictedCashRatio == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.RestrictedCashRatio
@@ -2127,7 +2127,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetRestrictedCashRatio() float32
 
 // GetRestrictedCashRatioOk returns a tuple with the RestrictedCashRatio field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetRestrictedCashRatioOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetRestrictedCashRatioOk() (*float64, bool) {
 	if o == nil || o.RestrictedCashRatio == nil {
 		return nil, false
 	}
@@ -2143,15 +2143,15 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasRestrictedCashRatio() bool {
 	return false
 }
 
-// SetRestrictedCashRatio gets a reference to the given float32 and assigns it to the RestrictedCashRatio field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetRestrictedCashRatio(v float32) {
+// SetRestrictedCashRatio gets a reference to the given float64 and assigns it to the RestrictedCashRatio field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetRestrictedCashRatio(v float64) {
 	o.RestrictedCashRatio = &v
 }
 
 // GetLeveredFreeCashFlowBreakEvenYears returns the LeveredFreeCashFlowBreakEvenYears field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetLeveredFreeCashFlowBreakEvenYears() float32 {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetLeveredFreeCashFlowBreakEvenYears() float64 {
 	if o == nil || o.LeveredFreeCashFlowBreakEvenYears == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.LeveredFreeCashFlowBreakEvenYears
@@ -2159,7 +2159,7 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) GetLeveredFreeCashFlowBreakEvenY
 
 // GetLeveredFreeCashFlowBreakEvenYearsOk returns a tuple with the LeveredFreeCashFlowBreakEvenYears field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedAnalysisHealth) GetLeveredFreeCashFlowBreakEvenYearsOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedAnalysisHealth) GetLeveredFreeCashFlowBreakEvenYearsOk() (*float64, bool) {
 	if o == nil || o.LeveredFreeCashFlowBreakEvenYears == nil {
 		return nil, false
 	}
@@ -2175,8 +2175,8 @@ func (o *CompanyAnalysisExtendedAnalysisHealth) HasLeveredFreeCashFlowBreakEvenY
 	return false
 }
 
-// SetLeveredFreeCashFlowBreakEvenYears gets a reference to the given float32 and assigns it to the LeveredFreeCashFlowBreakEvenYears field.
-func (o *CompanyAnalysisExtendedAnalysisHealth) SetLeveredFreeCashFlowBreakEvenYears(v float32) {
+// SetLeveredFreeCashFlowBreakEvenYears gets a reference to the given float64 and assigns it to the LeveredFreeCashFlowBreakEvenYears field.
+func (o *CompanyAnalysisExtendedAnalysisHealth) SetLeveredFreeCashFlowBreakEvenYears(v float64) {
 	o.LeveredFreeCashFlowBreakEvenYears = &v
 }
 

@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Current** | Pointer to **float32** |  | [optional] 
-**Future** | Pointer to **float32** |  | [optional] 
+**Current** | Pointer to **float64** |  | [optional] 
+**Future** | Pointer to **float64** |  | [optional] 
 **Upcoming** | Pointer to **bool** |  | [optional] 
 **ExDate** | Pointer to **int64** |  | [optional] 
 
@@ -30,20 +30,20 @@ but it doesn't guarantee that properties required by API are set
 
 ### GetCurrent
 
-`func (o *CompanyAnalysisDividend) GetCurrent() float32`
+`func (o *CompanyAnalysisDividend) GetCurrent() float64`
 
 GetCurrent returns the Current field if non-nil, zero value otherwise.
 
 ### GetCurrentOk
 
-`func (o *CompanyAnalysisDividend) GetCurrentOk() (*float32, bool)`
+`func (o *CompanyAnalysisDividend) GetCurrentOk() (*float64, bool)`
 
 GetCurrentOk returns a tuple with the Current field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCurrent
 
-`func (o *CompanyAnalysisDividend) SetCurrent(v float32)`
+`func (o *CompanyAnalysisDividend) SetCurrent(v float64)`
 
 SetCurrent sets Current field to given value.
 
@@ -55,20 +55,20 @@ HasCurrent returns a boolean if a field has been set.
 
 ### GetFuture
 
-`func (o *CompanyAnalysisDividend) GetFuture() float32`
+`func (o *CompanyAnalysisDividend) GetFuture() float64`
 
 GetFuture returns the Future field if non-nil, zero value otherwise.
 
 ### GetFutureOk
 
-`func (o *CompanyAnalysisDividend) GetFutureOk() (*float32, bool)`
+`func (o *CompanyAnalysisDividend) GetFutureOk() (*float64, bool)`
 
 GetFutureOk returns a tuple with the Future field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetFuture
 
-`func (o *CompanyAnalysisDividend) SetFuture(v float32)`
+`func (o *CompanyAnalysisDividend) SetFuture(v float64)`
 
 SetFuture sets Future field to given value.
 

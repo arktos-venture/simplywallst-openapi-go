@@ -4,15 +4,15 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**MinPrice** | Pointer to **float32** |  | [optional] 
-**MaxPrice** | Pointer to **float32** |  | [optional] 
-**PriceSpread** | Pointer to **float32** |  | [optional] 
+**MinPrice** | Pointer to **float64** |  | [optional] 
+**MaxPrice** | Pointer to **float64** |  | [optional] 
+**PriceSpread** | Pointer to **float64** |  | [optional] 
 **IsVolatile** | Pointer to **bool** |  | [optional] 
-**AnalystCount** | Pointer to **float32** |  | [optional] 
+**AnalystCount** | Pointer to **float64** |  | [optional] 
 **IsFund** | Pointer to **bool** |  | [optional] 
 **DaysSinceLastTrade** | Pointer to **int32** |  | [optional] 
-**SharesOutstandingSingleGrowth1y** | Pointer to **float32** |  | [optional] 
-**SharesOutstandingSingleGrowth5y** | Pointer to **float32** |  | [optional] 
+**SharesOutstandingSingleGrowth1y** | Pointer to **float64** |  | [optional] 
+**SharesOutstandingSingleGrowth5y** | Pointer to **float64** |  | [optional] 
 
 ## Methods
 
@@ -35,20 +35,20 @@ but it doesn't guarantee that properties required by API are set
 
 ### GetMinPrice
 
-`func (o *CompanyAnalysisExtendedAnalysisMisc) GetMinPrice() float32`
+`func (o *CompanyAnalysisExtendedAnalysisMisc) GetMinPrice() float64`
 
 GetMinPrice returns the MinPrice field if non-nil, zero value otherwise.
 
 ### GetMinPriceOk
 
-`func (o *CompanyAnalysisExtendedAnalysisMisc) GetMinPriceOk() (*float32, bool)`
+`func (o *CompanyAnalysisExtendedAnalysisMisc) GetMinPriceOk() (*float64, bool)`
 
 GetMinPriceOk returns a tuple with the MinPrice field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetMinPrice
 
-`func (o *CompanyAnalysisExtendedAnalysisMisc) SetMinPrice(v float32)`
+`func (o *CompanyAnalysisExtendedAnalysisMisc) SetMinPrice(v float64)`
 
 SetMinPrice sets MinPrice field to given value.
 
@@ -60,20 +60,20 @@ HasMinPrice returns a boolean if a field has been set.
 
 ### GetMaxPrice
 
-`func (o *CompanyAnalysisExtendedAnalysisMisc) GetMaxPrice() float32`
+`func (o *CompanyAnalysisExtendedAnalysisMisc) GetMaxPrice() float64`
 
 GetMaxPrice returns the MaxPrice field if non-nil, zero value otherwise.
 
 ### GetMaxPriceOk
 
-`func (o *CompanyAnalysisExtendedAnalysisMisc) GetMaxPriceOk() (*float32, bool)`
+`func (o *CompanyAnalysisExtendedAnalysisMisc) GetMaxPriceOk() (*float64, bool)`
 
 GetMaxPriceOk returns a tuple with the MaxPrice field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetMaxPrice
 
-`func (o *CompanyAnalysisExtendedAnalysisMisc) SetMaxPrice(v float32)`
+`func (o *CompanyAnalysisExtendedAnalysisMisc) SetMaxPrice(v float64)`
 
 SetMaxPrice sets MaxPrice field to given value.
 
@@ -85,20 +85,20 @@ HasMaxPrice returns a boolean if a field has been set.
 
 ### GetPriceSpread
 
-`func (o *CompanyAnalysisExtendedAnalysisMisc) GetPriceSpread() float32`
+`func (o *CompanyAnalysisExtendedAnalysisMisc) GetPriceSpread() float64`
 
 GetPriceSpread returns the PriceSpread field if non-nil, zero value otherwise.
 
 ### GetPriceSpreadOk
 
-`func (o *CompanyAnalysisExtendedAnalysisMisc) GetPriceSpreadOk() (*float32, bool)`
+`func (o *CompanyAnalysisExtendedAnalysisMisc) GetPriceSpreadOk() (*float64, bool)`
 
 GetPriceSpreadOk returns a tuple with the PriceSpread field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetPriceSpread
 
-`func (o *CompanyAnalysisExtendedAnalysisMisc) SetPriceSpread(v float32)`
+`func (o *CompanyAnalysisExtendedAnalysisMisc) SetPriceSpread(v float64)`
 
 SetPriceSpread sets PriceSpread field to given value.
 
@@ -135,20 +135,20 @@ HasIsVolatile returns a boolean if a field has been set.
 
 ### GetAnalystCount
 
-`func (o *CompanyAnalysisExtendedAnalysisMisc) GetAnalystCount() float32`
+`func (o *CompanyAnalysisExtendedAnalysisMisc) GetAnalystCount() float64`
 
 GetAnalystCount returns the AnalystCount field if non-nil, zero value otherwise.
 
 ### GetAnalystCountOk
 
-`func (o *CompanyAnalysisExtendedAnalysisMisc) GetAnalystCountOk() (*float32, bool)`
+`func (o *CompanyAnalysisExtendedAnalysisMisc) GetAnalystCountOk() (*float64, bool)`
 
 GetAnalystCountOk returns a tuple with the AnalystCount field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetAnalystCount
 
-`func (o *CompanyAnalysisExtendedAnalysisMisc) SetAnalystCount(v float32)`
+`func (o *CompanyAnalysisExtendedAnalysisMisc) SetAnalystCount(v float64)`
 
 SetAnalystCount sets AnalystCount field to given value.
 
@@ -210,20 +210,20 @@ HasDaysSinceLastTrade returns a boolean if a field has been set.
 
 ### GetSharesOutstandingSingleGrowth1y
 
-`func (o *CompanyAnalysisExtendedAnalysisMisc) GetSharesOutstandingSingleGrowth1y() float32`
+`func (o *CompanyAnalysisExtendedAnalysisMisc) GetSharesOutstandingSingleGrowth1y() float64`
 
 GetSharesOutstandingSingleGrowth1y returns the SharesOutstandingSingleGrowth1y field if non-nil, zero value otherwise.
 
 ### GetSharesOutstandingSingleGrowth1yOk
 
-`func (o *CompanyAnalysisExtendedAnalysisMisc) GetSharesOutstandingSingleGrowth1yOk() (*float32, bool)`
+`func (o *CompanyAnalysisExtendedAnalysisMisc) GetSharesOutstandingSingleGrowth1yOk() (*float64, bool)`
 
 GetSharesOutstandingSingleGrowth1yOk returns a tuple with the SharesOutstandingSingleGrowth1y field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetSharesOutstandingSingleGrowth1y
 
-`func (o *CompanyAnalysisExtendedAnalysisMisc) SetSharesOutstandingSingleGrowth1y(v float32)`
+`func (o *CompanyAnalysisExtendedAnalysisMisc) SetSharesOutstandingSingleGrowth1y(v float64)`
 
 SetSharesOutstandingSingleGrowth1y sets SharesOutstandingSingleGrowth1y field to given value.
 
@@ -235,20 +235,20 @@ HasSharesOutstandingSingleGrowth1y returns a boolean if a field has been set.
 
 ### GetSharesOutstandingSingleGrowth5y
 
-`func (o *CompanyAnalysisExtendedAnalysisMisc) GetSharesOutstandingSingleGrowth5y() float32`
+`func (o *CompanyAnalysisExtendedAnalysisMisc) GetSharesOutstandingSingleGrowth5y() float64`
 
 GetSharesOutstandingSingleGrowth5y returns the SharesOutstandingSingleGrowth5y field if non-nil, zero value otherwise.
 
 ### GetSharesOutstandingSingleGrowth5yOk
 
-`func (o *CompanyAnalysisExtendedAnalysisMisc) GetSharesOutstandingSingleGrowth5yOk() (*float32, bool)`
+`func (o *CompanyAnalysisExtendedAnalysisMisc) GetSharesOutstandingSingleGrowth5yOk() (*float64, bool)`
 
 GetSharesOutstandingSingleGrowth5yOk returns a tuple with the SharesOutstandingSingleGrowth5y field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetSharesOutstandingSingleGrowth5y
 
-`func (o *CompanyAnalysisExtendedAnalysisMisc) SetSharesOutstandingSingleGrowth5y(v float32)`
+`func (o *CompanyAnalysisExtendedAnalysisMisc) SetSharesOutstandingSingleGrowth5y(v float64)`
 
 SetSharesOutstandingSingleGrowth5y sets SharesOutstandingSingleGrowth5y field to given value.
 

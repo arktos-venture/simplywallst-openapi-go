@@ -64,7 +64,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**map[string]IndustryValues**](industryValues.md)
+[**map[string]IndustryValues**](IndustryValues.md)
 
 ### Authorization
 
@@ -134,7 +134,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**IndustryCountry**](industryCountry.md)
+[**IndustryCountry**](IndustryCountry.md)
 
 ### Authorization
 
@@ -195,7 +195,7 @@ Other parameters are passed through a pointer to a apiListIndustryTreeRequest st
 
 ### Return type
 
-[**IndustryTree**](industryTree.md)
+[**IndustryTree**](IndustryTree.md)
 
 ### Authorization
 

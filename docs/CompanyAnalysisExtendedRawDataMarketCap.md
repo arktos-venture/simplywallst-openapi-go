@@ -4,15 +4,15 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Listing** | Pointer to **float32** |  | [optional] 
-**Primary** | Pointer to **float32** |  | [optional] 
-**Reported** | Pointer to **float32** |  | [optional] 
-**Usd** | Pointer to **float32** |  | [optional] 
-**SharesOutstanding** | Pointer to **float32** |  | [optional] 
-**SharesOutstandingCommonEquity** | Pointer to **float32** |  | [optional] 
-**RelativeListingSharesOutstanding** | Pointer to **float32** |  | [optional] 
-**TradingItemToPrimaryRatio** | Pointer to **float32** |  | [optional] 
-**TotalEnterpriseValueReported** | Pointer to **float32** |  | [optional] 
+**Listing** | Pointer to **float64** |  | [optional] 
+**Primary** | Pointer to **float64** |  | [optional] 
+**Reported** | Pointer to **float64** |  | [optional] 
+**Usd** | Pointer to **float64** |  | [optional] 
+**SharesOutstanding** | Pointer to **float64** |  | [optional] 
+**SharesOutstandingCommonEquity** | Pointer to **float64** |  | [optional] 
+**RelativeListingSharesOutstanding** | Pointer to **float64** |  | [optional] 
+**TradingItemToPrimaryRatio** | Pointer to **float64** |  | [optional] 
+**TotalEnterpriseValueReported** | Pointer to **float64** |  | [optional] 
 **MarketCapBand** | Pointer to **string** |  | [optional] 
 
 ## Methods
@@ -36,20 +36,20 @@ but it doesn't guarantee that properties required by API are set
 
 ### GetListing
 
-`func (o *CompanyAnalysisExtendedRawDataMarketCap) GetListing() float32`
+`func (o *CompanyAnalysisExtendedRawDataMarketCap) GetListing() float64`
 
 GetListing returns the Listing field if non-nil, zero value otherwise.
 
 ### GetListingOk
 
-`func (o *CompanyAnalysisExtendedRawDataMarketCap) GetListingOk() (*float32, bool)`
+`func (o *CompanyAnalysisExtendedRawDataMarketCap) GetListingOk() (*float64, bool)`
 
 GetListingOk returns a tuple with the Listing field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetListing
 
-`func (o *CompanyAnalysisExtendedRawDataMarketCap) SetListing(v float32)`
+`func (o *CompanyAnalysisExtendedRawDataMarketCap) SetListing(v float64)`
 
 SetListing sets Listing field to given value.
 
@@ -61,20 +61,20 @@ HasListing returns a boolean if a field has been set.
 
 ### GetPrimary
 
-`func (o *CompanyAnalysisExtendedRawDataMarketCap) GetPrimary() float32`
+`func (o *CompanyAnalysisExtendedRawDataMarketCap) GetPrimary() float64`
 
 GetPrimary returns the Primary field if non-nil, zero value otherwise.
 
 ### GetPrimaryOk
 
-`func (o *CompanyAnalysisExtendedRawDataMarketCap) GetPrimaryOk() (*float32, bool)`
+`func (o *CompanyAnalysisExtendedRawDataMarketCap) GetPrimaryOk() (*float64, bool)`
 
 GetPrimaryOk returns a tuple with the Primary field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetPrimary
 
-`func (o *CompanyAnalysisExtendedRawDataMarketCap) SetPrimary(v float32)`
+`func (o *CompanyAnalysisExtendedRawDataMarketCap) SetPrimary(v float64)`
 
 SetPrimary sets Primary field to given value.
 
@@ -86,20 +86,20 @@ HasPrimary returns a boolean if a field has been set.
 
 ### GetReported
 
-`func (o *CompanyAnalysisExtendedRawDataMarketCap) GetReported() float32`
+`func (o *CompanyAnalysisExtendedRawDataMarketCap) GetReported() float64`
 
 GetReported returns the Reported field if non-nil, zero value otherwise.
 
 ### GetReportedOk
 
-`func (o *CompanyAnalysisExtendedRawDataMarketCap) GetReportedOk() (*float32, bool)`
+`func (o *CompanyAnalysisExtendedRawDataMarketCap) GetReportedOk() (*float64, bool)`
 
 GetReportedOk returns a tuple with the Reported field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetReported
 
-`func (o *CompanyAnalysisExtendedRawDataMarketCap) SetReported(v float32)`
+`func (o *CompanyAnalysisExtendedRawDataMarketCap) SetReported(v float64)`
 
 SetReported sets Reported field to given value.
 
@@ -111,20 +111,20 @@ HasReported returns a boolean if a field has been set.
 
 ### GetUsd
 
-`func (o *CompanyAnalysisExtendedRawDataMarketCap) GetUsd() float32`
+`func (o *CompanyAnalysisExtendedRawDataMarketCap) GetUsd() float64`
 
 GetUsd returns the Usd field if non-nil, zero value otherwise.
 
 ### GetUsdOk
 
-`func (o *CompanyAnalysisExtendedRawDataMarketCap) GetUsdOk() (*float32, bool)`
+`func (o *CompanyAnalysisExtendedRawDataMarketCap) GetUsdOk() (*float64, bool)`
 
 GetUsdOk returns a tuple with the Usd field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetUsd
 
-`func (o *CompanyAnalysisExtendedRawDataMarketCap) SetUsd(v float32)`
+`func (o *CompanyAnalysisExtendedRawDataMarketCap) SetUsd(v float64)`
 
 SetUsd sets Usd field to given value.
 
@@ -136,20 +136,20 @@ HasUsd returns a boolean if a field has been set.
 
 ### GetSharesOutstanding
 
-`func (o *CompanyAnalysisExtendedRawDataMarketCap) GetSharesOutstanding() float32`
+`func (o *CompanyAnalysisExtendedRawDataMarketCap) GetSharesOutstanding() float64`
 
 GetSharesOutstanding returns the SharesOutstanding field if non-nil, zero value otherwise.
 
 ### GetSharesOutstandingOk
 
-`func (o *CompanyAnalysisExtendedRawDataMarketCap) GetSharesOutstandingOk() (*float32, bool)`
+`func (o *CompanyAnalysisExtendedRawDataMarketCap) GetSharesOutstandingOk() (*float64, bool)`
 
 GetSharesOutstandingOk returns a tuple with the SharesOutstanding field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetSharesOutstanding
 
-`func (o *CompanyAnalysisExtendedRawDataMarketCap) SetSharesOutstanding(v float32)`
+`func (o *CompanyAnalysisExtendedRawDataMarketCap) SetSharesOutstanding(v float64)`
 
 SetSharesOutstanding sets SharesOutstanding field to given value.
 
@@ -161,20 +161,20 @@ HasSharesOutstanding returns a boolean if a field has been set.
 
 ### GetSharesOutstandingCommonEquity
 
-`func (o *CompanyAnalysisExtendedRawDataMarketCap) GetSharesOutstandingCommonEquity() float32`
+`func (o *CompanyAnalysisExtendedRawDataMarketCap) GetSharesOutstandingCommonEquity() float64`
 
 GetSharesOutstandingCommonEquity returns the SharesOutstandingCommonEquity field if non-nil, zero value otherwise.
 
 ### GetSharesOutstandingCommonEquityOk
 
-`func (o *CompanyAnalysisExtendedRawDataMarketCap) GetSharesOutstandingCommonEquityOk() (*float32, bool)`
+`func (o *CompanyAnalysisExtendedRawDataMarketCap) GetSharesOutstandingCommonEquityOk() (*float64, bool)`
 
 GetSharesOutstandingCommonEquityOk returns a tuple with the SharesOutstandingCommonEquity field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetSharesOutstandingCommonEquity
 
-`func (o *CompanyAnalysisExtendedRawDataMarketCap) SetSharesOutstandingCommonEquity(v float32)`
+`func (o *CompanyAnalysisExtendedRawDataMarketCap) SetSharesOutstandingCommonEquity(v float64)`
 
 SetSharesOutstandingCommonEquity sets SharesOutstandingCommonEquity field to given value.
 
@@ -186,20 +186,20 @@ HasSharesOutstandingCommonEquity returns a boolean if a field has been set.
 
 ### GetRelativeListingSharesOutstanding
 
-`func (o *CompanyAnalysisExtendedRawDataMarketCap) GetRelativeListingSharesOutstanding() float32`
+`func (o *CompanyAnalysisExtendedRawDataMarketCap) GetRelativeListingSharesOutstanding() float64`
 
 GetRelativeListingSharesOutstanding returns the RelativeListingSharesOutstanding field if non-nil, zero value otherwise.
 
 ### GetRelativeListingSharesOutstandingOk
 
-`func (o *CompanyAnalysisExtendedRawDataMarketCap) GetRelativeListingSharesOutstandingOk() (*float32, bool)`
+`func (o *CompanyAnalysisExtendedRawDataMarketCap) GetRelativeListingSharesOutstandingOk() (*float64, bool)`
 
 GetRelativeListingSharesOutstandingOk returns a tuple with the RelativeListingSharesOutstanding field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRelativeListingSharesOutstanding
 
-`func (o *CompanyAnalysisExtendedRawDataMarketCap) SetRelativeListingSharesOutstanding(v float32)`
+`func (o *CompanyAnalysisExtendedRawDataMarketCap) SetRelativeListingSharesOutstanding(v float64)`
 
 SetRelativeListingSharesOutstanding sets RelativeListingSharesOutstanding field to given value.
 
@@ -211,20 +211,20 @@ HasRelativeListingSharesOutstanding returns a boolean if a field has been set.
 
 ### GetTradingItemToPrimaryRatio
 
-`func (o *CompanyAnalysisExtendedRawDataMarketCap) GetTradingItemToPrimaryRatio() float32`
+`func (o *CompanyAnalysisExtendedRawDataMarketCap) GetTradingItemToPrimaryRatio() float64`
 
 GetTradingItemToPrimaryRatio returns the TradingItemToPrimaryRatio field if non-nil, zero value otherwise.
 
 ### GetTradingItemToPrimaryRatioOk
 
-`func (o *CompanyAnalysisExtendedRawDataMarketCap) GetTradingItemToPrimaryRatioOk() (*float32, bool)`
+`func (o *CompanyAnalysisExtendedRawDataMarketCap) GetTradingItemToPrimaryRatioOk() (*float64, bool)`
 
 GetTradingItemToPrimaryRatioOk returns a tuple with the TradingItemToPrimaryRatio field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTradingItemToPrimaryRatio
 
-`func (o *CompanyAnalysisExtendedRawDataMarketCap) SetTradingItemToPrimaryRatio(v float32)`
+`func (o *CompanyAnalysisExtendedRawDataMarketCap) SetTradingItemToPrimaryRatio(v float64)`
 
 SetTradingItemToPrimaryRatio sets TradingItemToPrimaryRatio field to given value.
 
@@ -236,20 +236,20 @@ HasTradingItemToPrimaryRatio returns a boolean if a field has been set.
 
 ### GetTotalEnterpriseValueReported
 
-`func (o *CompanyAnalysisExtendedRawDataMarketCap) GetTotalEnterpriseValueReported() float32`
+`func (o *CompanyAnalysisExtendedRawDataMarketCap) GetTotalEnterpriseValueReported() float64`
 
 GetTotalEnterpriseValueReported returns the TotalEnterpriseValueReported field if non-nil, zero value otherwise.
 
 ### GetTotalEnterpriseValueReportedOk
 
-`func (o *CompanyAnalysisExtendedRawDataMarketCap) GetTotalEnterpriseValueReportedOk() (*float32, bool)`
+`func (o *CompanyAnalysisExtendedRawDataMarketCap) GetTotalEnterpriseValueReportedOk() (*float64, bool)`
 
 GetTotalEnterpriseValueReportedOk returns a tuple with the TotalEnterpriseValueReported field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTotalEnterpriseValueReported
 
-`func (o *CompanyAnalysisExtendedRawDataMarketCap) SetTotalEnterpriseValueReported(v float32)`
+`func (o *CompanyAnalysisExtendedRawDataMarketCap) SetTotalEnterpriseValueReported(v float64)`
 
 SetTotalEnterpriseValueReported sets TotalEnterpriseValueReported field to given value.
 

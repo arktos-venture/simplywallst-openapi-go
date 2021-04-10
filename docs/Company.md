@@ -17,9 +17,9 @@ Name | Type | Description | Notes
 **PrimaryCanonicalUrl** | Pointer to **NullableString** |  | [optional] 
 **IsSearchable** | Pointer to **bool** |  | [optional] 
 **IsinSymbol** | Pointer to **string** |  | [optional] 
-**Analysis** | Pointer to [**CompanyAnalysis**](company_analysis.md) |  | [optional] 
-**Info** | Pointer to [**CompanyInfo**](company_info.md) |  | [optional] 
-**Score** | Pointer to [**CompanyScore**](company_score.md) |  | [optional] 
+**Analysis** | Pointer to [**CompanyAnalysis**](CompanyAnalysis.md) |  | [optional] 
+**Info** | Pointer to [**CompanyInfo**](CompanyInfo.md) |  | [optional] 
+**Score** | Pointer to [**CompanyScore**](CompanyScore.md) |  | [optional] 
 
 ## Methods
 

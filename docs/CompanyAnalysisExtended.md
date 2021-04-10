@@ -5,9 +5,9 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | Pointer to **string** |  | [optional] 
-**Analysis** | Pointer to [**CompanyAnalysisExtendedAnalysis**](companyAnalysisExtended_analysis.md) |  | [optional] 
-**IndustryAverages** | Pointer to [**CompanyAnalysisExtendedIndustryAverages**](companyAnalysisExtendedIndustryAverages.md) |  | [optional] 
-**RawData** | Pointer to [**CompanyAnalysisExtendedRaw**](companyAnalysisExtendedRaw.md) |  | [optional] 
+**Analysis** | Pointer to [**CompanyAnalysisExtendedAnalysis**](CompanyAnalysisExtendedAnalysis.md) |  | [optional] 
+**IndustryAverages** | Pointer to [**CompanyAnalysisExtendedIndustryAverages**](CompanyAnalysisExtendedIndustryAverages.md) |  | [optional] 
+**RawData** | Pointer to [**CompanyAnalysisExtendedRaw**](CompanyAnalysisExtendedRaw.md) |  | [optional] 
 
 ## Methods
 

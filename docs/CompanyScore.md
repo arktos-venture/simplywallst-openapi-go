@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Data** | Pointer to [**CompanyDataScore**](companyDataScore.md) |  | [optional] 
+**Data** | Pointer to [**CompanyDataScore**](CompanyDataScore.md) |  | [optional] 
 
 ## Methods
 

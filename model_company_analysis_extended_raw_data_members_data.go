@@ -31,19 +31,19 @@ type CompanyAnalysisExtendedRawDataMembersData struct {
 	ProRank                    *int32   `json:"pro_rank,omitempty"`
 	BoardRank                  *int32   `json:"board_rank,omitempty"`
 	Biography                  *string  `json:"biography,omitempty"`
-	HoldingDate                *float32 `json:"holding_date,omitempty"`
-	SharesHeld                 *float32 `json:"shares_held,omitempty"`
-	PercentOfSharesOutstanding *float32 `json:"percent_of_shares_outstanding,omitempty"`
+	HoldingDate                *float64 `json:"holding_date,omitempty"`
+	SharesHeld                 *float64 `json:"shares_held,omitempty"`
+	PercentOfSharesOutstanding *float64 `json:"percent_of_shares_outstanding,omitempty"`
 	OptionsHeld                *int32   `json:"options_held,omitempty"`
-	SharesChanged              *float32 `json:"shares_changed,omitempty"`
-	PercentSharesChanged       *float32 `json:"percent_shares_changed,omitempty"`
+	SharesChanged              *float64 `json:"shares_changed,omitempty"`
+	PercentSharesChanged       *float64 `json:"percent_shares_changed,omitempty"`
 	RankSharesHeld             *int32   `json:"rank_shares_held,omitempty"`
 	RankSharesBought           *int32   `json:"rank_shares_bought,omitempty"`
 	RankSharesSold             *int32   `json:"rank_shares_sold,omitempty"`
 	Age                        *int32   `json:"age,omitempty"`
 	ShortTitle                 *string  `json:"short_title,omitempty"`
-	Tenure                     *float32 `json:"tenure,omitempty"`
-	StartDate                  *float32 `json:"start_date,omitempty"`
+	Tenure                     *float64 `json:"tenure,omitempty"`
+	StartDate                  *float64 `json:"start_date,omitempty"`
 }
 
 // NewCompanyAnalysisExtendedRawDataMembersData instantiates a new CompanyAnalysisExtendedRawDataMembersData object
@@ -544,9 +544,9 @@ func (o *CompanyAnalysisExtendedRawDataMembersData) SetBiography(v string) {
 }
 
 // GetHoldingDate returns the HoldingDate field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedRawDataMembersData) GetHoldingDate() float32 {
+func (o *CompanyAnalysisExtendedRawDataMembersData) GetHoldingDate() float64 {
 	if o == nil || o.HoldingDate == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.HoldingDate
@@ -554,7 +554,7 @@ func (o *CompanyAnalysisExtendedRawDataMembersData) GetHoldingDate() float32 {
 
 // GetHoldingDateOk returns a tuple with the HoldingDate field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedRawDataMembersData) GetHoldingDateOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedRawDataMembersData) GetHoldingDateOk() (*float64, bool) {
 	if o == nil || o.HoldingDate == nil {
 		return nil, false
 	}
@@ -570,15 +570,15 @@ func (o *CompanyAnalysisExtendedRawDataMembersData) HasHoldingDate() bool {
 	return false
 }
 
-// SetHoldingDate gets a reference to the given float32 and assigns it to the HoldingDate field.
-func (o *CompanyAnalysisExtendedRawDataMembersData) SetHoldingDate(v float32) {
+// SetHoldingDate gets a reference to the given float64 and assigns it to the HoldingDate field.
+func (o *CompanyAnalysisExtendedRawDataMembersData) SetHoldingDate(v float64) {
 	o.HoldingDate = &v
 }
 
 // GetSharesHeld returns the SharesHeld field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedRawDataMembersData) GetSharesHeld() float32 {
+func (o *CompanyAnalysisExtendedRawDataMembersData) GetSharesHeld() float64 {
 	if o == nil || o.SharesHeld == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.SharesHeld
@@ -586,7 +586,7 @@ func (o *CompanyAnalysisExtendedRawDataMembersData) GetSharesHeld() float32 {
 
 // GetSharesHeldOk returns a tuple with the SharesHeld field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedRawDataMembersData) GetSharesHeldOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedRawDataMembersData) GetSharesHeldOk() (*float64, bool) {
 	if o == nil || o.SharesHeld == nil {
 		return nil, false
 	}
@@ -602,15 +602,15 @@ func (o *CompanyAnalysisExtendedRawDataMembersData) HasSharesHeld() bool {
 	return false
 }
 
-// SetSharesHeld gets a reference to the given float32 and assigns it to the SharesHeld field.
-func (o *CompanyAnalysisExtendedRawDataMembersData) SetSharesHeld(v float32) {
+// SetSharesHeld gets a reference to the given float64 and assigns it to the SharesHeld field.
+func (o *CompanyAnalysisExtendedRawDataMembersData) SetSharesHeld(v float64) {
 	o.SharesHeld = &v
 }
 
 // GetPercentOfSharesOutstanding returns the PercentOfSharesOutstanding field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedRawDataMembersData) GetPercentOfSharesOutstanding() float32 {
+func (o *CompanyAnalysisExtendedRawDataMembersData) GetPercentOfSharesOutstanding() float64 {
 	if o == nil || o.PercentOfSharesOutstanding == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.PercentOfSharesOutstanding
@@ -618,7 +618,7 @@ func (o *CompanyAnalysisExtendedRawDataMembersData) GetPercentOfSharesOutstandin
 
 // GetPercentOfSharesOutstandingOk returns a tuple with the PercentOfSharesOutstanding field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedRawDataMembersData) GetPercentOfSharesOutstandingOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedRawDataMembersData) GetPercentOfSharesOutstandingOk() (*float64, bool) {
 	if o == nil || o.PercentOfSharesOutstanding == nil {
 		return nil, false
 	}
@@ -634,8 +634,8 @@ func (o *CompanyAnalysisExtendedRawDataMembersData) HasPercentOfSharesOutstandin
 	return false
 }
 
-// SetPercentOfSharesOutstanding gets a reference to the given float32 and assigns it to the PercentOfSharesOutstanding field.
-func (o *CompanyAnalysisExtendedRawDataMembersData) SetPercentOfSharesOutstanding(v float32) {
+// SetPercentOfSharesOutstanding gets a reference to the given float64 and assigns it to the PercentOfSharesOutstanding field.
+func (o *CompanyAnalysisExtendedRawDataMembersData) SetPercentOfSharesOutstanding(v float64) {
 	o.PercentOfSharesOutstanding = &v
 }
 
@@ -672,9 +672,9 @@ func (o *CompanyAnalysisExtendedRawDataMembersData) SetOptionsHeld(v int32) {
 }
 
 // GetSharesChanged returns the SharesChanged field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedRawDataMembersData) GetSharesChanged() float32 {
+func (o *CompanyAnalysisExtendedRawDataMembersData) GetSharesChanged() float64 {
 	if o == nil || o.SharesChanged == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.SharesChanged
@@ -682,7 +682,7 @@ func (o *CompanyAnalysisExtendedRawDataMembersData) GetSharesChanged() float32 {
 
 // GetSharesChangedOk returns a tuple with the SharesChanged field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedRawDataMembersData) GetSharesChangedOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedRawDataMembersData) GetSharesChangedOk() (*float64, bool) {
 	if o == nil || o.SharesChanged == nil {
 		return nil, false
 	}
@@ -698,15 +698,15 @@ func (o *CompanyAnalysisExtendedRawDataMembersData) HasSharesChanged() bool {
 	return false
 }
 
-// SetSharesChanged gets a reference to the given float32 and assigns it to the SharesChanged field.
-func (o *CompanyAnalysisExtendedRawDataMembersData) SetSharesChanged(v float32) {
+// SetSharesChanged gets a reference to the given float64 and assigns it to the SharesChanged field.
+func (o *CompanyAnalysisExtendedRawDataMembersData) SetSharesChanged(v float64) {
 	o.SharesChanged = &v
 }
 
 // GetPercentSharesChanged returns the PercentSharesChanged field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedRawDataMembersData) GetPercentSharesChanged() float32 {
+func (o *CompanyAnalysisExtendedRawDataMembersData) GetPercentSharesChanged() float64 {
 	if o == nil || o.PercentSharesChanged == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.PercentSharesChanged
@@ -714,7 +714,7 @@ func (o *CompanyAnalysisExtendedRawDataMembersData) GetPercentSharesChanged() fl
 
 // GetPercentSharesChangedOk returns a tuple with the PercentSharesChanged field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedRawDataMembersData) GetPercentSharesChangedOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedRawDataMembersData) GetPercentSharesChangedOk() (*float64, bool) {
 	if o == nil || o.PercentSharesChanged == nil {
 		return nil, false
 	}
@@ -730,8 +730,8 @@ func (o *CompanyAnalysisExtendedRawDataMembersData) HasPercentSharesChanged() bo
 	return false
 }
 
-// SetPercentSharesChanged gets a reference to the given float32 and assigns it to the PercentSharesChanged field.
-func (o *CompanyAnalysisExtendedRawDataMembersData) SetPercentSharesChanged(v float32) {
+// SetPercentSharesChanged gets a reference to the given float64 and assigns it to the PercentSharesChanged field.
+func (o *CompanyAnalysisExtendedRawDataMembersData) SetPercentSharesChanged(v float64) {
 	o.PercentSharesChanged = &v
 }
 
@@ -896,9 +896,9 @@ func (o *CompanyAnalysisExtendedRawDataMembersData) SetShortTitle(v string) {
 }
 
 // GetTenure returns the Tenure field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedRawDataMembersData) GetTenure() float32 {
+func (o *CompanyAnalysisExtendedRawDataMembersData) GetTenure() float64 {
 	if o == nil || o.Tenure == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.Tenure
@@ -906,7 +906,7 @@ func (o *CompanyAnalysisExtendedRawDataMembersData) GetTenure() float32 {
 
 // GetTenureOk returns a tuple with the Tenure field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedRawDataMembersData) GetTenureOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedRawDataMembersData) GetTenureOk() (*float64, bool) {
 	if o == nil || o.Tenure == nil {
 		return nil, false
 	}
@@ -922,15 +922,15 @@ func (o *CompanyAnalysisExtendedRawDataMembersData) HasTenure() bool {
 	return false
 }
 
-// SetTenure gets a reference to the given float32 and assigns it to the Tenure field.
-func (o *CompanyAnalysisExtendedRawDataMembersData) SetTenure(v float32) {
+// SetTenure gets a reference to the given float64 and assigns it to the Tenure field.
+func (o *CompanyAnalysisExtendedRawDataMembersData) SetTenure(v float64) {
 	o.Tenure = &v
 }
 
 // GetStartDate returns the StartDate field value if set, zero value otherwise.
-func (o *CompanyAnalysisExtendedRawDataMembersData) GetStartDate() float32 {
+func (o *CompanyAnalysisExtendedRawDataMembersData) GetStartDate() float64 {
 	if o == nil || o.StartDate == nil {
-		var ret float32
+		var ret float64
 		return ret
 	}
 	return *o.StartDate
@@ -938,7 +938,7 @@ func (o *CompanyAnalysisExtendedRawDataMembersData) GetStartDate() float32 {
 
 // GetStartDateOk returns a tuple with the StartDate field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CompanyAnalysisExtendedRawDataMembersData) GetStartDateOk() (*float32, bool) {
+func (o *CompanyAnalysisExtendedRawDataMembersData) GetStartDateOk() (*float64, bool) {
 	if o == nil || o.StartDate == nil {
 		return nil, false
 	}
@@ -954,8 +954,8 @@ func (o *CompanyAnalysisExtendedRawDataMembersData) HasStartDate() bool {
 	return false
 }
 
-// SetStartDate gets a reference to the given float32 and assigns it to the StartDate field.
-func (o *CompanyAnalysisExtendedRawDataMembersData) SetStartDate(v float32) {
+// SetStartDate gets a reference to the given float64 and assigns it to the StartDate field.
+func (o *CompanyAnalysisExtendedRawDataMembersData) SetStartDate(v float64) {
 	o.StartDate = &v
 }
 
