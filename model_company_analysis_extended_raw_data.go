@@ -16,11 +16,13 @@ import (
 
 // CompanyAnalysisExtendedRawData struct for CompanyAnalysisExtendedRawData
 type CompanyAnalysisExtendedRawData struct {
-	MarketCap           *CompanyAnalysisExtendedRawDataMarketCap           `json:"market_cap,omitempty"`
-	Members             *CompanyAnalysisExtendedRawDataMembers             `json:"members,omitempty"`
-	Industries          *CompanyAnalysisExtendedRawDataIndustries          `json:"industries,omitempty"`
-	InsiderTransactions *CompanyAnalysisExtendedRawDataInsiderTransactions `json:"insider_transactions,omitempty"`
-	CurrencyInfo        *CompanyAnalysisExtendedRawDataCurrencyInfo        `json:"currency_info,omitempty"`
+	MarketCap           *CompanyAnalysisExtendedRawDataMarketCap                     `json:"market_cap,omitempty"`
+	Members             *CompanyAnalysisExtendedRawDataMembers                       `json:"members,omitempty"`
+	Industries          *CompanyAnalysisExtendedRawDataIndustries                    `json:"industries,omitempty"`
+	InsiderTransactions *CompanyAnalysisExtendedRawDataInsiderTransactions           `json:"insider_transactions,omitempty"`
+	CurrencyInfo        *CompanyAnalysisExtendedRawDataCurrencyInfo                  `json:"currency_info,omitempty"`
+	Estimates           *map[int64]CompanyAnalysisExtendedRawDataEstimateResultsData `json:"estimates,omitempty"`
+	Past                *map[int64]CompanyAnalysisExtendedRawDataPastResultsData     `json:"past,omitempty"`
 }
 
 // NewCompanyAnalysisExtendedRawData instantiates a new CompanyAnalysisExtendedRawData object
@@ -200,6 +202,70 @@ func (o *CompanyAnalysisExtendedRawData) SetCurrencyInfo(v CompanyAnalysisExtend
 	o.CurrencyInfo = &v
 }
 
+// GetEstimates returns the Estimates field value if set, zero value otherwise.
+func (o *CompanyAnalysisExtendedRawData) GetEstimates() map[int64]CompanyAnalysisExtendedRawDataEstimateResultsData {
+	if o == nil || o.Estimates == nil {
+		var ret map[int64]CompanyAnalysisExtendedRawDataEstimateResultsData
+		return ret
+	}
+	return *o.Estimates
+}
+
+// GetEstimatesOk returns a tuple with the Estimates field value if set, nil otherwise
+// and a boolean to check if the value has been set.
+func (o *CompanyAnalysisExtendedRawData) GetEstimatesOk() (*map[int64]CompanyAnalysisExtendedRawDataEstimateResultsData, bool) {
+	if o == nil || o.Estimates == nil {
+		return nil, false
+	}
+	return o.Estimates, true
+}
+
+// HasEstimates returns a boolean if a field has been set.
+func (o *CompanyAnalysisExtendedRawData) HasEstimates() bool {
+	if o != nil && o.Estimates != nil {
+		return true
+	}
+
+	return false
+}
+
+// SetEstimates gets a reference to the given map[int64]CompanyAnalysisExtendedRawDataEstimateResultsData and assigns it to the Estimates field.
+func (o *CompanyAnalysisExtendedRawData) SetEstimates(v map[int64]CompanyAnalysisExtendedRawDataEstimateResultsData) {
+	o.Estimates = &v
+}
+
+// GetPast returns the Past field value if set, zero value otherwise.
+func (o *CompanyAnalysisExtendedRawData) GetPast() map[int64]CompanyAnalysisExtendedRawDataPastResultsData {
+	if o == nil || o.Past == nil {
+		var ret map[int64]CompanyAnalysisExtendedRawDataPastResultsData
+		return ret
+	}
+	return *o.Past
+}
+
+// GetPastOk returns a tuple with the Past field value if set, nil otherwise
+// and a boolean to check if the value has been set.
+func (o *CompanyAnalysisExtendedRawData) GetPastOk() (*map[int64]CompanyAnalysisExtendedRawDataPastResultsData, bool) {
+	if o == nil || o.Past == nil {
+		return nil, false
+	}
+	return o.Past, true
+}
+
+// HasPast returns a boolean if a field has been set.
+func (o *CompanyAnalysisExtendedRawData) HasPast() bool {
+	if o != nil && o.Past != nil {
+		return true
+	}
+
+	return false
+}
+
+// SetPast gets a reference to the given map[string]CompanyAnalysisExtendedRawDataPastResultsData and assigns it to the Past field.
+func (o *CompanyAnalysisExtendedRawData) SetPast(v map[int64]CompanyAnalysisExtendedRawDataPastResultsData) {
+	o.Past = &v
+}
+
 func (o CompanyAnalysisExtendedRawData) MarshalJSON() ([]byte, error) {
 	toSerialize := map[string]interface{}{}
 	if o.MarketCap != nil {
@@ -216,6 +282,12 @@ func (o CompanyAnalysisExtendedRawData) MarshalJSON() ([]byte, error) {
 	}
 	if o.CurrencyInfo != nil {
 		toSerialize["currency_info"] = o.CurrencyInfo
+	}
+	if o.Estimates != nil {
+		toSerialize["estimates"] = o.Estimates
+	}
+	if o.Past != nil {
+		toSerialize["past"] = o.Past
 	}
 	return json.Marshal(toSerialize)
 }

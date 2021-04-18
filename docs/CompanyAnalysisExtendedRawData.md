@@ -9,6 +9,8 @@ Name | Type | Description | Notes
 **Industries** | Pointer to [**CompanyAnalysisExtendedRawDataIndustries**](CompanyAnalysisExtendedRawDataIndustries.md) |  | [optional] 
 **InsiderTransactions** | Pointer to [**CompanyAnalysisExtendedRawDataInsiderTransactions**](CompanyAnalysisExtendedRawDataInsiderTransactions.md) |  | [optional] 
 **CurrencyInfo** | Pointer to [**CompanyAnalysisExtendedRawDataCurrencyInfo**](CompanyAnalysisExtendedRawDataCurrencyInfo.md) |  | [optional] 
+**Estimates** | Pointer to [**map[string]CompanyAnalysisExtendedRawDataEstimateResultsData**](CompanyAnalysisExtendedRawDataEstimateResultsData.md) |  | [optional] 
+**Past** | Pointer to [**map[string]CompanyAnalysisExtendedRawDataPastResultsData**](CompanyAnalysisExtendedRawDataPastResultsData.md) |  | [optional] 
 
 ## Methods
 
@@ -153,6 +155,56 @@ SetCurrencyInfo sets CurrencyInfo field to given value.
 `func (o *CompanyAnalysisExtendedRawData) HasCurrencyInfo() bool`
 
 HasCurrencyInfo returns a boolean if a field has been set.
+
+### GetEstimates
+
+`func (o *CompanyAnalysisExtendedRawData) GetEstimates() map[string]CompanyAnalysisExtendedRawDataEstimateResultsData`
+
+GetEstimates returns the Estimates field if non-nil, zero value otherwise.
+
+### GetEstimatesOk
+
+`func (o *CompanyAnalysisExtendedRawData) GetEstimatesOk() (*map[string]CompanyAnalysisExtendedRawDataEstimateResultsData, bool)`
+
+GetEstimatesOk returns a tuple with the Estimates field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetEstimates
+
+`func (o *CompanyAnalysisExtendedRawData) SetEstimates(v map[string]CompanyAnalysisExtendedRawDataEstimateResultsData)`
+
+SetEstimates sets Estimates field to given value.
+
+### HasEstimates
+
+`func (o *CompanyAnalysisExtendedRawData) HasEstimates() bool`
+
+HasEstimates returns a boolean if a field has been set.
+
+### GetPast
+
+`func (o *CompanyAnalysisExtendedRawData) GetPast() map[string]CompanyAnalysisExtendedRawDataPastResultsData`
+
+GetPast returns the Past field if non-nil, zero value otherwise.
+
+### GetPastOk
+
+`func (o *CompanyAnalysisExtendedRawData) GetPastOk() (*map[string]CompanyAnalysisExtendedRawDataPastResultsData, bool)`
+
+GetPastOk returns a tuple with the Past field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetPast
+
+`func (o *CompanyAnalysisExtendedRawData) SetPast(v map[string]CompanyAnalysisExtendedRawDataPastResultsData)`
+
+SetPast sets Past field to given value.
+
+### HasPast
+
+`func (o *CompanyAnalysisExtendedRawData) HasPast() bool`
+
+HasPast returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
