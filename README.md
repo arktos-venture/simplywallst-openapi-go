@@ -190,7 +190,15 @@ Class | Method | HTTP request | Description
 
 ## Documentation For Authorization
 
- Endpoints do not require authorization.
+
+
+### ApiKeyAuth
+
+- **Type**: API key
+- **API key parameter name**: api_token
+- **Location**: URL query string
+
+Note, each API key must be added to a map of `map[string]APIKey` where the key is: api_token and passed in as the auth context for each request.
 
 
 ## Documentation for Utility Methods
